@@ -1,0 +1,4 @@
+FONTE: Nimbus Sans (URW++ base35), clone métrico livre da Helvetica, em woff2 (Regular e Bold).
+Licença: AGPL-3.0 (texto em COPYING-AGPL-3.0.txt, distribuído junto). Ao redistribuir os arquivos de fonte, mantenha este aviso e a licença.
+
+HELVETICA: este repositório NÃO inclui a Helvetica (fonte comercial, © Linotype/Apple). Se você tem licença, use-a com uma regra @font-face no seu próprio CSS.

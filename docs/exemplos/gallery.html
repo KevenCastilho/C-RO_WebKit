@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C-RO — Galeria</title><link rel="stylesheet" href="../../dist/c-ro.min.css">
+<style>
+body{padding:12px} .wrap{max-width:980px;margin:0 auto} .sec{margin:0 0 18px}
+.sec>h2{margin:0 0 6px;font-size:12px;color:#fff;text-shadow:1px 1px 0 #000}
+.g-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center} .box{background:#fff;padding:10px;color:#000}
+.g-ico{margin:0;display:flex;flex-direction:column;align-items:center;gap:3px;width:84px;font-size:9px;color:#000} .g-ico figcaption{text-align:center}
+.note{font-size:10px;color:#ddd;margin:0 0 6px}
+</style><link rel="stylesheet" href="../assets/docs.css"><link rel="stylesheet" href="examples.css"></head><body class="ex" data-docs-root="../"><header class="bd-top cro-titlebar"><a class="bd-brand" href="../index.html"><img src="../assets/favicon-32.png" alt="" width="20" height="20"><span class="cro-titlebar__title">C-RO Documentação</span></a><form class="bd-search" role="search" onsubmit="return false"><input id="bd-q" type="search" placeholder="Buscar ( / )" autocomplete="off" aria-label="Buscar na documentação"><ul id="bd-results" class="list-unstyled" hidden></ul></form><nav class="bd-top-nav" aria-label="Principal"><a class="cro-btn" href="../index.html">Docs</a><a class="cro-btn is-active" href="../exemplos/index.html" aria-current="page">Exemplos</a></nav></header><div class="ex-navrow"><a class="cro-btn ex-back" href="index.html">‹ Voltar</a><nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Docs</a></li><li class="breadcrumb-item"><a href="index.html">Exemplos</a></li><li class="breadcrumb-item active" aria-current="page">Galeria</li></ol></nav></div><div class="wrap" data-ex-title="Galeria">
+<p class="note">Galeria viva do C-RO. Tudo é CSS puro (sem imagens). Para a cobertura HTML e o estado de cada peça ver docs/HTML_COVERAGE.md e DECISIONS.md.</p>
+
+<section class="sec"><h2>Botões</h2><div class="g-row box">
+<button class="cro-btn">Padrão 20px</button><button class="cro-btn" disabled>Desab</button><button class="cro-btn cro-btn--close">Fechar</button>
+<button>Elemento nu</button><a class="cro-btn" href="#">link-botão</a>
+<button class="cro-mesbtn" style="width:80px">Mesbtn</button></div></section>
+
+<section class="sec"><h2>Botões de sistema 11×11 / diálogo</h2><div class="g-row box">
+<button class="cro-sys-btn" aria-label="base"></button><button class="cro-sys-btn cro-sys-btn--mini" aria-label="mini"></button><button class="cro-sys-btn cro-sys-btn--close" aria-label="fechar"></button><button class="cro-sys-btn cro-sys-btn--quest" aria-label="quest"></button>
+<button class="cro-dialbtn" aria-label="d"></button><button class="cro-dialbtn cro-dialbtn--opt" aria-label="opt"></button></div></section>
+
+<section class="sec"><h2>Mesbtn com ícone (01–10)</h2><div class="g-row box"><button type="button" class="cro-mesbtn-ico cro-mesbtn-ico--01" aria-label="mesbtn 01"></button><button type="button" class="cro-mesbtn-ico cro-mesbtn-ico--02" aria-label="mesbtn 02"></button><button type="button" class="cro-mesbtn-ico cro-mesbtn-ico--03" aria-label="mesbtn 03"></button><button type="button" class="cro-mesbtn-ico cro-mesbtn-ico--04" aria-label="mesbtn 04"></button><button type="button" class="cro-mesbtn-ico cro-mesbtn-ico--05" aria-label="mesbtn 05"></button><button type="button" class="cro-mesbtn-ico cro-mesbtn-ico--06" aria-label="mesbtn 06"></button><button type="button" class="cro-mesbtn-ico cro-mesbtn-ico--07" aria-label="mesbtn 07"></button><button type="button" class="cro-mesbtn-ico cro-mesbtn-ico--08" aria-label="mesbtn 08"></button><button type="button" class="cro-mesbtn-ico cro-mesbtn-ico--09" aria-label="mesbtn 09"></button><button type="button" class="cro-mesbtn-ico cro-mesbtn-ico--10" aria-label="mesbtn 10"></button></div></section>
+
+<section class="sec"><h2>Janela, titlebar, rodapé</h2><div class="g-row">
+<section class="cro-window" style="width:300px"><header class="cro-titlebar"><span class="cro-titlebar__title">Janela</span><div class="cro-titlebar__actions"><button class="cro-sys-btn cro-sys-btn--mini" aria-label="m"></button><button class="cro-sys-btn cro-sys-btn--close" aria-label="x"></button></div></header>
+<div class="cro-window__body">Corpo da janela.</div><footer class="cro-window__footer"><button class="cro-btn">Cancelar</button><button class="cro-btn">OK</button></footer></section>
+<section class="cro-window cro-window--gutter" style="width:200px"><header class="cro-titlebar"><span class="cro-titlebar__title">Gutter</span></header><div class="cro-window__body">Listras laterais.</div></section>
+<section class="cro-window cro-window--mini" style="width:160px"><header class="cro-titlebar"><span class="cro-titlebar__title">Mini</span></header><footer class="cro-window__footer"></footer></section></div></section>
+
+<section class="sec"><h2>Abas horizontais (pílula) e verticais (escada)</h2><div class="g-row">
+<section class="cro-window" style="width:300px"><header class="cro-titlebar"><span class="cro-titlebar__title">Opções</span></header>
+<div class="cro-window__body"><div data-cro-tabs data-cro-panels="#gh"><div class="cro-tabs"><button class="cro-tabs__btn is-active" data-cro-tab="1">Geral</button><button class="cro-tabs__btn" data-cro-tab="2">Áudio</button><button class="cro-tabs__btn" data-cro-tab="3">Vídeo</button></div></div>
+<div class="cro-tab-panels" id="gh"><div data-cro-panel="1">Painel Geral</div><div data-cro-panel="2" hidden>Painel Áudio</div><div data-cro-panel="3" hidden>Painel Vídeo</div></div></div></section>
+<section class="cro-window" style="width:260px"><header class="cro-titlebar"><span class="cro-titlebar__title">Itens</span></header>
+<div class="cro-tabs-v" data-cro-tabs data-cro-panels="#gv"><div class="cro-tabs-v__rail"><button class="cro-tabs-v__btn is-active" data-cro-tab="a">Item</button><button class="cro-tabs-v__btn" data-cro-tab="b">Equip</button><button class="cro-tabs-v__btn" data-cro-tab="c">Etc</button></div>
+<div class="cro-tabs-v__body" id="gv"><div data-cro-panel="a"><div class="cro-slot-grid" style="width:128px"><div class="cro-slot"></div><div class="cro-slot"><span class="cro-slot__qty">99</span></div><div class="cro-slot is-selected"></div><div class="cro-slot cro-slot--plain"></div></div></div><div data-cro-panel="b" hidden>Equip</div><div data-cro-panel="c" hidden>Etc</div></div></div></section></div></section>
+
+<section class="sec"><h2>Formulário (classes e elementos nus)</h2><div class="g-row"><div class="box" style="width:300px">
+<div class="cro-field"><label class="cro-label" for="g1">Login</label><input class="cro-input" id="g1" value="usuario"></div>
+<div class="cro-field"><label class="cro-label cro-label--lg" for="g2">Senha</label><input class="cro-input" id="g2" type="password" value="abc"></div>
+<div class="cro-field"><label class="cro-label cro-label--stat" for="g3">Classe</label><select class="cro-select" id="g3"><option>Espadachim</option><option>Mago</option></select></div>
+<div class="cro-field"><textarea class="cro-textarea" placeholder="mensagem"></textarea></div>
+<label class="cro-check"><input type="checkbox" checked> Lembrar</label> <label class="cro-check"><input type="radio" name="r" checked> A</label> <label class="cro-check"><input type="radio" name="r"> B</label></div>
+<div class="box" style="width:300px"><p><input placeholder="input nu"> <input type="number" value="3" style="width:60px"></p><p><select data-cro-select><option>Select com popup do kit</option><option>Segunda</option></select></p>
+<p><input type="range"> <meter value=".7"></meter></p><p><input type="file"></p><p><input type="color" value="#4569b9"> <output>42</output></p>
+<fieldset><legend>Grupo</legend><label><input type="checkbox"> nu</label></fieldset></div></div></section>
+
+<section class="sec"><h2>Progress, grp, lista, tabela</h2><div class="g-row"><div class="box" style="width:240px">
+<div class="cro-progress cro-mb-2"><div class="cro-progress__bar" style="--p:70"></div></div><div class="cro-progress cro-mb-2"><div class="cro-progress__bar" style="--p:40"></div></div>
+<div class="cro-progress cro-mb-2"><div class="cro-progress__bar cro-progress__bar--orange" style="--p:60"></div></div><div class="cro-progress"><div class="cro-progress__bar cro-progress__bar--red" style="--p:20"></div></div>
+<p class="g-row"><span class="cro-grp cro-grp--offline"></span><span class="cro-grp cro-grp--online"></span><span class="cro-grp cro-grp--leader"></span></p></div>
+<ul class="cro-list" style="width:180px"><li class="cro-list__item">Item A</li><li class="cro-list__item is-selected">Selecionado</li><li class="cro-list__item">Item C</li></ul>
+<table class="cro-table" style="width:240px"><thead><tr><th>Nome</th><th>Lv</th></tr></thead><tbody><tr><td>Ana</td><td>99</td></tr><tr><td>Bia</td><td>50</td></tr></tbody></table></div></section>
+
+<section class="sec"><h2>Barras, diálogo, tooltip, sysbox</h2><div class="box"><p class="note" style="color:#333">Barra de diálogo: nome · campo de texto · alça de redimensionar (à direita).</p>
+<div class="cro-dialog-bar" style="width:600px"><div class="cro-dialog-bar__name"></div><div class="cro-dialog-bar__input"></div><span class="cro-dialog-grip" title="Redimensionar (alça)"></span></div>
+<p class="g-row"><span class="cro-tip" style="width:120px;height:40px;padding:6px">Tooltip</span><span class="cro-sysbox" style="width:160px;height:48px">Mensagem do sistema</span></p></div></section>
+
+<section class="sec"><h2>Ícones pequenos</h2><div class="g-row box"><figure class="g-ico"><span class="cro-ico cro-ico--arw-down"></span><figcaption>arw-down</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--arw-up"></span><figcaption>arw-up</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--arw-right-on"></span><figcaption>arw-right-on</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--battle-opt"></span><figcaption>battle-opt</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--battle-opt2"></span><figcaption>battle-opt2</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--btnbar-arrow"></span><figcaption>btnbar-arrow</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--chatmode"></span><figcaption>chatmode</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--close"></span><figcaption>close</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--close2"></span><figcaption>close2</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--confusion"></span><figcaption>confusion</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--folder"></span><figcaption>folder</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--lock"></span><figcaption>lock</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--unlock"></span><figcaption>unlock</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--num0"></span><figcaption>num0</figcaption></figure><figure class="g-ico"><button class="cro-ico cro-ico--page-first" aria-label="first"></button><figcaption>page-first</figcaption></figure><figure class="g-ico"><button class="cro-ico cro-ico--page-last" aria-label="last"></button><figcaption>page-last</figcaption></figure><figure class="g-ico"><button class="cro-ico cro-ico--page-next" aria-label="next"></button><figcaption>page-next</figcaption></figure><figure class="g-ico"><button class="cro-ico cro-ico--page-prev" aria-label="prev"></button><figcaption>page-prev</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--quest-0"></span><figcaption>quest-0</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--quest-1"></span><figcaption>quest-1</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--quest-2"></span><figcaption>quest-2</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--quest-3"></span><figcaption>quest-3</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--silence"></span><figcaption>silence</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--skill-empty"></span><figcaption>skill-empty</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--skill-up"></span><figcaption>skill-up</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--spin-down"></span><figcaption>spin-down</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--spin-up"></span><figcaption>spin-up</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--stick-left"></span><figcaption>stick-left</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--view-lines"></span><figcaption>view-lines</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--wnd-mini"></span><figcaption>wnd-mini</figcaption></figure><figure class="g-ico"><span class="cro-ico cro-ico--world-close"></span><figcaption>world-close</figcaption></figure></div></section>
+
+<section class="sec"><h2>Barra de rolagem (WebKit)</h2><div class="box"><div class="g-row">
+<div id="gal-sb-v" style="height:60px;width:200px;overflow-y:scroll;border:1px solid #c0c0c0"><div style="height:200px">Vertical…</div></div>
+<div id="gal-sb-h" style="width:200px;overflow-x:scroll;overflow-y:hidden;border:1px solid #c0c0c0"><div style="width:600px;height:40px">Horizontal… role para o lado</div></div>
+<div id="gal-sb-hv" style="height:60px;width:200px;overflow:scroll;border:1px solid #c0c0c0"><div style="width:600px;height:200px">Ambos os eixos (canto)</div></div>
+</div></div></section>
+
+<section class="sec"><h2>Elementos HTML (nus)</h2><div class="box">
+<h1>h1</h1><h2>h2</h2><h3>h3</h3><p>Texto com <a href="#">link</a>, <b>negrito</b>, <mark>mark</mark>, <del>del</del>, <ins>ins</ins>, <code>code</code>, <kbd>Ctrl</kbd>.</p>
+<ul><li>lista</li></ul><dl><dt>Termo</dt><dd>Definição</dd></dl><blockquote>Citação</blockquote><hr><pre>pre</pre>
+<details open><summary>details</summary>conteúdo</details>
+<ul class="cro-tree" role="tree"><li><details open><summary>Pasta</summary><ul><li>Arquivo</li></ul></details></li></ul>
+<div class="cro-pager"><button class="cro-ico cro-ico--page-first" aria-label="first"></button><button class="cro-ico cro-ico--page-prev" aria-label="prev"></button><button class="cro-pager__n">1</button><button class="cro-pager__n is-current">2</button><button class="cro-pager__n">3</button><button class="cro-ico cro-ico--page-next" aria-label="next"></button><button class="cro-ico cro-ico--page-last" aria-label="last"></button></div>
+<ul class="cro-menu" style="width:140px;margin-top:8px"><li>Abrir</li><li role="separator"></li><li aria-disabled="true">Desabilitado</li></ul></div></section>
+
+<section class="sec"><h2>JS</h2><div class="g-row box">
+<button id="ja">CRO.alert</button><button id="jc">CRO.confirm</button><button id="jp">CRO.prompt</button><button id="jm">CRO.menu</button><span id="jo"></span></div></section>
+</div>
+<script src="../../dist/c-ro.min.js"></script>
+<script>
+var o=document.getElementById('jo');
+document.getElementById('ja').onclick=function(){CRO.alert('Olá, aventureiro!').then(function(){o.textContent='alert fechado'})};
+document.getElementById('jc').onclick=function(){CRO.confirm('Sair do jogo?').then(function(v){o.textContent='confirm: '+v})};
+document.getElementById('jp').onclick=function(){CRO.prompt('Nome do personagem:','Ana').then(function(v){o.textContent='prompt: '+JSON.stringify(v)})};
+document.getElementById('jm').onclick=function(e){var r=e.target.getBoundingClientRect();CRO.menu([{label:'Atacar',value:'a'},{label:'Falar',value:'f'},'-',{label:'Ignorar',value:'i',disabled:true}],r.left,r.bottom).then(function(v){o.textContent='menu: '+v})};
+</script><script src="../assets/docs.js"></script></body></html>
