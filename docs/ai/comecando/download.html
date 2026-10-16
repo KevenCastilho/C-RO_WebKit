@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download e arquivos · C-RO AI reference</title><meta name="description" content="O que existe na pasta dist/ , para que serve cada arquivo e como escolher.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Começando › Download e arquivos</nav>
+<main>
+<h1>Download e arquivos</h1>
+<dl><dt>Type</dt><dd>Guide. Explanatory page about using the kit.</dd><dt>Section</dt><dd>Começando</dd><dt>Human version (rendered examples)</dt><dd><a href="../../comecando/download.html">comecando/download.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p>O que existe na pasta <code>dist/</code>, para que serve cada arquivo e como escolher.</p>
+<h2 id="conteúdo-do-pacote">Conteúdo do pacote</h2>
+<p>Os arquivos ficam em <code>dist/</code>. Não há Node nem npm: é só copiar os arquivos que você precisa.</p>
+<table>
+<thead>
+<tr>
+<th>Arquivo</th>
+<th>O que é</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c-ro-bs.css</code> / <code>c-ro-bs.min.css</code></td>
+<td><strong>Kit + Bootstrap 5.3.8</strong> em um CSS só. O Bootstrap fica em <code>@layer bootstrap</code>; o kit fica fora do layer e vence.</td>
+</tr>
+<tr>
+<td><code>c-ro-bs.js</code> / <code>c-ro-bs.min.js</code></td>
+<td>Bootstrap (bundle com Popper) <strong>+</strong> JS do kit (abas, <code>CRO.*</code>, select, cursor animado, favicon). Define <code>window.bootstrap</code> e <code>window.CRO</code>.</td>
+</tr>
+<tr>
+<td><code>c-ro.css</code> / <code>c-ro.min.css</code></td>
+<td><strong>Só o kit</strong> (classes <code>cro-*</code> e elementos HTML nus), sem Bootstrap.</td>
+</tr>
+<tr>
+<td><code>c-ro.lite.css</code> / <code>c-ro.lite.min.css</code></td>
+<td>Kit sem as peças específicas do jogo: botão Fechar, mesbtn com ícone, barra de diálogo/tooltip, sysbox.</td>
+</tr>
+<tr>
+<td><code>c-ro.js</code> / <code>c-ro.min.js</code></td>
+<td>Só o JS do kit (sem Bootstrap). Serve para <code>c-ro.css</code> e <code>c-ro.lite.css</code>.</td>
+</tr>
+<tr>
+<td><code>fonts/</code></td>
+<td>Nimbus Sans (Regular, Bold, woff2) + avisos de licença. Fica ao lado do CSS.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tamanhos-aproximados">Tamanhos aproximados</h2>
+<table>
+<thead>
+<tr>
+<th>Arquivo</th>
+<th>Bruto</th>
+<th>gzip</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c-ro-bs.min.css</code></td>
+<td>~1,2 MB</td>
+<td>~150 KB</td>
+</tr>
+<tr>
+<td><code>c-ro-bs.min.js</code></td>
+<td>~142 KB</td>
+<td>~56 KB</td>
+</tr>
+<tr>
+<td><code>c-ro.min.css</code></td>
+<td>~527 KB</td>
+<td>~74 KB</td>
+</tr>
+<tr>
+<td><code>c-ro.lite.min.css</code></td>
+<td>~361 KB</td>
+<td>~59 KB</td>
+</tr>
+<tr>
+<td><code>c-ro.min.js</code></td>
+<td>~62 KB</td>
+<td>~33 KB</td>
+</tr>
+</tbody>
+</table>
+<p>O peso vem dos sprites pixel-exatos (gradientes de 1px por linha), dos ícones do jogo e dos cursores, todos embutidos como CSS/<code>data:</code> URI. Não há imagens externas: <strong>um CSS e um JS</strong> resolvem tudo.</p>
+<h2 id="como-combinar">Como combinar</h2>
+<pre><code class="language-html">&lt;!-- Caso comum: Bootstrap tematizado --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;c-ro-bs.min.css&quot;&gt;
+&lt;script src=&quot;c-ro-bs.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Só o kit, sem Bootstrap --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;c-ro.min.css&quot;&gt;
+&lt;script src=&quot;c-ro.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<aside><strong>Warning</strong><p>Não misture <code>c-ro.css</code> com o Bootstrap original: o kit já inclui o Bootstrap em <code>c-ro-bs.css</code>. Dois Bootstraps na mesma página causam conflitos.</p></aside>
+<h2 id="usar-direto-do-github">Usar direto do GitHub</h2>
+<p>O repositório é <a href="https://github.com/KevenCastilho/C-RO_WebKit">https://github.com/KevenCastilho/C-RO_WebKit</a>. Há duas formas de usar os arquivos dele:</p>
+<ol>
+<li><strong>Baixar e copiar (recomendado).</strong> Em <strong>Code → Download ZIP</strong>, copie de <code>dist/</code> os arquivos que você precisa, mais a pasta <code>fonts/</code>. É a única forma de travar a versão, porque o repositório não usa tags: a branch <code>main</code> pode mudar.</li>
+<li><strong>Apontar para o GitHub Pages.</strong> Funciona sem copiar nada, mas o endereço sempre serve a versão atual da <code>main</code>:</li>
+</ol>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.css&quot;&gt;
+&lt;script src=&quot;https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>O CSS carrega as fontes da pasta <code>fonts/</code> que está ao lado dele, então elas vêm do mesmo endereço (<code>.../dist/fonts/</code>). Não use <code>raw.githubusercontent.com</code>: o GitHub serve esses arquivos como texto puro e o navegador recusa o CSS e o JS.</p>
+<aside><strong>Limitation</strong><p>Apontar para o Pages deixa a sua página dependente do GitHub estar no ar e de a <code>main</code> não mudar. Para produção, copie os arquivos.</p></aside>
+<h2 id="versão-legível-x-minificada">Versão legível x minificada</h2>
+<p><code>c-ro-bs.css</code> e <code>c-ro.css</code> têm comentários e seções nomeadas (bom para estudar e depurar). Os <code>.min.*</code> são equivalentes; o teste de regressão garante que o minificado renderiza idêntico, pixel a pixel.</p>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../comecando/introducao.html">« Introdução</a> · <a href="../comecando/como-funciona.html">Como funciona »</a></nav>
+</main>
+</body></html>

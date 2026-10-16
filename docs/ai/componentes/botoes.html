@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botões · C-RO AI reference</title><meta name="description" content="O botão de 20px do jogo (degradê azul de 1px por linha, borda cinza) com as cores contextuais do Bootstrap derivadas.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Componentes › Botões</nav>
+<main>
+<h1>Botões</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Componentes</dd><dt>Human version (rendered examples)</dt><dd><a href="../../componentes/botoes.html">componentes/botoes.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p>O botão de 20px do jogo (degradê azul de 1px por linha, borda cinza) com as cores contextuais do Bootstrap derivadas.</p>
+<h2 id="cores">Cores</h2>
+<pre><code class="language-html">&lt;button class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+&lt;button class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+&lt;button class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;
+&lt;button class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;
+&lt;button class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;</code></pre>
+<aside><strong>Derived/invented (not in the original game)</strong><p>O jogo só tem o botão azul-acinzentado padrão (CONFIRMADO). As cores contextuais são derivadas dele (DERIVADO).</p></aside>
+<h2 id="contorno">Contorno</h2>
+<pre><code class="language-html">&lt;button class=&quot;btn btn-outline-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-success&quot;&gt;Success&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-secondary&quot;&gt;Secondary&lt;/button&gt;</code></pre>
+<h2 id="tamanhos">Tamanhos</h2>
+<pre><code class="language-html">&lt;button class=&quot;btn btn-primary btn-lg&quot;&gt;Grande&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot;&gt;Padrão&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary btn-sm&quot;&gt;Pequeno&lt;/button&gt;</code></pre>
+<p>Os tamanhos usam a altura flexível do sprite: o degradê é redesenhado sem esticar a borda.</p>
+<h2 id="estados">Estados</h2>
+<pre><code class="language-html">&lt;button class=&quot;btn btn-primary active&quot;&gt;Ativo&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot; disabled&gt;Desabilitado&lt;/button&gt;
+&lt;a class=&quot;btn btn-primary disabled&quot; role=&quot;button&quot; aria-disabled=&quot;true&quot;&gt;Link desabilitado&lt;/a&gt;</code></pre>
+<h2 id="elementos">Elementos</h2>
+<pre><code class="language-html">&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;button&lt;/button&gt;
+&lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;a&lt;/a&gt;
+&lt;input class=&quot;btn btn-primary&quot; type=&quot;submit&quot; value=&quot;input&quot;&gt;</code></pre>
+<h2 id="bloco-e-alternância">Bloco e alternância</h2>
+<pre><code class="language-html">&lt;div class=&quot;d-grid gap-2&quot; style=&quot;max-width:260px&quot;&gt;&lt;button class=&quot;btn btn-primary&quot;&gt;Bloco&lt;/button&gt;&lt;button class=&quot;btn btn-secondary&quot;&gt;Bloco&lt;/button&gt;&lt;/div&gt;
+&lt;button class=&quot;btn btn-primary mt-2&quot; data-bs-toggle=&quot;button&quot;&gt;Alternar (data-bs-toggle=&quot;button&quot;)&lt;/button&gt;</code></pre>
+<h2 id="botões-nativos-do-kit">Botões nativos do kit</h2>
+<p>Veja <a href="../kit/botoes-cro.html">Botões cro-*</a>: <code>cro-btn</code>, <code>cro-mesbtn</code>, <code>cro-sys-btn</code>, <code>cro-dialbtn</code>.</p>
+<h2 id="todos-os-contornos">Todos os contornos</h2>
+<pre><code class="language-html">&lt;button class=&quot;btn btn-outline-secondary&quot;&gt;secondary&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-success&quot;&gt;success&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-danger&quot;&gt;danger&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-warning&quot;&gt;warning&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-info&quot;&gt;info&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-light&quot;&gt;light&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-dark&quot;&gt;dark&lt;/button&gt;</code></pre>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../componentes/breadcrumb.html">« Breadcrumb</a> · <a href="../componentes/grupo-de-botoes.html">Grupo de botões »</a></nav>
+</main>
+</body></html>

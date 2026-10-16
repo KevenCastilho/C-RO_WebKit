@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como funciona · C-RO AI reference</title><meta name="description" content="As regras de convivência entre o kit e o Bootstrap, para você prever o resultado sem tentativa e erro.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Começando › Como funciona</nav>
+<main>
+<h1>Como funciona</h1>
+<dl><dt>Type</dt><dd>Guide. Explanatory page about using the kit.</dd><dt>Section</dt><dd>Começando</dd><dt>Human version (rendered examples)</dt><dd><a href="../../comecando/como-funciona.html">comecando/como-funciona.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-btn</code></dd></dl>
+<div lang="pt-BR">
+<p>As regras de convivência entre o kit e o Bootstrap, para você prever o resultado sem tentativa e erro.</p>
+<h2 id="a-ideia">A ideia</h2>
+<p>O C-RO é <strong>um tema completo</strong> do Bootstrap 5.3.8 com a linguagem visual da interface do Ragnarok Online clássico. Você escreve a marcação normal do Bootstrap; o CSS troca a aparência. O kit nunca pede classes novas para o que o Bootstrap já tem.</p>
+<h2 id="camadas-e-precedência">Camadas e precedência</h2>
+<pre><code class="language-css">@layer bootstrap;            /* 1. Bootstrap inteiro, dentro do layer */
+/* 2. kit (fora de qualquer layer)   -&gt; vence o Bootstrap */
+/* 3. utilitários do Bootstrap (fora do layer), no fim */
+/* 4. o CSS do SEU site (se vier depois) -&gt; vence o kit */</code></pre>
+<p>Como o CSS "sem layer" vence qualquer layer, o kit sempre ganha do Bootstrap, mesmo com seletores mais fracos. E como os elementos HTML nus do kit usam <code>:where()</code> (especificidade zero), o <strong>seu CSS vence o kit sem precisar de <code>!important</code></strong>.</p>
+<aside><strong>Tip</strong><p>Regra de ouro: quando houver conflito, <strong>o kit vence o Bootstrap, e você vence o kit</strong>.</p></aside>
+<h2 id="três-tipos-de-aparência">Três tipos de aparência</h2>
+<pre><code class="language-html">&lt;button class=&quot;btn btn-primary&quot;&gt;Bootstrap (drop-in)&lt;/button&gt;
+&lt;button class=&quot;cro-btn&quot;&gt;Classe cro-* do kit&lt;/button&gt;
+&lt;button&gt;Elemento HTML nu&lt;/button&gt;</code></pre>
+<ol>
+<li><strong>Drop-in Bootstrap</strong> — <code>btn</code>, <code>card</code>, <code>modal</code>... com a cara do jogo.</li>
+<li><strong>Peças <code>cro-*</code></strong> — para o que o Bootstrap não tem (janela, slot, árvore...). Funcionam com ou sem Bootstrap.</li>
+<li><strong>Elementos nus</strong> — <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;table&gt;</code>, <code>&lt;h1&gt;</code>... já saem estilizados sem classe (veja <a href="../conteudo/reboot.html">Reboot</a>).</li>
+</ol>
+<h2 id="utilitários">Utilitários</h2>
+<p>Os utilitários do Bootstrap (<code>d-flex</code>, <code>mb-3</code>, <code>text-center</code>...) funcionam normalmente e ficam <strong>fora do layer</strong>. Só <code>display</code> e visibilidade usam <code>!important</code> (como no Bootstrap), para que <code>d-none</code> esconda de verdade mesmo quando o kit define <code>display</code> num componente.</p>
+<h2 id="onde-o-jogo-não-tem-equivalente">Onde o jogo não tem equivalente</h2>
+<p>O Ragnarok clássico tem poucos componentes de UI. Para os que não existem lá (carousel, spinner, placeholder, breadcrumb, offcanvas, popover...), o kit <strong>deriva</strong> o visual a partir dos elementos reais e marca o item como <strong>DERIVADO</strong> ou <strong>INVENTADO</strong>. Veja <a href="../extras/fidelidade.html">Fidelidade</a>.</p>
+<h2 id="o-que-o-kit-não-faz">O que o kit não faz</h2>
+<ul>
+<li><strong>RTL</strong>: não suportado (a UI do Ragnarok não é RTL).</li>
+<li><strong>Modo escuro</strong>: fora da v1 (o jogo é claro).</li>
+<li>Ele <strong>não</strong> tenta estilizar UI nativa do navegador que o CSS não alcança (popup de <code>select</code> sem <code>data-cro-select</code>, seletor de data/cor, barras de rolagem fora do WebKit...). Veja <a href="navegadores.html">Navegadores e limites</a>.</li>
+</ul>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../comecando/download.html">« Download e arquivos</a> · <a href="../comecando/javascript.html">JavaScript »</a></nav>
+</main>
+</body></html>

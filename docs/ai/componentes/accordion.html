@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accordion · C-RO AI reference</title><meta name="description" content="Painéis recolhíveis. No kit cada item vira uma pasta da árvore do jogo (aberta/fechada).">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Componentes › Accordion</nav>
+<main>
+<h1>Accordion</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Componentes</dd><dt>Human version (rendered examples)</dt><dd><a href="../../componentes/accordion.html">componentes/accordion.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-tree</code></dd></dl>
+<div lang="pt-BR">
+<p>Painéis recolhíveis. No kit cada item vira uma pasta da árvore do jogo (aberta/fechada).</p>
+<h2 id="exemplo">Exemplo</h2>
+<pre><code class="language-html">&lt;div class=&quot;accordion&quot; id=&quot;acEx&quot; style=&quot;max-width:520px&quot;&gt;
+  &lt;div class=&quot;accordion-item&quot;&gt;&lt;h2 class=&quot;accordion-header&quot;&gt;&lt;button class=&quot;accordion-button&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#acc1&quot; aria-expanded=&quot;true&quot; aria-controls=&quot;acc1&quot;&gt;Equipamentos&lt;/button&gt;&lt;/h2&gt;
+    &lt;div id=&quot;acc1&quot; class=&quot;accordion-collapse collapse show&quot; data-bs-parent=&quot;#acEx&quot;&gt;&lt;div class=&quot;accordion-body&quot;&gt;Espada, escudo e armadura.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;accordion-item&quot;&gt;&lt;h2 class=&quot;accordion-header&quot;&gt;&lt;button class=&quot;accordion-button collapsed&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#acc2&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;acc2&quot;&gt;Consumíveis&lt;/button&gt;&lt;/h2&gt;
+    &lt;div id=&quot;acc2&quot; class=&quot;accordion-collapse collapse&quot; data-bs-parent=&quot;#acEx&quot;&gt;&lt;div class=&quot;accordion-body&quot;&gt;Poções e asas.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;accordion-item&quot;&gt;&lt;h2 class=&quot;accordion-header&quot;&gt;&lt;button class=&quot;accordion-button collapsed&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#acc3&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;acc3&quot;&gt;Cartas&lt;/button&gt;&lt;/h2&gt;
+    &lt;div id=&quot;acc3&quot; class=&quot;accordion-collapse collapse&quot; data-bs-parent=&quot;#acEx&quot;&gt;&lt;div class=&quot;accordion-body&quot;&gt;Cartas de monstros.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h2 id="sempre-aberto">Sempre aberto</h2>
+<p>Remova <code>data-bs-parent</code> para que vários itens fiquem abertos ao mesmo tempo.</p>
+<h2 id="nativo-do-kit-ltdetailsgt">Nativo do kit: <code>&lt;details&gt;</code></h2>
+<p>O mesmo visual vale para o elemento HTML <code>details</code>, sem JavaScript:</p>
+<pre><code class="language-html">&lt;ul class=&quot;cro-tree&quot; role=&quot;tree&quot; style=&quot;max-width:300px&quot;&gt;&lt;li&gt;&lt;details open&gt;&lt;summary&gt;Pasta aberta&lt;/summary&gt;&lt;ul&gt;&lt;li&gt;Arquivo A&lt;/li&gt;&lt;li&gt;Arquivo B&lt;/li&gt;&lt;/ul&gt;&lt;/details&gt;&lt;/li&gt;&lt;li&gt;&lt;details&gt;&lt;summary&gt;Pasta fechada&lt;/summary&gt;&lt;ul&gt;&lt;li&gt;Arquivo C&lt;/li&gt;&lt;/ul&gt;&lt;/details&gt;&lt;/li&gt;&lt;/ul&gt;</code></pre>
+<h2 id="flush">Flush</h2>
+<p><code>accordion-flush</code> remove bordas e cantos para encaixar o accordion em outro contêiner:</p>
+<pre><code class="language-html">&lt;div class=&quot;accordion accordion-flush&quot; id=&quot;acFl&quot; style=&quot;max-width:420px&quot;&gt;&lt;div class=&quot;accordion-item&quot;&gt;&lt;h2 class=&quot;accordion-header&quot;&gt;&lt;button class=&quot;accordion-button collapsed&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#acfl1&quot; aria-expanded=&quot;false&quot;&gt;accordion-flush&lt;/button&gt;&lt;/h2&gt;&lt;div id=&quot;acfl1&quot; class=&quot;accordion-collapse collapse&quot; data-bs-parent=&quot;#acFl&quot;&gt;&lt;div class=&quot;accordion-body&quot;&gt;Sem bordas.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../formularios/validacao.html">« Validação</a> · <a href="../componentes/alerts.html">Alerts »</a></nav>
+</main>
+</body></html>

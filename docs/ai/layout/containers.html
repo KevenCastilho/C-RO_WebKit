@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Containers · C-RO AI reference</title><meta name="description" content="Containers centralizam e limitam a largura do conteúdo, exatamente como no Bootstrap.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Layout › Containers</nav>
+<main>
+<h1>Containers</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Layout</dd><dt>Human version (rendered examples)</dt><dd><a href="../../layout/containers.html">layout/containers.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p>Containers centralizam e limitam a largura do conteúdo, exatamente como no Bootstrap.</p>
+<h2 id="tipos">Tipos</h2>
+<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;…&lt;/div&gt;          &lt;!-- largura máxima por breakpoint --&gt;
+&lt;div class=&quot;container-sm&quot;&gt;…&lt;/div&gt;       &lt;!-- 100% até sm, fixo a partir de sm --&gt;
+&lt;div class=&quot;container-md&quot;&gt;…&lt;/div&gt;
+&lt;div class=&quot;container-lg&quot;&gt;…&lt;/div&gt;
+&lt;div class=&quot;container-xl&quot;&gt;…&lt;/div&gt;
+&lt;div class=&quot;container-xxl&quot;&gt;…&lt;/div&gt;
+&lt;div class=&quot;container-fluid&quot;&gt;…&lt;/div&gt;    &lt;!-- sempre 100% --&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;container-fluid&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;container-fluid (100%)&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;container mt-2&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;container (limitado)&lt;/div&gt;&lt;/div&gt;</code></pre>
+<h2 id="dentro-de-janelas-do-kit">Dentro de janelas do kit</h2>
+<p>Containers funcionam dentro de <code>modal</code>, <code>card</code> e <code>cro-window</code>. Eles só dependem da largura do pai.</p>
+<pre><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;max-width:420px&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;Janela&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;&lt;div class=&quot;container-fluid&quot;&gt;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;A&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;B&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../layout/breakpoints.html">« Breakpoints</a> · <a href="../layout/grid.html">Grid »</a></nav>
+</main>
+</body></html>

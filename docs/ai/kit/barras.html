@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barras, progress e grp · C-RO AI reference</title><meta name="description" content="Barras de HP/SP/experiência, ícones de grupo e barras de botões.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Peças nativas do kit › Barras, progress e grp</nav>
+<main>
+<h1>Barras, progress e grp</h1>
+<dl><dt>Type</dt><dd>Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.</dd><dt>Section</dt><dd>Peças nativas do kit</dd><dt>Human version (rendered examples)</dt><dd><a href="../../kit/barras.html">kit/barras.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-btnbar</code> <code>cro-btnbar--tall</code> <code>cro-btnbar--xl</code> <code>cro-exp</code> <code>cro-grp</code> <code>cro-grp--leader</code> <code>cro-grp--offline</code> <code>cro-grp--online</code> <code>cro-mb-2</code> <code>cro-mesbtn</code> <code>cro-progress</code> <code>cro-progress--fluid</code> <code>cro-progress__bar</code> <code>cro-progress__bar--blue</code> <code>cro-progress__bar--cyan</code> <code>cro-progress__bar--gray</code> <code>cro-progress__bar--green</code> <code>cro-progress__bar--orange</code> <code>cro-progress__bar--pink</code> <code>cro-progress__bar--purple</code> <code>cro-progress__bar--red</code> <code>cro-progress__bar--sp</code> <code>cro-progress__bar--yellow</code> <code>cro-skillbar</code> <code>cro-skillbar--bottom</code></dd></dl>
+<div lang="pt-BR">
+<p>Barras de HP/SP/experiência, ícones de grupo e barras de botões.</p>
+<h2 id="progress-cro-progress">Progress (<code>cro-progress</code>)</h2>
+<p>Defina o preenchimento com a variável <code>--p</code> (0–100).</p>
+<pre><code class="language-html">&lt;div style=&quot;max-width:260px&quot;&gt;
+&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar&quot; style=&quot;--p:70&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--orange&quot; style=&quot;--p:60&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--red&quot; style=&quot;--p:20&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cro-progress&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--blue&quot; style=&quot;--p:90&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>Cores: <code>--green</code>, <code>--blue</code>, <code>--cyan</code>, <code>--yellow</code>, <code>--orange</code>, <code>--red</code>, <code>--pink</code>, <code>--purple</code>, <code>--gray</code> e <code>--sp</code>.</p>
+<h2 id="barra-de-experiência-cro-exp">Barra de experiência (<code>cro-exp</code>)</h2>
+<pre><code class="language-html">&lt;div class=&quot;cro-exp&quot; style=&quot;--p:62;width:260px&quot;&gt;&lt;/div&gt;</code></pre>
+<h2 id="atualizar-por-javascript">Atualizar por JavaScript</h2>
+<pre><code class="language-html">&lt;div class=&quot;cro-progress&quot; style=&quot;width:260px&quot;&gt;&lt;div class=&quot;cro-progress__bar&quot; id=&quot;hpbar&quot; style=&quot;--p:100&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p class=&quot;mt-2&quot;&gt;&lt;button class=&quot;btn btn-secondary btn-sm&quot; id=&quot;hpdown&quot;&gt;Levar dano&lt;/button&gt;&lt;/p&gt;</code></pre>
+<pre><code class="language-js">var hp = 100;
+document.getElementById(&#x27;hpdown&#x27;).addEventListener(&#x27;click&#x27;, function () {
+  hp = hp &lt;= 15 ? 100 : hp - 15;
+  CRO.bar(document.getElementById(&#x27;hpbar&#x27;), hp);   // abaixo de 25% a barra fica vermelha
+});</code></pre>
+<h2 id="grp-status-de-grupo">Grp (status de grupo)</h2>
+<pre><code class="language-html">&lt;span class=&quot;cro-grp cro-grp--offline&quot; title=&quot;offline&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cro-grp cro-grp--online&quot; title=&quot;online&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cro-grp cro-grp--leader&quot; title=&quot;líder&quot;&gt;&lt;/span&gt;</code></pre>
+<h2 id="barra-de-botões">Barra de botões</h2>
+<pre><code class="language-html">&lt;div class=&quot;cro-btnbar&quot; style=&quot;width:260px&quot;&gt;&lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;Um&lt;/button&gt;&lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;Dois&lt;/button&gt;&lt;/div&gt;</code></pre>
+<aside><strong>Note</strong><p>Com Bootstrap, <code>.progress</code> / <code>.progress-bar</code> fazem o mesmo (<a href="../componentes/progress.html">Progress</a>).</p></aside>
+<h2 id="variações-completas">Variações completas</h2>
+<p>Barras <code>cro-progress__bar--*</code>: <code>green</code>, <code>blue</code>, <code>cyan</code>, <code>yellow</code>, <code>orange</code>, <code>red</code>, <code>pink</code>, <code>purple</code>, <code>gray</code>, <code>sp</code>.</p>
+<pre><code class="language-html">&lt;div style=&quot;max-width:260px&quot;&gt;
+&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--green&quot; style=&quot;--p:80&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--cyan&quot; style=&quot;--p:70&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--yellow&quot; style=&quot;--p:60&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--pink&quot; style=&quot;--p:50&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--purple&quot; style=&quot;--p:40&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--gray&quot; style=&quot;--p:30&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cro-progress&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--sp&quot; style=&quot;--p:75&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p><code>cro-progress--fluid</code> faz a barra ocupar 100% da largura do contêiner:</p>
+<pre><code class="language-html">&lt;div class=&quot;cro-progress cro-progress--fluid&quot;&gt;&lt;div class=&quot;cro-progress__bar&quot; style=&quot;--p:55&quot;&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<h2 id="barras-de-botões-cro-btnbar-e-de-skills-cro-skillbar">Barras de botões (<code>cro-btnbar</code>) e de skills (<code>cro-skillbar</code>)</h2>
+<pre><code class="language-html">&lt;div class=&quot;cro-btnbar&quot; style=&quot;width:260px;margin-bottom:6px&quot;&gt;&lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;Normal&lt;/button&gt;&lt;/div&gt;
+&lt;div class=&quot;cro-btnbar cro-btnbar--tall&quot; style=&quot;width:260px;margin-bottom:6px&quot;&gt;&lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;tall&lt;/button&gt;&lt;/div&gt;
+&lt;div class=&quot;cro-btnbar cro-btnbar--xl&quot; style=&quot;width:260px;margin-bottom:6px&quot;&gt;&lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;xl&lt;/button&gt;&lt;/div&gt;
+&lt;div class=&quot;cro-skillbar&quot; style=&quot;width:260px;margin-bottom:6px&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;cro-skillbar cro-skillbar--bottom&quot; style=&quot;width:260px&quot;&gt;&lt;/div&gt;</code></pre>
+<table>
+<thead>
+<tr>
+<th>Classe</th>
+<th>Papel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cro-btnbar</code> (<code>--tall</code>, <code>--xl</code>)</td>
+<td>Faixa listrada de barra de botões (21px; <code>--tall</code> 29px)</td>
+</tr>
+<tr>
+<td><code>cro-skillbar</code></td>
+<td>Cabeçalho (20px) da janela de skills</td>
+</tr>
+<tr>
+<td><code>cro-skillbar--bottom</code></td>
+<td>Rodapé (32px) da janela de skills</td>
+</tr>
+</tbody>
+</table>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../kit/slots.html">« Slots e inventário</a> · <a href="../kit/arvore-menu.html">Árvore, menu e lista »</a></nav>
+</main>
+</body></html>

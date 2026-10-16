@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gutters · C-RO AI reference</title><meta name="description" content="Espaços entre colunas controlados por g-* , gx-* e gy-* .">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Layout › Gutters</nav>
+<main>
+<h1>Gutters</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Layout</dd><dt>Human version (rendered examples)</dt><dd><a href="../../layout/gutters.html">layout/gutters.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p>Espaços entre colunas controlados por <code>g-*</code>, <code>gx-*</code> e <code>gy-*</code>.</p>
+<h2 id="gutters-horizontais-e-verticais">Gutters horizontais e verticais</h2>
+<pre><code class="language-html">&lt;div class=&quot;row gx-5 mb-3&quot;&gt;&lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;gx-5&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;gx-5&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row gy-3&quot;&gt;&lt;div class=&quot;col-6&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;gy-3&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col-6&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;gy-3&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col-6&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;gy-3&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col-6&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;gy-3&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<h2 id="sem-gutter">Sem gutter</h2>
+<pre><code class="language-html">&lt;div class=&quot;row g-0&quot;&gt;&lt;div class=&quot;col-6&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;g-0&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col-6&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;g-0&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<h2 id="responsivo">Responsivo</h2>
+<p><code>g-2 g-md-4</code> usa 2 em telas pequenas e 4 a partir de <code>md</code>.</p>
+<pre><code class="language-html">&lt;div class=&quot;row g-2 g-md-4&quot;&gt;…&lt;/div&gt;</code></pre>
+<aside><strong>Tip</strong><p>Na UI do jogo o espaçamento é curto. Prefira <code>g-1</code> ou <code>g-2</code> dentro de janelas.</p></aside>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../layout/colunas.html">« Colunas</a> · <a href="../layout/z-index.html">Z-index »</a></nav>
+</main>
+</body></html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botões cro-* · C-RO AI reference</title><meta name="description" content="Botões nativos do kit: o botão padrão, o mesbtn, os botões de sistema 11×11 e os de diálogo.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Peças nativas do kit › Botões cro-*</nav>
+<main>
+<h1>Botões cro-*</h1>
+<dl><dt>Type</dt><dd>Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.</dd><dt>Section</dt><dd>Peças nativas do kit</dd><dt>Human version (rendered examples)</dt><dd><a href="../../kit/botoes-cro.html">kit/botoes-cro.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-btn</code> <code>cro-btn--20</code> <code>cro-btn--close</code> <code>cro-dialbtn</code> <code>cro-dialbtn--opt</code> <code>cro-mesbtn</code> <code>cro-mesbtn-ico</code> <code>cro-mesbtn-ico--01</code> <code>cro-mesbtn-ico--02</code> <code>cro-mesbtn-ico--03</code> <code>cro-mesbtn-ico--04</code> <code>cro-mesbtn-ico--05</code> <code>cro-mesbtn-ico--06</code> <code>cro-mesbtn-ico--07</code> <code>cro-mesbtn-ico--08</code> <code>cro-mesbtn-ico--09</code> <code>cro-mesbtn-ico--10</code> <code>cro-sys-btn</code> <code>cro-sys-btn--close</code> <code>cro-sys-btn--mini</code> <code>cro-sys-btn--quest</code> <code>is-active</code> <code>is-hover</code> <code>is-on</code></dd></dl>
+<div lang="pt-BR">
+<p>Botões nativos do kit: o botão padrão, o mesbtn, os botões de sistema 11×11 e os de diálogo.</p>
+<h2 id="botão-padrão-cro-btn">Botão padrão (<code>cro-btn</code>)</h2>
+<pre><code class="language-html">&lt;button class=&quot;cro-btn&quot;&gt;Padrão 20px&lt;/button&gt;
+&lt;button class=&quot;cro-btn&quot; disabled&gt;Desabilitado&lt;/button&gt;
+&lt;button class=&quot;cro-btn cro-btn--close&quot;&gt;Fechar&lt;/button&gt;
+&lt;a class=&quot;cro-btn&quot; href=&quot;#&quot;&gt;link-botão&lt;/a&gt;
+&lt;button&gt;Elemento nu&lt;/button&gt;</code></pre>
+<p><code>&lt;button&gt;</code> sem classe também recebe o visual (veja <a href="../conteudo/reboot.html">Reboot</a>).</p>
+<h2 id="mesbtn-botão-de-mensagem">Mesbtn (botão de mensagem)</h2>
+<pre><code class="language-html">&lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;Mesbtn&lt;/button&gt;
+&lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:120px&quot;&gt;Mais largo&lt;/button&gt;</code></pre>
+<h2 id="mesbtn-com-ícone-0110">Mesbtn com ícone (01–10)</h2>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;cro-mesbtn-ico cro-mesbtn-ico--01&quot; aria-label=&quot;mesbtn 01&quot;&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;cro-mesbtn-ico cro-mesbtn-ico--02&quot; aria-label=&quot;mesbtn 02&quot;&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;cro-mesbtn-ico cro-mesbtn-ico--03&quot; aria-label=&quot;mesbtn 03&quot;&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;cro-mesbtn-ico cro-mesbtn-ico--04&quot; aria-label=&quot;mesbtn 04&quot;&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;cro-mesbtn-ico cro-mesbtn-ico--05&quot; aria-label=&quot;mesbtn 05&quot;&gt;&lt;/button&gt;</code></pre>
+<h2 id="botões-de-sistema-1111-e-de-diálogo">Botões de sistema 11×11 e de diálogo</h2>
+<pre><code class="language-html">&lt;button class=&quot;cro-sys-btn&quot; aria-label=&quot;base&quot;&gt;&lt;/button&gt;
+&lt;button class=&quot;cro-sys-btn cro-sys-btn--mini&quot; aria-label=&quot;minimizar&quot;&gt;&lt;/button&gt;
+&lt;button class=&quot;cro-sys-btn cro-sys-btn--close&quot; aria-label=&quot;fechar&quot;&gt;&lt;/button&gt;
+&lt;button class=&quot;cro-sys-btn cro-sys-btn--quest&quot; aria-label=&quot;ajuda&quot;&gt;&lt;/button&gt;
+&lt;button class=&quot;cro-dialbtn&quot; aria-label=&quot;diálogo&quot;&gt;&lt;/button&gt;
+&lt;button class=&quot;cro-dialbtn cro-dialbtn--opt&quot; aria-label=&quot;opções&quot;&gt;&lt;/button&gt;</code></pre>
+<aside><strong>Warning</strong><p>Botões só com ícone precisam de <code>aria-label</code>.</p></aside>
+<aside><strong>Limitation</strong><p>O perfil <strong>lite</strong> (<code>c-ro.lite.css</code>) não inclui <code>cro-btn--close</code> nem <code>cro-mesbtn-ico</code>.</p></aside>
+<h2 id="estados-forçados-e-variantes">Estados forçados e variantes</h2>
+<p>Todo botão do kit responde a <code>:hover</code>, <code>:active</code> e <code>:disabled</code>. Para <strong>forçar</strong> o estado por classe (útil em testes, capturas de tela ou botões "ligados"), use <code>is-hover</code>, <code>is-active</code> e, nos botões de sistema, <code>is-on</code> / <code>cro-sys-btn--on</code>:</p>
+<pre><code class="language-html">&lt;button class=&quot;cro-btn is-hover&quot;&gt;is-hover&lt;/button&gt;
+&lt;button class=&quot;cro-btn is-active&quot;&gt;is-active&lt;/button&gt;
+&lt;button class=&quot;cro-btn--20&quot;&gt;cro-btn--20 (mesmo botão, nome alternativo)&lt;/button&gt;
+&lt;button class=&quot;cro-sys-btn cro-sys-btn--close is-on&quot; aria-label=&quot;fechar ligado&quot;&gt;&lt;/button&gt;
+&lt;button class=&quot;cro-mesbtn is-hover&quot; style=&quot;width:90px&quot;&gt;is-hover&lt;/button&gt;</code></pre>
+<table>
+<thead>
+<tr>
+<th>Classe</th>
+<th>Faz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cro-btn--20</code></td>
+<td>Sinônimo de <code>cro-btn</code> (botão de 20px)</td>
+</tr>
+<tr>
+<td><code>is-hover</code>, <code>is-active</code></td>
+<td>Forçam a aparência de hover/pressionado em <code>cro-btn</code> e <code>cro-mesbtn</code></td>
+</tr>
+<tr>
+<td><code>is-on</code>, <code>cro-sys-btn--on</code></td>
+<td>Forçam o estado "ligado" nos botões de sistema (<code>cro-sys-btn</code>, <code>--mini</code>, <code>--close</code>)</td>
+</tr>
+<tr>
+<td><code>cro-sys-btn__content</code></td>
+<td>Conteúdo (texto/ícone) centralizado dentro de um botão de sistema</td>
+</tr>
+<tr>
+<td><code>cro-btn__icon</code></td>
+<td>Marca um <code>&lt;svg&gt;</code>/<code>&lt;img&gt;</code> como ícone interno do botão (12px, alinhado)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mesbtn-com-ícone-01-a-10">Mesbtn com ícone: 01 a 10</h2>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;cro-mesbtn-ico cro-mesbtn-ico--06&quot; aria-label=&quot;mesbtn 06&quot;&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;cro-mesbtn-ico cro-mesbtn-ico--07&quot; aria-label=&quot;mesbtn 07&quot;&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;cro-mesbtn-ico cro-mesbtn-ico--08&quot; aria-label=&quot;mesbtn 08&quot;&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;cro-mesbtn-ico cro-mesbtn-ico--09&quot; aria-label=&quot;mesbtn 09&quot;&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;cro-mesbtn-ico cro-mesbtn-ico--10&quot; aria-label=&quot;mesbtn 10&quot;&gt;&lt;/button&gt;</code></pre>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../kit/janela.html">« Janela e titlebar</a> · <a href="../kit/abas-cro.html">Abas cro-* »</a></nav>
+</main>
+</body></html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JavaScript · C-RO AI reference</title><meta name="description" content="O bundle c-ro-bs.js traz o JavaScript do Bootstrap e o do kit. Tudo é opcional — o visual é só CSS.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Começando › JavaScript</nav>
+<main>
+<h1>JavaScript</h1>
+<dl><dt>Type</dt><dd>Guide. Explanatory page about using the kit.</dd><dt>Section</dt><dd>Começando</dd><dt>Human version (rendered examples)</dt><dd><a href="../../comecando/javascript.html">comecando/javascript.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>data-cro-* attributes in this page</dt><dd><code>data-cro-tab</code></dd></dl>
+<div lang="pt-BR">
+<p>O bundle <code>c-ro-bs.js</code> traz o JavaScript do Bootstrap e o do kit. Tudo é opcional — o visual é só CSS.</p>
+<h2 id="o-que-o-bundle-traz">O que o bundle traz</h2>
+<p><code>c-ro-bs.min.js</code> contém, nesta ordem, o <strong>Bootstrap 5.3.8 (bundle com Popper)</strong> e o <strong>JS do kit</strong>. Ele cria <code>window.bootstrap</code> e <code>window.CRO</code>. Sem dependências (sem jQuery).</p>
+<table>
+<thead>
+<tr>
+<th>Parte</th>
+<th>Faz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bootstrap</td>
+<td>Modal, dropdown, tooltip, popover, collapse, carousel, toast, offcanvas, scrollspy, abas... (atributos <code>data-bs-*</code> e API <code>new bootstrap.X()</code>)</td>
+</tr>
+<tr>
+<td><code>CRO.init()</code></td>
+<td>Liga abas <code>data-cro-tabs</code> e selects <code>data-cro-select</code> (roda sozinho no load)</td>
+</tr>
+<tr>
+<td><code>CRO.alert/confirm/prompt/menu</code></td>
+<td>Diálogos e menu de contexto no visual do jogo — veja <a href="../kit/dialogos.html">Diálogos</a></td>
+</tr>
+<tr>
+<td>Cursor animado</td>
+<td>Anima o cursor do Ragnarok sob o ponteiro — veja <a href="../extras/cursores.html">Cursores</a></td>
+</tr>
+<tr>
+<td>Favicon</td>
+<td>Aplica o favicon do kit se o site não tiver um — veja <a href="../extras/favicon.html">Favicon</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="atributos-data--do-bootstrap">Atributos <code>data-*</code> do Bootstrap</h2>
+<p>Funcionam como no Bootstrap, sem JavaScript seu:</p>
+<pre><code class="language-html">&lt;button class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#jsModal&quot;&gt;Abrir modal&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#jsCol&quot;&gt;Alternar collapse&lt;/button&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;jsModal&quot; tabindex=&quot;-1&quot; aria-hidden=&quot;true&quot;&gt;&lt;div class=&quot;modal-dialog modal-dialog-centered&quot;&gt;&lt;div class=&quot;modal-content&quot;&gt;
+  &lt;div class=&quot;modal-header&quot;&gt;&lt;h1 class=&quot;modal-title fs-5&quot;&gt;Janela&lt;/h1&gt;&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;&lt;/div&gt;
+  &lt;div class=&quot;modal-body&quot;&gt;Comportamento do Bootstrap, visual do jogo.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;collapse w-100&quot; id=&quot;jsCol&quot;&gt;&lt;div class=&quot;card card-body&quot;&gt;Conteúdo recolhível.&lt;/div&gt;&lt;/div&gt;</code></pre>
+<h2 id="tooltips-popovers-e-toasts">Tooltips, popovers e toasts</h2>
+<p>Tooltips e popovers precisam ser inicializados (como no Bootstrap). Toasts também:</p>
+<pre><code class="language-html">&lt;button class=&quot;btn btn-secondary&quot; id=&quot;tt1&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-title=&quot;Dica do kit&quot;&gt;Passe o mouse&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary&quot; id=&quot;tt2&quot; data-bs-toggle=&quot;popover&quot; data-bs-title=&quot;Título&quot; data-bs-content=&quot;Conteúdo do popover&quot;&gt;Popover&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary&quot; id=&quot;tt3&quot;&gt;Mostrar toast&lt;/button&gt;
+&lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;&lt;div id=&quot;tt4&quot; class=&quot;toast&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;toast-header&quot;&gt;&lt;strong class=&quot;me-auto&quot;&gt;Aviso&lt;/strong&gt;&lt;small&gt;agora&lt;/small&gt;&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;toast-body&quot;&gt;Toast com barra de título.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-js">// tooltips e popovers: a documentação já liga os deste exemplo; no seu site faça:
+document.querySelectorAll(&#x27;[data-bs-toggle=&quot;tooltip&quot;]&#x27;).forEach(function (el) {
+  new bootstrap.Tooltip(el);
+});
+document.querySelectorAll(&#x27;[data-bs-toggle=&quot;popover&quot;]&#x27;).forEach(function (el) {
+  new bootstrap.Popover(el);
+});
+document.getElementById(&#x27;tt3&#x27;).addEventListener(&#x27;click&#x27;, function () {
+  bootstrap.Toast.getOrCreateInstance(document.getElementById(&#x27;tt4&#x27;)).show();
+});</code></pre>
+<h2 id="api-do-kit-windowcro">API do kit (<code>window.CRO</code>)</h2>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Retorno</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CRO.init(root?)</code></td>
+<td>—</td>
+<td>Liga abas e selects dentro de <code>root</code> (idempotente). Chame depois de inserir HTML novo.</td>
+</tr>
+<tr>
+<td><code>CRO.alert(msg, {title, ok})</code></td>
+<td><code>Promise&lt;undefined&gt;</code></td>
+<td>Aviso</td>
+</tr>
+<tr>
+<td><code>CRO.confirm(msg, {title, ok, cancel})</code></td>
+<td><code>Promise&lt;boolean&gt;</code></td>
+<td>Confirmação (Esc = <code>false</code>)</td>
+</tr>
+<tr>
+<td><code>CRO.prompt(msg, padrão, {title, ok, cancel})</code></td>
+<td><code>Promise&lt;string \| null&gt;</code></td>
+<td>Entrada de texto (Esc/Cancelar = <code>null</code>)</td>
+</tr>
+<tr>
+<td><code>CRO.menu(itens, x, y)</code></td>
+<td><code>Promise&lt;value \| undefined&gt;</code></td>
+<td>Menu de contexto; setas/Enter/Esc</td>
+</tr>
+<tr>
+<td><code>CRO.bar(el, perc)</code></td>
+<td>—</td>
+<td>Define a largura de uma barra HP/SP e troca para vermelha abaixo de 25%</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-html">&lt;button class=&quot;btn btn-secondary&quot; id=&quot;b-alert&quot;&gt;CRO.alert&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary&quot; id=&quot;b-conf&quot;&gt;CRO.confirm&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary&quot; id=&quot;b-prompt&quot;&gt;CRO.prompt&lt;/button&gt;
+&lt;span id=&quot;b-out&quot; class=&quot;ms-2&quot;&gt;&lt;/span&gt;</code></pre>
+<pre><code class="language-js">var out = document.getElementById(&#x27;b-out&#x27;);
+document.getElementById(&#x27;b-alert&#x27;).onclick = function () {
+  CRO.alert(&#x27;Olá, aventureiro!&#x27;).then(function () { out.textContent = &#x27;alert fechado&#x27;; });
+};
+document.getElementById(&#x27;b-conf&#x27;).onclick = function () {
+  CRO.confirm(&#x27;Sair do jogo?&#x27;).then(function (v) { out.textContent = &#x27;confirm: &#x27; + v; });
+};
+document.getElementById(&#x27;b-prompt&#x27;).onclick = function () {
+  CRO.prompt(&#x27;Nome do personagem:&#x27;, &#x27;Ana&#x27;).then(function (v) {
+    out.textContent = &#x27;prompt: &#x27; + JSON.stringify(v);
+  });
+};</code></pre>
+<h2 id="só-o-kit-sem-bootstrap">Só o kit, sem Bootstrap</h2>
+<p>Com <code>c-ro.js</code> você tem <code>CRO.*</code>, abas <code>data-cro-tabs</code>, select, cursor e favicon, mas não <code>bootstrap</code>. Veja <a href="download.html">Download</a>.</p>
+<aside><strong>Limitation</strong><p><code>datalist</code> e os seletores nativos de data e cor continuam nativos: o CSS não consegue estilizar o popup deles.</p></aside>
+<h2 id="funções-internas-expostas">Funções internas expostas</h2>
+<p>Além das APIs acima, <code>window.CRO</code> expõe duas funções de abas:</p>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CRO.initTabs(root?)</code></td>
+<td>Liga só as abas <code>data-cro-tabs</code> dentro de <code>root</code> (o <code>CRO.init</code> chama esta e a do select)</td>
+</tr>
+<tr>
+<td><code>CRO.selectTab(botao, focar?)</code></td>
+<td>Ativa a aba do <code>botao</code> por código (<code>focar = true</code> move o foco)</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-js">CRO.selectTab(document.querySelector(&#x27;[data-cro-tab=&quot;2&quot;]&#x27;), true);</code></pre>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../comecando/como-funciona.html">« Como funciona</a> · <a href="../comecando/customizacao.html">Customização »</a></nav>
+</main>
+</body></html>

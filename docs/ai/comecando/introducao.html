@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introdução · C-RO AI reference</title><meta name="description" content="Comece a usar o C-RO: um CSS, um JS, a marcação padrão do Bootstrap e a aparência do Ragnarok Online clássico.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Começando › Introdução</nav>
+<main>
+<h1>Introdução</h1>
+<dl><dt>Type</dt><dd>Guide. Explanatory page about using the kit.</dd><dt>Section</dt><dd>Começando</dd><dt>Human version (rendered examples)</dt><dd><a href="../../comecando/introducao.html">comecando/introducao.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p>Comece a usar o C-RO: um CSS, um JS, a marcação padrão do Bootstrap e a aparência do Ragnarok Online clássico.</p>
+<h2 id="início-rápido">Início rápido</h2>
+<ol>
+<li>Copie <code>c-ro-bs.min.css</code>, <code>c-ro-bs.min.js</code> e a pasta <code>fonts/</code> (ela precisa ficar ao lado do CSS) para o seu projeto.</li>
+<li>Linke o CSS no <code>&lt;head&gt;</code> e o JS antes do <code>&lt;/body&gt;</code>.</li>
+<li>Escreva Bootstrap normalmente.</li>
+</ol>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;../dist/c-ro-bs.min.css&quot;&gt;
+...
+&lt;script src=&quot;../dist/c-ro-bs.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Pronto. Este é o seu primeiro componente:</p>
+<pre><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;max-width:320px&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;Status&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Poring&lt;/h5&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Nível 1. Muito fofo e muito gelatinoso.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Atacar&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h2 id="usar-direto-do-github">Usar direto do GitHub</h2>
+<p>O repositório é <a href="https://github.com/KevenCastilho/C-RO_WebKit">https://github.com/KevenCastilho/C-RO_WebKit</a>. Há duas formas de usar os arquivos dele:</p>
+<ol>
+<li><strong>Baixar e copiar (recomendado).</strong> Em <strong>Code → Download ZIP</strong>, copie de <code>dist/</code> os arquivos que você precisa, mais a pasta <code>fonts/</code>. É a única forma de travar a versão, porque o repositório não usa tags: a branch <code>main</code> pode mudar.</li>
+<li><strong>Apontar para o GitHub Pages.</strong> Funciona sem copiar nada, mas o endereço sempre serve a versão atual da <code>main</code>:</li>
+</ol>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.css&quot;&gt;
+&lt;script src=&quot;https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>O CSS carrega as fontes da pasta <code>fonts/</code> que está ao lado dele, então elas vêm do mesmo endereço (<code>.../dist/fonts/</code>). Não use <code>raw.githubusercontent.com</code>: o GitHub serve esses arquivos como texto puro e o navegador recusa o CSS e o JS.</p>
+<aside><strong>Limitation</strong><p>Apontar para o Pages deixa a sua página dependente do GitHub estar no ar e de a <code>main</code> não mudar. Para produção, copie os arquivos.</p></aside>
+<h2 id="qual-arquivo-usar">Qual arquivo usar</h2>
+<table>
+<thead>
+<tr>
+<th>Você quer...</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bootstrap com a cara do jogo (o caso comum)</td>
+<td><code>c-ro-bs.min.css</code> + <code>c-ro-bs.min.js</code></td>
+</tr>
+<tr>
+<td>Só as classes <code>cro-*</code>, sem Bootstrap</td>
+<td><code>c-ro.min.css</code> + <code>c-ro.min.js</code></td>
+</tr>
+<tr>
+<td>O mesmo, sem as peças específicas do jogo</td>
+<td><code>c-ro.lite.min.css</code> + <code>c-ro.min.js</code></td>
+</tr>
+</tbody>
+</table>
+<p>Veja todos os arquivos em <a href="download.html">Download e arquivos</a>.</p>
+<h2 id="página-inicial-recomendada">Página inicial recomendada</h2>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;Olá, mundo!&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;c-ro-bs.min.css&quot;&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;container py-3&quot;&gt;
+      &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+      &lt;button class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#m&quot;&gt;Abrir janela&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;modal fade&quot; id=&quot;m&quot; tabindex=&quot;-1&quot; aria-hidden=&quot;true&quot;&gt;
+      &lt;div class=&quot;modal-dialog modal-dialog-centered&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+          &lt;div class=&quot;modal-header&quot;&gt;&lt;h1 class=&quot;modal-title fs-5&quot;&gt;Janela&lt;/h1&gt;&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;&lt;/div&gt;
+          &lt;div class=&quot;modal-body&quot;&gt;Esta janela tem barra de título e botão de sistema do jogo.&lt;/div&gt;
+          &lt;div class=&quot;modal-footer&quot;&gt;&lt;button class=&quot;btn btn-secondary&quot; data-bs-dismiss=&quot;modal&quot;&gt;Fechar&lt;/button&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script src=&quot;c-ro-bs.min.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<aside><strong>Tip</strong><p>Sirva os arquivos com gzip ou brotli. O CSS tem sprites pixel-exatos embutidos: ~1,2 MB minificado, ~150 KB comprimido.</p></aside>
+<h2 id="fonte">Fonte</h2>
+<p>O kit carrega a <strong>Nimbus Sans</strong> (clone métrico livre da Helvetica, Regular e Bold, subconjunto Latin em woff2) da pasta <code>fonts/</code>, que precisa estar ao lado do CSS — ou ajuste o caminho no CSS. Ele não usa a Helvetica instalada no sistema: no Windows o sistema troca "Helvetica" por Arial.</p>
+<aside><strong>Note</strong><p>A Nimbus Sans é AGPL-3.0 (texto em <code>fonts/COPYING-AGPL-3.0.txt</code>). A Helvetica real é fonte comercial e não vem no kit; veja <code>fonts/NOTICE-FONTS.txt</code> para usá-la.</p></aside>
+<h2 id="próximos-passos">Próximos passos</h2>
+<ul>
+<li>Entenda a ideia em <a href="como-funciona.html">Como funciona</a>.</li>
+<li>Veja o JavaScript em <a href="javascript.html">JavaScript</a>.</li>
+<li>Já usa Bootstrap? Leia <a href="migracao.html">De Bootstrap para C-RO</a>.</li>
+</ul>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../comecando/download.html">Download e arquivos »</a></nav>
+</main>
+</body></html>

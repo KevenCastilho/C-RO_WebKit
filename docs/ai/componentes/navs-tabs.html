@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navs e abas · C-RO AI reference</title><meta name="description" content="nav-tabs e nav-pills viram as abas do jogo: horizontais em pílula e, com flex-column , verticais em escada.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Componentes › Navs e abas</nav>
+<main>
+<h1>Navs e abas</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Componentes</dd><dt>Human version (rendered examples)</dt><dd><a href="../../componentes/navs-tabs.html">componentes/navs-tabs.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p><code>nav-tabs</code> e <code>nav-pills</code> viram as abas do jogo: horizontais em pílula e, com <code>flex-column</code>, verticais em escada.</p>
+<h2 id="abas-horizontais">Abas horizontais</h2>
+<pre><code class="language-html">&lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link active&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nt1&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-selected=&quot;true&quot;&gt;Geral&lt;/button&gt;&lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nt2&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Itens&lt;/button&gt;&lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link disabled&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-disabled=&quot;true&quot;&gt;Desabilitada&lt;/button&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content p-2&quot;&gt;&lt;div class=&quot;tab-pane fade show active&quot; id=&quot;nt1&quot; role=&quot;tabpanel&quot;&gt;Conteúdo geral.&lt;/div&gt;&lt;div class=&quot;tab-pane fade&quot; id=&quot;nt2&quot; role=&quot;tabpanel&quot;&gt;Conteúdo dos itens.&lt;/div&gt;&lt;/div&gt;</code></pre>
+<h2 id="abas-verticais-escada">Abas verticais (escada)</h2>
+<pre><code class="language-html">&lt;div class=&quot;d-flex align-items-start&quot; style=&quot;max-width:420px&quot;&gt;
+  &lt;ul class=&quot;nav nav-pills flex-column&quot; role=&quot;tablist&quot;&gt;&lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link active&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#nv1&quot; type=&quot;button&quot; role=&quot;tab&quot;&gt;Status&lt;/button&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#nv2&quot; type=&quot;button&quot; role=&quot;tab&quot;&gt;Equip&lt;/button&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#nv3&quot; type=&quot;button&quot; role=&quot;tab&quot;&gt;Skill&lt;/button&gt;&lt;/li&gt;&lt;/ul&gt;
+  &lt;div class=&quot;tab-content flex-grow-1 p-2&quot;&gt;&lt;div class=&quot;tab-pane fade show active&quot; id=&quot;nv1&quot; role=&quot;tabpanel&quot;&gt;Painel de status.&lt;/div&gt;&lt;div class=&quot;tab-pane fade&quot; id=&quot;nv2&quot; role=&quot;tabpanel&quot;&gt;Painel de equipamentos.&lt;/div&gt;&lt;div class=&quot;tab-pane fade&quot; id=&quot;nv3&quot; role=&quot;tabpanel&quot;&gt;Painel de habilidades.&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h2 id="nav-simples">Nav simples</h2>
+<pre><code class="language-html">&lt;ul class=&quot;nav&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Ativo&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link disabled&quot; aria-disabled=&quot;true&quot;&gt;Off&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</code></pre>
+<aside><strong>Note</strong><p>Sem Bootstrap, o kit tem as abas <code>cro-tabs</code> e <code>cro-tabs-v</code> com <code>data-cro-tabs</code>. Veja <a href="../kit/abas-cro.html">Abas cro-*</a>.</p></aside>
+<h2 id="outras-variações">Outras variações</h2>
+<pre><code class="language-html">&lt;ul class=&quot;nav nav-underline mb-2&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;nav-underline&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;B&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;ul class=&quot;nav nav-tabs nav-fill mb-2&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;nav-fill&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;B&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;ul class=&quot;nav nav-pills nav-justified&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;nav-justified&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;B&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</code></pre>
+<ul>
+<li><code>nav-fill</code>: cada item ocupa o espaço proporcional ao conteúdo. <code>nav-justified</code>: todos com largura igual.</li>
+<li><code>nav-underline</code>: derivação do Bootstrap (sublinhado no ativo).</li>
+<li>Em cards: <code>card-header-tabs</code> e <code>card-header-pills</code> (veja <a href="card.html">Card</a>).</li>
+</ul>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../componentes/navbar.html">« Navbar</a> · <a href="../componentes/offcanvas.html">Offcanvas »</a></nav>
+</main>
+</body></html>

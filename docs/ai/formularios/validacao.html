@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Validação · C-RO AI reference</title><meta name="description" content="Estados válido e inválido com as classes do Bootstrap e a pseudo-classe :user-invalid do navegador.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Formulários › Validação</nav>
+<main>
+<h1>Validação</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Formulários</dd><dt>Human version (rendered examples)</dt><dd><a href="../../formularios/validacao.html">formularios/validacao.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>is-invalid</code> <code>is-valid</code></dd></dl>
+<div lang="pt-BR">
+<p>Estados válido e inválido com as classes do Bootstrap e a pseudo-classe <code>:user-invalid</code> do navegador.</p>
+<h2 id="classes-is-valid-e-is-invalid">Classes <code>is-valid</code> e <code>is-invalid</code></h2>
+<pre><code class="language-html">&lt;div style=&quot;max-width:320px&quot;&gt;
+  &lt;input class=&quot;form-control is-valid mb-1&quot; value=&quot;válido&quot;&gt;
+  &lt;input class=&quot;form-control is-invalid&quot; value=&quot;inválido&quot; aria-describedby=&quot;val-fb&quot;&gt;
+  &lt;div id=&quot;val-fb&quot; class=&quot;invalid-feedback&quot;&gt;Informe um nome com 4 a 12 letras.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h2 id="validação-do-navegador">Validação do navegador</h2>
+<p>Com <code>novalidate</code> e <code>was-validated</code>, o Bootstrap mostra válido/inválido conforme as regras HTML (<code>required</code>, <code>pattern</code>, <code>type=email</code>).</p>
+<pre><code class="language-html">&lt;form class=&quot;needs-validation&quot; id=&quot;val-form&quot; novalidate style=&quot;max-width:320px&quot;&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;val-nome&quot;&gt;Nome&lt;/label&gt;
+  &lt;input class=&quot;form-control mb-1&quot; id=&quot;val-nome&quot; required minlength=&quot;4&quot; placeholder=&quot;mín. 4 letras&quot;&gt;
+  &lt;div class=&quot;invalid-feedback&quot;&gt;Mínimo de 4 letras.&lt;/div&gt;
+  &lt;div class=&quot;valid-feedback&quot;&gt;Ótimo!&lt;/div&gt;
+  &lt;button class=&quot;btn btn-primary mt-2&quot; type=&quot;submit&quot;&gt;Validar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+<pre><code class="language-js">var f = document.getElementById(&#x27;val-form&#x27;);
+f.addEventListener(&#x27;submit&#x27;, function (e) {
+  e.preventDefault();
+  f.classList.add(&#x27;was-validated&#x27;);
+});</code></pre>
+<aside><strong>Note</strong><p>Os campos mostram o estado inválido do kit (<code>--cro-invalid</code>, derivado) também sem classes, via <code>:user-invalid</code>, depois que o usuário interage.</p></aside>
+<h2 id="balões-de-validação">Balões de validação</h2>
+<p><code>valid-tooltip</code> e <code>invalid-tooltip</code> mostram a mensagem em balão (dentro de um contêiner <code>position-relative</code>):</p>
+<pre><code class="language-html">&lt;div class=&quot;position-relative mb-5&quot; style=&quot;max-width:300px&quot;&gt;&lt;input class=&quot;form-control is-invalid&quot; value=&quot;x&quot;&gt;&lt;div class=&quot;invalid-tooltip&quot;&gt;invalid-tooltip: valor inválido.&lt;/div&gt;&lt;/div&gt;</code></pre>
+<h2 id="grupos-de-input-com-validação">Grupos de input com validação</h2>
+<p>Dentro de <code>input-group</code>, adicione <code>has-validation</code> para os cantos arredondados continuarem corretos ao mostrar <code>invalid-feedback</code>:</p>
+<pre><code class="language-html">&lt;div class=&quot;input-group has-validation&quot;&gt;&lt;span class=&quot;input-group-text&quot;&gt;@&lt;/span&gt;&lt;input class=&quot;form-control is-invalid&quot;&gt;&lt;div class=&quot;invalid-feedback&quot;&gt;Usuário já existe.&lt;/div&gt;&lt;/div&gt;</code></pre>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../formularios/layout.html">« Layout de formulários</a> · <a href="../componentes/accordion.html">Accordion »</a></nav>
+</main>
+</body></html>

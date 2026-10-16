@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Form control · C-RO AI reference</title><meta name="description" content="Campos de texto, textarea, tamanhos, readonly, plaintext e arquivo.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Formulários › Form control</nav>
+<main>
+<h1>Form control</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Formulários</dd><dt>Human version (rendered examples)</dt><dd><a href="../../formularios/form-control.html">formularios/form-control.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p>Campos de texto, textarea, tamanhos, readonly, plaintext e arquivo.</p>
+<h2 id="exemplo">Exemplo</h2>
+<pre><code class="language-html">&lt;div style=&quot;max-width:380px&quot;&gt;
+  &lt;label for=&quot;fc1&quot; class=&quot;form-label&quot;&gt;E-mail&lt;/label&gt;&lt;input type=&quot;email&quot; class=&quot;form-control mb-2&quot; id=&quot;fc1&quot; placeholder=&quot;nome@exemplo.com&quot;&gt;
+  &lt;label for=&quot;fc2&quot; class=&quot;form-label&quot;&gt;Texto longo&lt;/label&gt;&lt;textarea class=&quot;form-control&quot; id=&quot;fc2&quot; rows=&quot;3&quot;&gt;Linha 1&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+<h2 id="tamanhos">Tamanhos</h2>
+<pre><code class="language-html">&lt;div style=&quot;max-width:380px&quot;&gt;&lt;input class=&quot;form-control form-control-lg mb-1&quot; placeholder=&quot;form-control-lg&quot;&gt;&lt;input class=&quot;form-control mb-1&quot; placeholder=&quot;padrão&quot;&gt;&lt;input class=&quot;form-control form-control-sm&quot; placeholder=&quot;form-control-sm&quot;&gt;&lt;/div&gt;</code></pre>
+<h2 id="readonly-plaintext-e-desabilitado">Readonly, plaintext e desabilitado</h2>
+<pre><code class="language-html">&lt;div style=&quot;max-width:380px&quot;&gt;
+  &lt;input class=&quot;form-control mb-1&quot; value=&quot;somente leitura&quot; readonly&gt;
+  &lt;input class=&quot;form-control-plaintext mb-1&quot; value=&quot;texto simples&quot; readonly&gt;
+  &lt;input class=&quot;form-control&quot; value=&quot;desabilitado&quot; disabled&gt;
+&lt;/div&gt;</code></pre>
+<h2 id="arquivo-e-cor">Arquivo e cor</h2>
+<pre><code class="language-html">&lt;div style=&quot;max-width:380px&quot;&gt;&lt;input class=&quot;form-control mb-1&quot; type=&quot;file&quot;&gt;&lt;input class=&quot;form-control mb-1&quot; type=&quot;file&quot; multiple&gt;&lt;input type=&quot;color&quot; class=&quot;form-control form-control-color&quot; value=&quot;#4569b9&quot; title=&quot;Escolha uma cor&quot;&gt;&lt;/div&gt;</code></pre>
+<h2 id="datalist">Datalist</h2>
+<pre><code class="language-html">&lt;div style=&quot;max-width:380px&quot;&gt;&lt;input class=&quot;form-control&quot; list=&quot;fc-dl&quot; placeholder=&quot;digite...&quot;&gt;&lt;datalist id=&quot;fc-dl&quot;&gt;&lt;option value=&quot;Poring&quot;&gt;&lt;option value=&quot;Lunatic&quot;&gt;&lt;option value=&quot;Fabre&quot;&gt;&lt;/datalist&gt;&lt;/div&gt;</code></pre>
+<aside><strong>Limitation</strong><p>A lista do <code>datalist</code> é nativa do navegador.</p></aside>
+<h2 id="rótulos-em-linha">Rótulos em linha</h2>
+<p><code>col-form-label</code>, <code>col-form-label-sm</code> e <code>col-form-label-lg</code> alinham rótulos com campos do mesmo tamanho em layouts horizontais (<a href="layout.html">Layout de formulários</a>).</p>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../formularios/visao-geral.html">« Visão geral</a> · <a href="../formularios/select.html">Select »</a></nav>
+</main>
+</body></html>

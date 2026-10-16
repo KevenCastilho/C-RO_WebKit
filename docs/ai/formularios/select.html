@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Select · C-RO AI reference</title><meta name="description" content="form-select mantém o select nativo. Com data-cro-select ele ganha o popup de opções do kit.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Formulários › Select</nav>
+<main>
+<h1>Select</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Formulários</dd><dt>Human version (rendered examples)</dt><dd><a href="../../formularios/select.html">formularios/select.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>data-cro-* attributes in this page</dt><dd><code>data-cro-select</code></dd></dl>
+<div lang="pt-BR">
+<p><code>form-select</code> mantém o select nativo. Com <code>data-cro-select</code> ele ganha o popup de opções do kit.</p>
+<h2 id="padrão">Padrão</h2>
+<pre><code class="language-html">&lt;div style=&quot;max-width:300px&quot;&gt;&lt;select class=&quot;form-select&quot; aria-label=&quot;Classe&quot;&gt;&lt;option selected&gt;Escolha...&lt;/option&gt;&lt;option value=&quot;1&quot;&gt;Espadachim&lt;/option&gt;&lt;option value=&quot;2&quot;&gt;Mago&lt;/option&gt;&lt;option value=&quot;3&quot;&gt;Gatuno&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;</code></pre>
+<h2 id="tamanhos-múltiplo-e-desabilitado">Tamanhos, múltiplo e desabilitado</h2>
+<pre><code class="language-html">&lt;div class=&quot;row g-2&quot; style=&quot;max-width:640px&quot;&gt;
+  &lt;div class=&quot;col&quot;&gt;&lt;select class=&quot;form-select form-select-lg mb-1&quot;&gt;&lt;option&gt;lg&lt;/option&gt;&lt;/select&gt;&lt;select class=&quot;form-select form-select-sm&quot;&gt;&lt;option&gt;sm&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;&lt;select class=&quot;form-select&quot; multiple size=&quot;3&quot;&gt;&lt;option&gt;Poring&lt;/option&gt;&lt;option selected&gt;Lunatic&lt;/option&gt;&lt;option&gt;Fabre&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;&lt;select class=&quot;form-select&quot; disabled&gt;&lt;option&gt;Desabilitado&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h2 id="popup-do-kit-data-cro-select">Popup do kit (<code>data-cro-select</code>)</h2>
+<p>O popup do <code>&lt;select&gt;</code> é desenhado pelo sistema e o CSS não alcança. Para ter as opções no visual do jogo, adicione <code>data-cro-select</code>. O kit dispara <code>input</code> e <code>change</code> normalmente.</p>
+<pre><code class="language-html">&lt;div style=&quot;max-width:300px&quot;&gt;&lt;select class=&quot;form-select&quot; data-cro-select aria-label=&quot;Classe&quot;&gt;&lt;option&gt;Espadachim&lt;/option&gt;&lt;option&gt;Mago&lt;/option&gt;&lt;option&gt;Gatuno&lt;/option&gt;&lt;option&gt;Arqueiro&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-js">// o select continua sendo o elemento de verdade: ouça &#x27;change&#x27; como sempre
+document.querySelectorAll(&#x27;select[data-cro-select]&#x27;).forEach(function (s) {
+  s.addEventListener(&#x27;change&#x27;, function () { console.log(&#x27;classe:&#x27;, s.value); });
+});</code></pre>
+<aside><strong>Note</strong><p>Sem o atributo, o select segue 100% nativo (melhor para mobile).</p></aside>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../formularios/form-control.html">« Form control</a> · <a href="../formularios/checks-radios.html">Checks e radios »</a></nav>
+</main>
+</body></html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flex · C-RO AI reference</title><meta name="description" content="Direção, alinhamento, justificação, quebra e crescimento.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Utilitários › Flex</nav>
+<main>
+<h1>Flex</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Utilitários</dd><dt>Human version (rendered examples)</dt><dd><a href="../../utilitarios/flex.html">utilitarios/flex.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p>Direção, alinhamento, justificação, quebra e crescimento.</p>
+<pre><code class="language-html">&lt;div class=&quot;d-flex flex-row justify-content-between align-items-center border p-2 mb-2&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;3&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;d-flex flex-column gap-1 border p-2 mb-2&quot; style=&quot;max-width:160px&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;A&lt;/div&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;B&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;d-flex border p-2&quot;&gt;&lt;div class=&quot;bd-demo-box flex-grow-1&quot;&gt;cresce&lt;/div&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;fixo&lt;/div&gt;&lt;/div&gt;</code></pre>
+<h2 id="todas-as-classes">Todas as classes</h2>
+<table>
+<thead>
+<tr>
+<th>Família</th>
+<th>Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direção</td>
+<td><code>flex-row</code>, <code>flex-row-reverse</code>, <code>flex-column</code>, <code>flex-column-reverse</code></td>
+</tr>
+<tr>
+<td>Quebra</td>
+<td><code>flex-nowrap</code>, <code>flex-wrap</code>, <code>flex-wrap-reverse</code></td>
+</tr>
+<tr>
+<td>Crescer/encolher</td>
+<td><code>flex-fill</code>, <code>flex-grow-0/1</code>, <code>flex-shrink-0/1</code></td>
+</tr>
+<tr>
+<td>Justificar</td>
+<td><code>justify-content-start/end/center/between/around/evenly</code></td>
+</tr>
+<tr>
+<td>Alinhar itens</td>
+<td><code>align-items-start/end/center/baseline/stretch</code></td>
+</tr>
+<tr>
+<td>Alinhar conteúdo</td>
+<td><code>align-content-start/end/center/between/around/stretch</code></td>
+</tr>
+<tr>
+<td>Item</td>
+<td><code>align-self-auto/start/end/center/baseline/stretch</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-html">&lt;div class=&quot;d-flex flex-wrap align-content-around border&quot; style=&quot;height:90px&quot;&gt;&lt;div class=&quot;bd-demo-box flex-fill&quot;&gt;flex-fill&lt;/div&gt;&lt;div class=&quot;bd-demo-box flex-grow-0&quot;&gt;grow-0&lt;/div&gt;&lt;div class=&quot;bd-demo-box align-self-end&quot;&gt;self-end&lt;/div&gt;&lt;/div&gt;</code></pre>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../utilitarios/display.html">« Display</a> · <a href="../utilitarios/float.html">Float »</a></nav>
+</main>
+</body></html>

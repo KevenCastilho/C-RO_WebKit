@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customização · C-RO AI reference</title><meta name="description" content="Como mudar o visual do kit sem editar o kit — tokens (variáveis CSS), seu próprio CSS e a troca da fonte.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Começando › Customização</nav>
+<main>
+<h1>Customização</h1>
+<dl><dt>Type</dt><dd>Guide. Explanatory page about using the kit.</dd><dt>Section</dt><dd>Começando</dd><dt>Human version (rendered examples)</dt><dd><a href="../../comecando/customizacao.html">comecando/customizacao.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p>Como mudar o visual do kit sem editar o kit — tokens (variáveis CSS), seu próprio CSS e a troca da fonte.</p>
+<h2 id="dois-níveis">Dois níveis</h2>
+<table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>Quando usar</th>
+<th>Como</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Tokens <code>--cro-*</code></td>
+<td>Trocar cor de destaque, seleção, fundo de campo, fonte...</td>
+<td>Redefina a variável em <code>:root</code> ou em qualquer container</td>
+</tr>
+<tr>
+<td>2. Seu CSS</td>
+<td>Ajustar um componente</td>
+<td>Escreva a regra; ela vence o kit (veja abaixo)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-tokens">1. Tokens</h2>
+<p>Os tokens ficam em <code>:root</code> e valem em qualquer escopo, inclusive dentro de um único componente. Veja a lista em <a href="../extras/tokens.html">Tokens</a>.</p>
+<pre><code class="language-html">&lt;div class=&quot;d-flex flex-wrap gap-3 align-items-start&quot;&gt;
+  &lt;div&gt;
+    &lt;p class=&quot;mb-1&quot;&gt;&lt;b&gt;Padrão&lt;/b&gt;&lt;/p&gt;
+    &lt;input class=&quot;form-control mb-2&quot; value=&quot;campo&quot; style=&quot;width:160px&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;link com a cor de destaque&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;--cro-accent:#a01a8c; --cro-field-bg:#fff6cc; --cro-field-border:#a01a8c&quot;&gt;
+    &lt;p class=&quot;mb-1&quot;&gt;&lt;b&gt;Tokens trocados neste bloco&lt;/b&gt;&lt;/p&gt;
+    &lt;input class=&quot;form-control mb-2&quot; value=&quot;campo&quot; style=&quot;width:160px&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;link com a cor de destaque&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<pre><code class="language-css">:root {
+  --cro-accent: #174888;      /* links, rótulos, destaque */
+  --cro-sel-bg: #83a2ff;      /* item selecionado (lista, menu, tabela) */
+  --cro-field-bg: #f2f2f2;    /* fundo dos campos */
+  --cro-field-border: #c0c0c0;
+  --cro-win-body: #ffffff;    /* corpo de janela/card/modal */
+  --cro-font-ui: &quot;Minha Fonte&quot;, Helvetica, Arial, sans-serif;
+}</code></pre>
+<aside><strong>Warning</strong><p>Os sprites do kit (botões, barras, ícones, abas) são imagens de CSS pixel a pixel e <strong>não</strong> seguem tokens de cor. Os tokens mexem em cores, fontes e medidas que o kit lê via <code>var()</code>. Para mudar um sprite use o nível 3.</p></aside>
+<h2 id="2-seu-próprio-css">2. Seu próprio CSS</h2>
+<p>O CSS do kit está fora do layer do Bootstrap e os elementos HTML nus usam <code>:where()</code> (especificidade 0). Resultado:</p>
+<ul>
+<li>Uma regra sua, mesmo simples (<code>button { ... }</code>), vence o estilo <strong>de elemento</strong> do kit.</li>
+<li>Para vencer uma <strong>classe</strong> do kit (<code>.cro-btn</code>, <code>.btn</code>), use um seletor de especificidade igual ou maior, ou carregue o seu CSS depois.</li>
+<li>Qualquer <code>cursor</code> declarado por você vence o cursor do kit (veja <a href="../extras/cursores.html">Cursores</a>).</li>
+</ul>
+<pre><code class="language-css">/* seu CSS, carregado depois de c-ro-bs.min.css */
+a { color: #0a5; }                 /* vence o kit: seletor de elemento */
+.card-header { font-size: 14px; }  /* vence o Bootstrap (layer) e iguala o kit */</code></pre>
+<h2 id="cores-do-tema-bootstrap">Cores do tema Bootstrap</h2>
+<p>As cores contextuais do Bootstrap já vêm tematizadas (a paleta é a do jogo):</p>
+<table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Cor</th>
+<th>Origem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>primary</code></td>
+<td><code>#174888</code></td>
+<td>derivado do azul do jogo</td>
+</tr>
+<tr>
+<td><code>secondary</code></td>
+<td><code>#6e6e6e</code></td>
+<td>derivado</td>
+</tr>
+<tr>
+<td><code>success</code></td>
+<td><code>#1f6b2f</code></td>
+<td>derivado</td>
+</tr>
+<tr>
+<td><code>info</code></td>
+<td><code>#0f6a78</code></td>
+<td>derivado</td>
+</tr>
+<tr>
+<td><code>warning</code></td>
+<td><code>#f3c34d</code></td>
+<td>derivado</td>
+</tr>
+<tr>
+<td><code>danger</code></td>
+<td><code>#8a1c1c</code></td>
+<td>derivado</td>
+</tr>
+<tr>
+<td><code>light</code> / <code>dark</code></td>
+<td><code>#f4f4f4</code> / <code>#1f242c</code></td>
+<td>derivado</td>
+</tr>
+</tbody>
+</table>
+<p>Essas cores são <strong>compiladas</strong> no Bootstrap e não são tokens de runtime. Para usar outra cor, escreva o seu CSS: ele vence o kit.</p>
+<h2 id="fonte">Fonte</h2>
+<p>Troque <code>--cro-font-ui</code> e <code>--cro-font-title</code> e carregue a sua fonte com <code>@font-face</code>. Lembre-se da licença da fonte nova.</p>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../comecando/javascript.html">« JavaScript</a> · <a href="../comecando/navegadores.html">Navegadores e limites »</a></nav>
+</main>
+</body></html>

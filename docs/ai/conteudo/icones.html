@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ícones · C-RO AI reference</title><meta name="description" content="O kit traz os ícones pixel-exatos do jogo ( cro-ico ) e convive bem com Font Awesome, Lucide, Material Symbols e SVG próprio.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Conteúdo › Ícones</nav>
+<main>
+<h1>Ícones</h1>
+<dl><dt>Type</dt><dd>Kit extra. A feature Bootstrap does not have.</dd><dt>Section</dt><dd>Conteúdo</dd><dt>Human version (rendered examples)</dt><dd><a href="../../conteudo/icones.html">conteudo/icones.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-btn</code> <code>cro-ico</code> <code>cro-ico--arw-down</code> <code>cro-ico--arw-up</code> <code>cro-ico--battle-opt</code> <code>cro-ico--chatmode</code> <code>cro-ico--close</code> <code>cro-ico--folder</code> <code>cro-ico--lock</code> <code>cro-ico--unlock</code></dd></dl>
+<div lang="pt-BR">
+<p>O kit traz os ícones pixel-exatos do jogo (<code>cro-ico</code>) e convive bem com Font Awesome, Lucide, Material Symbols e SVG próprio.</p>
+<h2 id="ícones-do-jogo">Ícones do jogo</h2>
+<p>São CSS puro, sem imagem externa. Use <code>&lt;span class="cro-ico cro-ico--NOME"&gt;</code> (ou <code>&lt;button&gt;</code> quando clicável, com <code>aria-label</code>).</p>
+<pre><code class="language-html">&lt;span class=&quot;cro-ico cro-ico--lock&quot; title=&quot;lock&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cro-ico cro-ico--unlock&quot; title=&quot;unlock&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cro-ico cro-ico--folder&quot; title=&quot;folder&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cro-ico cro-ico--arw-up&quot; title=&quot;arw-up&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cro-ico cro-ico--arw-down&quot; title=&quot;arw-down&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cro-ico cro-ico--close&quot; title=&quot;close&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cro-ico cro-ico--chatmode&quot; title=&quot;chatmode&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;cro-ico cro-ico--battle-opt&quot; title=&quot;battle-opt&quot;&gt;&lt;/span&gt;</code></pre>
+<p>Veja a lista completa em <a href="../kit/icones-cro.html">Ícones do jogo</a>.</p>
+<h2 id="ícones-de-terceiros">Ícones de terceiros</h2>
+<p>O kit <strong>não embute</strong> Font Awesome, Lucide ou Material Symbols; ele garante que convivam. Os ícones modernos <strong>não</strong> têm o estilo Classic: para fidelidade use os <code>cro-ico</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Situação</th>
+<th>Como usar</th>
+<th>O que o kit faz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dentro de botão</td>
+<td><code>&lt;button class="cro-btn"&gt;&lt;svg …/&gt;Salvar&lt;/button&gt;</code> ou <code>&lt;i class="fa-solid fa-floppy-disk"&gt;&lt;/i&gt;</code></td>
+<td>ícone 12px, <code>currentColor</code>, 4px do texto, muda de cor com o botão</td>
+</tr>
+<tr>
+<td>SVG sem <code>width/height</code> (Lucide)</td>
+<td><code>&lt;svg viewBox="0 0 24 24" stroke="currentColor" fill="none"&gt;…</code></td>
+<td>vira <code>1em</code> (em vez de 300×150)</td>
+</tr>
+<tr>
+<td>Lista, menu, aba, título</td>
+<td><code>&lt;span class="cro-icon-slot"&gt;&lt;svg…/&gt;&lt;/span&gt;</code> (<code>--11</code>, <code>--16</code>)</td>
+<td>caixa fixa, herda a cor do estado</td>
+</tr>
+<tr>
+<td><code>&lt;img&gt;</code> como ícone</td>
+<td><code>&lt;img src="x.png" alt=""&gt;</code></td>
+<td>continua inline (use <code>.cro-block</code> para bloco)</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-html">&lt;button class=&quot;cro-btn&quot;&gt;&lt;svg viewBox=&quot;0 0 24 24&quot; width=&quot;12&quot; height=&quot;12&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M5 12l5 5L20 7&quot;/&gt;&lt;/svg&gt;Confirmar&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary&quot;&gt;&lt;svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;9&quot;/&gt;&lt;/svg&gt; Círculo&lt;/button&gt;</code></pre>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../conteudo/figuras.html">« Figuras</a> · <a href="../formularios/visao-geral.html">Visão geral »</a></nav>
+</main>
+</body></html>

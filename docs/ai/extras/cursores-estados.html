@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estados automáticos do cursor · C-RO AI reference</title><meta name="description" content="Como o kit escolhe o cursor sem você fazer nada — mesma lógica dos cursores nativos do Windows.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Extras do kit › Estados automáticos do cursor</nav>
+<main>
+<h1>Estados automáticos do cursor</h1>
+<dl><dt>Type</dt><dd>Kit extra. A feature Bootstrap does not have.</dd><dt>Section</dt><dd>Extras do kit</dd><dt>Human version (rendered examples)</dt><dd><a href="../../extras/cursores-estados.html">extras/cursores-estados.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>data-cro-* attributes in this page</dt><dd><code>data-cro-cursor-anim</code> <code>data-cro-handwriting</code> <code>data-cro-top</code></dd></dl>
+<div lang="pt-BR">
+<p>Como o kit escolhe o cursor sem você fazer nada — mesma lógica dos cursores nativos do Windows.</p>
+<h2 id="tabela-de-gatilhos">Tabela de gatilhos</h2>
+<table>
+<thead>
+<tr>
+<th>Situação</th>
+<th>Cursor</th>
+<th>Gatilho no HTML</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Padrão</td>
+<td>Seta animada</td>
+<td>qualquer lugar</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>Mão apontando</td>
+<td><code>a[href]</code>, <code>area[href]</code></td>
+</tr>
+<tr>
+<td>Dica / ajuda</td>
+<td>Mão com <strong>?</strong></td>
+<td><code>[title]</code>, <code>abbr[title]</code>, <code>[data-bs-toggle=tooltip]</code>, <code>[data-bs-toggle=popover]</code>, <code>.tooltip</code>, <code>.popover</code></td>
+</tr>
+<tr>
+<td>Aviso / erro</td>
+<td>Mão com <strong>!</strong></td>
+<td><code>.alert</code>, <code>[role=alert]</code>, <code>.invalid-feedback</code>, <code>.is-invalid</code>, <code>[aria-invalid=true]</code></td>
+</tr>
+<tr>
+<td>Ocupado (região)</td>
+<td>Seta + Poring</td>
+<td><code>[aria-busy=true]</code></td>
+</tr>
+<tr>
+<td>Ocupado (página)</td>
+<td>Poring</td>
+<td><code>html[aria-busy=true]</code></td>
+</tr>
+<tr>
+<td>Arrastar</td>
+<td>Mão aberta / fechada</td>
+<td><code>[draggable=true]</code> (e <code>:active</code>)</td>
+</tr>
+<tr>
+<td>Texto</td>
+<td>Barra I</td>
+<td>campos editáveis: <code>input</code> de texto, <code>textarea</code>, <code>[contenteditable]</code></td>
+</tr>
+<tr>
+<td>Caneta</td>
+<td>Caneta</td>
+<td><code>canvas</code>, <code>[data-cro-handwriting]</code>; e campos editáveis quando o ponteiro é uma caneta</td>
+</tr>
+<tr>
+<td>Voltar ao topo</td>
+<td>Seta para cima</td>
+<td><code>[data-cro-top]</code></td>
+</tr>
+<tr>
+<td>Desabilitado</td>
+<td>Proibido (⊘)</td>
+<td><code>:disabled</code>, <code>[aria-disabled=true]</code></td>
+</tr>
+<tr>
+<td>Redimensionar, mover, esperar...</td>
+<td>Cursor do jogo</td>
+<td><code>cursor</code> nativo (<code>ns-resize</code>, <code>move</code>, <code>wait</code>...) convertido</td>
+</tr>
+</tbody>
+</table>
+<h2 id="prioridade">Prioridade</h2>
+<p>Entre regras do kit, a última vence: ajuda &lt; aviso &lt; ocupado &lt; arrastar &lt; link &lt; topo &lt; texto &lt; caneta &lt; desabilitado. Casos práticos:</p>
+<ul>
+<li>Um <strong>link</strong> com <code>title</code> mostra a mão do link (o link vence a "?").</li>
+<li>Um <strong>campo de texto</strong> com <code>title</code> mostra a barra I.</li>
+<li>Um campo <strong>inválido</strong> continua com a barra I (a mão "!" não vence campos editáveis).</li>
+<li>Um botão <code>disabled</code> com <code>title</code> mostra o cursor proibido.</li>
+</ul>
+<h2 id="experimente">Experimente</h2>
+<pre><code class="language-html">&lt;div class=&quot;d-flex flex-wrap gap-2 align-items-center&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt;link (mão)&lt;/a&gt;
+  &lt;span title=&quot;com title: mão com ?&quot;&gt;dica (?)&lt;/span&gt;
+  &lt;abbr title=&quot;Ragnarok Online&quot;&gt;RO&lt;/abbr&gt;
+  &lt;div class=&quot;alert alert-warning mb-0 py-1&quot;&gt;alerta (mão com !)&lt;/div&gt;
+  &lt;input class=&quot;form-control&quot; style=&quot;width:140px&quot; value=&quot;campo (barra I)&quot;&gt;
+  &lt;button class=&quot;btn btn-secondary&quot; disabled&gt;desabilitado&lt;/button&gt;
+  &lt;div draggable=&quot;true&quot; class=&quot;bd-demo-box&quot;&gt;arraste (mão)&lt;/div&gt;
+  &lt;a href=&quot;#&quot; data-cro-top&gt;voltar ao topo (↑)&lt;/a&gt;
+  &lt;div aria-busy=&quot;true&quot; class=&quot;bd-demo-box&quot;&gt;aria-busy&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h2 id="controle-fino">Controle fino</h2>
+<pre><code class="language-html">&lt;html data-cro-cursor-anim=&quot;off&quot;&gt;           &lt;!-- sem animação --&gt;
+&lt;canvas data-cro-handwriting&gt;&lt;/canvas&gt;      &lt;!-- cursor de caneta --&gt;
+&lt;a href=&quot;#topo&quot; data-cro-top&gt;Topo&lt;/a&gt;       &lt;!-- seta para cima --&gt;
+&lt;main aria-busy=&quot;true&quot;&gt;carregando...&lt;/main&gt; &lt;!-- seta + Poring --&gt;</code></pre>
+<p>Para tirar o cursor do kit de um elemento, declare o seu: <code>.x { cursor: auto; }</code> (palavra-chave: usa o cursor nativo).</p>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../extras/cursores.html">« Cursores do Ragnarok</a> · <a href="../extras/favicon.html">Favicon automático »</a></nav>
+</main>
+</body></html>

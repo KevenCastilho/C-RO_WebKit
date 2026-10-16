@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Favicon automático · C-RO AI reference</title><meta name="description" content="Se o site não declara favicon, o kit aplica o dele — um retrato em pixel art — sem você fazer nada.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Extras do kit › Favicon automático</nav>
+<main>
+<h1>Favicon automático</h1>
+<dl><dt>Type</dt><dd>Kit extra. A feature Bootstrap does not have.</dd><dt>Section</dt><dd>Extras do kit</dd><dt>Human version (rendered examples)</dt><dd><a href="../../extras/favicon.html">extras/favicon.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>data-cro-* attributes in this page</dt><dd><code>data-cro-favicon</code> <code>data-cro-favicon-link</code></dd></dl>
+<div lang="pt-BR">
+<p>Se o site não declara favicon, o kit aplica o dele — um retrato em pixel art — sem você fazer nada.</p>
+<h2 id="a-regra">A regra</h2>
+<ol>
+<li>Ao carregar, o JS procura um <code>&lt;link rel="icon"&gt;</code> (ou <code>shortcut icon</code>) <strong>com <code>href</code> preenchido</strong> no <code>&lt;head&gt;</code>.</li>
+<li><strong>Não achou</strong>: injeta o favicon do kit (PNG 32px) e, se também não houver, um <code>apple-touch-icon</code> de 180px.</li>
+<li><strong>Achou</strong>: não faz nada. O favicon do site sempre vence.</li>
+<li>Depois: se o site adicionar um favicon, o do kit é removido; se remover o dele, o do kit volta.</li>
+</ol>
+<pre><code class="language-html">&lt;!-- sem &lt;link rel=&quot;icon&quot;&gt;: aparece o favicon do C-RO --&gt;
+&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;title&gt;Meu site&lt;/title&gt;&lt;/head&gt;
+
+&lt;!-- com &lt;link rel=&quot;icon&quot;&gt;: aparece o seu --&gt;
+&lt;head&gt;&lt;link rel=&quot;icon&quot; href=&quot;/meu.ico&quot;&gt;&lt;/head&gt;</code></pre>
+<h2 id="desligar">Desligar</h2>
+<pre><code class="language-html">&lt;html data-cro-favicon=&quot;off&quot;&gt;</code></pre>
+<h2 id="teste-ao-vivo">Teste ao vivo</h2>
+<p>Esta página não declara favicon: o ícone da aba é o do kit. Os links injetados:</p>
+<pre><code class="language-html">&lt;ul id=&quot;fv-list&quot; class=&quot;mb-0&quot;&gt;&lt;/ul&gt;</code></pre>
+<pre><code class="language-js">var ul = document.getElementById(&#x27;fv-list&#x27;);
+document.querySelectorAll(&#x27;link[rel~=icon],link[rel=apple-touch-icon]&#x27;).forEach(function (l) {
+  var li = document.createElement(&#x27;li&#x27;);
+  li.textContent = l.getAttribute(&#x27;rel&#x27;) + &#x27; &#x27; + (l.getAttribute(&#x27;sizes&#x27;) || &#x27;&#x27;) + &#x27; — &#x27; +
+    (l.hasAttribute(&#x27;data-cro-favicon-link&#x27;) ? &#x27;injetado pelo kit&#x27; : &#x27;do site&#x27;);
+  ul.appendChild(li);
+});</code></pre>
+<h2 id="arquivos">Arquivos</h2>
+<p>Em <code>dist/favicon/</code>: <code>favicon.svg</code>, <code>favicon-32.png</code>, <code>apple-touch-icon.png</code> e <code>favicon.ico</code> (16/32/48) — úteis se você quiser servir o ícone como arquivo.</p>
+<aside><strong>Limitation</strong><p>Um <code>/favicon.ico</code> na raiz do site <strong>sem</strong> <code>&lt;link&gt;</code> não é detectável sem uma requisição. Nesse caso o do kit vale; declare o seu <code>&lt;link rel="icon"&gt;</code> para vencer.</p></aside>
+<aside><strong>Note</strong><p>A arte (30×30) foi fornecida pelo autor do projeto. O SVG não vai embutido no bundle (pesaria ~56 KB).</p></aside>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../extras/cursores-estados.html">« Estados automáticos do cursor</a> · <a href="../extras/fonte.html">Fonte »</a></nav>
+</main>
+</body></html>

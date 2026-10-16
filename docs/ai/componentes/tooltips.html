@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tooltips · C-RO AI reference</title><meta name="description" content="Dicas ao passar o mouse. No kit usam a &quot;dica&quot; do jogo (caixa amarela), sem seta.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Componentes › Tooltips</nav>
+<main>
+<h1>Tooltips</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Componentes</dd><dt>Human version (rendered examples)</dt><dd><a href="../../componentes/tooltips.html">componentes/tooltips.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-tip</code></dd></dl>
+<div lang="pt-BR">
+<p>Dicas ao passar o mouse. No kit usam a "dica" do jogo (caixa amarela), sem seta.</p>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-title=&quot;Dica do kit&quot;&gt;Em cima&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;right&quot; data-bs-title=&quot;À direita&quot;&gt;Direita&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;bottom&quot; data-bs-title=&quot;Embaixo&quot;&gt;Embaixo&lt;/button&gt;
+&lt;a href=&quot;#&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-title=&quot;Link com dica&quot;&gt;Link com dica&lt;/a&gt;</code></pre>
+<aside><strong>Warning</strong><p>Tooltips precisam ser inicializados com <code>new bootstrap.Tooltip(el)</code>.</p></aside>
+<aside><strong>Limitation</strong><p>A dica do jogo não tem seta, então o tooltip do kit também não.</p></aside>
+<h2 id="dica-do-navegador-title">Dica do navegador (<code>title</code>)</h2>
+<p>O atributo <code>title</code> mostra a dica nativa (não estilizável), mas o cursor "mão com ?" do kit aparece sozinho:</p>
+<pre><code class="language-html">&lt;span title=&quot;Dica nativa do navegador&quot;&gt;Passe o mouse (cursor ?)&lt;/span&gt;</code></pre>
+<h2 id="nativo-do-kit">Nativo do kit</h2>
+<pre><code class="language-html">&lt;span class=&quot;cro-tip&quot; style=&quot;width:140px;height:40px;padding:6px&quot;&gt;Dica do jogo&lt;/span&gt;</code></pre>
+<h2 id="marcação-gerada">Marcação gerada</h2>
+<p>O Bootstrap gera <code>.tooltip &gt; .tooltip-arrow + .tooltip-inner</code> com a classe de posição <code>bs-tooltip-top|bottom|start|end|auto</code>. No kit a seta não é exibida e o <code>tooltip-inner</code> é a caixa de dica do jogo. Para personalizar, mire em <code>.tooltip-inner</code> (via <code>data-bs-custom-class</code>).</p>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../componentes/toasts.html">« Toasts</a> · <a href="../kit/janela.html">Janela e titlebar »</a></nav>
+</main>
+</body></html>

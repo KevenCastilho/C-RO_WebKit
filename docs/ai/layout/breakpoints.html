@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breakpoints · C-RO AI reference</title><meta name="description" content="Os pontos de quebra responsivos são os do Bootstrap 5.3. O kit não altera nenhuma medida do grid.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Layout › Breakpoints</nav>
+<main>
+<h1>Breakpoints</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Layout</dd><dt>Human version (rendered examples)</dt><dd><a href="../../layout/breakpoints.html">layout/breakpoints.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p>Os pontos de quebra responsivos são os do Bootstrap 5.3. O kit não altera nenhuma medida do grid.</p>
+<h2 id="tabela">Tabela</h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Sufixo</th>
+<th>Largura mínima</th>
+<th>Container máx.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extra pequeno</td>
+<td><em>(nenhum)</em></td>
+<td><code>&lt;576px</code></td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Pequeno</td>
+<td><code>sm</code></td>
+<td><code>≥576px</code></td>
+<td>540px</td>
+</tr>
+<tr>
+<td>Médio</td>
+<td><code>md</code></td>
+<td><code>≥768px</code></td>
+<td>720px</td>
+</tr>
+<tr>
+<td>Grande</td>
+<td><code>lg</code></td>
+<td><code>≥992px</code></td>
+<td>960px</td>
+</tr>
+<tr>
+<td>Extra grande</td>
+<td><code>xl</code></td>
+<td><code>≥1200px</code></td>
+<td>1140px</td>
+</tr>
+<tr>
+<td>XXL</td>
+<td><code>xxl</code></td>
+<td><code>≥1400px</code></td>
+<td>1320px</td>
+</tr>
+</tbody>
+</table>
+<p>Os sufixos valem para colunas (<code>col-md-4</code>), display (<code>d-lg-none</code>), flex, espaçamento, texto e demais utilitários responsivos.</p>
+<h2 id="media-queries">Media queries</h2>
+<pre><code class="language-css">@media (min-width: 768px)  { /* md e acima */ }
+@media (min-width: 992px)  { /* lg e acima */ }
+@media (max-width: 575.98px) { /* só xs */ }</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;d-block d-md-none&quot;&gt;&lt;span class=&quot;badge text-bg-danger&quot;&gt;Você está abaixo de md&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;d-none d-md-block&quot;&gt;&lt;span class=&quot;badge text-bg-success&quot;&gt;Você está em md ou maior&lt;/span&gt;&lt;/div&gt;</code></pre>
+<aside><strong>Tip</strong><p>Redimensione a janela do navegador para ver o exemplo trocar.</p></aside>
+<aside><strong>Note</strong><p>O próprio kit usa <code>container-type</code> e media queries do Bootstrap onde precisa. A tela do jogo (800×600) não é um breakpoint do kit: o layout é fluido.</p></aside>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../comecando/migracao.html">« De Bootstrap para C-RO</a> · <a href="../layout/containers.html">Containers »</a></nav>
+</main>
+</body></html>

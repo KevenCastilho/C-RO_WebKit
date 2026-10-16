@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tipografia · C-RO AI reference</title><meta name="description" content="Títulos, parágrafos, listas e utilitários de texto. A base é a Helvetica (Nimbus Sans) 12px, como no jogo.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Conteúdo › Tipografia</nav>
+<main>
+<h1>Tipografia</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Conteúdo</dd><dt>Human version (rendered examples)</dt><dd><a href="../../conteudo/tipografia.html">conteudo/tipografia.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-bullets</code> <code>is-on</code></dd></dl>
+<div lang="pt-BR">
+<p>Títulos, parágrafos, listas e utilitários de texto. A base é a Helvetica (Nimbus Sans) 12px, como no jogo.</p>
+<h2 id="títulos">Títulos</h2>
+<pre><code class="language-html">&lt;h1&gt;h1. Título&lt;/h1&gt;&lt;h2&gt;h2. Título&lt;/h2&gt;&lt;h3&gt;h3. Título&lt;/h3&gt;&lt;h4&gt;h4. Título&lt;/h4&gt;&lt;h5&gt;h5. Título&lt;/h5&gt;&lt;h6&gt;h6. Título&lt;/h6&gt;</code></pre>
+<p>Classes <code>.h1</code>–<code>.h6</code> e <code>.display-1</code>–<code>.display-6</code> dão o tamanho sem a semântica:</p>
+<pre><code class="language-html">&lt;p class=&quot;h3&quot;&gt;Parece h3, mas é um parágrafo&lt;/p&gt;
+&lt;p class=&quot;display-6&quot;&gt;display-6&lt;/p&gt;</code></pre>
+<h2 id="texto">Texto</h2>
+<pre><code class="language-html">&lt;p class=&quot;lead&quot;&gt;Parágrafo de destaque (&lt;code&gt;.lead&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Texto normal com &lt;small&gt;texto pequeno&lt;/small&gt;, &lt;mark&gt;destacado&lt;/mark&gt;, &lt;del&gt;removido&lt;/del&gt;, &lt;u&gt;sublinhado&lt;/u&gt; e &lt;strong&gt;forte&lt;/strong&gt;.&lt;/p&gt;
+&lt;p class=&quot;text-start&quot;&gt;Esquerda&lt;/p&gt;&lt;p class=&quot;text-center&quot;&gt;Centro&lt;/p&gt;&lt;p class=&quot;text-end&quot;&gt;Direita&lt;/p&gt;
+&lt;p class=&quot;fw-bold&quot;&gt;Negrito&lt;/p&gt;&lt;p class=&quot;fst-italic&quot;&gt;Itálico&lt;/p&gt;&lt;p class=&quot;text-uppercase&quot;&gt;maiúsculas&lt;/p&gt;</code></pre>
+<h2 id="listas">Listas</h2>
+<pre><code class="language-html">&lt;ul&gt;&lt;li&gt;Não ordenada&lt;/li&gt;&lt;li&gt;Outro item&lt;/li&gt;&lt;/ul&gt;
+&lt;ol&gt;&lt;li&gt;Ordenada&lt;/li&gt;&lt;li&gt;Outro&lt;/li&gt;&lt;/ol&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;&lt;li&gt;Sem marcadores&lt;/li&gt;&lt;li&gt;Outro&lt;/li&gt;&lt;/ul&gt;
+&lt;ul class=&quot;list-inline&quot;&gt;&lt;li class=&quot;list-inline-item&quot;&gt;Em&lt;/li&gt;&lt;li class=&quot;list-inline-item&quot;&gt;linha&lt;/li&gt;&lt;/ul&gt;</code></pre>
+<h3 id="marcador-do-kit-bolinha-sys-base">Marcador do kit (bolinha sys_base)</h3>
+<p>Toda <code>&lt;ul&gt;</code> <strong>solta</strong> (sem <code>class</code> nem <code>role</code>) usa como marcador a bolinha azul 11×11 do jogo (<code>sys_base</code>), no lugar do quadrado do HTML. A <code>&lt;ol&gt;</code> continua numerada. O marcador <strong>não</strong> é aplicado dentro de componentes que já têm visual próprio: árvore, menu, <code>list-group</code>, <code>nav</code>, paginação, breadcrumb, dropdown, abas e qualquer <code>&lt;nav&gt;</code>.</p>
+<p>Os estados são os mesmos do botão <code>cro-sys-btn</code>: repouso, <strong>hover</strong> (bolinha acesa), <code>:active</code> (acesa e um pouco mais escura), <code>is-on</code>/<code>is-active</code>/<code>aria-current</code>/<code>aria-selected</code> (acesa) e <code>is-disabled</code>/<code>aria-disabled="true"</code> (cinza, sem reagir ao mouse).</p>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;Item normal (passe o mouse)&lt;/li&gt;
+  &lt;li class=&quot;is-on&quot;&gt;Item com &lt;code&gt;is-on&lt;/code&gt;&lt;/li&gt;
+  &lt;li aria-disabled=&quot;true&quot;&gt;Item desabilitado&lt;/li&gt;
+  &lt;li&gt;Item com filhos
+    &lt;ul&gt;&lt;li&gt;Filho a&lt;/li&gt;&lt;li&gt;Filho b&lt;/li&gt;&lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<p>Para uma <code>&lt;ul&gt;</code> que <strong>tem</strong> <code>class</code> e ainda assim deve ter a bolinha, adicione <code>cro-bullets</code>. Para tirar a bolinha, use <code>list-unstyled</code> (ou qualquer <code>class</code>).</p>
+<pre><code class="language-html">&lt;ul class=&quot;minha-lista cro-bullets&quot;&gt;&lt;li&gt;Lista com class própria&lt;/li&gt;&lt;li&gt;Mesma bolinha&lt;/li&gt;&lt;/ul&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;&lt;li&gt;Sem bolinha&lt;/li&gt;&lt;/ul&gt;</code></pre>
+<aside><strong>Note</strong><p>&gt; A regra usa <code>:where()</code> (especificidade 0): um <code>li::before { content: none }</code> ou um <code>list-style</code> seu no CSS do projeto vence sem precisar de <code>!important</code>.</p></aside>
+<h2 id="citações-e-abreviações">Citações e abreviações</h2>
+<pre><code class="language-html">&lt;blockquote class=&quot;blockquote&quot;&gt;&lt;p&gt;Uma frase marcante.&lt;/p&gt;&lt;footer class=&quot;blockquote-footer&quot;&gt;Alguém em &lt;cite&gt;Fonte&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
+&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt;</code></pre>
+<aside><strong>Note</strong><p>Elementos com <code>title</code> e <code>abbr</code> ganham automaticamente o cursor "mão com ?" do jogo. Veja <a href="../extras/cursores-estados.html">Estados automáticos do cursor</a>.</p></aside>
+<h2 id="abreviações">Abreviações</h2>
+<p><code>initialism</code> deixa a abreviação em caixa pequena: <code>&lt;abbr class="initialism" title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code>.</p>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../conteudo/reboot.html">« Reboot e elementos nus</a> · <a href="../conteudo/imagens.html">Imagens »</a></nav>
+</main>
+</body></html>

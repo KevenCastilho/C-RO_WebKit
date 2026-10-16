@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essentials · C-RO AI reference</title><meta name="description" content="Files, minimal page, rules, JS API and limits of the C-RO kit, in one page.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="index.html">C-RO AI reference</a> › Essentials</nav>
+<main>
+<h1>Essentials</h1>
+<p>Everything needed to produce correct code with C-RO in one page. Details per component are in the other pages of this reference.</p>
+
+<h2 id="what">What C-RO is</h2>
+<p>A CSS/JS kit that gives Bootstrap 5.3.8 the look of the 2002 Classic Ragnarok Online interface. It is a complete Bootstrap theme: you write normal Bootstrap markup and the CSS changes the appearance. It also provides native <code>cro-*</code> pieces for things Bootstrap lacks (game window with title bar, inventory slots, tree, menus, <code>CRO.alert/confirm/prompt/menu</code> dialogs), game cursors, and an automatic favicon. No Node, no build step is needed to use it.</p>
+
+<h2 id="files">Which files to load</h2>
+<table>
+<tr><th>Need</th><th>CSS</th><th>JS</th></tr>
+<tr><td>Bootstrap markup with the game look (the usual case)</td><td><code>c-ro-bs.min.css</code></td><td><code>c-ro-bs.min.js</code> (Bootstrap bundle with Popper + kit; defines <code>window.bootstrap</code> and <code>window.CRO</code>)</td></tr>
+<tr><td>Kit only, no Bootstrap (<code>cro-*</code> classes and bare HTML elements)</td><td><code>c-ro.min.css</code> (or <code>c-ro.lite.min.css</code>, without game-specific pieces)</td><td><code>c-ro.min.js</code> (<code>window.CRO</code> only)</td></tr>
+</table>
+<p>Hosted copies: <code>https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.css</code>, <code>https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.js</code> (same folder for the other files). Keep the <code>fonts/</code> folder next to the CSS: font URLs are relative to the CSS file. Do not use <code>raw.githubusercontent.com</code> (served as text/plain, browsers refuse it).</p>
+<p>Never load <code>c-ro.css</code> together with the original Bootstrap, and never load two Bootstraps: <code>c-ro-bs.css</code> already contains Bootstrap.</p>
+
+<h2 id="skeleton">Minimal page</h2>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;My page&lt;/title&gt;
+  &lt;link rel="stylesheet" href="c-ro-bs.min.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;button class="btn btn-primary"&gt;Hello, adventurer!&lt;/button&gt;
+  &lt;script src="c-ro-bs.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<h2 id="rules">Rules that prevent most mistakes</h2>
+<ol>
+<li><b>Use plain Bootstrap 5.3.8 markup</b> for anything Bootstrap has (<code>btn</code>, <code>card</code>, <code>modal</code>, <code>form-control</code>, <code>nav-tabs</code>, ...). Do not invent <code>cro-*</code> variants of them. Components are marked <i>Bootstrap drop-in</i> in this reference.</li>
+<li><b>Only use <code>cro-*</code>, <code>is-*</code> and <code>data-cro-*</code> names that are documented.</b> The full list is in <a href="extras/referencia.html">Class index</a> and <a href="extras/atributos-data.html">data-cro-* attributes</a>. If a class is not listed there, it does not exist.</li>
+<li><b>Cascade</b>: Bootstrap is inside <code>@layer bootstrap</code>; the kit is outside any layer and therefore wins over Bootstrap; the site's own CSS loaded <i>after</i> the kit wins over the kit. Bare-element rules of the kit use <code>:where()</code> (zero specificity), so a simple selector like <code>a { color: ... }</code> overrides them without <code>!important</code>. Overriding a kit <i>class</i> needs equal or higher specificity or a later stylesheet. Do not use <code>!important</code> as a first resort.</li>
+<li><b>Customize with tokens first</b>: redefine <code>--cro-*</code> custom properties on <code>:root</code> or on any container (full list: <a href="extras/tokens.html">Tokens</a>). Example: <code>--cro-accent</code>, <code>--cro-sel-bg</code>, <code>--cro-field-bg</code>, <code>--cro-field-border</code>, <code>--cro-win-body</code>, <code>--cro-font-ui</code>. Sprites (buttons, bars, icons, tabs) are pixel images and do <b>not</b> follow color tokens. Bootstrap theme colors (primary, secondary, ...) are compiled in and are not runtime tokens.</li>
+<li><b>Initialize what Bootstrap requires</b>: tooltips and popovers need <code>new bootstrap.Tooltip(el)</code> / <code>new bootstrap.Popover(el)</code>; toasts need <code>bootstrap.Toast.getOrCreateInstance(el).show()</code>. Modal, collapse, dropdown, offcanvas, tabs and carousel work through <code>data-bs-*</code> attributes with no script.</li>
+<li><b>Tabs and selects of the kit</b> are driven by attributes: <code>data-cro-tabs</code>, <code>data-cro-panels</code>, <code>data-cro-tab</code>, <code>data-cro-panel</code>, <code>data-cro-select</code>. After inserting such HTML dynamically call <code>CRO.init(root)</code> (idempotent).</li>
+<li><b>Honesty labels</b>: items marked DERIVADO or INVENTADO do not exist in the original game; do not describe them as authentic. CONFIRMADO = measured from the game's bitmaps; NÃO DETERMINADO = visual unknown, shown with the <code>cro-undefined</code> class (dashed gray border).</li>
+<li><b>Not supported</b>: RTL (<code>dir="rtl"</code>) and dark mode. Native popups the CSS cannot reach stay native (date/time/color pickers, <code>datalist</code>; plain <code>select</code> popups unless <code>data-cro-select</code> is set). Custom scrollbars only in WebKit/Blink.</li>
+<li><b>Cursors</b>: the kit sets game cursors on the whole page; a <code>cursor</code> declared by the author always wins. The animated cursor and the automatic favicon need the JS bundle (<code>data-cro-cursor-anim="off"</code> and <code>data-cro-favicon="off"</code> on <code>&lt;html&gt;</code> disable them).</li>
+<li><b>Browsers</b>: needs <code>@layer</code>, <code>:where()</code>, <code>mask</code>. Approximate minimums: Chrome/Edge 120, Firefox 110, Safari 16. Automated tests run only in Chromium.</li>
+</ol>
+
+<h2 id="js">JavaScript API (<code>window.CRO</code>)</h2>
+<table>
+<tr><th>Call</th><th>Returns</th><th>Notes</th></tr>
+<tr><td><code>CRO.init(root?)</code></td><td>-</td><td>Wires <code>data-cro-tabs</code> and <code>data-cro-select</code> inside root. Runs on load by itself.</td></tr>
+<tr><td><code>CRO.alert(msg, {title, ok})</code></td><td>Promise&lt;undefined&gt;</td><td>Game-style alert</td></tr>
+<tr><td><code>CRO.confirm(msg, {title, ok, cancel})</code></td><td>Promise&lt;boolean&gt;</td><td>Esc resolves <code>false</code></td></tr>
+<tr><td><code>CRO.prompt(msg, default, {title, ok, cancel})</code></td><td>Promise&lt;string|null&gt;</td><td>Esc/Cancel resolves <code>null</code></td></tr>
+<tr><td><code>CRO.menu(items, x, y)</code></td><td>Promise&lt;value|undefined&gt;</td><td>Context menu; arrows/Enter/Esc</td></tr>
+<tr><td><code>CRO.bar(el, percent)</code></td><td>-</td><td>Sets an HP/SP bar width; turns red below 25% unless <code>data-cro-color</code> is present</td></tr>
+<tr><td><code>CRO.initTabs(root?)</code>, <code>CRO.selectTab(button, focus?)</code></td><td>-</td><td>Tabs only</td></tr>
+</table>
+<p>Details and examples: <a href="comecando/javascript.html">JavaScript</a>, <a href="kit/dialogos.html">Dialogs</a>.</p>
+
+<h2 id="where">Where to read next</h2>
+<p>Back to the <a href="index.html">index</a>. Component pages repeat their own caveats, so reading a single page is enough for a single component.</p>
+</main>
+</body></html>

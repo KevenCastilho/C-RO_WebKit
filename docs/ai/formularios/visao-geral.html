@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visão geral · C-RO AI reference</title><meta name="description" content="Todos os controles de formulário do Bootstrap com o visual de campo do jogo: fundo cinza-claro, borda fina, rótulos azuis.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Formulários › Visão geral</nav>
+<main>
+<h1>Visão geral</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Formulários</dd><dt>Human version (rendered examples)</dt><dd><a href="../../formularios/visao-geral.html">formularios/visao-geral.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p>Todos os controles de formulário do Bootstrap com o visual de campo do jogo: fundo cinza-claro, borda fina, rótulos azuis.</p>
+<h2 id="exemplo">Exemplo</h2>
+<pre><code class="language-html">&lt;form style=&quot;max-width:420px&quot;&gt;
+  &lt;div class=&quot;mb-2&quot;&gt;&lt;label for=&quot;vg-email&quot; class=&quot;form-label&quot;&gt;E-mail&lt;/label&gt;&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;vg-email&quot; placeholder=&quot;nome@exemplo.com&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;mb-2&quot;&gt;&lt;label for=&quot;vg-sel&quot; class=&quot;form-label&quot;&gt;Classe&lt;/label&gt;&lt;select id=&quot;vg-sel&quot; class=&quot;form-select&quot;&gt;&lt;option&gt;Espadachim&lt;/option&gt;&lt;option&gt;Mago&lt;/option&gt;&lt;option&gt;Gatuno&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
+  &lt;div class=&quot;mb-2&quot;&gt;&lt;label for=&quot;vg-msg&quot; class=&quot;form-label&quot;&gt;Mensagem&lt;/label&gt;&lt;textarea class=&quot;form-control&quot; id=&quot;vg-msg&quot; rows=&quot;2&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
+  &lt;div class=&quot;form-check mb-2&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;vg-ck&quot; checked&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;vg-ck&quot;&gt;Lembrar de mim&lt;/label&gt;&lt;/div&gt;
+  &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+<h2 id="dois-jeitos-de-escrever">Dois jeitos de escrever</h2>
+<ol>
+<li><strong>Bootstrap</strong>: <code>form-control</code>, <code>form-select</code>, <code>form-check-input</code>...</li>
+<li><strong>Nativo do kit</strong>: <code>cro-input</code>, <code>cro-select</code>, <code>cro-textarea</code>, <code>cro-check</code>, <code>cro-field</code>, <code>cro-label</code>. Veja <a href="../kit/formularios-cro.html">Formulários cro-*</a>.</li>
+<li><strong>Elementos nus</strong>: sem classe nenhuma, o <code>&lt;input&gt;</code> já sai estilizado (<a href="../conteudo/reboot.html">Reboot</a>).</li>
+</ol>
+<h2 id="tipos-de-input">Tipos de input</h2>
+<pre><code class="language-html">&lt;div class=&quot;row g-2&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;t-text&quot;&gt;Texto&lt;/label&gt;&lt;input id=&quot;t-text&quot; class=&quot;form-control&quot; value=&quot;valor&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;t-pw&quot;&gt;Senha&lt;/label&gt;&lt;input id=&quot;t-pw&quot; type=&quot;password&quot; class=&quot;form-control&quot; value=&quot;segredo&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;t-num&quot;&gt;Número&lt;/label&gt;&lt;input id=&quot;t-num&quot; type=&quot;number&quot; class=&quot;form-control&quot; value=&quot;42&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;t-date&quot;&gt;Data&lt;/label&gt;&lt;input id=&quot;t-date&quot; type=&quot;date&quot; class=&quot;form-control&quot; value=&quot;2026-10-08&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;t-time&quot;&gt;Hora&lt;/label&gt;&lt;input id=&quot;t-time&quot; type=&quot;time&quot; class=&quot;form-control&quot; value=&quot;12:30&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;t-file&quot;&gt;Arquivo&lt;/label&gt;&lt;input id=&quot;t-file&quot; type=&quot;file&quot; class=&quot;form-control&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;t-color&quot;&gt;Cor&lt;/label&gt;&lt;input id=&quot;t-color&quot; type=&quot;color&quot; class=&quot;form-control form-control-color&quot; value=&quot;#3366cc&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;t-ro&quot;&gt;Somente leitura&lt;/label&gt;&lt;input id=&quot;t-ro&quot; class=&quot;form-control&quot; value=&quot;readonly&quot; readonly&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;t-dis&quot;&gt;Desabilitado&lt;/label&gt;&lt;input id=&quot;t-dis&quot; class=&quot;form-control&quot; value=&quot;disabled&quot; disabled&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<aside><strong>Limitation</strong><p>Os popups nativos de data, hora e cor continuam do navegador; o CSS só estiliza o campo.</p></aside>
+<h2 id="texto-de-ajuda-e-extras">Texto de ajuda e extras</h2>
+<pre><code class="language-html">&lt;div style=&quot;max-width:360px&quot;&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;vg-s&quot;&gt;Senha&lt;/label&gt;&lt;input class=&quot;form-control&quot; id=&quot;vg-s&quot; type=&quot;password&quot; aria-describedby=&quot;vg-help&quot;&gt;
+  &lt;div id=&quot;vg-help&quot; class=&quot;form-text&quot;&gt;form-text: mínimo de 8 caracteres.&lt;/div&gt;
+  &lt;div class=&quot;form-check form-check-reverse mt-2&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;vg-rev&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;vg-rev&quot;&gt;form-check-reverse&lt;/label&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../conteudo/icones.html">« Ícones</a> · <a href="../formularios/form-control.html">Form control »</a></nav>
+</main>
+</body></html>

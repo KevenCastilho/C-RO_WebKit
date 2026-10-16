@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Z-index · C-RO AI reference</title><meta name="description" content="Camadas fixas do Bootstrap para componentes sobrepostos. O kit as mantém.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Layout › Z-index</nav>
+<main>
+<h1>Z-index</h1>
+<dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Layout</dd><dt>Human version (rendered examples)</dt><dd><a href="../../layout/z-index.html">layout/z-index.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p>Camadas fixas do Bootstrap para componentes sobrepostos. O kit as mantém.</p>
+<h2 id="escala">Escala</h2>
+<table>
+<thead>
+<tr>
+<th>Camada</th>
+<th>z-index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dropdown</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>sticky</td>
+<td>1020</td>
+</tr>
+<tr>
+<td>fixed</td>
+<td>1030</td>
+</tr>
+<tr>
+<td>offcanvas-backdrop</td>
+<td>1040</td>
+</tr>
+<tr>
+<td>offcanvas</td>
+<td>1045</td>
+</tr>
+<tr>
+<td>modal-backdrop</td>
+<td>1050</td>
+</tr>
+<tr>
+<td>modal</td>
+<td>1055</td>
+</tr>
+<tr>
+<td>popover</td>
+<td>1070</td>
+</tr>
+<tr>
+<td>tooltip</td>
+<td>1080</td>
+</tr>
+<tr>
+<td>toast</td>
+<td>1090</td>
+</tr>
+</tbody>
+</table>
+<p>Utilitários: <code>z-n1</code>, <code>z-0</code>, <code>z-1</code>, <code>z-2</code>, <code>z-3</code>.</p>
+<pre><code class="language-html">&lt;div class=&quot;position-absolute z-1 bd-demo-box&quot; style=&quot;left:20px;top:20px;width:120px;height:60px;background:#cfe&quot;&gt;z-1&lt;/div&gt;
+&lt;div class=&quot;position-absolute z-2 bd-demo-box&quot; style=&quot;left:70px;top:50px;width:120px;height:60px;background:#fec&quot;&gt;z-2&lt;/div&gt;</code></pre>
+<aside><strong>Note</strong><p>Os diálogos <code>CRO.alert/confirm/prompt</code> usam <code>&lt;dialog&gt;</code> na camada superior (top layer) do navegador, acima de qualquer z-index.</p></aside>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../layout/gutters.html">« Gutters</a> · <a href="../conteudo/reboot.html">Reboot e elementos nus »</a></nav>
+</main>
+</body></html>

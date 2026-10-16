@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abas cro-* · C-RO AI reference</title><meta name="description" content="Abas horizontais em pílula e verticais em escada, com ARIA e teclado automáticos via data-cro-tabs .">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Peças nativas do kit › Abas cro-*</nav>
+<main>
+<h1>Abas cro-*</h1>
+<dl><dt>Type</dt><dd>Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.</dd><dt>Section</dt><dd>Peças nativas do kit</dd><dt>Human version (rendered examples)</dt><dd><a href="../../kit/abas-cro.html">kit/abas-cro.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-tab-panel</code> <code>cro-tab-panels</code> <code>cro-tabs</code> <code>cro-tabs-v</code> <code>cro-tabs-v__body</code> <code>cro-tabs-v__btn</code> <code>cro-tabs-v__rail</code> <code>cro-tabs__btn</code> <code>cro-titlebar</code> <code>cro-titlebar__title</code> <code>cro-window</code> <code>cro-window__body</code> <code>is-active</code></dd><dt>data-cro-* attributes in this page</dt><dd><code>data-cro-panel</code> <code>data-cro-panels</code> <code>data-cro-tab</code> <code>data-cro-tabs</code></dd></dl>
+<div lang="pt-BR">
+<p>Abas horizontais em pílula e verticais em escada, com ARIA e teclado automáticos via <code>data-cro-tabs</code>.</p>
+<h2 id="horizontais-pílula">Horizontais (pílula)</h2>
+<pre><code class="language-html">&lt;section class=&quot;cro-window&quot; style=&quot;width:320px&quot;&gt;&lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Opções&lt;/span&gt;&lt;/header&gt;
+&lt;div class=&quot;cro-window__body&quot;&gt;
+  &lt;div data-cro-tabs data-cro-panels=&quot;#ab-h&quot;&gt;&lt;div class=&quot;cro-tabs&quot;&gt;&lt;button class=&quot;cro-tabs__btn is-active&quot; data-cro-tab=&quot;1&quot;&gt;Geral&lt;/button&gt;&lt;button class=&quot;cro-tabs__btn&quot; data-cro-tab=&quot;2&quot;&gt;Áudio&lt;/button&gt;&lt;button class=&quot;cro-tabs__btn&quot; data-cro-tab=&quot;3&quot;&gt;Vídeo&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;cro-tab-panels&quot; id=&quot;ab-h&quot;&gt;&lt;div data-cro-panel=&quot;1&quot;&gt;Painel Geral&lt;/div&gt;&lt;div data-cro-panel=&quot;2&quot; hidden&gt;Painel Áudio&lt;/div&gt;&lt;div data-cro-panel=&quot;3&quot; hidden&gt;Painel Vídeo&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;</code></pre>
+<h2 id="verticais-escada">Verticais (escada)</h2>
+<pre><code class="language-html">&lt;section class=&quot;cro-window&quot; style=&quot;width:280px&quot;&gt;&lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Itens&lt;/span&gt;&lt;/header&gt;
+&lt;div class=&quot;cro-tabs-v&quot; data-cro-tabs data-cro-panels=&quot;#ab-v&quot;&gt;
+  &lt;div class=&quot;cro-tabs-v__rail&quot;&gt;&lt;button class=&quot;cro-tabs-v__btn is-active&quot; data-cro-tab=&quot;a&quot;&gt;Item&lt;/button&gt;&lt;button class=&quot;cro-tabs-v__btn&quot; data-cro-tab=&quot;b&quot;&gt;Equip&lt;/button&gt;&lt;button class=&quot;cro-tabs-v__btn&quot; data-cro-tab=&quot;c&quot;&gt;Etc&lt;/button&gt;&lt;/div&gt;
+  &lt;div class=&quot;cro-tabs-v__body&quot; id=&quot;ab-v&quot;&gt;&lt;div data-cro-panel=&quot;a&quot;&gt;Itens&lt;/div&gt;&lt;div data-cro-panel=&quot;b&quot; hidden&gt;Equipamentos&lt;/div&gt;&lt;div data-cro-panel=&quot;c&quot; hidden&gt;Outros&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;</code></pre>
+<h2 id="como-funciona">Como funciona</h2>
+<ul>
+<li><code>data-cro-tabs</code> no contêiner dos botões; <code>data-cro-tab="id"</code> em cada botão; <code>data-cro-panel="id"</code> em cada painel.</li>
+<li>Os painéis ficam em <code>data-cro-panels="#seletor"</code> ou no elemento irmão.</li>
+<li>O kit coloca <code>role=tablist/tab/tabpanel</code>, <code>aria-selected</code>, <code>tabindex</code> e as teclas ←/→/Home/End.</li>
+<li>Chame <code>CRO.init(root)</code> depois de inserir abas novas no DOM.</li>
+</ul>
+<aside><strong>Note</strong><p>Com Bootstrap, use <code>nav-tabs</code> e <code>nav-pills</code> (<a href="../componentes/navs-tabs.html">Navs e abas</a>); o visual é o mesmo.</p></aside>
+<h2 id="classes-do-painel">Classes do painel</h2>
+<p><code>cro-tab-panels</code> envolve os painéis e <code>cro-tab-panel</code> marca um painel estilizado (com <code>data-cro-panel</code>):</p>
+<pre><code class="language-html">&lt;div class=&quot;cro-tab-panels&quot; id=&quot;p&quot;&gt;&lt;div class=&quot;cro-tab-panel&quot; data-cro-panel=&quot;1&quot;&gt;Painel&lt;/div&gt;&lt;/div&gt;</code></pre>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../kit/botoes-cro.html">« Botões cro-*</a> · <a href="../kit/formularios-cro.html">Formulários cro-* »</a></nav>
+</main>
+</body></html>

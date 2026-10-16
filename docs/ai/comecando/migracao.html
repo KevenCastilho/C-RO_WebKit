@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De Bootstrap para C-RO · C-RO AI reference</title><meta name="description" content="Você já tem um site em Bootstrap 5? A migração é trocar dois arquivos. Veja o que muda no visual e o que fica igual.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Começando › De Bootstrap para C-RO</nav>
+<main>
+<h1>De Bootstrap para C-RO</h1>
+<dl><dt>Type</dt><dd>Guide. Explanatory page about using the kit.</dd><dt>Section</dt><dd>Começando</dd><dt>Human version (rendered examples)</dt><dd><a href="../../comecando/migracao.html">comecando/migracao.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p>Você já tem um site em Bootstrap 5? A migração é trocar dois arquivos. Veja o que muda no visual e o que fica igual.</p>
+<h2 id="passo-a-passo">Passo a passo</h2>
+<ol>
+<li>Troque <code>bootstrap.min.css</code> por <code>c-ro-bs.min.css</code> (e leve a pasta <code>fonts/</code> junto).</li>
+<li>Troque <code>bootstrap.bundle.min.js</code> por <code>c-ro-bs.min.js</code>.</li>
+<li>Remova a inicialização duplicada, se houver. O bundle já traz <code>bootstrap</code> global.</li>
+<li>Abra o site. Revise o que o jogo não tem (lista abaixo).</li>
+</ol>
+<aside><strong>Tip</strong><p>Não mude a marcação. O kit <strong>não cria classes novas</strong> para o que o Bootstrap já oferece.</p></aside>
+<h2 id="mapa-bootstrap-kit">Mapa Bootstrap → kit</h2>
+<table>
+<thead>
+<tr>
+<th>Bootstrap</th>
+<th>No kit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.btn</code> (+ cores, outline, sm/lg)</td>
+<td>Botão de 20px do jogo (cores contextuais derivadas)</td>
+</tr>
+<tr>
+<td><code>.btn-close</code></td>
+<td>Botão de sistema "fechar"</td>
+</tr>
+<tr>
+<td><code>.form-control</code>, <code>.form-select</code>, <code>.form-check</code>, <code>.form-range</code>, <code>.input-group</code></td>
+<td>Formulários do jogo</td>
+</tr>
+<tr>
+<td><code>.nav-tabs</code> / <code>.nav-pills</code></td>
+<td>Abas em pílula; <code>.flex-column</code> vira abas em escada (verticais)</td>
+</tr>
+<tr>
+<td><code>.modal</code></td>
+<td>Janela do jogo (header = barra de título)</td>
+</tr>
+<tr>
+<td><code>.card</code></td>
+<td>Janela completa (partes só se declaradas)</td>
+</tr>
+<tr>
+<td><code>.toast</code></td>
+<td>Janela pequena; sem header vira sysbox</td>
+</tr>
+<tr>
+<td><code>.popover</code></td>
+<td>Janela pequena (seta do Bootstrap, derivada)</td>
+</tr>
+<tr>
+<td><code>.offcanvas</code></td>
+<td>Janela derivada (referência: Storage)</td>
+</tr>
+<tr>
+<td><code>.alert</code></td>
+<td>Sysbox com cores contextuais derivadas</td>
+</tr>
+<tr>
+<td><code>.badge</code></td>
+<td>Pílula de 16px</td>
+</tr>
+<tr>
+<td><code>.dropdown-menu</code></td>
+<td>Menu do kit</td>
+</tr>
+<tr>
+<td><code>.tooltip</code></td>
+<td>Dica do kit (sem seta)</td>
+</tr>
+<tr>
+<td><code>.accordion</code></td>
+<td>Árvore/acordeão com pastas aberta/fechada</td>
+</tr>
+<tr>
+<td><code>.progress</code></td>
+<td>Barra "gze" (cores <code>bg-*</code> viram variantes da barra)</td>
+</tr>
+<tr>
+<td><code>.pagination</code></td>
+<td>Pager (primeira/anterior/próxima/última com ícones do jogo)</td>
+</tr>
+<tr>
+<td><code>.list-group</code>, <code>.table</code></td>
+<td>Lista e tabela do kit</td>
+</tr>
+<tr>
+<td><code>.navbar</code></td>
+<td><code>nav-link</code> e toggler são botões do kit</td>
+</tr>
+<tr>
+<td><code>.breadcrumb</code>, <code>.spinner-*</code>, <code>.carousel</code>, <code>.placeholder</code>, <code>.collapse</code></td>
+<td>Derivações mínimas</td>
+</tr>
+<tr>
+<td>Grid, utilitários, helpers, JS</td>
+<td>Bootstrap puro</td>
+</tr>
+</tbody>
+</table>
+<h2 id="o-que-pode-precisar-de-ajuste">O que pode precisar de ajuste</h2>
+<ul>
+<li><strong>Alturas fixas</strong>: botões e campos do jogo têm altura própria (18–20px). Se o seu CSS fixava alturas, revise.</li>
+<li><strong>Tamanho de fonte</strong>: a base é 12px (como o jogo). Títulos seguem a escala do Bootstrap relativa a isso.</li>
+<li><strong>Customização de Sass</strong>: não há Sass para o consumidor. Cores do tema são compiladas no build (veja <a href="customizacao.html">Customização</a>).</li>
+<li><strong>Sombras e raios</strong>: o jogo tem bordas de 2–3px e quase nenhum arredondamento; <code>rounded-*</code> funciona, mas o visual fica fora do estilo.</li>
+</ul>
+<h2 id="cursor-e-favicon">Cursor e favicon</h2>
+<p>Ao migrar, <strong>todo</strong> o site passa a usar os cursores do Ragnarok. Se alguma parte precisa de outro cursor, declare <code>cursor:</code> no seu CSS (ele vence). O favicon do kit só entra se o site não declarar um.</p>
+<h2 id="classes-internas-do-bootstrap-você-não-escreve">Classes internas do Bootstrap (você não escreve)</h2>
+<p>O Bootstrap aplica estas classes sozinho durante transições e posicionamento; o kit as respeita e <strong>não</strong> as altera: <code>collapsing</code>, <code>showing</code>, <code>hiding</code>, <code>carousel-item-next</code>, <code>carousel-item-prev</code>, <code>carousel-item-start</code>, <code>carousel-item-end</code>, <code>pointer-event</code>, <code>bs-tooltip-top</code>, <code>bs-tooltip-bottom</code>, <code>bs-tooltip-start</code>, <code>bs-tooltip-end</code>, <code>bs-tooltip-auto</code>, <code>bs-popover-top</code>, <code>bs-popover-bottom</code>, <code>bs-popover-start</code>, <code>bs-popover-end</code>, <code>bs-popover-auto</code>, <code>popover-arrow</code>, <code>popover-header</code>, <code>popover-body</code>, <code>modal-static</code> (modal que balança ao clicar fora com <code>data-bs-backdrop="static"</code>) e <code>bi</code> (ícones do Bootstrap Icons, não incluídos).</p>
+<p>Variações por breakpoint que existem no Bootstrap e funcionam igual no kit: <code>list-group-horizontal-lg</code>, <code>list-group-horizontal-xl</code>, <code>list-group-horizontal-xxl</code>, <code>navbar-expand-xl</code>, <code>navbar-expand-xxl</code>, <code>offcanvas-md</code>, <code>offcanvas-xl</code>, <code>offcanvas-xxl</code>, <code>table-responsive-md</code>, <code>table-responsive-lg</code>, <code>table-responsive-xl</code>, <code>table-responsive-xxl</code>.</p>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../comecando/para-ia.html">« Para IAs</a> · <a href="../layout/breakpoints.html">Breakpoints »</a></nav>
+</main>
+</body></html>
