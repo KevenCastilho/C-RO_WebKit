@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/visao-geral",
+ "title": "Visão geral",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Utilitários são classes de uma propriedade só. Todos os do Bootstrap 5.3 funcionam, fora do layer; só display e visibilidade levam !important.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/visao-geral.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/visao-geral.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Visão geral\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/visao-geral.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nUtilitários são classes de uma propriedade só. Todos os do Bootstrap 5.3 funcionam, fora do layer; só display e visibilidade levam !important.\n\n## Como funcionam\n\n```\n<div class=\"p-3 border rounded bg-light\">p-3 border rounded bg-light</div>\n<div class=\"p-2 text-bg-primary fw-bold\">text-bg-primary fw-bold</div>\n```\n\n- Aplicam-se sem quebrar o kit: o CSS do kit está fora do layer do Bootstrap, e os utilitários vêm depois.\n- Para display (d-none, d-flex) e visibilidade o Bootstrap usa !important, e o kit mantém assim para que d-none esconda de verdade.\n- São responsivos: d-md-flex, mb-lg-3, text-xl-end.\n\n## Famílias\n\nFundo · Bordas · Cores · Display · Flex · Float · Interações · Link · Object fit · Opacidade · Overflow · Posição · Sombras · Tamanho · Espaçamento · Texto · Alinhamento vertical · Visibilidade\n\nNote\n\nUtilitários próprios do kit: cro-flex, cro-gap-2, cro-items-center, cro-m-0, cro-mb-2, cro-mb-4, cro-mt-2, cro-block. Servem para quem usa só c-ro.css, sem Bootstrap.\n« Visualmente oculto · Fundo »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"p-3 border rounded bg-light\">p-3 border rounded bg-light</div>\n<div class=\"p-2 text-bg-primary fw-bold\">text-bg-primary fw-bold</div>"
+  }
+ ]
+}

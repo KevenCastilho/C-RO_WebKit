@@ -13,25 +13,97 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <div lang="pt-BR">
 <p>Alinhamento, ordem, deslocamento e quebra de colunas. Tudo igual ao Bootstrap.</p>
 <h2 id="alinhamento-vertical">Alinhamento vertical</h2>
-<pre><code class="language-html">&lt;div class=&quot;row align-items-start&quot; style=&quot;height:60px&quot;&gt;&lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;start&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;start&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;row align-items-center mt-2&quot; style=&quot;height:60px&quot;&gt;&lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;center&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;center&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;row align-items-end mt-2&quot; style=&quot;height:60px&quot;&gt;&lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;end&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;end&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;row align-items-start&quot; style=&quot;height:60px&quot;&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;start&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;start&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row align-items-center mt-2&quot; style=&quot;height:60px&quot;&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;center&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;center&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row align-items-end mt-2&quot; style=&quot;height:60px&quot;&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;end&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;end&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="alinhamento-horizontal">Alinhamento horizontal</h2>
-<pre><code class="language-html">&lt;div class=&quot;row justify-content-center mb-2&quot;&gt;&lt;div class=&quot;col-4&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;center&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col-4&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;center&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;row justify-content-between&quot;&gt;&lt;div class=&quot;col-4&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;between&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col-4&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;between&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;row justify-content-center mb-2&quot;&gt;
+  &lt;div class=&quot;col-4&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;center&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-4&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;center&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row justify-content-between&quot;&gt;
+  &lt;div class=&quot;col-4&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;between&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-4&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;between&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="ordem-e-deslocamento">Ordem e deslocamento</h2>
-<pre><code class="language-html">&lt;div class=&quot;row mb-2&quot;&gt;&lt;div class=&quot;col order-2&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;1º no HTML, order-2&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col order-1&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;2º no HTML, order-1&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-4&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;col-4&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col-4 offset-4&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;col-4 offset-4&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;row mb-2&quot;&gt;
+  &lt;div class=&quot;col order-2&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;1º no HTML, order-2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col order-1&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;2º no HTML, order-1&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-4&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;col-4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-4 offset-4&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;col-4 offset-4&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="quebra-de-linha">Quebra de linha</h2>
 <pre><code class="language-html">&lt;div class=&quot;row g-2&quot;&gt;
-  &lt;div class=&quot;col-6&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;col-6&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col-6&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;col-6&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-6&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;col-6&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-6&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;col-6&lt;/div&gt;
+  &lt;/div&gt;
   &lt;div class=&quot;w-100&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;col-6&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;col-6 (nova linha)&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col-6&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;col-6&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-6&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;col-6 (nova linha)&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-6&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;col-6&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 <h2 id="colunas-por-linha">Colunas por linha</h2>
 <pre><code class="language-html">&lt;div class=&quot;row row-cols-3 g-2&quot;&gt;
-  &lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;3&lt;/div&gt;&lt;/div&gt;
-  &lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;bd-demo-box&quot;&gt;5&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;bd-demo-box&quot;&gt;5&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../layout/grid.html">« Grid</a> · <a href="../layout/gutters.html">Gutters »</a></nav>

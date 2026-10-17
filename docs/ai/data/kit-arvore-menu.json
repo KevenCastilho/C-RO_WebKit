@@ -1,0 +1,51 @@
+{
+ "id": "kit/arvore-menu",
+ "title": "Árvore, menu e lista",
+ "type": "Native kit piece",
+ "section": "Peças nativas do kit",
+ "summary": "Árvore de pastas ( details ), menu de contexto, lista selecionável e tabela.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/arvore-menu.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/kit/arvore-menu.html",
+ "classes": [
+  "cro-ico",
+  "cro-ico--page-first",
+  "cro-ico--page-last",
+  "cro-ico--page-next",
+  "cro-ico--page-prev",
+  "cro-list",
+  "cro-list__item",
+  "cro-menu",
+  "cro-pager",
+  "cro-pager__n",
+  "cro-table",
+  "cro-tree",
+  "is-current",
+  "is-disabled",
+  "is-selected"
+ ],
+ "data_attributes": [],
+ "text": "# Árvore, menu e lista\n\nType: Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.\nSection: Peças nativas do kit\nHuman version (rendered examples): kit/arvore-menu.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-ico cro-ico--page-first cro-ico--page-last cro-ico--page-next cro-ico--page-prev cro-list cro-list__item cro-menu cro-pager cro-pager__n cro-table cro-tree is-current is-disabled is-selected\n\nÁrvore de pastas (details), menu de contexto, lista selecionável e tabela.\n\n## Árvore\n\n```\n<ul class=\"cro-tree\" role=\"tree\" style=\"max-width:260px\">\n  <li>\n    <details open>\n      <summary>Equipamentos</summary>\n      <ul>\n        <li>Espada</li>\n        <li>Escudo</li>\n        <li>\n          <details>\n            <summary>Armaduras</summary>\n            <ul>\n              <li>Couro</li>\n            </ul>\n          </details>\n        </li>\n      </ul>\n    </details>\n  </li>\n  <li>\n    <details>\n      <summary>Consumíveis</summary>\n      <ul>\n        <li>Poção</li>\n      </ul>\n    </details>\n  </li>\n</ul>\n```\n\n## Menu\n\n```\n<ul class=\"cro-menu\" style=\"width:160px\">\n  <li>Abrir</li>\n  <li>Renomear</li>\n  <li role=\"separator\"></li>\n  <li aria-disabled=\"true\">Desabilitado</li>\n</ul>\n```\n\n## Lista e tabela\n\n```\n<ul class=\"cro-list\" style=\"width:180px\">\n  <li class=\"cro-list__item\">Item A</li>\n  <li class=\"cro-list__item is-selected\">Selecionado</li>\n  <li class=\"cro-list__item\">Item C</li>\n</ul>\n<table class=\"cro-table\" style=\"width:240px\">\n  <thead>\n    <tr>\n      <th>Nome</th>\n      <th>Lv</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ana</td>\n      <td>99</td>\n    </tr>\n    <tr>\n      <td>Bia</td>\n      <td>50</td>\n    </tr>\n  </tbody>\n</table>\n```\n\n## Paginação\n\n```\n<div class=\"cro-pager\">\n  <button class=\"cro-ico cro-ico--page-first\" aria-label=\"primeira\"></button>\n  <button class=\"cro-ico cro-ico--page-prev\" aria-label=\"anterior\"></button>\n  <button class=\"cro-pager__n\">1</button>\n  <button class=\"cro-pager__n is-current\">2</button>\n  <button class=\"cro-pager__n\">3</button>\n  <button class=\"cro-ico cro-ico--page-next\" aria-label=\"próxima\"></button>\n  <button class=\"cro-ico cro-ico--page-last\" aria-label=\"última\"></button>\n</div>\n```\n\nNote\n\nA seleção azul vem de --cro-sel-bg. Com Bootstrap: List group, Dropdowns, Accordion.\n\n## Estados por classe\n\nItens de menu desabilitados: aria-disabled=\"true\" ou a classe is-disabled. Itens de lista selecionados: is-selected. Páginas atuais do pager: is-current.\n\n```\n<ul class=\"cro-menu\" style=\"width:160px\">\n  <li>Normal</li>\n  <li class=\"is-disabled\">is-disabled</li>\n  <li aria-disabled=\"true\">aria-disabled</li>\n</ul>\n```\n\n« Barras, progress e grp · Diálogos (CRO.alert...) »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<ul class=\"cro-tree\" role=\"tree\" style=\"max-width:260px\">\n  <li>\n    <details open>\n      <summary>Equipamentos</summary>\n      <ul>\n        <li>Espada</li>\n        <li>Escudo</li>\n        <li>\n          <details>\n            <summary>Armaduras</summary>\n            <ul>\n              <li>Couro</li>\n            </ul>\n          </details>\n        </li>\n      </ul>\n    </details>\n  </li>\n  <li>\n    <details>\n      <summary>Consumíveis</summary>\n      <ul>\n        <li>Poção</li>\n      </ul>\n    </details>\n  </li>\n</ul>"
+  },
+  {
+   "language": "html",
+   "code": "<ul class=\"cro-menu\" style=\"width:160px\">\n  <li>Abrir</li>\n  <li>Renomear</li>\n  <li role=\"separator\"></li>\n  <li aria-disabled=\"true\">Desabilitado</li>\n</ul>"
+  },
+  {
+   "language": "html",
+   "code": "<ul class=\"cro-list\" style=\"width:180px\">\n  <li class=\"cro-list__item\">Item A</li>\n  <li class=\"cro-list__item is-selected\">Selecionado</li>\n  <li class=\"cro-list__item\">Item C</li>\n</ul>\n<table class=\"cro-table\" style=\"width:240px\">\n  <thead>\n    <tr>\n      <th>Nome</th>\n      <th>Lv</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ana</td>\n      <td>99</td>\n    </tr>\n    <tr>\n      <td>Bia</td>\n      <td>50</td>\n    </tr>\n  </tbody>\n</table>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"cro-pager\">\n  <button class=\"cro-ico cro-ico--page-first\" aria-label=\"primeira\"></button>\n  <button class=\"cro-ico cro-ico--page-prev\" aria-label=\"anterior\"></button>\n  <button class=\"cro-pager__n\">1</button>\n  <button class=\"cro-pager__n is-current\">2</button>\n  <button class=\"cro-pager__n\">3</button>\n  <button class=\"cro-ico cro-ico--page-next\" aria-label=\"próxima\"></button>\n  <button class=\"cro-ico cro-ico--page-last\" aria-label=\"última\"></button>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<ul class=\"cro-menu\" style=\"width:160px\">\n  <li>Normal</li>\n  <li class=\"is-disabled\">is-disabled</li>\n  <li aria-disabled=\"true\">aria-disabled</li>\n</ul>"
+  }
+ ]
+}

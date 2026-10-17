@@ -1,0 +1,23 @@
+{
+ "id": "componentes/btn-close",
+ "title": "Botão fechar",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "btn-close vira o botão de sistema \"fechar\" 11×11 do jogo.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/btn-close.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/btn-close.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Botão fechar\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/btn-close.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nbtn-close vira o botão de sistema \"fechar\" 11×11 do jogo.\n\n```\n<button type=\"button\" class=\"btn-close\" aria-label=\"Fechar\"></button>\n<button type=\"button\" class=\"btn-close\" disabled aria-label=\"Fechar\"></button>\n```\n\nDentro de modal, alert, toast e offcanvas ele já aparece no lugar certo da barra de título.\n\nNote\n\nSempre dê aria-label ao botão (o ícone não tem texto). Nativo do kit: cro-btn cro-btn--close e cro-sys-btn cro-sys-btn--close.\n\n## Versão branca\n\nbtn-close-white é para fundos escuros (por exemplo text-bg-dark):\n\n```\n<div class=\"p-2 bg-dark d-flex align-items-center gap-2 text-white\">\n  Fundo escuro\n  <button type=\"button\" class=\"btn-close btn-close-white\" aria-label=\"Fechar\"></button>\n</div>\n```\n\n« Carousel · Collapse »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<button type=\"button\" class=\"btn-close\" aria-label=\"Fechar\"></button>\n<button type=\"button\" class=\"btn-close\" disabled aria-label=\"Fechar\"></button>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"p-2 bg-dark d-flex align-items-center gap-2 text-white\">\n  Fundo escuro\n  <button type=\"button\" class=\"btn-close btn-close-white\" aria-label=\"Fechar\"></button>\n</div>"
+  }
+ ]
+}

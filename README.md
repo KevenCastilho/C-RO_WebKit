@@ -15,6 +15,8 @@ Escreva o Bootstrap de sempre. A página sai com as janelas, botões, formulári
 [**Começar em 1 minuto**](#começar-em-1-minuto) ·
 [**Baixar**](https://github.com/KevenCastilho/C-RO_WebKit/archive/refs/heads/main.zip)
 
+<sub>Vai pedir a uma IA para conhecer ou usar o C-RO? Aponte para a <a href="https://kevencastilho.github.io/C-RO_WebKit/docs/ai/index.html">documentação para IAs</a> (https://kevencastilho.github.io/C-RO_WebKit/docs/ai/index.html).</sub>
+
 <img src="docs/assets/img/c-ro-showcase.png" alt="Janelas, botões, formulários, abas, barras HP/SP, tabela, toast e paginação no estilo do Ragnarok Online" width="100%">
 
 </div>

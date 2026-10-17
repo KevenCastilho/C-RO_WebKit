@@ -1,0 +1,27 @@
+{
+ "id": "layout/grid",
+ "title": "Grid",
+ "type": "Bootstrap drop-in",
+ "section": "Layout",
+ "summary": "Sistema de 12 colunas com flexbox. As classes row e col-* são as do Bootstrap, sem alteração.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/layout/grid.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/layout/grid.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Grid\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Layout\nHuman version (rendered examples): layout/grid.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nSistema de 12 colunas com flexbox. As classes row e col-* são as do Bootstrap, sem alteração.\n\n## Como funciona\n\n- Containers (.container) centralizam o conteúdo.\n- Linhas (.row) são grupos horizontais de colunas.\n- Colunas (.col, .col-6, .col-md-4...) somam até 12 por linha; o excedente quebra para a linha de baixo.\n- .g-* controla o espaçamento (gutter) entre colunas.\n\n```\n<div class=\"container-fluid\">\n  <div class=\"row\">\n    <div class=\"col\"><div class=\"bd-demo-box\">1 de 3</div></div>\n    <div class=\"col\"><div class=\"bd-demo-box\">2 de 3</div></div>\n    <div class=\"col\"><div class=\"bd-demo-box\">3 de 3</div></div>\n  </div>\n</div>\n```\n\n## Larguras diferentes\n\n```\n<div class=\"row g-2 mb-2\">\n  <div class=\"col-8\"><div class=\"bd-demo-box\">col-8</div></div>\n  <div class=\"col-4\"><div class=\"bd-demo-box\">col-4</div></div>\n</div>\n<div class=\"row g-2 mb-2\">\n  <div class=\"col-md-4\"><div class=\"bd-demo-box\">col-md-4</div></div>\n  <div class=\"col-md-4\"><div class=\"bd-demo-box\">col-md-4</div></div>\n  <div class=\"col-md-4\"><div class=\"bd-demo-box\">col-md-4</div></div>\n</div>\n<div class=\"row g-2\">\n  <div class=\"col-auto\"><div class=\"bd-demo-box\">col-auto</div></div>\n  <div class=\"col\"><div class=\"bd-demo-box\">col (preenche)</div></div>\n</div>\n```\n\n## Colunas em janelas\n\nO grid é ideal para montar formulários dentro de janelas do jogo:\n\n```\n<div class=\"card\" style=\"max-width:520px\">\n  <div class=\"card-header\">Criar personagem</div>\n  <div class=\"card-body\">\n    <form class=\"row g-2\">\n      <div class=\"col-7\">\n        <label class=\"form-label\" for=\"g-nome\">Nome</label>\n        <input class=\"form-control\" id=\"g-nome\" value=\"Ana\">\n      </div>\n      <div class=\"col-5\">\n        <label class=\"form-label\" for=\"g-cl\">Classe</label>\n        <select class=\"form-select\" id=\"g-cl\">\n          <option>Espadachim</option>\n          <option>Mago</option>\n        </select>\n      </div>\n      <div class=\"col-12\"><button class=\"btn btn-primary\" type=\"submit\">Criar</button></div>\n    </form>\n  </div>\n</div>\n```\n\nNote\n\nPara o aninhamento, alinhamento e ordenação de colunas veja Colunas. Para espaçamento, Gutters.\n« Containers · Colunas »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"container-fluid\">\n  <div class=\"row\">\n    <div class=\"col\"><div class=\"bd-demo-box\">1 de 3</div></div>\n    <div class=\"col\"><div class=\"bd-demo-box\">2 de 3</div></div>\n    <div class=\"col\"><div class=\"bd-demo-box\">3 de 3</div></div>\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"row g-2 mb-2\">\n  <div class=\"col-8\"><div class=\"bd-demo-box\">col-8</div></div>\n  <div class=\"col-4\"><div class=\"bd-demo-box\">col-4</div></div>\n</div>\n<div class=\"row g-2 mb-2\">\n  <div class=\"col-md-4\"><div class=\"bd-demo-box\">col-md-4</div></div>\n  <div class=\"col-md-4\"><div class=\"bd-demo-box\">col-md-4</div></div>\n  <div class=\"col-md-4\"><div class=\"bd-demo-box\">col-md-4</div></div>\n</div>\n<div class=\"row g-2\">\n  <div class=\"col-auto\"><div class=\"bd-demo-box\">col-auto</div></div>\n  <div class=\"col\"><div class=\"bd-demo-box\">col (preenche)</div></div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"card\" style=\"max-width:520px\">\n  <div class=\"card-header\">Criar personagem</div>\n  <div class=\"card-body\">\n    <form class=\"row g-2\">\n      <div class=\"col-7\">\n        <label class=\"form-label\" for=\"g-nome\">Nome</label>\n        <input class=\"form-control\" id=\"g-nome\" value=\"Ana\">\n      </div>\n      <div class=\"col-5\">\n        <label class=\"form-label\" for=\"g-cl\">Classe</label>\n        <select class=\"form-select\" id=\"g-cl\">\n          <option>Espadachim</option>\n          <option>Mago</option>\n        </select>\n      </div>\n      <div class=\"col-12\"><button class=\"btn btn-primary\" type=\"submit\">Criar</button></div>\n    </form>\n  </div>\n</div>"
+  }
+ ]
+}

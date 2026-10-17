@@ -19,10 +19,36 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <li>Qualquer classe sua, ou do Bootstrap, vence o estilo de elemento.</li>
 <li>Se você escrever <code>button { ... }</code> no seu CSS, o seu vence.</li>
 </ul>
-<pre><code class="language-html">&lt;h1&gt;Título h1&lt;/h1&gt;&lt;h2&gt;h2&lt;/h2&gt;&lt;h3&gt;h3&lt;/h3&gt;
-&lt;p&gt;Texto com &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;, &lt;b&gt;negrito&lt;/b&gt;, &lt;i&gt;itálico&lt;/i&gt;, &lt;mark&gt;mark&lt;/mark&gt;, &lt;del&gt;del&lt;/del&gt;, &lt;ins&gt;ins&lt;/ins&gt;, &lt;code&gt;code&lt;/code&gt; e &lt;kbd&gt;Ctrl&lt;/kbd&gt;.&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;Lista&lt;/li&gt;&lt;li&gt;de itens&lt;/li&gt;&lt;/ul&gt;
-&lt;dl&gt;&lt;dt&gt;Termo&lt;/dt&gt;&lt;dd&gt;Definição&lt;/dd&gt;&lt;/dl&gt;
+<pre><code class="language-html">&lt;h1&gt;Título h1&lt;/h1&gt;
+&lt;h2&gt;h2&lt;/h2&gt;
+&lt;h3&gt;h3&lt;/h3&gt;
+&lt;p&gt;
+  Texto com
+  &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;
+  ,
+  &lt;b&gt;negrito&lt;/b&gt;
+  ,
+  &lt;i&gt;itálico&lt;/i&gt;
+  ,
+  &lt;mark&gt;mark&lt;/mark&gt;
+  ,
+  &lt;del&gt;del&lt;/del&gt;
+  ,
+  &lt;ins&gt;ins&lt;/ins&gt;
+  ,
+  &lt;code&gt;code&lt;/code&gt;
+  e
+  &lt;kbd&gt;Ctrl&lt;/kbd&gt;
+  .
+&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lista&lt;/li&gt;
+  &lt;li&gt;de itens&lt;/li&gt;
+&lt;/ul&gt;
+&lt;dl&gt;
+  &lt;dt&gt;Termo&lt;/dt&gt;
+  &lt;dd&gt;Definição&lt;/dd&gt;
+&lt;/dl&gt;
 &lt;blockquote&gt;Citação em bloco.&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;pre&gt;pre
@@ -31,13 +57,39 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <pre><code class="language-html">&lt;button&gt;Botão nu&lt;/button&gt;
 &lt;input placeholder=&quot;input nu&quot;&gt;
 &lt;input type=&quot;number&quot; value=&quot;3&quot; style=&quot;width:60px&quot;&gt;
-&lt;select&gt;&lt;option&gt;Select nu&lt;/option&gt;&lt;option&gt;Outra&lt;/option&gt;&lt;/select&gt;
-&lt;input type=&quot;range&quot;&gt; &lt;meter value=&quot;.7&quot;&gt;&lt;/meter&gt; &lt;progress value=&quot;40&quot; max=&quot;100&quot;&gt;&lt;/progress&gt;
-&lt;input type=&quot;checkbox&quot; checked&gt; &lt;input type=&quot;radio&quot; name=&quot;rx&quot; checked&gt; &lt;input type=&quot;radio&quot; name=&quot;rx&quot;&gt;</code></pre>
+&lt;select&gt;
+  &lt;option&gt;Select nu&lt;/option&gt;
+  &lt;option&gt;Outra&lt;/option&gt;
+&lt;/select&gt;
+&lt;input type=&quot;range&quot;&gt;
+&lt;meter value=&quot;.7&quot;&gt;&lt;/meter&gt;
+&lt;progress value=&quot;40&quot; max=&quot;100&quot;&gt;&lt;/progress&gt;
+&lt;input type=&quot;checkbox&quot; checked&gt;
+&lt;input type=&quot;radio&quot; name=&quot;rx&quot; checked&gt;
+&lt;input type=&quot;radio&quot; name=&quot;rx&quot;&gt;</code></pre>
 <h2 id="estruturas">Estruturas</h2>
-<pre><code class="language-html">&lt;details open&gt;&lt;summary&gt;details / summary&lt;/summary&gt;Conteúdo recolhível, com pasta aberta/fechada do jogo.&lt;/details&gt;
-&lt;fieldset&gt;&lt;legend&gt;Grupo&lt;/legend&gt;&lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Opção&lt;/label&gt;&lt;/fieldset&gt;
-&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Item&lt;/th&gt;&lt;th&gt;Qtd&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Poção&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</code></pre>
+<pre><code class="language-html">&lt;details open&gt;
+  &lt;summary&gt;details / summary&lt;/summary&gt;
+  Conteúdo recolhível, com pasta aberta/fechada do jogo.
+&lt;/details&gt;
+&lt;fieldset&gt;
+  &lt;legend&gt;Grupo&lt;/legend&gt;
+  &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Opção&lt;/label&gt;
+&lt;/fieldset&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Item&lt;/th&gt;
+      &lt;th&gt;Qtd&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Poção&lt;/td&gt;
+      &lt;td&gt;12&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../layout/z-index.html">« Z-index</a> · <a href="../conteudo/tipografia.html">Tipografia »</a></nav>
 </main>

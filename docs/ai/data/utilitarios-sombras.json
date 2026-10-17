@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/sombras",
+ "title": "Sombras",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Sombras do Bootstrap.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/sombras.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/sombras.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Sombras\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/sombras.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nSombras do Bootstrap.\n\n```\n<div class=\"p-3 shadow-none border\">shadow-none</div>\n<div class=\"p-3 shadow-sm\">shadow-sm</div>\n<div class=\"p-3 shadow\">shadow</div>\n<div class=\"p-3 shadow-lg\">shadow-lg</div>\n```\n\nNote\n\nA sombra de janelas é o filtro --cro-win-drop (segue a silhueta recortada); --cro-win-shadow é a mesma sombra em box-shadow, para caixas retas como tooltips (Tokens).\n« Posição · Tamanho »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"p-3 shadow-none border\">shadow-none</div>\n<div class=\"p-3 shadow-sm\">shadow-sm</div>\n<div class=\"p-3 shadow\">shadow</div>\n<div class=\"p-3 shadow-lg\">shadow-lg</div>"
+  }
+ ]
+}

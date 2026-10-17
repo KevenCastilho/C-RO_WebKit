@@ -1,0 +1,25 @@
+{
+ "id": "comecando/como-funciona",
+ "title": "Como funciona",
+ "type": "Guide",
+ "section": "Começando",
+ "summary": "As regras de convivência entre o kit e o Bootstrap, para você prever o resultado sem tentativa e erro.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/como-funciona.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/comecando/como-funciona.html",
+ "classes": [
+  "cro-btn"
+ ],
+ "data_attributes": [],
+ "text": "# Como funciona\n\nType: Guide. Explanatory page about using the kit.\nSection: Começando\nHuman version (rendered examples): comecando/como-funciona.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-btn\n\nAs regras de convivência entre o kit e o Bootstrap, para você prever o resultado sem tentativa e erro.\n\n## A ideia\n\nO C-RO é um tema completo do Bootstrap 5.3.8 com a linguagem visual da interface do Ragnarok Online clássico. Você escreve a marcação normal do Bootstrap; o CSS troca a aparência. O kit nunca pede classes novas para o que o Bootstrap já tem.\n\n## Camadas e precedência\n\n```\n@layer bootstrap;            /* 1. Bootstrap inteiro, dentro do layer */\n/* 2. kit (fora de qualquer layer)   -> vence o Bootstrap */\n/* 3. utilitários do Bootstrap (fora do layer), no fim */\n/* 4. o CSS do SEU site (se vier depois) -> vence o kit */\n```\n\nComo o CSS \"sem layer\" vence qualquer layer, o kit sempre ganha do Bootstrap, mesmo com seletores mais fracos. E como os elementos HTML nus do kit usam :where() (especificidade zero), o seu CSS vence o kit sem precisar de !important.\n\nTip\n\nRegra de ouro: quando houver conflito, o kit vence o Bootstrap, e você vence o kit.\n\n## Três tipos de aparência\n\n```\n<button class=\"btn btn-primary\">Bootstrap (drop-in)</button>\n<button class=\"cro-btn\">Classe cro-* do kit</button>\n<button>Elemento HTML nu</button>\n```\n\n- Drop-in Bootstrap — btn, card, modal... com a cara do jogo.\n- Peças cro-* — para o que o Bootstrap não tem (janela, slot, árvore...). Funcionam com ou sem Bootstrap.\n- Elementos nus — <button>, <input>, <table>, <h1>... já saem estilizados sem classe (veja Reboot).\n\n## Utilitários\n\nOs utilitários do Bootstrap (d-flex, mb-3, text-center...) funcionam normalmente e ficam fora do layer. Só display e visibilidade usam !important (como no Bootstrap), para que d-none esconda de verdade mesmo quando o kit define display num componente.\n\n## Onde o jogo não tem equivalente\n\nO Ragnarok clássico tem poucos componentes de UI. Para os que não existem lá (carousel, spinner, placeholder, breadcrumb, offcanvas, popover...), o kit deriva o visual a partir dos elementos reais e marca o item como DERIVADO ou INVENTADO. Veja Fidelidade.\n\n## O que o kit não faz\n\n- RTL: não suportado (a UI do Ragnarok não é RTL).\n- Modo escuro: fora da v1 (o jogo é claro).\n- Ele não tenta estilizar UI nativa do navegador que o CSS não alcança (popup de select sem data-cro-select, seletor de data/cor, barras de rolagem fora do WebKit...). Veja Navegadores e limites.\n« Download e arquivos · JavaScript »\n",
+ "code_blocks": [
+  {
+   "language": "css",
+   "code": "@layer bootstrap;            /* 1. Bootstrap inteiro, dentro do layer */\n/* 2. kit (fora de qualquer layer)   -> vence o Bootstrap */\n/* 3. utilitários do Bootstrap (fora do layer), no fim */\n/* 4. o CSS do SEU site (se vier depois) -> vence o kit */"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"btn btn-primary\">Bootstrap (drop-in)</button>\n<button class=\"cro-btn\">Classe cro-* do kit</button>\n<button>Elemento HTML nu</button>"
+  }
+ ]
+}

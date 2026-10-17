@@ -1,0 +1,29 @@
+{
+ "id": "componentes/tooltips",
+ "title": "Tooltips",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Dicas ao passar o mouse. No kit usam a \"dica\" do jogo (caixa amarela), sem seta.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/tooltips.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/tooltips.html",
+ "classes": [
+  "cro-tip"
+ ],
+ "data_attributes": [],
+ "text": "# Tooltips\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/tooltips.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-tip\n\nDicas ao passar o mouse. No kit usam a \"dica\" do jogo (caixa amarela), sem seta.\n\n```\n<button\n  type=\"button\"\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"tooltip\"\n  data-bs-title=\"Dica do kit\">\n  Em cima\n</button>\n<button\n  type=\"button\"\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"tooltip\"\n  data-bs-placement=\"right\"\n  data-bs-title=\"À direita\">\n  Direita\n</button>\n<button\n  type=\"button\"\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"tooltip\"\n  data-bs-placement=\"bottom\"\n  data-bs-title=\"Embaixo\">\n  Embaixo\n</button>\n<a href=\"#\" data-bs-toggle=\"tooltip\" data-bs-title=\"Link com dica\">Link com dica</a>\n```\n\nWarning\n\nTooltips precisam ser inicializados com new bootstrap.Tooltip(el).\n\nLimitation\n\nA dica do jogo não tem seta, então o tooltip do kit também não.\n\n## Dica do navegador (title)\n\nO atributo title mostra a dica nativa (não estilizável), mas o cursor \"mão com ?\" do kit aparece sozinho:\n\n```\n<span title=\"Dica nativa do navegador\">Passe o mouse (cursor ?)</span>\n```\n\n## Nativo do kit\n\n```\n<span class=\"cro-tip\" style=\"width:140px;height:40px;padding:6px\">Dica do jogo</span>\n```\n\n## Marcação gerada\n\nO Bootstrap gera .tooltip > .tooltip-arrow + .tooltip-inner com a classe de posição bs-tooltip-top|bottom|start|end|auto. No kit a seta não é exibida e o tooltip-inner é a caixa de dica do jogo. Para personalizar, mire em .tooltip-inner (via data-bs-custom-class).\n« Toasts · Janela e titlebar »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<button\n  type=\"button\"\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"tooltip\"\n  data-bs-title=\"Dica do kit\">\n  Em cima\n</button>\n<button\n  type=\"button\"\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"tooltip\"\n  data-bs-placement=\"right\"\n  data-bs-title=\"À direita\">\n  Direita\n</button>\n<button\n  type=\"button\"\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"tooltip\"\n  data-bs-placement=\"bottom\"\n  data-bs-title=\"Embaixo\">\n  Embaixo\n</button>\n<a href=\"#\" data-bs-toggle=\"tooltip\" data-bs-title=\"Link com dica\">Link com dica</a>"
+  },
+  {
+   "language": "html",
+   "code": "<span title=\"Dica nativa do navegador\">Passe o mouse (cursor ?)</span>"
+  },
+  {
+   "language": "html",
+   "code": "<span class=\"cro-tip\" style=\"width:140px;height:40px;padding:6px\">Dica do jogo</span>"
+  }
+ ]
+}

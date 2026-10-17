@@ -1,0 +1,23 @@
+{
+ "id": "formularios/range",
+ "title": "Range",
+ "type": "Bootstrap drop-in",
+ "section": "Formulários",
+ "summary": "Controle deslizante no visual da barra de rolagem do jogo.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/range.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/formularios/range.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Range\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Formulários\nHuman version (rendered examples): formularios/range.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nControle deslizante no visual da barra de rolagem do jogo.\n\n```\n<div style=\"max-width:300px\">\n  <label for=\"rg1\" class=\"form-label\">Volume</label>\n  <input type=\"range\" class=\"form-range\" id=\"rg1\" min=\"0\" max=\"10\" value=\"4\">\n</div>\n```\n\n## Desabilitado e com passos\n\n```\n<div style=\"max-width:300px\">\n  <input type=\"range\" class=\"form-range mb-2\" disabled>\n  <input type=\"range\" class=\"form-range\" min=\"0\" max=\"5\" step=\"0.5\" id=\"rg3\">\n</div>\n```\n\n« Checks e radios · Input group »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:300px\">\n  <label for=\"rg1\" class=\"form-label\">Volume</label>\n  <input type=\"range\" class=\"form-range\" id=\"rg1\" min=\"0\" max=\"10\" value=\"4\">\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:300px\">\n  <input type=\"range\" class=\"form-range mb-2\" disabled>\n  <input type=\"range\" class=\"form-range\" min=\"0\" max=\"5\" step=\"0.5\" id=\"rg3\">\n</div>"
+  }
+ ]
+}

@@ -13,14 +13,58 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <div lang="pt-BR">
 <p>Slides com controles. Derivação mínima do kit.</p>
 <pre><code class="language-html">&lt;div id=&quot;carEx&quot; class=&quot;carousel slide&quot; style=&quot;max-width:360px&quot;&gt;
-  &lt;div class=&quot;carousel-indicators&quot;&gt;&lt;button type=&quot;button&quot; data-bs-target=&quot;#carEx&quot; data-bs-slide-to=&quot;0&quot; class=&quot;active&quot; aria-current=&quot;true&quot; aria-label=&quot;Slide 1&quot;&gt;&lt;/button&gt;&lt;button type=&quot;button&quot; data-bs-target=&quot;#carEx&quot; data-bs-slide-to=&quot;1&quot; aria-label=&quot;Slide 2&quot;&gt;&lt;/button&gt;&lt;button type=&quot;button&quot; data-bs-target=&quot;#carEx&quot; data-bs-slide-to=&quot;2&quot; aria-label=&quot;Slide 3&quot;&gt;&lt;/button&gt;&lt;/div&gt;
-  &lt;div class=&quot;carousel-inner&quot;&gt;
-    &lt;div class=&quot;carousel-item active&quot;&gt;&lt;div style=&quot;height:120px;background:#4569b9;color:#fff;display:grid;place-items:center&quot;&gt;Slide 1&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;carousel-item&quot;&gt;&lt;div style=&quot;height:120px;background:#1f6b2f;color:#fff;display:grid;place-items:center&quot;&gt;Slide 2&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;carousel-item&quot;&gt;&lt;div style=&quot;height:120px;background:#8a1c1c;color:#fff;display:grid;place-items:center&quot;&gt;Slide 3&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;carousel-indicators&quot;&gt;
+    &lt;button
+      type=&quot;button&quot;
+      data-bs-target=&quot;#carEx&quot;
+      data-bs-slide-to=&quot;0&quot;
+      class=&quot;active&quot;
+      aria-current=&quot;true&quot;
+      aria-label=&quot;Slide 1&quot;&gt;&lt;/button&gt;
+    &lt;button
+      type=&quot;button&quot;
+      data-bs-target=&quot;#carEx&quot;
+      data-bs-slide-to=&quot;1&quot;
+      aria-label=&quot;Slide 2&quot;&gt;&lt;/button&gt;
+    &lt;button
+      type=&quot;button&quot;
+      data-bs-target=&quot;#carEx&quot;
+      data-bs-slide-to=&quot;2&quot;
+      aria-label=&quot;Slide 3&quot;&gt;&lt;/button&gt;
   &lt;/div&gt;
-  &lt;button class=&quot;carousel-control-prev&quot; type=&quot;button&quot; data-bs-target=&quot;#carEx&quot; data-bs-slide=&quot;prev&quot;&gt;&lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span class=&quot;visually-hidden&quot;&gt;Anterior&lt;/span&gt;&lt;/button&gt;
-  &lt;button class=&quot;carousel-control-next&quot; type=&quot;button&quot; data-bs-target=&quot;#carEx&quot; data-bs-slide=&quot;next&quot;&gt;&lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span class=&quot;visually-hidden&quot;&gt;Próximo&lt;/span&gt;&lt;/button&gt;
+  &lt;div class=&quot;carousel-inner&quot;&gt;
+    &lt;div class=&quot;carousel-item active&quot;&gt;
+      &lt;div style=&quot;height:120px;background:#4569b9;color:#fff;display:grid;place-items:center&quot;&gt;
+        Slide 1
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;carousel-item&quot;&gt;
+      &lt;div style=&quot;height:120px;background:#1f6b2f;color:#fff;display:grid;place-items:center&quot;&gt;
+        Slide 2
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;carousel-item&quot;&gt;
+      &lt;div style=&quot;height:120px;background:#8a1c1c;color:#fff;display:grid;place-items:center&quot;&gt;
+        Slide 3
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button
+    class=&quot;carousel-control-prev&quot;
+    type=&quot;button&quot;
+    data-bs-target=&quot;#carEx&quot;
+    data-bs-slide=&quot;prev&quot;&gt;
+    &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;visually-hidden&quot;&gt;Anterior&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button
+    class=&quot;carousel-control-next&quot;
+    type=&quot;button&quot;
+    data-bs-target=&quot;#carEx&quot;
+    data-bs-slide=&quot;next&quot;&gt;
+    &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;visually-hidden&quot;&gt;Próximo&lt;/span&gt;
+  &lt;/button&gt;
 &lt;/div&gt;</code></pre>
 <p>Para troca automática use <code>data-bs-ride="carousel"</code>. A animação respeita <code>prefers-reduced-motion</code>.</p>
 <aside><strong>Derived/invented (not in the original game)</strong><p>Controles e indicadores derivados dos ícones de seta do jogo.</p></aside>
@@ -31,7 +75,36 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <li><code>carousel-caption</code>: legenda sobre o slide.</li>
 <li><code>data-bs-ride="carousel"</code>: troca automática; <code>data-bs-interval="2000"</code> por slide.</li>
 </ul>
-<pre><code class="language-html">&lt;div id=&quot;carEx2&quot; class=&quot;carousel slide carousel-fade carousel-dark&quot; style=&quot;max-width:360px&quot;&gt;&lt;div class=&quot;carousel-inner&quot;&gt;&lt;div class=&quot;carousel-item active&quot;&gt;&lt;div style=&quot;height:120px;background:#d5e0f6&quot;&gt;&lt;/div&gt;&lt;div class=&quot;carousel-caption&quot;&gt;&lt;h5&gt;carousel-caption&lt;/h5&gt;&lt;p&gt;Legenda do slide.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;carousel-item&quot;&gt;&lt;div style=&quot;height:120px;background:#c8cdd3&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;button class=&quot;carousel-control-prev&quot; type=&quot;button&quot; data-bs-target=&quot;#carEx2&quot; data-bs-slide=&quot;prev&quot;&gt;&lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span class=&quot;visually-hidden&quot;&gt;Anterior&lt;/span&gt;&lt;/button&gt;&lt;button class=&quot;carousel-control-next&quot; type=&quot;button&quot; data-bs-target=&quot;#carEx2&quot; data-bs-slide=&quot;next&quot;&gt;&lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span class=&quot;visually-hidden&quot;&gt;Próximo&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div id=&quot;carEx2&quot; class=&quot;carousel slide carousel-fade carousel-dark&quot; style=&quot;max-width:360px&quot;&gt;
+  &lt;div class=&quot;carousel-inner&quot;&gt;
+    &lt;div class=&quot;carousel-item active&quot;&gt;
+      &lt;div style=&quot;height:120px;background:#d5e0f6&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;carousel-caption&quot;&gt;
+        &lt;h5&gt;carousel-caption&lt;/h5&gt;
+        &lt;p&gt;Legenda do slide.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;carousel-item&quot;&gt;
+      &lt;div style=&quot;height:120px;background:#c8cdd3&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button
+    class=&quot;carousel-control-prev&quot;
+    type=&quot;button&quot;
+    data-bs-target=&quot;#carEx2&quot;
+    data-bs-slide=&quot;prev&quot;&gt;
+    &lt;span class=&quot;carousel-control-prev-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;visually-hidden&quot;&gt;Anterior&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button
+    class=&quot;carousel-control-next&quot;
+    type=&quot;button&quot;
+    data-bs-target=&quot;#carEx2&quot;
+    data-bs-slide=&quot;next&quot;&gt;
+    &lt;span class=&quot;carousel-control-next-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;visually-hidden&quot;&gt;Próximo&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
 <aside><strong>Note</strong><p>As classes <code>carousel-item-next/prev/start/end</code> são estados internos aplicados pelo Bootstrap durante a transição: você não as escreve.</p></aside>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../componentes/card.html">« Card</a> · <a href="../componentes/btn-close.html">Botão fechar »</a></nav>

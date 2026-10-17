@@ -1,0 +1,43 @@
+{
+ "id": "kit/janela",
+ "title": "Janela e titlebar",
+ "type": "Native kit piece",
+ "section": "Peças nativas do kit",
+ "summary": "A janela é a peça central do jogo: barra de título em degradê, corpo branco, rodapé, cantos recortados de 12 pixels e sombra.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/janela.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/kit/janela.html",
+ "classes": [
+  "cro-box",
+  "cro-box__frame",
+  "cro-btn",
+  "cro-sys-btn",
+  "cro-sys-btn--close",
+  "cro-sys-btn--mini",
+  "cro-titlebar",
+  "cro-titlebar__actions",
+  "cro-titlebar__title",
+  "cro-window",
+  "cro-window--flat",
+  "cro-window--gutter",
+  "cro-window--mini",
+  "cro-window__body",
+  "cro-window__footer"
+ ],
+ "data_attributes": [],
+ "text": "# Janela e titlebar\n\nType: Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.\nSection: Peças nativas do kit\nHuman version (rendered examples): kit/janela.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-box cro-box__frame cro-btn cro-sys-btn cro-sys-btn--close cro-sys-btn--mini cro-titlebar cro-titlebar__actions cro-titlebar__title cro-window cro-window--flat cro-window--gutter cro-window--mini cro-window__body cro-window__footer\n\nA janela é a peça central do jogo: barra de título em degradê, corpo branco, rodapé, cantos recortados de 12 pixels e sombra.\n\n## Estrutura\n\n```\n<section class=\"cro-window\" style=\"width:300px\">\n  <header class=\"cro-titlebar\">\n    <span class=\"cro-titlebar__title\">Janela</span>\n    <div class=\"cro-titlebar__actions\">\n      <button class=\"cro-sys-btn cro-sys-btn--mini\" aria-label=\"Minimizar\"></button>\n      <button class=\"cro-sys-btn cro-sys-btn--close\" aria-label=\"Fechar\"></button>\n    </div>\n  </header>\n  <div class=\"cro-window__body\">Corpo da janela.</div>\n  <footer class=\"cro-window__footer\">\n    <button class=\"cro-btn\">Cancelar</button>\n    <button class=\"cro-btn\">OK</button>\n  </footer>\n</section>\n```\n\n| Classe | Papel |\n| cro-window | Caixa da janela (borda, cantos, sombra) |\n| cro-titlebar + __title + __actions | Barra de título (17px) e seus botões |\n| cro-window__body | Corpo |\n| cro-window__footer | Rodapé de 28px (botões) |\n\n## Variantes\n\n```\n<section class=\"cro-window cro-window--gutter\" style=\"width:200px\">\n  <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Gutter</span></header>\n  <div class=\"cro-window__body\">Listras laterais (como a janela de equipamentos).</div>\n</section>\n<section class=\"cro-window cro-window--mini\" style=\"width:160px\">\n  <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Mini</span></header>\n  <footer class=\"cro-window__footer\"></footer>\n</section>\n<section class=\"cro-window cro-window--flat\" style=\"width:180px\">\n  <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Flat</span></header>\n  <div class=\"cro-window__body\">Sem sombra.</div>\n</section>\n```\n\n## Equivalência com Bootstrap\n\n| Bootstrap | Kit |\n| .card | .cro-window |\n| .card-header | .cro-titlebar |\n| .card-body | .cro-window__body |\n| .card-footer | .cro-window__footer |\n| .modal-content | .cro-window |\n\nNote\n\nOs cantos têm 12 pixels recortados exatos, feitos por máscara no primeiro e no último pedaço da janela (nítidos em qualquer tamanho). A sombra é um drop-shadow (--cro-win-drop) que segue essa silhueta: os cantos recortados ficam transparentes. Que a sombra existe é CONFIRMADO (telas de Login/Seleção/Criação); os parâmetros (2px 2px, desfoque 2,5px, 35%) são DERIVADOS, não medidos.\n\n## Caixa (janela sem barra de título)\n\nNo roBrowser, as caixas brancas sem barra (NpcBox, InputBox, ItemObtain, SkillDescription) são outra família: casca branca com padding: 2px e raio de 5px, e uma moldura interna de 1px com raio de 5px. Sem sombra. O popover do Bootstrap sem título usa esta caixa automaticamente.\n\n```\n<div class=\"cro-box\" style=\"width:220px\">\n  <div class=\"cro-box__frame\">Texto dentro da caixa.</div>\n</div>\n```\n\n| Classe | Papel |\n| cro-box | Casca branca (padding 2px, raio 5px) |\n| cro-box__frame | Moldura interna de 1px (--cro-box-frame, derivada do roBrowser) |\n\n## Diálogo modal nativo\n\nO <dialog class=\"cro-modal\"> envolve uma cro-window e é o que CRO.alert/confirm/prompt usam. Veja Diálogos.\n\n## Janela sem barra de título\n\nSem cro-titlebar, a janela ganha a borda de cima (1px, mesma cor das laterais) para fechar o contorno; o jogo só desenha essa borda junto com a barra, então este acabamento é derivado. O mesmo vale para card sem cabeçalho, popover sem título e o conteúdo de collapse.\n« Tooltips · Botões cro-* »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<section class=\"cro-window\" style=\"width:300px\">\n  <header class=\"cro-titlebar\">\n    <span class=\"cro-titlebar__title\">Janela</span>\n    <div class=\"cro-titlebar__actions\">\n      <button class=\"cro-sys-btn cro-sys-btn--mini\" aria-label=\"Minimizar\"></button>\n      <button class=\"cro-sys-btn cro-sys-btn--close\" aria-label=\"Fechar\"></button>\n    </div>\n  </header>\n  <div class=\"cro-window__body\">Corpo da janela.</div>\n  <footer class=\"cro-window__footer\">\n    <button class=\"cro-btn\">Cancelar</button>\n    <button class=\"cro-btn\">OK</button>\n  </footer>\n</section>"
+  },
+  {
+   "language": "html",
+   "code": "<section class=\"cro-window cro-window--gutter\" style=\"width:200px\">\n  <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Gutter</span></header>\n  <div class=\"cro-window__body\">Listras laterais (como a janela de equipamentos).</div>\n</section>\n<section class=\"cro-window cro-window--mini\" style=\"width:160px\">\n  <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Mini</span></header>\n  <footer class=\"cro-window__footer\"></footer>\n</section>\n<section class=\"cro-window cro-window--flat\" style=\"width:180px\">\n  <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Flat</span></header>\n  <div class=\"cro-window__body\">Sem sombra.</div>\n</section>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"cro-box\" style=\"width:220px\">\n  <div class=\"cro-box__frame\">Texto dentro da caixa.</div>\n</div>"
+  }
+ ]
+}

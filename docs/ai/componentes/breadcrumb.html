@@ -12,9 +12,20 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Componentes</dd><dt>Human version (rendered examples)</dt><dd><a href="../../componentes/breadcrumb.html">componentes/breadcrumb.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
 <div lang="pt-BR">
 <p>Trilha de navegação. Derivação mínima do kit (o jogo não tem breadcrumb).</p>
-<pre><code class="language-html">&lt;nav aria-label=&quot;breadcrumb&quot;&gt;&lt;ol class=&quot;breadcrumb&quot;&gt;&lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Início&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Itens&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Armas&lt;/li&gt;&lt;/ol&gt;&lt;/nav&gt;</code></pre>
+<pre><code class="language-html">&lt;nav aria-label=&quot;breadcrumb&quot;&gt;
+  &lt;ol class=&quot;breadcrumb&quot;&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Início&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Itens&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Armas&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
 <h2 id="separador-personalizado">Separador personalizado</h2>
-<pre><code class="language-html">&lt;nav style=&quot;--bs-breadcrumb-divider: &#x27;&gt;&#x27;;&quot; aria-label=&quot;breadcrumb&quot;&gt;&lt;ol class=&quot;breadcrumb&quot;&gt;&lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Início&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Atual&lt;/li&gt;&lt;/ol&gt;&lt;/nav&gt;</code></pre>
+<pre><code class="language-html">&lt;nav style=&quot;--bs-breadcrumb-divider: &#x27;&gt;&#x27;;&quot; aria-label=&quot;breadcrumb&quot;&gt;
+  &lt;ol class=&quot;breadcrumb&quot;&gt;
+    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Início&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Atual&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
 <aside><strong>Derived/invented (not in the original game)</strong><p>Derivado do estilo de links e texto do kit.</p></aside>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../componentes/badge.html">« Badge</a> · <a href="../componentes/botoes.html">Botões »</a></nav>

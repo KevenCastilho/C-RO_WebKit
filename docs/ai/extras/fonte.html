@@ -16,7 +16,12 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <p><code>--cro-font-ui</code>, <code>--cro-font-title</code> e <code>--cro-font-btn</code> valem <code>"C-RO Helvetica", sans-serif</code>. <code>"C-RO Helvetica"</code> é um nome <strong>do kit</strong>, declarado em <code>@font-face</code> (Regular e Bold) apontando para <code>fonts/NimbusSans-*.woff2</code>; o itálico é sintetizado pelo navegador. A pasta <code>fonts/</code> precisa ficar ao lado do CSS (<code>dist/fonts/</code> neste site).</p>
 <aside><strong>Note</strong><p>Para usar a Helvetica real (fonte comercial, não incluída aqui), declare-a no seu CSS com <code>@font-face</code> e aponte <code>--cro-font-ui</code> para ela. Para comparar, use a linha de teste abaixo: ela mostra a mesma frase na fonte do kit e na fonte genérica <code>sans-serif</code> do seu sistema (R, G, a, 1 e &amp; são os melhores sinais).</p></aside>
 <h2 id="verificação-ao-vivo">Verificação ao vivo</h2>
-<pre><code class="language-html">&lt;p style=&quot;font:36px/1.2 &#x27;C-RO Helvetica&#x27;, monospace&quot;&gt;Fonte do kit: Rag Gy 1 Qej&amp;amp; &lt;b&gt;Bold&lt;/b&gt; &lt;i&gt;Oblique&lt;/i&gt;&lt;/p&gt;
+<pre><code class="language-html">&lt;p style=&quot;font:36px/1.2 &#x27;C-RO Helvetica&#x27;, monospace&quot;&gt;
+  Fonte do kit: Rag Gy 1 Qej
+  &amp;amp;
+  &lt;b&gt;Bold&lt;/b&gt;
+  &lt;i&gt;Oblique&lt;/i&gt;
+&lt;/p&gt;
 &lt;p style=&quot;font:36px/1.2 sans-serif&quot;&gt;sans-serif do sistema: Rag Gy 1 Qej&amp;amp;&lt;/p&gt;
 &lt;pre id=&quot;fonte-diag&quot; style=&quot;white-space:pre-wrap&quot;&gt;verificando…&lt;/pre&gt;</code></pre>
 <pre><code class="language-js">(function () {

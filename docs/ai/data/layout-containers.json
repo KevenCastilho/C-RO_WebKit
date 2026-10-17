@@ -1,0 +1,27 @@
+{
+ "id": "layout/containers",
+ "title": "Containers",
+ "type": "Bootstrap drop-in",
+ "section": "Layout",
+ "summary": "Containers centralizam e limitam a largura do conteúdo, exatamente como no Bootstrap.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/layout/containers.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/layout/containers.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Containers\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Layout\nHuman version (rendered examples): layout/containers.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nContainers centralizam e limitam a largura do conteúdo, exatamente como no Bootstrap.\n\n## Tipos\n\n```\n<div class=\"container\">…</div>\n<!-- largura máxima por breakpoint -->\n<div class=\"container-sm\">…</div>\n<!-- 100% até sm, fixo a partir de sm -->\n<div class=\"container-md\">…</div>\n<div class=\"container-lg\">…</div>\n<div class=\"container-xl\">…</div>\n<div class=\"container-xxl\">…</div>\n<div class=\"container-fluid\">…</div>\n<!-- sempre 100% -->\n```\n\n```\n<div class=\"container-fluid\">\n  <div class=\"bd-demo-box\">container-fluid (100%)</div>\n</div>\n<div class=\"container mt-2\">\n  <div class=\"bd-demo-box\">container (limitado)</div>\n</div>\n```\n\n## Dentro de janelas do kit\n\nContainers funcionam dentro de modal, card e cro-window. Eles só dependem da largura do pai.\n\n```\n<div class=\"card\" style=\"max-width:420px\">\n  <div class=\"card-header\">Janela</div>\n  <div class=\"card-body\">\n    <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col\">\n          <div class=\"bd-demo-box\">A</div>\n        </div>\n        <div class=\"col\">\n          <div class=\"bd-demo-box\">B</div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n```\n\n« Breakpoints · Grid »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"container\">…</div>\n<!-- largura máxima por breakpoint -->\n<div class=\"container-sm\">…</div>\n<!-- 100% até sm, fixo a partir de sm -->\n<div class=\"container-md\">…</div>\n<div class=\"container-lg\">…</div>\n<div class=\"container-xl\">…</div>\n<div class=\"container-xxl\">…</div>\n<div class=\"container-fluid\">…</div>\n<!-- sempre 100% -->"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"container-fluid\">\n  <div class=\"bd-demo-box\">container-fluid (100%)</div>\n</div>\n<div class=\"container mt-2\">\n  <div class=\"bd-demo-box\">container (limitado)</div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"card\" style=\"max-width:420px\">\n  <div class=\"card-header\">Janela</div>\n  <div class=\"card-body\">\n    <div class=\"container-fluid\">\n      <div class=\"row\">\n        <div class=\"col\">\n          <div class=\"bd-demo-box\">A</div>\n        </div>\n        <div class=\"col\">\n          <div class=\"bd-demo-box\">B</div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "id": "conteudo/icones",
+ "title": "Ícones",
+ "type": "Kit extra",
+ "section": "Conteúdo",
+ "summary": "O kit traz os ícones pixel-exatos do jogo ( cro-ico ) e convive bem com Font Awesome, Lucide, Material Symbols e SVG próprio.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/conteudo/icones.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/conteudo/icones.html",
+ "classes": [
+  "cro-btn",
+  "cro-ico",
+  "cro-ico--arw-down",
+  "cro-ico--arw-up",
+  "cro-ico--battle-opt",
+  "cro-ico--chatmode",
+  "cro-ico--close",
+  "cro-ico--folder",
+  "cro-ico--lock",
+  "cro-ico--unlock"
+ ],
+ "data_attributes": [],
+ "text": "# Ícones\n\nType: Kit extra. A feature Bootstrap does not have.\nSection: Conteúdo\nHuman version (rendered examples): conteudo/icones.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-btn cro-ico cro-ico--arw-down cro-ico--arw-up cro-ico--battle-opt cro-ico--chatmode cro-ico--close cro-ico--folder cro-ico--lock cro-ico--unlock\n\nO kit traz os ícones pixel-exatos do jogo (cro-ico) e convive bem com Font Awesome, Lucide, Material Symbols e SVG próprio.\n\n## Ícones do jogo\n\nSão CSS puro, sem imagem externa. Use <span class=\"cro-ico cro-ico--NOME\"> (ou <button> quando clicável, com aria-label).\n\n```\n<span class=\"cro-ico cro-ico--lock\" title=\"lock\"></span>\n<span class=\"cro-ico cro-ico--unlock\" title=\"unlock\"></span>\n<span class=\"cro-ico cro-ico--folder\" title=\"folder\"></span>\n<span class=\"cro-ico cro-ico--arw-up\" title=\"arw-up\"></span>\n<span class=\"cro-ico cro-ico--arw-down\" title=\"arw-down\"></span>\n<span class=\"cro-ico cro-ico--close\" title=\"close\"></span>\n<span class=\"cro-ico cro-ico--chatmode\" title=\"chatmode\"></span>\n<span class=\"cro-ico cro-ico--battle-opt\" title=\"battle-opt\"></span>\n```\n\nVeja a lista completa em Ícones do jogo.\n\n## Ícones de terceiros\n\nO kit não embute Font Awesome, Lucide ou Material Symbols; ele garante que convivam. Os ícones modernos não têm o estilo Classic: para fidelidade use os cro-ico.\n\n| Situação | Como usar | O que o kit faz |\n| Dentro de botão | <button class=\"cro-btn\"><svg …/>Salvar</button> ou <i class=\"fa-solid fa-floppy-disk\"></i> | ícone 12px, currentColor, 4px do texto, muda de cor com o botão |\n| SVG sem width/height (Lucide) | <svg viewBox=\"0 0 24 24\" stroke=\"currentColor\" fill=\"none\">… | vira 1em (em vez de 300×150) |\n| Lista, menu, aba, título | <span class=\"cro-icon-slot\"><svg…/></span> (--11, --16) | caixa fixa, herda a cor do estado |\n| <img> como ícone | <img src=\"x.png\" alt=\"\"> | continua inline (use .cro-block para bloco) |\n\n```\n<button class=\"cro-btn\">\n  <svg\n    viewBox=\"0 0 24 24\"\n    width=\"12\"\n    height=\"12\"\n    fill=\"none\"\n    stroke=\"currentColor\"\n    stroke-width=\"2\">\n    <path d=\"M5 12l5 5L20 7\"/>\n  </svg>\n  Confirmar\n</button>\n<button class=\"btn btn-secondary\">\n  <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n    <circle cx=\"12\" cy=\"12\" r=\"9\"/>\n  </svg>\n  Círculo\n</button>\n```\n\n« Figuras · Visão geral »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<span class=\"cro-ico cro-ico--lock\" title=\"lock\"></span>\n<span class=\"cro-ico cro-ico--unlock\" title=\"unlock\"></span>\n<span class=\"cro-ico cro-ico--folder\" title=\"folder\"></span>\n<span class=\"cro-ico cro-ico--arw-up\" title=\"arw-up\"></span>\n<span class=\"cro-ico cro-ico--arw-down\" title=\"arw-down\"></span>\n<span class=\"cro-ico cro-ico--close\" title=\"close\"></span>\n<span class=\"cro-ico cro-ico--chatmode\" title=\"chatmode\"></span>\n<span class=\"cro-ico cro-ico--battle-opt\" title=\"battle-opt\"></span>"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"cro-btn\">\n  <svg\n    viewBox=\"0 0 24 24\"\n    width=\"12\"\n    height=\"12\"\n    fill=\"none\"\n    stroke=\"currentColor\"\n    stroke-width=\"2\">\n    <path d=\"M5 12l5 5L20 7\"/>\n  </svg>\n  Confirmar\n</button>\n<button class=\"btn btn-secondary\">\n  <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n    <circle cx=\"12\" cy=\"12\" r=\"9\"/>\n  </svg>\n  Círculo\n</button>"
+  }
+ ]
+}

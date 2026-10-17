@@ -9,17 +9,42 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Peças nativas do kit › Formulários cro-*</nav>
 <main>
 <h1>Formulários cro-*</h1>
-<dl><dt>Type</dt><dd>Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.</dd><dt>Section</dt><dd>Peças nativas do kit</dd><dt>Human version (rendered examples)</dt><dd><a href="../../kit/formularios-cro.html">kit/formularios-cro.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-check</code> <code>cro-field</code> <code>cro-input</code> <code>cro-label</code> <code>cro-label--lg</code> <code>cro-label--stat</code> <code>cro-select</code> <code>cro-textarea</code></dd><dt>data-cro-* attributes in this page</dt><dd><code>data-cro-select</code></dd></dl>
+<dl><dt>Type</dt><dd>Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.</dd><dt>Section</dt><dd>Peças nativas do kit</dd><dt>Human version (rendered examples)</dt><dd><a href="../../kit/formularios-cro.html">kit/formularios-cro.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-check</code> <code>cro-field</code> <code>cro-input</code> <code>cro-label</code> <code>cro-label--stat</code> <code>cro-select</code> <code>cro-textarea</code></dd><dt>data-cro-* attributes in this page</dt><dd><code>data-cro-select</code></dd></dl>
 <div lang="pt-BR">
 <p>Campos nativos do kit: <code>cro-field</code>, <code>cro-label</code>, <code>cro-input</code>, <code>cro-select</code>, <code>cro-textarea</code>, <code>cro-check</code>.</p>
+<p>Um formulário usa <strong>um só tipo de rótulo</strong>: o <code>cro-label</code> simples. Misturar <code>--lg</code> ou <code>--stat</code> com o rótulo normal na mesma janela deixa um campo maior e mais escuro que o outro.</p>
 <pre><code class="language-html">&lt;div style=&quot;max-width:320px&quot;&gt;
-  &lt;div class=&quot;cro-field&quot;&gt;&lt;label class=&quot;cro-label&quot; for=&quot;fc-a&quot;&gt;Login&lt;/label&gt;&lt;input class=&quot;cro-input&quot; id=&quot;fc-a&quot; value=&quot;usuario&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;cro-field&quot;&gt;&lt;label class=&quot;cro-label cro-label--lg&quot; for=&quot;fc-b&quot;&gt;Senha&lt;/label&gt;&lt;input class=&quot;cro-input&quot; id=&quot;fc-b&quot; type=&quot;password&quot; value=&quot;abc&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;cro-field&quot;&gt;&lt;label class=&quot;cro-label cro-label--stat&quot; for=&quot;fc-c&quot;&gt;Classe&lt;/label&gt;&lt;select class=&quot;cro-select&quot; id=&quot;fc-c&quot;&gt;&lt;option&gt;Espadachim&lt;/option&gt;&lt;option&gt;Mago&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
+  &lt;div class=&quot;cro-field&quot;&gt;
+    &lt;label class=&quot;cro-label&quot; for=&quot;fc-a&quot;&gt;Login&lt;/label&gt;
+    &lt;input class=&quot;cro-input&quot; id=&quot;fc-a&quot; value=&quot;usuario&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cro-field&quot;&gt;
+    &lt;label class=&quot;cro-label&quot; for=&quot;fc-b&quot;&gt;Senha&lt;/label&gt;
+    &lt;input class=&quot;cro-input&quot; id=&quot;fc-b&quot; type=&quot;password&quot; value=&quot;abc&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cro-field&quot;&gt;
+    &lt;label class=&quot;cro-label&quot; for=&quot;fc-c&quot;&gt;Classe&lt;/label&gt;
+    &lt;select class=&quot;cro-select&quot; id=&quot;fc-c&quot;&gt;
+      &lt;option&gt;Espadachim&lt;/option&gt;
+      &lt;option&gt;Mago&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
   &lt;div class=&quot;cro-field&quot;&gt;&lt;textarea class=&quot;cro-textarea&quot; placeholder=&quot;mensagem&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;
   &lt;label class=&quot;cro-check&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Lembrar&lt;/label&gt;
   &lt;label class=&quot;cro-check&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;fcr&quot; checked&gt; A&lt;/label&gt;
   &lt;label class=&quot;cro-check&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;fcr&quot;&gt; B&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+<h2 id="variações-do-rótulo">Variações do rótulo</h2>
+<p><code>cro-label--lg</code> (negrito 13px, cor <code>--cro-label-lg</code>) e <code>cro-label--stat</code> (negrito 11px, cor <code>--cro-label-stat</code>) são variações de tamanho e cor. Use a mesma variação em <strong>todos</strong> os rótulos de um mesmo grupo, nunca em um só campo no meio dos outros.</p>
+<pre><code class="language-html">&lt;div style=&quot;max-width:320px&quot;&gt;
+  &lt;div class=&quot;cro-field&quot;&gt;
+    &lt;label class=&quot;cro-label cro-label--stat&quot; for=&quot;fc-d&quot;&gt;STR&lt;/label&gt;
+    &lt;input class=&quot;cro-input&quot; id=&quot;fc-d&quot; value=&quot;99&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cro-field&quot;&gt;
+    &lt;label class=&quot;cro-label cro-label--stat&quot; for=&quot;fc-e&quot;&gt;AGI&lt;/label&gt;
+    &lt;input class=&quot;cro-input&quot; id=&quot;fc-e&quot; value=&quot;80&quot;&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 <table>
 <thead>
@@ -49,9 +74,15 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 </table>
 <h2 id="elementos-nus">Elementos nus</h2>
 <p>Sem classe nenhuma também funciona: <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;input type=range&gt;</code>, <code>&lt;meter&gt;</code>, <code>&lt;progress&gt;</code>, <code>&lt;fieldset&gt;</code>... Veja <a href="../conteudo/reboot.html">Reboot</a>.</p>
-<pre><code class="language-html">&lt;input placeholder=&quot;input nu&quot;&gt; &lt;input type=&quot;number&quot; value=&quot;3&quot; style=&quot;width:60px&quot;&gt;
-&lt;select data-cro-select&gt;&lt;option&gt;Select com popup do kit&lt;/option&gt;&lt;option&gt;Segunda&lt;/option&gt;&lt;/select&gt;
-&lt;input type=&quot;range&quot;&gt; &lt;meter value=&quot;.7&quot;&gt;&lt;/meter&gt; &lt;output&gt;42&lt;/output&gt;</code></pre>
+<pre><code class="language-html">&lt;input placeholder=&quot;input nu&quot;&gt;
+&lt;input type=&quot;number&quot; value=&quot;3&quot; style=&quot;width:60px&quot;&gt;
+&lt;select data-cro-select&gt;
+  &lt;option&gt;Select com popup do kit&lt;/option&gt;
+  &lt;option&gt;Segunda&lt;/option&gt;
+&lt;/select&gt;
+&lt;input type=&quot;range&quot;&gt;
+&lt;meter value=&quot;.7&quot;&gt;&lt;/meter&gt;
+&lt;output&gt;42&lt;/output&gt;</code></pre>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../kit/abas-cro.html">« Abas cro-*</a> · <a href="../kit/slots.html">Slots e inventário »</a></nav>
 </main>

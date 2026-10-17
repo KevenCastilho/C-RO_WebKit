@@ -1,0 +1,23 @@
+{
+ "id": "componentes/breadcrumb",
+ "title": "Breadcrumb",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Trilha de navegação. Derivação mínima do kit (o jogo não tem breadcrumb).",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/breadcrumb.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/breadcrumb.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Breadcrumb\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/breadcrumb.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nTrilha de navegação. Derivação mínima do kit (o jogo não tem breadcrumb).\n\n```\n<nav aria-label=\"breadcrumb\">\n  <ol class=\"breadcrumb\">\n    <li class=\"breadcrumb-item\"><a href=\"#\">Início</a></li>\n    <li class=\"breadcrumb-item\"><a href=\"#\">Itens</a></li>\n    <li class=\"breadcrumb-item active\" aria-current=\"page\">Armas</li>\n  </ol>\n</nav>\n```\n\n## Separador personalizado\n\n```\n<nav style=\"--bs-breadcrumb-divider: '>';\" aria-label=\"breadcrumb\">\n  <ol class=\"breadcrumb\">\n    <li class=\"breadcrumb-item\"><a href=\"#\">Início</a></li>\n    <li class=\"breadcrumb-item active\" aria-current=\"page\">Atual</li>\n  </ol>\n</nav>\n```\n\nDerived/invented (not in the original game)\n\nDerivado do estilo de links e texto do kit.\n« Badge · Botões »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<nav aria-label=\"breadcrumb\">\n  <ol class=\"breadcrumb\">\n    <li class=\"breadcrumb-item\"><a href=\"#\">Início</a></li>\n    <li class=\"breadcrumb-item\"><a href=\"#\">Itens</a></li>\n    <li class=\"breadcrumb-item active\" aria-current=\"page\">Armas</li>\n  </ol>\n</nav>"
+  },
+  {
+   "language": "html",
+   "code": "<nav style=\"--bs-breadcrumb-divider: '>';\" aria-label=\"breadcrumb\">\n  <ol class=\"breadcrumb\">\n    <li class=\"breadcrumb-item\"><a href=\"#\">Início</a></li>\n    <li class=\"breadcrumb-item active\" aria-current=\"page\">Atual</li>\n  </ol>\n</nav>"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "id": "comecando/download",
+ "title": "Download e arquivos",
+ "type": "Guide",
+ "section": "Começando",
+ "summary": "O que existe na pasta dist/ , para que serve cada arquivo e como escolher.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/download.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/comecando/download.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Download e arquivos\n\nType: Guide. Explanatory page about using the kit.\nSection: Começando\nHuman version (rendered examples): comecando/download.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nO que existe na pasta dist/, para que serve cada arquivo e como escolher.\n\n## Conteúdo do pacote\n\nOs arquivos ficam em dist/. Não há Node nem npm: é só copiar os arquivos que você precisa.\n\n| Arquivo | O que é |\n| c-ro-bs.css / c-ro-bs.min.css | Kit + Bootstrap 5.3.8 em um CSS só. O Bootstrap fica em @layer bootstrap; o kit fica fora do layer e vence. |\n| c-ro-bs.js / c-ro-bs.min.js | Bootstrap (bundle com Popper) + JS do kit (abas, CRO.*, select, cursor animado, favicon). Define window.bootstrap e window.CRO. |\n| c-ro.css / c-ro.min.css | Só o kit (classes cro-* e elementos HTML nus), sem Bootstrap. |\n| c-ro.lite.css / c-ro.lite.min.css | Kit sem as peças específicas do jogo: botão Fechar, mesbtn com ícone, barra de diálogo/tooltip, sysbox. |\n| c-ro.js / c-ro.min.js | Só o JS do kit (sem Bootstrap). Serve para c-ro.css e c-ro.lite.css. |\n| fonts/ | Nimbus Sans (Regular, Bold, woff2) + avisos de licença. Fica ao lado do CSS. |\n\n## Tamanhos\n\nCalculados a partir dos arquivos de dist/ a cada geração da documentação.\n\n| Arquivo | Bruto | gzip |\n| c-ro-bs.min.css | 1,2 MB | 146 KB |\n| c-ro-bs.min.js | 148 KB | 62 KB |\n| c-ro.min.css | 519 KB | 73 KB |\n| c-ro.lite.min.css | 357 KB | 58 KB |\n| c-ro.min.js | 70 KB | 38 KB |\n\nO peso vem dos sprites pixel-exatos (gradientes de 1px por linha), dos ícones do jogo e dos cursores, todos embutidos como CSS/data: URI. Não há imagens externas: um CSS e um JS resolvem tudo.\n\n## Como combinar\n\n```\n<!-- Caso comum: Bootstrap tematizado -->\n<link rel=\"stylesheet\" href=\"c-ro-bs.min.css\">\n<script src=\"c-ro-bs.min.js\"></script>\n\n<!-- Só o kit, sem Bootstrap -->\n<link rel=\"stylesheet\" href=\"c-ro.min.css\">\n<script src=\"c-ro.min.js\"></script>\n```\n\nWarning\n\nNão misture c-ro.css com o Bootstrap original: o kit já inclui o Bootstrap em c-ro-bs.css. Dois Bootstraps na mesma página causam conflitos.\n\n## Usar direto do GitHub\n\nO repositório é https://github.com/KevenCastilho/C-RO_WebKit. Há duas formas de usar os arquivos dele:\n\n- Baixar e copiar (recomendado). Em Code → Download ZIP, copie de dist/ os arquivos que você precisa, mais a pasta fonts/. É a única forma de travar a versão, porque o repositório não usa tags: a branch main pode mudar.\n- Apontar para o GitHub Pages. Funciona sem copiar nada, mas o endereço sempre serve a versão atual da main:\n\n```\n<link rel=\"stylesheet\" href=\"https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.css\">\n<script src=\"https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.js\"></script>\n```\n\nO CSS carrega as fontes da pasta fonts/ que está ao lado dele, então elas vêm do mesmo endereço (.../dist/fonts/). Não use raw.githubusercontent.com: o GitHub serve esses arquivos como texto puro e o navegador recusa o CSS e o JS.\n\nLimitation\n\nApontar para o Pages deixa a sua página dependente do GitHub estar no ar e de a main não mudar. Para produção, copie os arquivos.\n\n## Versão legível x minificada\n\nc-ro-bs.css e c-ro.css têm comentários e seções nomeadas (bom para estudar e depurar). Os .min.* são equivalentes; o teste de regressão garante que o minificado renderiza idêntico, pixel a pixel.\n« Introdução · Como funciona »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<!-- Caso comum: Bootstrap tematizado -->\n<link rel=\"stylesheet\" href=\"c-ro-bs.min.css\">\n<script src=\"c-ro-bs.min.js\"></script>\n\n<!-- Só o kit, sem Bootstrap -->\n<link rel=\"stylesheet\" href=\"c-ro.min.css\">\n<script src=\"c-ro.min.js\"></script>"
+  },
+  {
+   "language": "html",
+   "code": "<link rel=\"stylesheet\" href=\"https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.css\">\n<script src=\"https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.js\"></script>"
+  }
+ ]
+}

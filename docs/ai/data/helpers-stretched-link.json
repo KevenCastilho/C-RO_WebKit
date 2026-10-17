@@ -1,0 +1,19 @@
+{
+ "id": "helpers/stretched-link",
+ "title": "Stretched link",
+ "type": "Bootstrap drop-in",
+ "section": "Helpers",
+ "summary": "Torna um elemento inteiro clicável a partir de um link interno.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/stretched-link.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/helpers/stretched-link.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Stretched link\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Helpers\nHuman version (rendered examples): helpers/stretched-link.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nTorna um elemento inteiro clicável a partir de um link interno.\n\n```\n<div class=\"card position-relative\" style=\"max-width:260px\">\n  <div class=\"card-body\">\n    <h5 class=\"card-title\">Card clicável</h5>\n    <p class=\"card-text\">Todo o card leva ao destino.</p>\n    <a href=\"#\" class=\"stretched-link\">Ir</a>\n  </div>\n</div>\n```\n\n« Stacks · Truncar texto »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"card position-relative\" style=\"max-width:260px\">\n  <div class=\"card-body\">\n    <h5 class=\"card-title\">Card clicável</h5>\n    <p class=\"card-text\">Todo o card leva ao destino.</p>\n    <a href=\"#\" class=\"stretched-link\">Ir</a>\n  </div>\n</div>"
+  }
+ ]
+}

@@ -12,11 +12,33 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Componentes</dd><dt>Human version (rendered examples)</dt><dd><a href="../../componentes/collapse.html">componentes/collapse.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
 <div lang="pt-BR">
 <p>Mostra e esconde conteúdo com animação.</p>
-<pre><code class="language-html">&lt;p&gt;&lt;button class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#colEx&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;colEx&quot;&gt;Alternar&lt;/button&gt;&lt;/p&gt;
-&lt;div class=&quot;collapse&quot; id=&quot;colEx&quot;&gt;&lt;div class=&quot;card card-body&quot;&gt;Conteúdo que aparece e some.&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;p&gt;
+  &lt;button
+    class=&quot;btn btn-primary&quot;
+    data-bs-toggle=&quot;collapse&quot;
+    data-bs-target=&quot;#colEx&quot;
+    aria-expanded=&quot;false&quot;
+    aria-controls=&quot;colEx&quot;&gt;
+    Alternar
+  &lt;/button&gt;
+&lt;/p&gt;
+&lt;div class=&quot;collapse&quot; id=&quot;colEx&quot;&gt;
+  &lt;div class=&quot;card card-body&quot;&gt;Conteúdo que aparece e some.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="horizontal">Horizontal</h2>
-<pre><code class="language-html">&lt;button class=&quot;btn btn-secondary mb-2&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#colH&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;colH&quot;&gt;Horizontal&lt;/button&gt;
-&lt;div style=&quot;min-height:70px&quot;&gt;&lt;div class=&quot;collapse collapse-horizontal&quot; id=&quot;colH&quot;&gt;&lt;div class=&quot;card card-body&quot; style=&quot;width:240px&quot;&gt;Abre para o lado.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;button
+  class=&quot;btn btn-secondary mb-2&quot;
+  data-bs-toggle=&quot;collapse&quot;
+  data-bs-target=&quot;#colH&quot;
+  aria-expanded=&quot;false&quot;
+  aria-controls=&quot;colH&quot;&gt;
+  Horizontal
+&lt;/button&gt;
+&lt;div style=&quot;min-height:70px&quot;&gt;
+  &lt;div class=&quot;collapse collapse-horizontal&quot; id=&quot;colH&quot;&gt;
+    &lt;div class=&quot;card card-body&quot; style=&quot;width:240px&quot;&gt;Abre para o lado.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="vários-alvos">Vários alvos</h2>
 <p>Use <code>data-bs-target=".multi"</code> para controlar vários elementos com a mesma classe. <code>aria-expanded</code> e <code>aria-controls</code> mantêm a acessibilidade.</p>
 </div>

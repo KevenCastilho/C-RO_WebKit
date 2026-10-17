@@ -1,0 +1,35 @@
+{
+ "id": "layout/colunas",
+ "title": "Colunas",
+ "type": "Bootstrap drop-in",
+ "section": "Layout",
+ "summary": "Alinhamento, ordem, deslocamento e quebra de colunas. Tudo igual ao Bootstrap.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/layout/colunas.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/layout/colunas.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Colunas\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Layout\nHuman version (rendered examples): layout/colunas.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nAlinhamento, ordem, deslocamento e quebra de colunas. Tudo igual ao Bootstrap.\n\n## Alinhamento vertical\n\n```\n<div class=\"row align-items-start\" style=\"height:60px\">\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">start</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">start</div>\n  </div>\n</div>\n<div class=\"row align-items-center mt-2\" style=\"height:60px\">\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">center</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">center</div>\n  </div>\n</div>\n<div class=\"row align-items-end mt-2\" style=\"height:60px\">\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">end</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">end</div>\n  </div>\n</div>\n```\n\n## Alinhamento horizontal\n\n```\n<div class=\"row justify-content-center mb-2\">\n  <div class=\"col-4\">\n    <div class=\"bd-demo-box\">center</div>\n  </div>\n  <div class=\"col-4\">\n    <div class=\"bd-demo-box\">center</div>\n  </div>\n</div>\n<div class=\"row justify-content-between\">\n  <div class=\"col-4\">\n    <div class=\"bd-demo-box\">between</div>\n  </div>\n  <div class=\"col-4\">\n    <div class=\"bd-demo-box\">between</div>\n  </div>\n</div>\n```\n\n## Ordem e deslocamento\n\n```\n<div class=\"row mb-2\">\n  <div class=\"col order-2\">\n    <div class=\"bd-demo-box\">1º no HTML, order-2</div>\n  </div>\n  <div class=\"col order-1\">\n    <div class=\"bd-demo-box\">2º no HTML, order-1</div>\n  </div>\n</div>\n<div class=\"row\">\n  <div class=\"col-4\">\n    <div class=\"bd-demo-box\">col-4</div>\n  </div>\n  <div class=\"col-4 offset-4\">\n    <div class=\"bd-demo-box\">col-4 offset-4</div>\n  </div>\n</div>\n```\n\n## Quebra de linha\n\n```\n<div class=\"row g-2\">\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">col-6</div>\n  </div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">col-6</div>\n  </div>\n  <div class=\"w-100\"></div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">col-6 (nova linha)</div>\n  </div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">col-6</div>\n  </div>\n</div>\n```\n\n## Colunas por linha\n\n```\n<div class=\"row row-cols-3 g-2\">\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">1</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">2</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">3</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">4</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">5</div>\n  </div>\n</div>\n```\n\n« Grid · Gutters »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"row align-items-start\" style=\"height:60px\">\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">start</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">start</div>\n  </div>\n</div>\n<div class=\"row align-items-center mt-2\" style=\"height:60px\">\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">center</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">center</div>\n  </div>\n</div>\n<div class=\"row align-items-end mt-2\" style=\"height:60px\">\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">end</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">end</div>\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"row justify-content-center mb-2\">\n  <div class=\"col-4\">\n    <div class=\"bd-demo-box\">center</div>\n  </div>\n  <div class=\"col-4\">\n    <div class=\"bd-demo-box\">center</div>\n  </div>\n</div>\n<div class=\"row justify-content-between\">\n  <div class=\"col-4\">\n    <div class=\"bd-demo-box\">between</div>\n  </div>\n  <div class=\"col-4\">\n    <div class=\"bd-demo-box\">between</div>\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"row mb-2\">\n  <div class=\"col order-2\">\n    <div class=\"bd-demo-box\">1º no HTML, order-2</div>\n  </div>\n  <div class=\"col order-1\">\n    <div class=\"bd-demo-box\">2º no HTML, order-1</div>\n  </div>\n</div>\n<div class=\"row\">\n  <div class=\"col-4\">\n    <div class=\"bd-demo-box\">col-4</div>\n  </div>\n  <div class=\"col-4 offset-4\">\n    <div class=\"bd-demo-box\">col-4 offset-4</div>\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"row g-2\">\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">col-6</div>\n  </div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">col-6</div>\n  </div>\n  <div class=\"w-100\"></div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">col-6 (nova linha)</div>\n  </div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">col-6</div>\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"row row-cols-3 g-2\">\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">1</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">2</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">3</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">4</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">5</div>\n  </div>\n</div>"
+  }
+ ]
+}

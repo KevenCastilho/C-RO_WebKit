@@ -1,0 +1,281 @@
+C-RO: reference for AI agents (single file)
+Generated from the same pages as https://kevencastilho.github.io/C-RO_WebKit/docs/ai/index.html
+Project: https://github.com/KevenCastilho/C-RO_WebKit  License: MIT
+Files to load: https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.css and https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.js
+
+
+==============================================================================
+PAGE: Essentials
+SOURCE: https://kevencastilho.github.io/C-RO_WebKit/docs/ai/essentials.html
+==============================================================================
+
+# Essentials
+
+Everything needed to produce correct code with C-RO in one page. Details per component are in the other pages of this reference.
+
+This reference is also published as single files: https://kevencastilho.github.io/C-RO_WebKit/docs/ai/ai-essentials.txt (this page plus the most important pages, plain text, under 30 KB), https://kevencastilho.github.io/C-RO_WebKit/docs/ai/ai-full.txt and https://kevencastilho.github.io/C-RO_WebKit/docs/ai/ai-full.html (every page in one file), and as JSON: https://kevencastilho.github.io/C-RO_WebKit/docs/ai/nav.json (navigation) with one file per topic under https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/.
+
+## What C-RO is
+
+A CSS/JS kit that gives Bootstrap 5.3.8 the look of the 2002 Classic Ragnarok Online interface. It is a complete Bootstrap theme: you write normal Bootstrap markup and the CSS changes the appearance. It also provides native cro-* pieces for things Bootstrap lacks (game window with title bar, inventory slots, tree, menus, CRO.alert/confirm/prompt/menu dialogs), game cursors, and an automatic favicon. No Node, no build step is needed to use it.
+
+## Which files to load
+
+| Need | CSS | JS |
+| Bootstrap markup with the game look (the usual case) | c-ro-bs.min.css | c-ro-bs.min.js (Bootstrap bundle with Popper + kit; defines window.bootstrap and window.CRO) |
+| Kit only, no Bootstrap (cro-* classes and bare HTML elements) | c-ro.min.css (or c-ro.lite.min.css, without game-specific pieces) | c-ro.min.js (window.CRO only) |
+
+Hosted copies: https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.css, https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.js (same folder for the other files). Keep the fonts/ folder next to the CSS: font URLs are relative to the CSS file. Do not put raw.githubusercontent.com in a <link> or <script> of a page (served as text/plain, browsers refuse it). Reading the source files through raw.githubusercontent.com to study them is fine.
+
+Never load c-ro.css together with the original Bootstrap, and never load two Bootstraps: c-ro-bs.css already contains Bootstrap.
+
+## Minimal page
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My page</title>
+  <link rel="stylesheet" href="c-ro-bs.min.css">
+</head>
+<body>
+  <button class="btn btn-primary">Hello, adventurer!</button>
+  <script src="c-ro-bs.min.js"></script>
+</body>
+</html>
+```
+
+## Rules that prevent most mistakes
+
+- Use plain Bootstrap 5.3.8 markup for anything Bootstrap has (btn, card, modal, form-control, nav-tabs, ...). Do not invent cro-* variants of them. Components are marked Bootstrap drop-in in this reference.
+- Do not mix btn and cro-btn on the same screen (both have the game look but different sizes). Native pieces (cro-window, cro-progress, cro-tabs, cro-btn) give the most faithful game look; Bootstrap markup is fine for forms, tabs and buttons inside cro-window. Do not use Bootstrap colored buttons (btn-warning, btn-success, btn-danger), card or <hr> when imitating the game; see How it looks in the game.
+- Only use cro-*, is-* and data-cro-* names that are documented. The full list is in Class index and data-cro-* attributes. If a class is not listed there, it does not exist.
+- Cascade: Bootstrap is inside @layer bootstrap; the kit is outside any layer and therefore wins over Bootstrap; the site's own CSS loaded after the kit wins over the kit. Bare-element rules of the kit use :where() (zero specificity), so a simple selector like a { color: ... } overrides them without !important. Overriding a kit class needs equal or higher specificity or a later stylesheet. Do not use !important as a first resort.
+- Customize with tokens first: redefine --cro-* custom properties on :root or on any container (full list: Tokens). Example: --cro-accent, --cro-sel-bg, --cro-field-bg, --cro-field-border, --cro-win-body, --cro-font-ui. Sprites (buttons, bars, icons, tabs) are pixel images and do not follow color tokens. Bootstrap theme colors (primary, secondary, ...) are compiled in and are not runtime tokens.
+- Initialize what Bootstrap requires: tooltips and popovers need new bootstrap.Tooltip(el) / new bootstrap.Popover(el); toasts need bootstrap.Toast.getOrCreateInstance(el).show(). Modal, collapse, dropdown, offcanvas, tabs and carousel work through data-bs-* attributes with no script.
+- Tabs and selects of the kit are driven by attributes: data-cro-tabs, data-cro-panels, data-cro-tab, data-cro-panel, data-cro-select. After inserting such HTML dynamically call CRO.init(root) (idempotent).
+- Honesty labels: items marked DERIVADO or INVENTADO do not exist in the original game; do not describe them as authentic. CONFIRMADO = measured from the game's bitmaps; NÃO DETERMINADO = visual unknown, shown with the cro-undefined class (dashed gray border).
+- What does not exist: no chat window (only the chat input bar cro-dialog-bar), no ready-made inventory/equipment/status/skill/party/minimap windows (compose them from cro-window, cro-slot, cro-progress, cro-tabs), no backend. See What does not exist. Never invent a class that is not in the class index.
+- Not supported: RTL (dir="rtl") and dark mode. Native popups the CSS cannot reach stay native (date/time/color pickers, datalist; plain select popups unless data-cro-select is set). Custom scrollbars only in WebKit/Blink.
+- Cursors: the kit sets game cursors on the whole page; a cursor declared by the author always wins. The animated cursor and the automatic favicon need the JS bundle (data-cro-cursor-anim="off" and data-cro-favicon="off" on <html> disable them).
+- Browsers: needs @layer, :where(), mask. Approximate minimums: Chrome/Edge 120, Firefox 110, Safari 16. Automated tests run only in Chromium.
+
+## JavaScript API (window.CRO)
+
+| Call | Returns | Notes |
+| CRO.init(root?) | - | Wires data-cro-tabs and data-cro-select inside root. Runs on load by itself. |
+| CRO.alert(msg, {title, ok}) | Promise<undefined> | Game-style alert |
+| CRO.confirm(msg, {title, ok, cancel}) | Promise<boolean> | Esc resolves false |
+| CRO.prompt(msg, default, {title, ok, cancel}) | Promise<string|null> | Esc/Cancel resolves null |
+| CRO.menu(items, x, y) | Promise<value|undefined> | Context menu; arrows/Enter/Esc |
+| CRO.bar(el, percent) | - | Sets an HP/SP bar width; turns red below 25% unless data-cro-color is present |
+| CRO.initTabs(root?), CRO.selectTab(button, focus?) | - | Tabs only |
+
+All four dialog calls return a Promise. They do not take a callback. The second argument is an options object, never a function. Correct: const ok = await CRO.confirm('Leave?', { ok: 'Yes', cancel: 'No' }); or CRO.confirm('Leave?').then(ok => ...). Wrong: CRO.confirm('Leave?', function (ok) { ... }) (the dialog opens but the function is never called).
+
+Details and examples: JavaScript, Dialogs, complete pages in Recipes, frequent mistakes in Common mistakes.
+
+## Where to read next
+
+Back to the index. Component pages repeat their own caveats, so reading a single page is enough for a single component.
+
+
+==============================================================================
+PAGE: Diálogos (CRO.alert...)
+SOURCE: https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/dialogos.html
+==============================================================================
+
+# Diálogos (CRO.alert...)
+
+Type: Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.
+Section: Peças nativas do kit
+Human version (rendered examples): kit/dialogos.html
+Prose language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.
+cro-* / is-* classes in this page: cro-btn cro-modal cro-modal__actions cro-modal__body cro-titlebar cro-titlebar__title cro-window cro-window__body cro-window__footer
+
+Avisos, confirmações, entrada de texto e menu de contexto, sem escrever HTML — todas com Promise.
+
+## API
+
+```
+<button class="btn btn-secondary" id="dl-a">CRO.alert</button>
+<button class="btn btn-secondary" id="dl-c">CRO.confirm</button>
+<button class="btn btn-secondary" id="dl-p">CRO.prompt</button>
+<button class="btn btn-secondary" id="dl-m">CRO.menu</button>
+<span id="dl-out" class="ms-2"></span>
+```
+
+```
+var out = document.getElementById('dl-out');
+document.getElementById('dl-a').onclick = function () {
+  CRO.alert('Olá, aventureiro!', { title: 'Aviso' }).then(function () {
+    out.textContent = 'alert fechado';
+  });
+};
+document.getElementById('dl-c').onclick = function () {
+  CRO.confirm('Sair do jogo?', { ok: 'Sair', cancel: 'Ficar' }).then(function (v) {
+    out.textContent = 'confirm: ' + v;
+  });
+};
+document.getElementById('dl-p').onclick = function () {
+  CRO.prompt('Nome do personagem:', 'Ana').then(function (v) {
+    out.textContent = 'prompt: ' + JSON.stringify(v);
+  });
+};
+document.getElementById('dl-m').onclick = function (e) {
+  var r = e.target.getBoundingClientRect();
+  CRO.menu([
+    { label: 'Atacar', value: 'a' },
+    { label: 'Falar', value: 'f' },
+    '-',
+    { label: 'Ignorar', value: 'i', disabled: true }
+  ], r.left, r.bottom)
+    .then(function (v) { out.textContent = 'menu: ' + v; });
+};
+```
+
+| Função | Resolve com |
+| CRO.alert(msg, {title, ok}) | undefined |
+| CRO.confirm(msg, {title, ok, cancel}) | true / false (Esc = false) |
+| CRO.prompt(msg, padrão, {title, ok, cancel}) | texto / null (Esc ou Cancelar) |
+| CRO.menu(itens, x, y) | value do item / undefined |
+
+## Com async/await
+
+```
+async function sair() {
+  if (await CRO.confirm('Deseja sair?')) {
+    const nome = await CRO.prompt('Seu nome:', 'Ana');
+    if (nome !== null) await CRO.alert('Até logo, ' + nome + '!');
+  }
+}
+```
+
+## Por baixo
+
+Usam <dialog class="cro-modal"> com showModal() (foco preso, Esc fecha, camada superior do navegador) e uma cro-window dentro. Você pode montar o seu:
+
+```
+<dialog class="cro-modal">
+  <section class="cro-window">
+    <header class="cro-titlebar"><span class="cro-titlebar__title">Título</span></header>
+    <div class="cro-window__body cro-modal__body">Mensagem</div>
+    <footer class="cro-window__footer cro-modal__actions">
+      <button class="cro-btn">OK</button>
+    </footer>
+  </section>
+</dialog>
+```
+
+« Árvore, menu e lista · Ícones do jogo »
+
+
+==============================================================================
+PAGE: O que não existe no kit
+SOURCE: https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/nao-existe.html
+==============================================================================
+
+# O que não existe no kit
+
+Type: Guide. Explanatory page about using the kit.
+Section: Extras do kit
+Human version (rendered examples): extras/nao-existe.html
+Prose language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.
+
+Lista direta do que o C-RO não oferece, com a alternativa. Se algo não está documentado aqui nem no índice de classes, não existe: não invente classes.
+
+## Resposta curta
+
+| Pergunta | Resposta | O que fazer |
+| Existe janela de chat pronta? | Não. Existe só a barra de entrada do chat (cro-dialog-bar: nome, campo de texto e alça), mais o ícone cro-ico--chatmode. Não há área de mensagens, rolagem de log nem abas de chat. | Monte com cro-window + a barra cro-dialog-bar. Veja Sysbox e dica. |
+| Existe modo escuro? | Não. | Não há alternativa; o visual segue o jogo de 2002. |
+| Existe suporte a RTL (dir="rtl")? | Não. | Não suportado. |
+| Existe janela pronta de inventário, equipamento, status, habilidades, grupo ou minimapa? | Não. Existem as peças: cro-window, cro-slot, cro-progress, cro-tabs, cro-tree, cro-list. | Componha as janelas com as peças. Veja Janela e Slots. |
+| Existe backend de login, sessão ou jogo? | Não. É só CSS e JS de interface. | O formulário de login é visual; ligue ao seu servidor. |
+| O kit usa Node, React, Vue ou etapa de build para usar? | Não. Para usar bastam um CSS e um JS. | <link> e <script>. |
+| Os botões/barras/abas seguem as variáveis de cor? | Não. São imagens (sprites) desenhadas em CSS. Só textos, campos, fundos e bordas seguem tokens --cro-*. | Veja Tokens e Customização. |
+| As cores do tema do Bootstrap (primary, secondary...) mudam em tempo de execução? | Não. Estão compiladas no CSS. | — |
+| Os pickers nativos (data, hora, cor) e datalist seguem o visual do jogo? | Não. Ficam nativos. | Veja Navegadores e limites. |
+
+## Como ter certeza de que uma classe existe
+
+Procure a classe no índice de classes cro-*. Se não estiver lá, ela não existe. O mesmo vale para atributos: a lista completa está em Atributos data-cro-* e os tokens em Tokens.
+
+Warning
+
+Ausência de resultado numa busca de texto não prova que algo não existe, e presença de um nome plausível (cro-chat, cro-hp-bar) não prova que existe. A fonte de verdade é o índice de classes.
+« Receitas · Como é no jogo »
+
+
+==============================================================================
+PAGE: Como é no jogo (e o que evitar)
+SOURCE: https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/como-e-no-jogo.html
+==============================================================================
+
+# Como é no jogo (e o que evitar)
+
+Type: Guide. Explanatory page about using the kit.
+Section: Extras do kit
+Human version (rendered examples): extras/como-e-no-jogo.html
+Prose language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.
+
+Regras visuais do Ragnarok Online clássico que o kit segue. Uma tela que as quebra parece "estranha" mesmo usando as classes certas.
+
+## O que o jogo faz
+
+| Elemento | Padrão do jogo | Como o kit trata |
+| Janela | Compacta, tamanho fixo (a janela de login e a Basic Info têm cerca de 280×120 px), título em texto branco com sombra | cro-window com cro-titlebar. Dê uma largura fixa (style="width:300px"); não estique para a página toda. |
+| Botões | Pequenos, de tamanho fixo (cerca de 42×20 px no login), nos cantos inferiores da janela, em um rodapé | cro-btn ou btn, dentro de cro-window__footer. Não use w-100 nem botões grandes. |
+| Cores de botão | Uma só aparência (azul para a ação principal, cinza para as demais) | Evite btn-warning, btn-success e btn-danger em telas que imitam o jogo: são cores do Bootstrap sem equivalente nos botões do jogo. |
+| Barra de HP/SP | 85×8 px, azul; vermelha só abaixo de 25% de vida; "atual / máx" como texto | cro-progress com --p. Veja Barras. |
+| Abas | Dentro do corpo da janela, abaixo do título | cro-tabs (ou nav-tabs do Bootstrap). Nunca dentro da faixa do título. |
+| Campos de formulário | Rótulo azul à esquerda ou acima, campo cinza | cro-field / form-control. Um só tipo de rótulo por formulário. |
+| Agrupamento | Painéis com borda (cro-box), sem cartões nem linhas horizontais | Não use card nem <hr> para separar áreas do jogo. |
+
+## O que evitar
+
+- Esticar uma janela na largura da página, com campos e barras de largura total.
+- Misturar btn do Bootstrap com cro-btn na mesma tela: os dois têm o visual do jogo, mas com tamanhos diferentes e o resultado fica desigual. Escolha um dos dois.
+- Colocar o rodapé listrado (cro-window__footer) dentro do corpo (cro-window__body): ele é irmão do corpo, depois dele.
+- Usar cro-tab ou outras classes que não estão no índice.
+- Inventar variações de cor para HP (verde, rosa, vermelha em 60%).
+- Títulos grandes e coloridos soltos fora de uma janela.
+
+Note
+
+Esta página descreve o que o kit tenta reproduzir. Os itens marcados como DERIVADO/INVENTADO em Fidelidade não existem no jogo original.
+« O que não existe · Erros comuns »
+
+
+==============================================================================
+PAGE: Erros comuns
+SOURCE: https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/erros-comuns.html
+==============================================================================
+
+# Erros comuns
+
+Type: Guide. Explanatory page about using the kit.
+Section: Extras do kit
+Human version (rendered examples): extras/erros-comuns.html
+Prose language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.
+
+Os erros que mais apareceram em testes com IAs e pessoas, com a correção.
+
+| Erro | Correção |
+| CRO.confirm('Sair?', function (v) { ... }) (usar callback) | CRO.alert, CRO.confirm, CRO.prompt e CRO.menu devolvem Promise. Use await CRO.confirm('Sair?') ou .then(v => ...). O segundo argumento é um objeto de opções ({ ok, cancel, title }), não uma função. |
+| Botões das abas com classe cro-tab | A classe é cro-tabs__btn. A estrutura é [data-cro-tabs data-cro-panels="#id"] > .cro-tabs > button.cro-tabs__btn[data-cro-tab] e os painéis [data-cro-panel] em .cro-tab-panels#id. Veja Abas cro-*. |
+| Abas inseridas por JavaScript não funcionam | Chame CRO.init(raiz) depois de inserir o HTML. |
+| Carregar o CSS sem Bootstrap e usar modal, card, nav-tabs | c-ro.min.css não tem Bootstrap. Para markup Bootstrap carregue c-ro-bs.min.css e c-ro-bs.min.js. |
+| Carregar o Bootstrap original junto com c-ro-bs | c-ro-bs já contém o Bootstrap. Carregar dois quebra o visual. |
+| Usar raw.githubusercontent.com no <link> ou <script> | O GitHub serve esses arquivos como text/plain; o navegador recusa. Use https://kevencastilho.github.io/C-RO_WebKit/dist/... ou copie dist/ para o seu site. Ler o texto dos arquivos por raw (para estudo) funciona. |
+| Fontes quebradas | A pasta fonts/ precisa ficar ao lado do CSS. |
+| Mudar --cro-accent e esperar que botões, barras e abas mudem de cor | Só textos, campos, fundos e bordas seguem tokens. Botões, barras, abas e ícones são imagens. |
+| Rodapé da janela dentro do corpo | cro-window__footer é irmão de cro-window__body. Veja Janela. |
+| Rótulo cro-label--lg em um campo só | Use a mesma variação em todos os rótulos do grupo. |
+| btn e cro-btn na mesma tela | Escolha um. |
+| Barra de HP vermelha em 60% ou verde | HP e SP são azuis; vermelha só abaixo de 25% (CRO.bar faz isso sozinho). |
+| Tooltip ou popover não aparece | No Bootstrap precisam de new bootstrap.Tooltip(el) / new bootstrap.Popover(el). |
+| Esperar um componente de chat, modo escuro ou RTL | Não existem. Veja O que não existe. |
+« Como é no jogo

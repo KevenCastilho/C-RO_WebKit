@@ -1,0 +1,33 @@
+{
+ "id": "formularios/select",
+ "title": "Select",
+ "type": "Bootstrap drop-in",
+ "section": "Formulários",
+ "summary": "form-select mantém o select nativo. Com data-cro-select ele ganha o popup de opções do kit.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/select.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/formularios/select.html",
+ "classes": [],
+ "data_attributes": [
+  "data-cro-select"
+ ],
+ "text": "# Select\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Formulários\nHuman version (rendered examples): formularios/select.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ndata-cro-* attributes in this page: data-cro-select\n\nform-select mantém o select nativo. Com data-cro-select ele ganha o popup de opções do kit.\n\n## Padrão\n\n```\n<div style=\"max-width:300px\">\n  <select class=\"form-select\" aria-label=\"Classe\">\n    <option selected>Escolha...</option>\n    <option value=\"1\">Espadachim</option>\n    <option value=\"2\">Mago</option>\n    <option value=\"3\">Gatuno</option>\n  </select>\n</div>\n```\n\n## Tamanhos, múltiplo e desabilitado\n\n```\n<div class=\"row g-2\" style=\"max-width:640px\">\n  <div class=\"col\">\n    <select class=\"form-select form-select-lg mb-1\">\n      <option>lg</option>\n    </select>\n    <select class=\"form-select form-select-sm\">\n      <option>sm</option>\n    </select>\n  </div>\n  <div class=\"col\">\n    <select class=\"form-select\" multiple size=\"3\">\n      <option>Poring</option>\n      <option selected>Lunatic</option>\n      <option>Fabre</option>\n    </select>\n  </div>\n  <div class=\"col\">\n    <select class=\"form-select\" disabled>\n      <option>Desabilitado</option>\n    </select>\n  </div>\n</div>\n```\n\n## Popup do kit (data-cro-select)\n\nO popup do <select> é desenhado pelo sistema e o CSS não alcança. Para ter as opções no visual do jogo, adicione data-cro-select. O kit dispara input e change normalmente.\n\n```\n<div style=\"max-width:300px\">\n  <select class=\"form-select\" data-cro-select aria-label=\"Classe\">\n    <option>Espadachim</option>\n    <option>Mago</option>\n    <option>Gatuno</option>\n    <option>Arqueiro</option>\n  </select>\n</div>\n```\n\n```\n// o select continua sendo o elemento de verdade: ouça 'change' como sempre\ndocument.querySelectorAll('select[data-cro-select]').forEach(function (s) {\n  s.addEventListener('change', function () { console.log('classe:', s.value); });\n});\n```\n\nNote\n\nSem o atributo, o select segue 100% nativo (melhor para mobile).\n« Form control · Checks e radios »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:300px\">\n  <select class=\"form-select\" aria-label=\"Classe\">\n    <option selected>Escolha...</option>\n    <option value=\"1\">Espadachim</option>\n    <option value=\"2\">Mago</option>\n    <option value=\"3\">Gatuno</option>\n  </select>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"row g-2\" style=\"max-width:640px\">\n  <div class=\"col\">\n    <select class=\"form-select form-select-lg mb-1\">\n      <option>lg</option>\n    </select>\n    <select class=\"form-select form-select-sm\">\n      <option>sm</option>\n    </select>\n  </div>\n  <div class=\"col\">\n    <select class=\"form-select\" multiple size=\"3\">\n      <option>Poring</option>\n      <option selected>Lunatic</option>\n      <option>Fabre</option>\n    </select>\n  </div>\n  <div class=\"col\">\n    <select class=\"form-select\" disabled>\n      <option>Desabilitado</option>\n    </select>\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:300px\">\n  <select class=\"form-select\" data-cro-select aria-label=\"Classe\">\n    <option>Espadachim</option>\n    <option>Mago</option>\n    <option>Gatuno</option>\n    <option>Arqueiro</option>\n  </select>\n</div>"
+  },
+  {
+   "language": "js",
+   "code": "// o select continua sendo o elemento de verdade: ouça 'change' como sempre\ndocument.querySelectorAll('select[data-cro-select]').forEach(function (s) {\n  s.addEventListener('change', function () { console.log('classe:', s.value); });\n});"
+  }
+ ]
+}

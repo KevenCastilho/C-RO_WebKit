@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O que não existe no kit · C-RO AI reference</title><meta name="description" content="Lista direta do que o C-RO não oferece, com a alternativa. Se algo não está documentado aqui nem no índice de classes , não existe: não invente classes.">
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#1b1b1b;background:#fff}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto;border:1px solid #ddd}code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+table{border-collapse:collapse;margin:.75rem 0}td,th{border:1px solid #ccc;padding:.25rem .5rem;text-align:left;vertical-align:top}
+aside{border-left:4px solid #888;background:#f7f7f7;padding:.1rem .8rem;margin:.75rem 0}dt{font-weight:600}dd{margin:0 0 .4rem 0}
+nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
+<nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Extras do kit › O que não existe no kit</nav>
+<main>
+<h1>O que não existe no kit</h1>
+<dl><dt>Type</dt><dd>Guide. Explanatory page about using the kit.</dd><dt>Section</dt><dd>Extras do kit</dd><dt>Human version (rendered examples)</dt><dd><a href="../../extras/nao-existe.html">extras/nao-existe.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
+<div lang="pt-BR">
+<p>Lista direta do que o C-RO <b>não</b> oferece, com a alternativa. Se algo não está documentado aqui nem no <a href="referencia.html">índice de classes</a>, não existe: não invente classes.</p>
+<h2 id="resposta-curta">Resposta curta</h2>
+<table>
+<thead>
+<tr>
+<th>Pergunta</th>
+<th>Resposta</th>
+<th>O que fazer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Existe janela de chat pronta?</td>
+<td><strong>Não.</strong> Existe só a barra de entrada do chat (<code>cro-dialog-bar</code>: nome, campo de texto e alça), mais o ícone <code>cro-ico--chatmode</code>. Não há área de mensagens, rolagem de log nem abas de chat.</td>
+<td>Monte com <code>cro-window</code> + a barra <code>cro-dialog-bar</code>. Veja <a href="../kit/sysbox-tip.html">Sysbox e dica</a>.</td>
+</tr>
+<tr>
+<td>Existe modo escuro?</td>
+<td><strong>Não.</strong></td>
+<td>Não há alternativa; o visual segue o jogo de 2002.</td>
+</tr>
+<tr>
+<td>Existe suporte a RTL (<code>dir="rtl"</code>)?</td>
+<td><strong>Não.</strong></td>
+<td>Não suportado.</td>
+</tr>
+<tr>
+<td>Existe janela pronta de inventário, equipamento, status, habilidades, grupo ou minimapa?</td>
+<td><strong>Não.</strong> Existem as peças: <code>cro-window</code>, <code>cro-slot</code>, <code>cro-progress</code>, <code>cro-tabs</code>, <code>cro-tree</code>, <code>cro-list</code>.</td>
+<td>Componha as janelas com as peças. Veja <a href="../kit/janela.html">Janela</a> e <a href="../kit/slots.html">Slots</a>.</td>
+</tr>
+<tr>
+<td>Existe backend de login, sessão ou jogo?</td>
+<td><strong>Não.</strong> É só CSS e JS de interface.</td>
+<td>O formulário de login é visual; ligue ao seu servidor.</td>
+</tr>
+<tr>
+<td>O kit usa Node, React, Vue ou etapa de build para usar?</td>
+<td><strong>Não.</strong> Para usar bastam um CSS e um JS.</td>
+<td><code>&lt;link&gt;</code> e <code>&lt;script&gt;</code>.</td>
+</tr>
+<tr>
+<td>Os botões/barras/abas seguem as variáveis de cor?</td>
+<td><strong>Não.</strong> São imagens (sprites) desenhadas em CSS. Só textos, campos, fundos e bordas seguem tokens <code>--cro-*</code>.</td>
+<td>Veja <a href="tokens.html">Tokens</a> e <a href="../comecando/customizacao.html">Customização</a>.</td>
+</tr>
+<tr>
+<td>As cores do tema do Bootstrap (primary, secondary...) mudam em tempo de execução?</td>
+<td><strong>Não.</strong> Estão compiladas no CSS.</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Os pickers nativos (data, hora, cor) e <code>datalist</code> seguem o visual do jogo?</td>
+<td><strong>Não.</strong> Ficam nativos.</td>
+<td>Veja <a href="../comecando/navegadores.html">Navegadores e limites</a>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="como-ter-certeza-de-que-uma-classe-existe">Como ter certeza de que uma classe existe</h2>
+<p>Procure a classe no <a href="referencia.html">índice de classes <code>cro-*</code></a>. Se não estiver lá, ela não existe. O mesmo vale para atributos: a lista completa está em <a href="atributos-data.html">Atributos data-cro-*</a> e os tokens em <a href="tokens.html">Tokens</a>.</p>
+<aside><strong>Warning</strong><p>Ausência de resultado numa busca de texto não prova que algo não existe, e presença de um nome plausível (<code>cro-chat</code>, <code>cro-hp-bar</code>) não prova que existe. A fonte de verdade é o índice de classes.</p></aside>
+</div>
+<nav class="pager" aria-label="Pages"><a href="../extras/receitas.html">« Receitas</a> · <a href="../extras/como-e-no-jogo.html">Como é no jogo »</a></nav>
+</main>
+</body></html>

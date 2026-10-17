@@ -1,0 +1,29 @@
+{
+ "id": "componentes/alerts",
+ "title": "Alerts",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Mensagens de feedback. No kit são sysbox , a caixa de mensagem do sistema do jogo; as cores contextuais são derivadas por matiz.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/alerts.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/alerts.html",
+ "classes": [
+  "cro-sysbox"
+ ],
+ "data_attributes": [],
+ "text": "# Alerts\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/alerts.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-sysbox\n\nMensagens de feedback. No kit são sysbox, a caixa de mensagem do sistema do jogo; as cores contextuais são derivadas por matiz.\n\n## Cores\n\n```\n<div class=\"alert alert-primary\" role=\"alert\">Primary — uma mensagem informativa.</div>\n<div class=\"alert alert-secondary\" role=\"alert\">Secondary</div>\n<div class=\"alert alert-success\" role=\"alert\">Success — personagem criado!</div>\n<div class=\"alert alert-danger\" role=\"alert\">Danger — falha ao conectar.</div>\n<div class=\"alert alert-warning\" role=\"alert\">Warning — o servidor reinicia em 5 min.</div>\n<div class=\"alert alert-info\" role=\"alert\">Info</div>\n<div class=\"alert alert-light\" role=\"alert\">Light</div>\n<div class=\"alert alert-dark\" role=\"alert\">Dark</div>\n```\n\nDerived/invented (not in the original game)\n\nO sysbox do jogo só tem uma cor. As variações contextuais por matiz são derivadas do mesmo sprite (DERIVADO).\n\n## Com link, título e dispensável\n\n```\n<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\n  <h4 class=\"alert-heading\">Atenção!</h4>\n  <p class=\"mb-0\">Leia as <a href=\"#\" class=\"alert-link\">regras do servidor</a>.</p>\n  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Fechar\"></button>\n</div>\n```\n\nNote\n\nAlerts e campos inválidos ganham automaticamente o cursor \"mão com !\" do jogo. Veja Estados automáticos do cursor.\n\n## Nativo do kit\n\n```\n<div class=\"cro-sysbox\" style=\"width:240px;height:48px\">Mensagem do sistema</div>\n```\n\n« Accordion · Badge »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"alert alert-primary\" role=\"alert\">Primary — uma mensagem informativa.</div>\n<div class=\"alert alert-secondary\" role=\"alert\">Secondary</div>\n<div class=\"alert alert-success\" role=\"alert\">Success — personagem criado!</div>\n<div class=\"alert alert-danger\" role=\"alert\">Danger — falha ao conectar.</div>\n<div class=\"alert alert-warning\" role=\"alert\">Warning — o servidor reinicia em 5 min.</div>\n<div class=\"alert alert-info\" role=\"alert\">Info</div>\n<div class=\"alert alert-light\" role=\"alert\">Light</div>\n<div class=\"alert alert-dark\" role=\"alert\">Dark</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\n  <h4 class=\"alert-heading\">Atenção!</h4>\n  <p class=\"mb-0\">Leia as <a href=\"#\" class=\"alert-link\">regras do servidor</a>.</p>\n  <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Fechar\"></button>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"cro-sysbox\" style=\"width:240px;height:48px\">Mensagem do sistema</div>"
+  }
+ ]
+}

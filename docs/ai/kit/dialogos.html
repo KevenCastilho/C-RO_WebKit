@@ -80,9 +80,13 @@ document.getElementById(&#x27;dl-m&#x27;).onclick = function (e) {
 <h2 id="por-baixo">Por baixo</h2>
 <p>Usam <code>&lt;dialog class="cro-modal"&gt;</code> com <code>showModal()</code> (foco preso, Esc fecha, camada superior do navegador) e uma <code>cro-window</code> dentro. Você pode montar o seu:</p>
 <pre><code class="language-html">&lt;dialog class=&quot;cro-modal&quot;&gt;
-  &lt;section class=&quot;cro-window&quot;&gt;&lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Título&lt;/span&gt;&lt;/header&gt;
-  &lt;div class=&quot;cro-window__body cro-modal__body&quot;&gt;Mensagem&lt;/div&gt;
-  &lt;footer class=&quot;cro-window__footer cro-modal__actions&quot;&gt;&lt;button class=&quot;cro-btn&quot;&gt;OK&lt;/button&gt;&lt;/footer&gt;&lt;/section&gt;
+  &lt;section class=&quot;cro-window&quot;&gt;
+    &lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Título&lt;/span&gt;&lt;/header&gt;
+    &lt;div class=&quot;cro-window__body cro-modal__body&quot;&gt;Mensagem&lt;/div&gt;
+    &lt;footer class=&quot;cro-window__footer cro-modal__actions&quot;&gt;
+      &lt;button class=&quot;cro-btn&quot;&gt;OK&lt;/button&gt;
+    &lt;/footer&gt;
+  &lt;/section&gt;
 &lt;/dialog&gt;</code></pre>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../kit/arvore-menu.html">« Árvore, menu e lista</a> · <a href="../kit/icones-cro.html">Ícones do jogo »</a></nav>

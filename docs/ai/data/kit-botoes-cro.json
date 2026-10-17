@@ -1,0 +1,64 @@
+{
+ "id": "kit/botoes-cro",
+ "title": "Botões cro-*",
+ "type": "Native kit piece",
+ "section": "Peças nativas do kit",
+ "summary": "Botões nativos do kit: o botão padrão, o mesbtn, os botões de sistema 11×11 e os de diálogo.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/botoes-cro.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/kit/botoes-cro.html",
+ "classes": [
+  "cro-btn",
+  "cro-btn--20",
+  "cro-btn--close",
+  "cro-dialbtn",
+  "cro-dialbtn--opt",
+  "cro-mesbtn",
+  "cro-mesbtn-ico",
+  "cro-mesbtn-ico--01",
+  "cro-mesbtn-ico--02",
+  "cro-mesbtn-ico--03",
+  "cro-mesbtn-ico--04",
+  "cro-mesbtn-ico--05",
+  "cro-mesbtn-ico--06",
+  "cro-mesbtn-ico--07",
+  "cro-mesbtn-ico--08",
+  "cro-mesbtn-ico--09",
+  "cro-mesbtn-ico--10",
+  "cro-sys-btn",
+  "cro-sys-btn--close",
+  "cro-sys-btn--mini",
+  "cro-sys-btn--quest",
+  "is-active",
+  "is-hover",
+  "is-on"
+ ],
+ "data_attributes": [],
+ "text": "# Botões cro-*\n\nType: Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.\nSection: Peças nativas do kit\nHuman version (rendered examples): kit/botoes-cro.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-btn cro-btn--20 cro-btn--close cro-dialbtn cro-dialbtn--opt cro-mesbtn cro-mesbtn-ico cro-mesbtn-ico--01 cro-mesbtn-ico--02 cro-mesbtn-ico--03 cro-mesbtn-ico--04 cro-mesbtn-ico--05 cro-mesbtn-ico--06 cro-mesbtn-ico--07 cro-mesbtn-ico--08 cro-mesbtn-ico--09 cro-mesbtn-ico--10 cro-sys-btn cro-sys-btn--close cro-sys-btn--mini cro-sys-btn--quest is-active is-hover is-on\n\nBotões nativos do kit: o botão padrão, o mesbtn, os botões de sistema 11×11 e os de diálogo.\n\n## Botão padrão (cro-btn)\n\n```\n<button class=\"cro-btn\">Padrão 20px</button>\n<button class=\"cro-btn\" disabled>Desabilitado</button>\n<button class=\"cro-btn cro-btn--close\">Fechar</button>\n<a class=\"cro-btn\" href=\"#\">link-botão</a>\n<button>Elemento nu</button>\n```\n\n<button> sem classe também recebe o visual (veja Reboot).\n\n## Mesbtn (botão de mensagem)\n\n```\n<button class=\"cro-mesbtn\" style=\"width:80px\">Mesbtn</button>\n<button class=\"cro-mesbtn\" style=\"width:120px\">Mais largo</button>\n```\n\n## Mesbtn com ícone (01–10)\n\n```\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--01\" aria-label=\"mesbtn 01\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--02\" aria-label=\"mesbtn 02\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--03\" aria-label=\"mesbtn 03\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--04\" aria-label=\"mesbtn 04\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--05\" aria-label=\"mesbtn 05\"></button>\n```\n\n## Botões de sistema 11×11 e de diálogo\n\n```\n<button class=\"cro-sys-btn\" aria-label=\"base\"></button>\n<button class=\"cro-sys-btn cro-sys-btn--mini\" aria-label=\"minimizar\"></button>\n<button class=\"cro-sys-btn cro-sys-btn--close\" aria-label=\"fechar\"></button>\n<button class=\"cro-sys-btn cro-sys-btn--quest\" aria-label=\"ajuda\"></button>\n<button class=\"cro-dialbtn\" aria-label=\"diálogo\"></button>\n<button class=\"cro-dialbtn cro-dialbtn--opt\" aria-label=\"opções\"></button>\n```\n\nWarning\n\nBotões só com ícone precisam de aria-label.\n\nLimitation\n\nO perfil lite (c-ro.lite.css) não inclui cro-btn--close nem cro-mesbtn-ico.\n\n## Estados forçados e variantes\n\nTodo botão do kit responde a :hover, :active e :disabled. Para forçar o estado por classe (útil em testes, capturas de tela ou botões \"ligados\"), use is-hover, is-active e, nos botões de sistema, is-on / cro-sys-btn--on:\n\n```\n<button class=\"cro-btn is-hover\">is-hover</button>\n<button class=\"cro-btn is-active\">is-active</button>\n<button class=\"cro-btn--20\">cro-btn--20 (mesmo botão, nome alternativo)</button>\n<button class=\"cro-sys-btn cro-sys-btn--close is-on\" aria-label=\"fechar ligado\"></button>\n<button class=\"cro-mesbtn is-hover\" style=\"width:90px\">is-hover</button>\n```\n\n| Classe | Faz |\n| cro-btn--20 | Sinônimo de cro-btn (botão de 20px) |\n| is-hover, is-active | Forçam a aparência de hover/pressionado em cro-btn e cro-mesbtn |\n| is-on, cro-sys-btn--on | Forçam o estado \"ligado\" nos botões de sistema (cro-sys-btn, --mini, --close) |\n| cro-sys-btn__content | Conteúdo (texto/ícone) centralizado dentro de um botão de sistema |\n| cro-btn__icon | Marca um <svg>/<img> como ícone interno do botão (12px, alinhado) |\n\n## Mesbtn com ícone: 01 a 10\n\n```\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--06\" aria-label=\"mesbtn 06\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--07\" aria-label=\"mesbtn 07\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--08\" aria-label=\"mesbtn 08\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--09\" aria-label=\"mesbtn 09\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--10\" aria-label=\"mesbtn 10\"></button>\n```\n\n« Janela e titlebar · Abas cro-* »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<button class=\"cro-btn\">Padrão 20px</button>\n<button class=\"cro-btn\" disabled>Desabilitado</button>\n<button class=\"cro-btn cro-btn--close\">Fechar</button>\n<a class=\"cro-btn\" href=\"#\">link-botão</a>\n<button>Elemento nu</button>"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"cro-mesbtn\" style=\"width:80px\">Mesbtn</button>\n<button class=\"cro-mesbtn\" style=\"width:120px\">Mais largo</button>"
+  },
+  {
+   "language": "html",
+   "code": "<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--01\" aria-label=\"mesbtn 01\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--02\" aria-label=\"mesbtn 02\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--03\" aria-label=\"mesbtn 03\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--04\" aria-label=\"mesbtn 04\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--05\" aria-label=\"mesbtn 05\"></button>"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"cro-sys-btn\" aria-label=\"base\"></button>\n<button class=\"cro-sys-btn cro-sys-btn--mini\" aria-label=\"minimizar\"></button>\n<button class=\"cro-sys-btn cro-sys-btn--close\" aria-label=\"fechar\"></button>\n<button class=\"cro-sys-btn cro-sys-btn--quest\" aria-label=\"ajuda\"></button>\n<button class=\"cro-dialbtn\" aria-label=\"diálogo\"></button>\n<button class=\"cro-dialbtn cro-dialbtn--opt\" aria-label=\"opções\"></button>"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"cro-btn is-hover\">is-hover</button>\n<button class=\"cro-btn is-active\">is-active</button>\n<button class=\"cro-btn--20\">cro-btn--20 (mesmo botão, nome alternativo)</button>\n<button class=\"cro-sys-btn cro-sys-btn--close is-on\" aria-label=\"fechar ligado\"></button>\n<button class=\"cro-mesbtn is-hover\" style=\"width:90px\">is-hover</button>"
+  },
+  {
+   "language": "html",
+   "code": "<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--06\" aria-label=\"mesbtn 06\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--07\" aria-label=\"mesbtn 07\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--08\" aria-label=\"mesbtn 08\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--09\" aria-label=\"mesbtn 09\"></button>\n<button type=\"button\" class=\"cro-mesbtn-ico cro-mesbtn-ico--10\" aria-label=\"mesbtn 10\"></button>"
+  }
+ ]
+}

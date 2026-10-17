@@ -1,0 +1,27 @@
+{
+ "id": "componentes/grupo-de-botoes",
+ "title": "Grupo de botões",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Agrupe botões em uma linha ou coluna.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/grupo-de-botoes.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/grupo-de-botoes.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Grupo de botões\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/grupo-de-botoes.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nAgrupe botões em uma linha ou coluna.\n\n```\n<div class=\"btn-group\" role=\"group\" aria-label=\"Grupo básico\">\n  <button class=\"btn btn-secondary\">Esquerda</button>\n  <button class=\"btn btn-secondary\">Meio</button>\n  <button class=\"btn btn-secondary\">Direita</button>\n</div>\n```\n\n## Tamanhos e vertical\n\n```\n<div class=\"btn-group btn-group-sm\" role=\"group\">\n  <button class=\"btn btn-primary\">1</button>\n  <button class=\"btn btn-primary\">2</button>\n</div>\n<div class=\"btn-group btn-group-lg\" role=\"group\">\n  <button class=\"btn btn-primary\">1</button>\n  <button class=\"btn btn-primary\">2</button>\n</div>\n<div class=\"btn-group-vertical\" role=\"group\">\n  <button class=\"btn btn-secondary\">Cima</button>\n  <button class=\"btn btn-secondary\">Baixo</button>\n</div>\n```\n\n## Barra de ferramentas e radio\n\n```\n<div class=\"btn-toolbar gap-2\" role=\"toolbar\">\n  <div class=\"btn-group\" role=\"group\">\n    <button class=\"btn btn-secondary\">1</button>\n    <button class=\"btn btn-secondary\">2</button>\n  </div>\n  <div class=\"btn-group\" role=\"group\">\n    <input type=\"radio\" class=\"btn-check\" name=\"tbr\" id=\"tbr1\" checked>\n    <label class=\"btn btn-outline-primary\" for=\"tbr1\">A</label>\n    <input type=\"radio\" class=\"btn-check\" name=\"tbr\" id=\"tbr2\">\n    <label class=\"btn btn-outline-primary\" for=\"tbr2\">B</label>\n  </div>\n</div>\n```\n\n« Botões · Card »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"btn-group\" role=\"group\" aria-label=\"Grupo básico\">\n  <button class=\"btn btn-secondary\">Esquerda</button>\n  <button class=\"btn btn-secondary\">Meio</button>\n  <button class=\"btn btn-secondary\">Direita</button>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"btn-group btn-group-sm\" role=\"group\">\n  <button class=\"btn btn-primary\">1</button>\n  <button class=\"btn btn-primary\">2</button>\n</div>\n<div class=\"btn-group btn-group-lg\" role=\"group\">\n  <button class=\"btn btn-primary\">1</button>\n  <button class=\"btn btn-primary\">2</button>\n</div>\n<div class=\"btn-group-vertical\" role=\"group\">\n  <button class=\"btn btn-secondary\">Cima</button>\n  <button class=\"btn btn-secondary\">Baixo</button>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"btn-toolbar gap-2\" role=\"toolbar\">\n  <div class=\"btn-group\" role=\"group\">\n    <button class=\"btn btn-secondary\">1</button>\n    <button class=\"btn btn-secondary\">2</button>\n  </div>\n  <div class=\"btn-group\" role=\"group\">\n    <input type=\"radio\" class=\"btn-check\" name=\"tbr\" id=\"tbr1\" checked>\n    <label class=\"btn btn-outline-primary\" for=\"tbr1\">A</label>\n    <input type=\"radio\" class=\"btn-check\" name=\"tbr\" id=\"tbr2\">\n    <label class=\"btn btn-outline-primary\" for=\"tbr2\">B</label>\n  </div>\n</div>"
+  }
+ ]
+}

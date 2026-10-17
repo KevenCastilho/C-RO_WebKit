@@ -1,0 +1,33 @@
+{
+ "id": "kit/slots",
+ "title": "Slots e inventário",
+ "type": "Native kit piece",
+ "section": "Peças nativas do kit",
+ "summary": "A grade de itens do jogo: quadrados de 32px com quantidade e seleção.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/slots.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/kit/slots.html",
+ "classes": [
+  "cro-slot",
+  "cro-slot--plain",
+  "cro-slot-grid",
+  "cro-slot__qty",
+  "cro-titlebar",
+  "cro-titlebar__title",
+  "cro-window",
+  "cro-window__body",
+  "is-selected"
+ ],
+ "data_attributes": [],
+ "text": "# Slots e inventário\n\nType: Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.\nSection: Peças nativas do kit\nHuman version (rendered examples): kit/slots.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-slot cro-slot--plain cro-slot-grid cro-slot__qty cro-titlebar cro-titlebar__title cro-window cro-window__body is-selected\n\nA grade de itens do jogo: quadrados de 32px com quantidade e seleção.\n\n```\n<div class=\"cro-slot-grid\" style=\"width:128px\">\n  <div class=\"cro-slot\"></div>\n  <div class=\"cro-slot\"><span class=\"cro-slot__qty\">99</span></div>\n  <div class=\"cro-slot is-selected\"></div>\n  <div class=\"cro-slot cro-slot--plain\"></div>\n</div>\n```\n\n| Classe | Papel |\n| cro-slot-grid | Grade; defina a largura (múltiplos de 32px para N colunas) |\n| cro-slot | Casa de 32px |\n| is-selected | Casa selecionada |\n| cro-slot--plain | Casa sem moldura |\n| cro-slot__qty | Quantidade no canto |\n\nColoque <img> ou um <span class=\"cro-icon-slot\"> dentro da casa para exibir o item.\n\n## Dentro de uma janela com abas\n\n```\n<section class=\"cro-window\" style=\"width:240px\">\n  <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Inventário</span></header>\n  <div class=\"cro-window__body\">\n    <div class=\"cro-slot-grid\" style=\"width:192px\">\n      <div class=\"cro-slot\"><span class=\"cro-slot__qty\">12</span></div>\n      <div class=\"cro-slot\"></div>\n      <div class=\"cro-slot is-selected\"></div>\n      <div class=\"cro-slot\"></div>\n      <div class=\"cro-slot\"></div>\n      <div class=\"cro-slot\"></div>\n    </div>\n  </div>\n</section>\n```\n\n« Formulários cro-* · Barras, progress e grp »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"cro-slot-grid\" style=\"width:128px\">\n  <div class=\"cro-slot\"></div>\n  <div class=\"cro-slot\"><span class=\"cro-slot__qty\">99</span></div>\n  <div class=\"cro-slot is-selected\"></div>\n  <div class=\"cro-slot cro-slot--plain\"></div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<section class=\"cro-window\" style=\"width:240px\">\n  <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Inventário</span></header>\n  <div class=\"cro-window__body\">\n    <div class=\"cro-slot-grid\" style=\"width:192px\">\n      <div class=\"cro-slot\"><span class=\"cro-slot__qty\">12</span></div>\n      <div class=\"cro-slot\"></div>\n      <div class=\"cro-slot is-selected\"></div>\n      <div class=\"cro-slot\"></div>\n      <div class=\"cro-slot\"></div>\n      <div class=\"cro-slot\"></div>\n    </div>\n  </div>\n</section>"
+  }
+ ]
+}

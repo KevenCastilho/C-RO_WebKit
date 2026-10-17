@@ -1,0 +1,41 @@
+{
+ "id": "kit/dialogos",
+ "title": "Diálogos (CRO.alert...)",
+ "type": "Native kit piece",
+ "section": "Peças nativas do kit",
+ "summary": "Avisos, confirmações, entrada de texto e menu de contexto, sem escrever HTML — todas com Promise .",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/dialogos.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/kit/dialogos.html",
+ "classes": [
+  "cro-btn",
+  "cro-modal",
+  "cro-modal__actions",
+  "cro-modal__body",
+  "cro-titlebar",
+  "cro-titlebar__title",
+  "cro-window",
+  "cro-window__body",
+  "cro-window__footer"
+ ],
+ "data_attributes": [],
+ "text": "# Diálogos (CRO.alert...)\n\nType: Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.\nSection: Peças nativas do kit\nHuman version (rendered examples): kit/dialogos.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-btn cro-modal cro-modal__actions cro-modal__body cro-titlebar cro-titlebar__title cro-window cro-window__body cro-window__footer\n\nAvisos, confirmações, entrada de texto e menu de contexto, sem escrever HTML — todas com Promise.\n\n## API\n\n```\n<button class=\"btn btn-secondary\" id=\"dl-a\">CRO.alert</button>\n<button class=\"btn btn-secondary\" id=\"dl-c\">CRO.confirm</button>\n<button class=\"btn btn-secondary\" id=\"dl-p\">CRO.prompt</button>\n<button class=\"btn btn-secondary\" id=\"dl-m\">CRO.menu</button>\n<span id=\"dl-out\" class=\"ms-2\"></span>\n```\n\n```\nvar out = document.getElementById('dl-out');\ndocument.getElementById('dl-a').onclick = function () {\n  CRO.alert('Olá, aventureiro!', { title: 'Aviso' }).then(function () {\n    out.textContent = 'alert fechado';\n  });\n};\ndocument.getElementById('dl-c').onclick = function () {\n  CRO.confirm('Sair do jogo?', { ok: 'Sair', cancel: 'Ficar' }).then(function (v) {\n    out.textContent = 'confirm: ' + v;\n  });\n};\ndocument.getElementById('dl-p').onclick = function () {\n  CRO.prompt('Nome do personagem:', 'Ana').then(function (v) {\n    out.textContent = 'prompt: ' + JSON.stringify(v);\n  });\n};\ndocument.getElementById('dl-m').onclick = function (e) {\n  var r = e.target.getBoundingClientRect();\n  CRO.menu([\n    { label: 'Atacar', value: 'a' },\n    { label: 'Falar', value: 'f' },\n    '-',\n    { label: 'Ignorar', value: 'i', disabled: true }\n  ], r.left, r.bottom)\n    .then(function (v) { out.textContent = 'menu: ' + v; });\n};\n```\n\n| Função | Resolve com |\n| CRO.alert(msg, {title, ok}) | undefined |\n| CRO.confirm(msg, {title, ok, cancel}) | true / false (Esc = false) |\n| CRO.prompt(msg, padrão, {title, ok, cancel}) | texto / null (Esc ou Cancelar) |\n| CRO.menu(itens, x, y) | value do item / undefined |\n\n## Com async/await\n\n```\nasync function sair() {\n  if (await CRO.confirm('Deseja sair?')) {\n    const nome = await CRO.prompt('Seu nome:', 'Ana');\n    if (nome !== null) await CRO.alert('Até logo, ' + nome + '!');\n  }\n}\n```\n\n## Por baixo\n\nUsam <dialog class=\"cro-modal\"> com showModal() (foco preso, Esc fecha, camada superior do navegador) e uma cro-window dentro. Você pode montar o seu:\n\n```\n<dialog class=\"cro-modal\">\n  <section class=\"cro-window\">\n    <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Título</span></header>\n    <div class=\"cro-window__body cro-modal__body\">Mensagem</div>\n    <footer class=\"cro-window__footer cro-modal__actions\">\n      <button class=\"cro-btn\">OK</button>\n    </footer>\n  </section>\n</dialog>\n```\n\n« Árvore, menu e lista · Ícones do jogo »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<button class=\"btn btn-secondary\" id=\"dl-a\">CRO.alert</button>\n<button class=\"btn btn-secondary\" id=\"dl-c\">CRO.confirm</button>\n<button class=\"btn btn-secondary\" id=\"dl-p\">CRO.prompt</button>\n<button class=\"btn btn-secondary\" id=\"dl-m\">CRO.menu</button>\n<span id=\"dl-out\" class=\"ms-2\"></span>"
+  },
+  {
+   "language": "js",
+   "code": "var out = document.getElementById('dl-out');\ndocument.getElementById('dl-a').onclick = function () {\n  CRO.alert('Olá, aventureiro!', { title: 'Aviso' }).then(function () {\n    out.textContent = 'alert fechado';\n  });\n};\ndocument.getElementById('dl-c').onclick = function () {\n  CRO.confirm('Sair do jogo?', { ok: 'Sair', cancel: 'Ficar' }).then(function (v) {\n    out.textContent = 'confirm: ' + v;\n  });\n};\ndocument.getElementById('dl-p').onclick = function () {\n  CRO.prompt('Nome do personagem:', 'Ana').then(function (v) {\n    out.textContent = 'prompt: ' + JSON.stringify(v);\n  });\n};\ndocument.getElementById('dl-m').onclick = function (e) {\n  var r = e.target.getBoundingClientRect();\n  CRO.menu([\n    { label: 'Atacar', value: 'a' },\n    { label: 'Falar', value: 'f' },\n    '-',\n    { label: 'Ignorar', value: 'i', disabled: true }\n  ], r.left, r.bottom)\n    .then(function (v) { out.textContent = 'menu: ' + v; });\n};"
+  },
+  {
+   "language": "js",
+   "code": "async function sair() {\n  if (await CRO.confirm('Deseja sair?')) {\n    const nome = await CRO.prompt('Seu nome:', 'Ana');\n    if (nome !== null) await CRO.alert('Até logo, ' + nome + '!');\n  }\n}"
+  },
+  {
+   "language": "html",
+   "code": "<dialog class=\"cro-modal\">\n  <section class=\"cro-window\">\n    <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Título</span></header>\n    <div class=\"cro-window__body cro-modal__body\">Mensagem</div>\n    <footer class=\"cro-window__footer cro-modal__actions\">\n      <button class=\"cro-btn\">OK</button>\n    </footer>\n  </section>\n</dialog>"
+  }
+ ]
+}

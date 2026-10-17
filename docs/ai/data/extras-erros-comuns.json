@@ -1,0 +1,14 @@
+{
+ "id": "extras/erros-comuns",
+ "title": "Erros comuns",
+ "type": "Guide",
+ "section": "Extras do kit",
+ "summary": "Os erros que mais apareceram em testes com IAs e pessoas, com a correção.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/erros-comuns.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/extras/erros-comuns.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Erros comuns\n\nType: Guide. Explanatory page about using the kit.\nSection: Extras do kit\nHuman version (rendered examples): extras/erros-comuns.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nOs erros que mais apareceram em testes com IAs e pessoas, com a correção.\n\n| Erro | Correção |\n| CRO.confirm('Sair?', function (v) { ... }) (usar callback) | CRO.alert, CRO.confirm, CRO.prompt e CRO.menu devolvem Promise. Use await CRO.confirm('Sair?') ou .then(v => ...). O segundo argumento é um objeto de opções ({ ok, cancel, title }), não uma função. |\n| Botões das abas com classe cro-tab | A classe é cro-tabs__btn. A estrutura é [data-cro-tabs data-cro-panels=\"#id\"] > .cro-tabs > button.cro-tabs__btn[data-cro-tab] e os painéis [data-cro-panel] em .cro-tab-panels#id. Veja Abas cro-*. |\n| Abas inseridas por JavaScript não funcionam | Chame CRO.init(raiz) depois de inserir o HTML. |\n| Carregar o CSS sem Bootstrap e usar modal, card, nav-tabs | c-ro.min.css não tem Bootstrap. Para markup Bootstrap carregue c-ro-bs.min.css e c-ro-bs.min.js. |\n| Carregar o Bootstrap original junto com c-ro-bs | c-ro-bs já contém o Bootstrap. Carregar dois quebra o visual. |\n| Usar raw.githubusercontent.com no <link> ou <script> | O GitHub serve esses arquivos como text/plain; o navegador recusa. Use https://kevencastilho.github.io/C-RO_WebKit/dist/... ou copie dist/ para o seu site. Ler o texto dos arquivos por raw (para estudo) funciona. |\n| Fontes quebradas | A pasta fonts/ precisa ficar ao lado do CSS. |\n| Mudar --cro-accent e esperar que botões, barras e abas mudem de cor | Só textos, campos, fundos e bordas seguem tokens. Botões, barras, abas e ícones são imagens. |\n| Rodapé da janela dentro do corpo | cro-window__footer é irmão de cro-window__body. Veja Janela. |\n| Rótulo cro-label--lg em um campo só | Use a mesma variação em todos os rótulos do grupo. |\n| btn e cro-btn na mesma tela | Escolha um. |\n| Barra de HP vermelha em 60% ou verde | HP e SP são azuis; vermelha só abaixo de 25% (CRO.bar faz isso sozinho). |\n| Tooltip ou popover não aparece | No Bootstrap precisam de new bootstrap.Tooltip(el) / new bootstrap.Popover(el). |\n| Esperar um componente de chat, modo escuro ou RTL | Não existem. Veja O que não existe. |\n« Como é no jogo\n",
+ "code_blocks": []
+}

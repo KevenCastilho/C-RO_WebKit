@@ -1,0 +1,23 @@
+{
+ "id": "componentes/collapse",
+ "title": "Collapse",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Mostra e esconde conteúdo com animação.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/collapse.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/collapse.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Collapse\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/collapse.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nMostra e esconde conteúdo com animação.\n\n```\n<p>\n  <button\n    class=\"btn btn-primary\"\n    data-bs-toggle=\"collapse\"\n    data-bs-target=\"#colEx\"\n    aria-expanded=\"false\"\n    aria-controls=\"colEx\">\n    Alternar\n  </button>\n</p>\n<div class=\"collapse\" id=\"colEx\">\n  <div class=\"card card-body\">Conteúdo que aparece e some.</div>\n</div>\n```\n\n## Horizontal\n\n```\n<button\n  class=\"btn btn-secondary mb-2\"\n  data-bs-toggle=\"collapse\"\n  data-bs-target=\"#colH\"\n  aria-expanded=\"false\"\n  aria-controls=\"colH\">\n  Horizontal\n</button>\n<div style=\"min-height:70px\">\n  <div class=\"collapse collapse-horizontal\" id=\"colH\">\n    <div class=\"card card-body\" style=\"width:240px\">Abre para o lado.</div>\n  </div>\n</div>\n```\n\n## Vários alvos\n\nUse data-bs-target=\".multi\" para controlar vários elementos com a mesma classe. aria-expanded e aria-controls mantêm a acessibilidade.\n« Botão fechar · Dropdowns »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<p>\n  <button\n    class=\"btn btn-primary\"\n    data-bs-toggle=\"collapse\"\n    data-bs-target=\"#colEx\"\n    aria-expanded=\"false\"\n    aria-controls=\"colEx\">\n    Alternar\n  </button>\n</p>\n<div class=\"collapse\" id=\"colEx\">\n  <div class=\"card card-body\">Conteúdo que aparece e some.</div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<button\n  class=\"btn btn-secondary mb-2\"\n  data-bs-toggle=\"collapse\"\n  data-bs-target=\"#colH\"\n  aria-expanded=\"false\"\n  aria-controls=\"colH\">\n  Horizontal\n</button>\n<div style=\"min-height:70px\">\n  <div class=\"collapse collapse-horizontal\" id=\"colH\">\n    <div class=\"card card-body\" style=\"width:240px\">Abre para o lado.</div>\n  </div>\n</div>"
+  }
+ ]
+}

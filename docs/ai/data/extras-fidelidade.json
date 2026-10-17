@@ -1,0 +1,21 @@
+{
+ "id": "extras/fidelidade",
+ "title": "Fidelidade: confirmado e derivado",
+ "type": "Kit extra",
+ "section": "Extras do kit",
+ "summary": "O kit nunca finge. Cada item é marcado como vindo do jogo, deduzido ou inventado.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/fidelidade.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/extras/fidelidade.html",
+ "classes": [
+  "cro-undefined"
+ ],
+ "data_attributes": [],
+ "text": "# Fidelidade: confirmado e derivado\n\nType: Kit extra. A feature Bootstrap does not have.\nSection: Extras do kit\nHuman version (rendered examples): extras/fidelidade.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-undefined\n\nO kit nunca finge. Cada item é marcado como vindo do jogo, deduzido ou inventado.\n\n## Os rótulos\n\n| Rótulo | Significa |\n| CONFIRMADO | Medido diretamente nos bitmaps/sprites do jogo (cores, tamanhos, pixels). |\n| DERIVADO | Deduzido de forma documentada de elementos reais (ex.: cores contextuais dos botões; seleção em listas). |\n| INVENTADO | Não existe no jogo; criado no estilo dele (ex.: barra I do cursor, copy/alias/zoom, favicon em tamanhos novos). |\n| NÃO DETERMINADO | Não virou token \"bonito\": fica documentado como lacuna. |\n\n## Onde o jogo não tem equivalente\n\nPara breadcrumb, carousel, spinner, placeholder, offcanvas, popover (seta), toast colorido, dropdown com cabeçalho, listras e animação do progress etc., o visual é derivado e marcado nas páginas com o aviso Derivado/inventado.\n\nNote\n\nA regra do projeto: \"o kit sempre vence o Bootstrap; onde o jogo não define, vale o Bootstrap e o item é marcado como derivado\".\n\n## Placeholder de \"não determinado\"\n\nA classe cro-undefined marca visualmente um elemento cujo visual clássico não foi determinado (borda tracejada cinza), em vez de inventar uma aparência bonita:\n\n```\n<div class=\"cro-undefined\" style=\"max-width:260px\">Elemento sem referência no jogo</div>\n```\n\n« Índice de classes cro-* · Receitas »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"cro-undefined\" style=\"max-width:260px\">Elemento sem referência no jogo</div>"
+  }
+ ]
+}

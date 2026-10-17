@@ -1,0 +1,19 @@
+{
+ "id": "helpers/stacks",
+ "title": "Stacks",
+ "type": "Bootstrap drop-in",
+ "section": "Helpers",
+ "summary": "Empilha filhos na vertical ( vstack ) ou horizontal ( hstack ).",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/stacks.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/helpers/stacks.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Stacks\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Helpers\nHuman version (rendered examples): helpers/stacks.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nEmpilha filhos na vertical (vstack) ou horizontal (hstack).\n\n```\n<div class=\"vstack gap-2\" style=\"max-width:240px\">\n  <div class=\"bd-demo-box\">1</div>\n  <div class=\"bd-demo-box\">2</div>\n  <div class=\"bd-demo-box\">3</div>\n</div>\n<div class=\"hstack gap-2 mt-2\">\n  <div class=\"bd-demo-box\">A</div>\n  <div class=\"bd-demo-box ms-auto\">B (ms-auto)</div>\n  <div class=\"vr\"></div>\n  <div class=\"bd-demo-box\">C</div>\n</div>\n```\n\n« Ratio · Stretched link »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"vstack gap-2\" style=\"max-width:240px\">\n  <div class=\"bd-demo-box\">1</div>\n  <div class=\"bd-demo-box\">2</div>\n  <div class=\"bd-demo-box\">3</div>\n</div>\n<div class=\"hstack gap-2 mt-2\">\n  <div class=\"bd-demo-box\">A</div>\n  <div class=\"bd-demo-box ms-auto\">B (ms-auto)</div>\n  <div class=\"vr\"></div>\n  <div class=\"bd-demo-box\">C</div>\n</div>"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "id": "componentes/popovers",
+ "title": "Popovers",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Balões com título e conteúdo. No kit são uma janela pequena do jogo.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/popovers.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/popovers.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Popovers\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/popovers.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nBalões com título e conteúdo. No kit são uma janela pequena do jogo.\n\n```\n<button\n  type=\"button\"\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"popover\"\n  data-bs-title=\"Título\"\n  data-bs-content=\"Conteúdo do popover.\">\n  Clique\n</button>\n<button\n  type=\"button\"\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"popover\"\n  data-bs-placement=\"right\"\n  data-bs-title=\"À direita\"\n  data-bs-content=\"Posição configurável.\">\n  Direita\n</button>\n<button\n  type=\"button\"\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"popover\"\n  data-bs-trigger=\"hover focus\"\n  data-bs-content=\"Aparece no hover.\">\n  Hover\n</button>\n```\n\nWarning\n\nPopovers precisam ser inicializados: new bootstrap.Popover(el) (a documentação já faz isso nos exemplos). Veja JavaScript.\n\nDerived/invented (not in the original game)\n\nA seta do popover é a do Bootstrap (o jogo não tem balão com seta). Elementos com popover ganham o cursor \"mão com ?\" automaticamente.\n\n## Marcação gerada\n\nO Bootstrap gera .popover com as classes de posição bs-popover-top|bottom|start|end|auto. Personalize com data-bs-custom-class=\"minha-classe\".\n\nPartes do popover gerado: popover-arrow, popover-header (título) e popover-body (conteúdo).\n« Placeholders · Progress »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<button\n  type=\"button\"\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"popover\"\n  data-bs-title=\"Título\"\n  data-bs-content=\"Conteúdo do popover.\">\n  Clique\n</button>\n<button\n  type=\"button\"\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"popover\"\n  data-bs-placement=\"right\"\n  data-bs-title=\"À direita\"\n  data-bs-content=\"Posição configurável.\">\n  Direita\n</button>\n<button\n  type=\"button\"\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"popover\"\n  data-bs-trigger=\"hover focus\"\n  data-bs-content=\"Aparece no hover.\">\n  Hover\n</button>"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "id": "utilitarios/fundo",
+ "title": "Fundo",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Cor de fundo e opacidade.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/fundo.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/fundo.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Fundo\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/fundo.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nCor de fundo e opacidade.\n\n```\n<div class=\"p-2 bg-primary text-white\">bg-primary</div>\n<div class=\"p-2 bg-success text-white\">bg-success</div>\n<div class=\"p-2 bg-danger text-white\">bg-danger</div>\n<div class=\"p-2 bg-warning\">bg-warning</div>\n<div class=\"p-2 bg-info text-white\">bg-info</div>\n<div class=\"p-2 bg-light\">bg-light</div>\n<div class=\"p-2 bg-dark text-white\">bg-dark</div>\n<div class=\"p-2 bg-white border\">bg-white</div>\n```\n\n## Opacidade do fundo\n\n```\n<div class=\"p-2 bg-primary bg-opacity-75 text-white\">75</div>\n<div class=\"p-2 bg-primary bg-opacity-50 text-white\">50</div>\n<div class=\"p-2 bg-primary bg-opacity-25\">25</div>\n```\n\n« Visão geral · Bordas »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"p-2 bg-primary text-white\">bg-primary</div>\n<div class=\"p-2 bg-success text-white\">bg-success</div>\n<div class=\"p-2 bg-danger text-white\">bg-danger</div>\n<div class=\"p-2 bg-warning\">bg-warning</div>\n<div class=\"p-2 bg-info text-white\">bg-info</div>\n<div class=\"p-2 bg-light\">bg-light</div>\n<div class=\"p-2 bg-dark text-white\">bg-dark</div>\n<div class=\"p-2 bg-white border\">bg-white</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"p-2 bg-primary bg-opacity-75 text-white\">75</div>\n<div class=\"p-2 bg-primary bg-opacity-50 text-white\">50</div>\n<div class=\"p-2 bg-primary bg-opacity-25\">25</div>"
+  }
+ ]
+}

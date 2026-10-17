@@ -1,0 +1,1119 @@
+{
+ "project": "C-RO",
+ "description": "CSS/JS kit that gives Bootstrap 5.3.8 the look of the 2002 Classic Ragnarok Online interface.",
+ "repository": "https://github.com/KevenCastilho/C-RO_WebKit",
+ "license": "MIT",
+ "files_to_load": {
+  "with_bootstrap": [
+   "https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.css",
+   "https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro-bs.min.js"
+  ],
+  "without_bootstrap": [
+   "https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro.min.css",
+   "https://kevencastilho.github.io/C-RO_WebKit/dist/c-ro.min.js"
+  ]
+ },
+ "start_here": {
+  "essentials_html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/essentials.html",
+  "essentials_text": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/ai-essentials.txt",
+  "index_html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/index.html",
+  "full_text": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/ai-full.txt",
+  "full_html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/ai-full.html"
+ },
+ "tasks": [
+  {
+   "task": "Page skeleton, which files to load",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/essentials.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/essentials.json"
+  },
+  {
+   "task": "Change colors/fonts without editing the kit",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/customizacao.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/comecando-customizacao.json"
+  },
+  {
+   "task": "Buttons",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/botoes.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-botoes.json"
+  },
+  {
+   "task": "Forms (inputs, selects, checks, validation)",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/visao-geral.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/formularios-visao-geral.json"
+  },
+  {
+   "task": "Modal / dialog window",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/modal.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-modal.json"
+  },
+  {
+   "task": "Game-style alert/confirm/prompt",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/dialogos.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-dialogos.json"
+  },
+  {
+   "task": "Window with title bar (native)",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/janela.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-janela.json"
+  },
+  {
+   "task": "Tabs",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/navs-tabs.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-navs-tabs.json"
+  },
+  {
+   "task": "Inventory slots",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/slots.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-slots.json"
+  },
+  {
+   "task": "Tree / menu / list",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/arvore-menu.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-arvore-menu.json"
+  },
+  {
+   "task": "Progress / HP-SP bars",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/progress.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-progress.json"
+  },
+  {
+   "task": "Tooltips and popovers",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/tooltips.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-tooltips.json"
+  },
+  {
+   "task": "Layout and grid",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/layout/grid.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/layout-grid.json"
+  },
+  {
+   "task": "Game cursors",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/cursores.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-cursores.json"
+  },
+  {
+   "task": "Automatic favicon",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/favicon.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-favicon.json"
+  },
+  {
+   "task": "What is authentic vs derived",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/fidelidade.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-fidelidade.json"
+  },
+  {
+   "task": "Every cro-* class that exists",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/referencia.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-referencia.json"
+  },
+  {
+   "task": "Every token (CSS variable)",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/tokens.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-tokens.json"
+  },
+  {
+   "task": "Browser support and limits",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/navegadores.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/comecando-navegadores.json"
+  },
+  {
+   "task": "Migrating from plain Bootstrap",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/migracao.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/comecando-migracao.json"
+  },
+  {
+   "task": "What does NOT exist (chat window, dark mode, RTL...)",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/nao-existe.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-nao-existe.json"
+  },
+  {
+   "task": "How it looks in the game / what to avoid",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/como-e-no-jogo.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-como-e-no-jogo.json"
+  },
+  {
+   "task": "Common mistakes and fixes",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/erros-comuns.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-erros-comuns.json"
+  },
+  {
+   "task": "Complete ready-made pages (login + tabs + confirm + HP)",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/receitas.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-receitas.json"
+  }
+ ],
+ "pages": [
+  {
+   "id": "essentials",
+   "title": "Essentials",
+   "type": "Essentials",
+   "section": "Essentials",
+   "summary": "Files, minimal page, rules, JS API and limits in one page.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/essentials.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/essentials.json"
+  },
+  {
+   "id": "comecando/introducao",
+   "title": "Introdução",
+   "type": "Guide",
+   "section": "Começando",
+   "summary": "Comece a usar o C-RO: um CSS, um JS, a marcação padrão do Bootstrap e a aparência do Ragnarok Online clássico.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/introducao.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/comecando-introducao.json"
+  },
+  {
+   "id": "comecando/download",
+   "title": "Download e arquivos",
+   "type": "Guide",
+   "section": "Começando",
+   "summary": "O que existe na pasta dist/ , para que serve cada arquivo e como escolher.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/download.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/comecando-download.json"
+  },
+  {
+   "id": "comecando/como-funciona",
+   "title": "Como funciona",
+   "type": "Guide",
+   "section": "Começando",
+   "summary": "As regras de convivência entre o kit e o Bootstrap, para você prever o resultado sem tentativa e erro.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/como-funciona.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/comecando-como-funciona.json"
+  },
+  {
+   "id": "comecando/javascript",
+   "title": "JavaScript",
+   "type": "Guide",
+   "section": "Começando",
+   "summary": "O bundle c-ro-bs.js traz o JavaScript do Bootstrap e o do kit. Tudo é opcional — o visual é só CSS.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/javascript.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/comecando-javascript.json"
+  },
+  {
+   "id": "comecando/customizacao",
+   "title": "Customização",
+   "type": "Guide",
+   "section": "Começando",
+   "summary": "Como mudar o visual do kit sem editar o kit — tokens (variáveis CSS), seu próprio CSS e a troca da fonte.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/customizacao.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/comecando-customizacao.json"
+  },
+  {
+   "id": "comecando/navegadores",
+   "title": "Navegadores e limites",
+   "type": "Guide",
+   "section": "Começando",
+   "summary": "O que o kit exige do navegador e o que, por decisão ou por limite técnico, ele não faz.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/navegadores.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/comecando-navegadores.json"
+  },
+  {
+   "id": "comecando/acessibilidade",
+   "title": "Acessibilidade",
+   "type": "Guide",
+   "section": "Começando",
+   "summary": "O visual do jogo é pixelado e de baixo contraste em alguns pontos. O que o kit faz por você e o que continua sendo responsabilidade da sua marcação.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/acessibilidade.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/comecando-acessibilidade.json"
+  },
+  {
+   "id": "comecando/para-ia",
+   "title": "Para IAs",
+   "type": "Guide",
+   "section": "Começando",
+   "summary": "Existe uma versão desta documentação feita para agentes de IA. Se você pediu para uma IA conhecer, estudar ou usar o C-RO, mande ela para lá.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/para-ia.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/comecando-para-ia.json"
+  },
+  {
+   "id": "comecando/migracao",
+   "title": "De Bootstrap para C-RO",
+   "type": "Guide",
+   "section": "Começando",
+   "summary": "Você já tem um site em Bootstrap 5? A migração é trocar dois arquivos. Veja o que muda no visual e o que fica igual.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/migracao.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/comecando-migracao.json"
+  },
+  {
+   "id": "layout/breakpoints",
+   "title": "Breakpoints",
+   "type": "Bootstrap drop-in",
+   "section": "Layout",
+   "summary": "Os pontos de quebra responsivos são os do Bootstrap 5.3. O kit não altera nenhuma medida do grid.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/layout/breakpoints.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/layout-breakpoints.json"
+  },
+  {
+   "id": "layout/containers",
+   "title": "Containers",
+   "type": "Bootstrap drop-in",
+   "section": "Layout",
+   "summary": "Containers centralizam e limitam a largura do conteúdo, exatamente como no Bootstrap.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/layout/containers.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/layout-containers.json"
+  },
+  {
+   "id": "layout/grid",
+   "title": "Grid",
+   "type": "Bootstrap drop-in",
+   "section": "Layout",
+   "summary": "Sistema de 12 colunas com flexbox. As classes row e col-* são as do Bootstrap, sem alteração.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/layout/grid.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/layout-grid.json"
+  },
+  {
+   "id": "layout/colunas",
+   "title": "Colunas",
+   "type": "Bootstrap drop-in",
+   "section": "Layout",
+   "summary": "Alinhamento, ordem, deslocamento e quebra de colunas. Tudo igual ao Bootstrap.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/layout/colunas.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/layout-colunas.json"
+  },
+  {
+   "id": "layout/gutters",
+   "title": "Gutters",
+   "type": "Bootstrap drop-in",
+   "section": "Layout",
+   "summary": "Espaços entre colunas controlados por g-* , gx-* e gy-* .",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/layout/gutters.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/layout-gutters.json"
+  },
+  {
+   "id": "layout/z-index",
+   "title": "Z-index",
+   "type": "Bootstrap drop-in",
+   "section": "Layout",
+   "summary": "Camadas fixas do Bootstrap para componentes sobrepostos. O kit as mantém.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/layout/z-index.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/layout-z-index.json"
+  },
+  {
+   "id": "conteudo/reboot",
+   "title": "Reboot e elementos nus",
+   "type": "Native kit piece",
+   "section": "Conteúdo",
+   "summary": "O kit estiliza os elementos HTML sem exigir classes. Um site de HTML puro já sai com a cara do jogo.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/conteudo/reboot.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/conteudo-reboot.json"
+  },
+  {
+   "id": "conteudo/tipografia",
+   "title": "Tipografia",
+   "type": "Bootstrap drop-in",
+   "section": "Conteúdo",
+   "summary": "Títulos, parágrafos, listas e utilitários de texto. A base é a Helvetica (Nimbus Sans) 12px, como no jogo.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/conteudo/tipografia.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/conteudo-tipografia.json"
+  },
+  {
+   "id": "conteudo/imagens",
+   "title": "Imagens",
+   "type": "Bootstrap drop-in",
+   "section": "Conteúdo",
+   "summary": "Imagens responsivas e miniaturas, como no Bootstrap.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/conteudo/imagens.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/conteudo-imagens.json"
+  },
+  {
+   "id": "conteudo/tabelas",
+   "title": "Tabelas",
+   "type": "Bootstrap drop-in",
+   "section": "Conteúdo",
+   "summary": ".table e variantes aplicam o visual de tabela do jogo.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/conteudo/tabelas.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/conteudo-tabelas.json"
+  },
+  {
+   "id": "conteudo/figuras",
+   "title": "Figuras",
+   "type": "Bootstrap drop-in",
+   "section": "Conteúdo",
+   "summary": "figure com legenda, estilizável com as classes do Bootstrap.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/conteudo/figuras.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/conteudo-figuras.json"
+  },
+  {
+   "id": "conteudo/icones",
+   "title": "Ícones",
+   "type": "Kit extra",
+   "section": "Conteúdo",
+   "summary": "O kit traz os ícones pixel-exatos do jogo ( cro-ico ) e convive bem com Font Awesome, Lucide, Material Symbols e SVG próprio.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/conteudo/icones.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/conteudo-icones.json"
+  },
+  {
+   "id": "formularios/visao-geral",
+   "title": "Visão geral",
+   "type": "Bootstrap drop-in",
+   "section": "Formulários",
+   "summary": "Todos os controles de formulário do Bootstrap com o visual de campo do jogo: fundo cinza-claro, borda fina, rótulos azuis.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/visao-geral.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/formularios-visao-geral.json"
+  },
+  {
+   "id": "formularios/form-control",
+   "title": "Form control",
+   "type": "Bootstrap drop-in",
+   "section": "Formulários",
+   "summary": "Campos de texto, textarea, tamanhos, readonly, plaintext e arquivo.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/form-control.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/formularios-form-control.json"
+  },
+  {
+   "id": "formularios/select",
+   "title": "Select",
+   "type": "Bootstrap drop-in",
+   "section": "Formulários",
+   "summary": "form-select mantém o select nativo. Com data-cro-select ele ganha o popup de opções do kit.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/select.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/formularios-select.json"
+  },
+  {
+   "id": "formularios/checks-radios",
+   "title": "Checks e radios",
+   "type": "Bootstrap drop-in",
+   "section": "Formulários",
+   "summary": "Checkbox, radio e switch com os indicadores do jogo.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/checks-radios.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/formularios-checks-radios.json"
+  },
+  {
+   "id": "formularios/range",
+   "title": "Range",
+   "type": "Bootstrap drop-in",
+   "section": "Formulários",
+   "summary": "Controle deslizante no visual da barra de rolagem do jogo.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/range.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/formularios-range.json"
+  },
+  {
+   "id": "formularios/input-group",
+   "title": "Input group",
+   "type": "Bootstrap drop-in",
+   "section": "Formulários",
+   "summary": "Anexe texto e botões a campos.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/input-group.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/formularios-input-group.json"
+  },
+  {
+   "id": "formularios/floating-labels",
+   "title": "Floating labels",
+   "type": "Bootstrap drop-in",
+   "section": "Formulários",
+   "summary": "O rótulo flutua sobre o campo quando ele tem valor ou foco.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/floating-labels.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/formularios-floating-labels.json"
+  },
+  {
+   "id": "formularios/layout",
+   "title": "Layout de formulários",
+   "type": "Bootstrap drop-in",
+   "section": "Formulários",
+   "summary": "Empilhado, em grade, horizontal e em linha, usando o grid e os utilitários do Bootstrap.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/layout.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/formularios-layout.json"
+  },
+  {
+   "id": "formularios/validacao",
+   "title": "Validação",
+   "type": "Bootstrap drop-in",
+   "section": "Formulários",
+   "summary": "Estados válido e inválido com as classes do Bootstrap e a pseudo-classe :user-invalid do navegador.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/validacao.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/formularios-validacao.json"
+  },
+  {
+   "id": "componentes/accordion",
+   "title": "Accordion",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Painéis recolhíveis. No kit cada item vira uma pasta da árvore do jogo (aberta/fechada).",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/accordion.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-accordion.json"
+  },
+  {
+   "id": "componentes/alerts",
+   "title": "Alerts",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Mensagens de feedback. No kit são sysbox , a caixa de mensagem do sistema do jogo; as cores contextuais são derivadas por matiz.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/alerts.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-alerts.json"
+  },
+  {
+   "id": "componentes/badge",
+   "title": "Badge",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Pequenas etiquetas de contagem ou status. No kit são pílulas de 16px com as cores dos botões.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/badge.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-badge.json"
+  },
+  {
+   "id": "componentes/breadcrumb",
+   "title": "Breadcrumb",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Trilha de navegação. Derivação mínima do kit (o jogo não tem breadcrumb).",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/breadcrumb.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-breadcrumb.json"
+  },
+  {
+   "id": "componentes/botoes",
+   "title": "Botões",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "O botão de 20px do jogo (degradê azul de 1px por linha, borda cinza) com as cores contextuais do Bootstrap derivadas.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/botoes.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-botoes.json"
+  },
+  {
+   "id": "componentes/grupo-de-botoes",
+   "title": "Grupo de botões",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Agrupe botões em uma linha ou coluna.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/grupo-de-botoes.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-grupo-de-botoes.json"
+  },
+  {
+   "id": "componentes/card",
+   "title": "Card",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Um card é uma janela completa do jogo: barra de título (card-header), corpo, rodapé. As partes só aparecem quando você as declara.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/card.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-card.json"
+  },
+  {
+   "id": "componentes/carousel",
+   "title": "Carousel",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Slides com controles. Derivação mínima do kit.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/carousel.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-carousel.json"
+  },
+  {
+   "id": "componentes/btn-close",
+   "title": "Botão fechar",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "btn-close vira o botão de sistema \"fechar\" 11×11 do jogo.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/btn-close.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-btn-close.json"
+  },
+  {
+   "id": "componentes/collapse",
+   "title": "Collapse",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Mostra e esconde conteúdo com animação.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/collapse.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-collapse.json"
+  },
+  {
+   "id": "componentes/dropdowns",
+   "title": "Dropdowns",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Menus de contexto abertos por um botão. No kit usam o menu do jogo (lista com seleção azul).",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/dropdowns.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-dropdowns.json"
+  },
+  {
+   "id": "componentes/list-group",
+   "title": "List group",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Listas de itens, com seleção azul do jogo.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/list-group.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-list-group.json"
+  },
+  {
+   "id": "componentes/modal",
+   "title": "Modal",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Janelas modais. O modal é uma janela do jogo: modal-header vira a barra de título e btn-close o botão fechar.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/modal.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-modal.json"
+  },
+  {
+   "id": "componentes/navbar",
+   "title": "Navbar",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Barras de navegação. Os nav-link e o toggler são botões do kit; marca e collapse seguem o Bootstrap.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/navbar.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-navbar.json"
+  },
+  {
+   "id": "componentes/navs-tabs",
+   "title": "Navs e abas",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "nav-tabs e nav-pills viram as abas do jogo: horizontais em pílula e, com flex-column , verticais em escada.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/navs-tabs.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-navs-tabs.json"
+  },
+  {
+   "id": "componentes/offcanvas",
+   "title": "Offcanvas",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Painéis que deslizam da borda da tela. No kit são uma janela derivada (referência: janela Storage).",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/offcanvas.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-offcanvas.json"
+  },
+  {
+   "id": "componentes/paginacao",
+   "title": "Paginação",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Paginação do Bootstrap com os ícones de primeira/anterior/próxima/última do jogo.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/paginacao.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-paginacao.json"
+  },
+  {
+   "id": "componentes/placeholders",
+   "title": "Placeholders",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Esqueletos de carregamento. Derivação mínima do kit.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/placeholders.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-placeholders.json"
+  },
+  {
+   "id": "componentes/popovers",
+   "title": "Popovers",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Balões com título e conteúdo. No kit são uma janela pequena do jogo.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/popovers.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-popovers.json"
+  },
+  {
+   "id": "componentes/progress",
+   "title": "Progress",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Barras de progresso no visual da barra HP/SP do jogo (\"gze\"). A altura segue a que você definir.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/progress.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-progress.json"
+  },
+  {
+   "id": "componentes/scrollspy",
+   "title": "Scrollspy",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Marca o link de navegação conforme a rolagem. Comportamento 100% Bootstrap.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/scrollspy.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-scrollspy.json"
+  },
+  {
+   "id": "componentes/spinners",
+   "title": "Spinners",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Indicadores de carregamento. Derivação mínima do kit; para \"ocupado\" no cursor use o relógio do jogo (automático).",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/spinners.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-spinners.json"
+  },
+  {
+   "id": "componentes/toasts",
+   "title": "Toasts",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Notificações leves. No kit são uma janela pequena; sem toast-header viram uma sysbox.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/toasts.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-toasts.json"
+  },
+  {
+   "id": "componentes/tooltips",
+   "title": "Tooltips",
+   "type": "Bootstrap drop-in",
+   "section": "Componentes",
+   "summary": "Dicas ao passar o mouse. No kit usam a \"dica\" do jogo (caixa amarela), sem seta.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/tooltips.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/componentes-tooltips.json"
+  },
+  {
+   "id": "kit/janela",
+   "title": "Janela e titlebar",
+   "type": "Native kit piece",
+   "section": "Peças nativas do kit",
+   "summary": "A janela é a peça central do jogo: barra de título em degradê, corpo branco, rodapé, cantos recortados de 12 pixels e sombra.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/janela.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-janela.json"
+  },
+  {
+   "id": "kit/botoes-cro",
+   "title": "Botões cro-*",
+   "type": "Native kit piece",
+   "section": "Peças nativas do kit",
+   "summary": "Botões nativos do kit: o botão padrão, o mesbtn, os botões de sistema 11×11 e os de diálogo.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/botoes-cro.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-botoes-cro.json"
+  },
+  {
+   "id": "kit/abas-cro",
+   "title": "Abas cro-*",
+   "type": "Native kit piece",
+   "section": "Peças nativas do kit",
+   "summary": "Abas horizontais em pílula e verticais em escada, com ARIA e teclado automáticos via data-cro-tabs .",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/abas-cro.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-abas-cro.json"
+  },
+  {
+   "id": "kit/formularios-cro",
+   "title": "Formulários cro-*",
+   "type": "Native kit piece",
+   "section": "Peças nativas do kit",
+   "summary": "Campos nativos do kit: cro-field , cro-label , cro-input , cro-select , cro-textarea , cro-check .",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/formularios-cro.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-formularios-cro.json"
+  },
+  {
+   "id": "kit/slots",
+   "title": "Slots e inventário",
+   "type": "Native kit piece",
+   "section": "Peças nativas do kit",
+   "summary": "A grade de itens do jogo: quadrados de 32px com quantidade e seleção.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/slots.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-slots.json"
+  },
+  {
+   "id": "kit/barras",
+   "title": "Barras, progress e grp",
+   "type": "Native kit piece",
+   "section": "Peças nativas do kit",
+   "summary": "Barras de HP/SP/experiência, ícones de grupo e barras de botões.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/barras.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-barras.json"
+  },
+  {
+   "id": "kit/arvore-menu",
+   "title": "Árvore, menu e lista",
+   "type": "Native kit piece",
+   "section": "Peças nativas do kit",
+   "summary": "Árvore de pastas ( details ), menu de contexto, lista selecionável e tabela.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/arvore-menu.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-arvore-menu.json"
+  },
+  {
+   "id": "kit/dialogos",
+   "title": "Diálogos (CRO.alert...)",
+   "type": "Native kit piece",
+   "section": "Peças nativas do kit",
+   "summary": "Avisos, confirmações, entrada de texto e menu de contexto, sem escrever HTML — todas com Promise .",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/dialogos.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-dialogos.json"
+  },
+  {
+   "id": "kit/icones-cro",
+   "title": "Ícones do jogo",
+   "type": "Native kit piece",
+   "section": "Peças nativas do kit",
+   "summary": "Ícones pixel-exatos extraídos da interface do jogo, como classes CSS. Sem imagens externas.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/icones-cro.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-icones-cro.json"
+  },
+  {
+   "id": "kit/sysbox-tip",
+   "title": "Sysbox e dica",
+   "type": "Native kit piece",
+   "section": "Peças nativas do kit",
+   "summary": "A caixa de mensagem do sistema e a dica (tooltip amarelo) do jogo.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/sysbox-tip.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/kit-sysbox-tip.json"
+  },
+  {
+   "id": "helpers/cor-fundo",
+   "title": "Cor e fundo",
+   "type": "Bootstrap drop-in",
+   "section": "Helpers",
+   "summary": "Helpers text-bg-* definem fundo e cor de texto contrastante de uma vez. Usam as cores do tema do kit.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/cor-fundo.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/helpers-cor-fundo.json"
+  },
+  {
+   "id": "helpers/links-coloridos",
+   "title": "Links coloridos",
+   "type": "Bootstrap drop-in",
+   "section": "Helpers",
+   "summary": "Links nas cores do tema, com sublinhado e opacidade ajustáveis.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/links-coloridos.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/helpers-links-coloridos.json"
+  },
+  {
+   "id": "helpers/focus-ring",
+   "title": "Focus ring",
+   "type": "Bootstrap drop-in",
+   "section": "Helpers",
+   "summary": "Anel de foco personalizável para elementos que o recebem por teclado.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/focus-ring.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/helpers-focus-ring.json"
+  },
+  {
+   "id": "helpers/icon-link",
+   "title": "Icon link",
+   "type": "Bootstrap drop-in",
+   "section": "Helpers",
+   "summary": "Link com ícone alinhado.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/icon-link.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/helpers-icon-link.json"
+  },
+  {
+   "id": "helpers/posicao",
+   "title": "Posição",
+   "type": "Bootstrap drop-in",
+   "section": "Helpers",
+   "summary": "Fixa, gruda e posiciona elementos com helpers.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/posicao.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/helpers-posicao.json"
+  },
+  {
+   "id": "helpers/ratio",
+   "title": "Ratio",
+   "type": "Bootstrap drop-in",
+   "section": "Helpers",
+   "summary": "Mantém a proporção de vídeos, mapas e iframes.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/ratio.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/helpers-ratio.json"
+  },
+  {
+   "id": "helpers/stacks",
+   "title": "Stacks",
+   "type": "Bootstrap drop-in",
+   "section": "Helpers",
+   "summary": "Empilha filhos na vertical ( vstack ) ou horizontal ( hstack ).",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/stacks.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/helpers-stacks.json"
+  },
+  {
+   "id": "helpers/stretched-link",
+   "title": "Stretched link",
+   "type": "Bootstrap drop-in",
+   "section": "Helpers",
+   "summary": "Torna um elemento inteiro clicável a partir de um link interno.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/stretched-link.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/helpers-stretched-link.json"
+  },
+  {
+   "id": "helpers/truncar-texto",
+   "title": "Truncar texto",
+   "type": "Bootstrap drop-in",
+   "section": "Helpers",
+   "summary": "Corta texto longo com reticências.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/truncar-texto.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/helpers-truncar-texto.json"
+  },
+  {
+   "id": "helpers/vr",
+   "title": "Linha vertical",
+   "type": "Bootstrap drop-in",
+   "section": "Helpers",
+   "summary": ".vr separa itens lado a lado.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/vr.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/helpers-vr.json"
+  },
+  {
+   "id": "helpers/visualmente-oculto",
+   "title": "Visualmente oculto",
+   "type": "Bootstrap drop-in",
+   "section": "Helpers",
+   "summary": "Esconde conteúdo da tela mas mantém para leitores de tela.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/visualmente-oculto.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/helpers-visualmente-oculto.json"
+  },
+  {
+   "id": "utilitarios/visao-geral",
+   "title": "Visão geral",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Utilitários são classes de uma propriedade só. Todos os do Bootstrap 5.3 funcionam, fora do layer; só display e visibilidade levam !important.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/visao-geral.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-visao-geral.json"
+  },
+  {
+   "id": "utilitarios/fundo",
+   "title": "Fundo",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Cor de fundo e opacidade.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/fundo.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-fundo.json"
+  },
+  {
+   "id": "utilitarios/bordas",
+   "title": "Bordas",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Borda, cor, largura e raio.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/bordas.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-bordas.json"
+  },
+  {
+   "id": "utilitarios/cores",
+   "title": "Cores",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Cor do texto.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/cores.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-cores.json"
+  },
+  {
+   "id": "utilitarios/display",
+   "title": "Display",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Mostra, esconde e alterna o tipo de display.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/display.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-display.json"
+  },
+  {
+   "id": "utilitarios/flex",
+   "title": "Flex",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Direção, alinhamento, justificação, quebra e crescimento.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/flex.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-flex.json"
+  },
+  {
+   "id": "utilitarios/float",
+   "title": "Float",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Flutua elementos à esquerda ou direita.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/float.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-float.json"
+  },
+  {
+   "id": "utilitarios/interacoes",
+   "title": "Interações",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Seleção de texto e eventos de ponteiro.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/interacoes.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-interacoes.json"
+  },
+  {
+   "id": "utilitarios/link",
+   "title": "Link",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Opacidade e deslocamento do sublinhado dos links.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/link.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-link.json"
+  },
+  {
+   "id": "utilitarios/object-fit",
+   "title": "Object fit",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Ajusta imagens dentro da caixa.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/object-fit.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-object-fit.json"
+  },
+  {
+   "id": "utilitarios/opacidade",
+   "title": "Opacidade",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Transparência do elemento.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/opacidade.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-opacidade.json"
+  },
+  {
+   "id": "utilitarios/overflow",
+   "title": "Overflow",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Controle de transbordamento.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/overflow.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-overflow.json"
+  },
+  {
+   "id": "utilitarios/posicao",
+   "title": "Posição",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Utilitários de posição e translação.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/posicao.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-posicao.json"
+  },
+  {
+   "id": "utilitarios/sombras",
+   "title": "Sombras",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Sombras do Bootstrap.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/sombras.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-sombras.json"
+  },
+  {
+   "id": "utilitarios/tamanho",
+   "title": "Tamanho",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Largura e altura relativas.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/tamanho.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-tamanho.json"
+  },
+  {
+   "id": "utilitarios/espacamento",
+   "title": "Espaçamento",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Margem e padding de 0 a 5, por lado e por breakpoint.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/espacamento.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-espacamento.json"
+  },
+  {
+   "id": "utilitarios/texto",
+   "title": "Texto",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Alinhamento, quebra, peso, estilo e transformação de texto.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/texto.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-texto.json"
+  },
+  {
+   "id": "utilitarios/alinhamento-vertical",
+   "title": "Alinhamento vertical",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Alinha elementos inline e células de tabela.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/alinhamento-vertical.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-alinhamento-vertical.json"
+  },
+  {
+   "id": "utilitarios/visibilidade",
+   "title": "Visibilidade",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Visível e invisível mantendo o espaço.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/visibilidade.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-visibilidade.json"
+  },
+  {
+   "id": "utilitarios/referencia-completa",
+   "title": "Referência completa",
+   "type": "Bootstrap drop-in",
+   "section": "Utilitários",
+   "summary": "Lista gerada do próprio CSS do Bootstrap 5.3.8 embutido: toda classe utilitária existente, agrupada por família. Se a classe está aqui, ela funciona.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/referencia-completa.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/utilitarios-referencia-completa.json"
+  },
+  {
+   "id": "extras/cursores",
+   "title": "Cursores do Ragnarok",
+   "type": "Kit extra",
+   "section": "Extras do kit",
+   "summary": "Todo o site passa a usar os cursores do Ragnarok Online — seta, mão, balão de ajuda, relógio, redimensionar... — inclusive animados. Sem classe, sem configuração.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/cursores.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-cursores.json"
+  },
+  {
+   "id": "extras/cursores-estados",
+   "title": "Estados automáticos do cursor",
+   "type": "Kit extra",
+   "section": "Extras do kit",
+   "summary": "Como o kit escolhe o cursor sem você fazer nada — mesma lógica dos cursores nativos do Windows.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/cursores-estados.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-cursores-estados.json"
+  },
+  {
+   "id": "extras/favicon",
+   "title": "Favicon automático",
+   "type": "Kit extra",
+   "section": "Extras do kit",
+   "summary": "Se o site não declara favicon, o kit aplica o dele — um retrato em pixel art — sem você fazer nada.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/favicon.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-favicon.json"
+  },
+  {
+   "id": "extras/fonte",
+   "title": "Fonte",
+   "type": "Kit extra",
+   "section": "Extras do kit",
+   "summary": "O kit usa a Nimbus Sans (clone livre da Helvetica) em todo texto. Esta página mostra, ao vivo, se ela carregou no seu navegador.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/fonte.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-fonte.json"
+  },
+  {
+   "id": "extras/tokens",
+   "title": "Tokens (variáveis CSS)",
+   "type": "Kit extra",
+   "section": "Extras do kit",
+   "summary": "Os valores de cor, medida e fonte do kit, expostos como variáveis --cro-* em :root .",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/tokens.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-tokens.json"
+  },
+  {
+   "id": "extras/atributos-data",
+   "title": "Atributos data-cro-*",
+   "type": "Kit extra",
+   "section": "Extras do kit",
+   "summary": "Os atributos HTML que controlam comportamento do kit, sem JavaScript seu.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/atributos-data.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-atributos-data.json"
+  },
+  {
+   "id": "extras/referencia",
+   "title": "Índice de classes cro-*",
+   "type": "Guide",
+   "section": "Extras do kit",
+   "summary": "Toda classe do kit ( cro-* e estados is-* ) e a página onde ela é explicada. Gerado do CSS: se a classe existe no kit, ela aparece aqui.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/referencia.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-referencia.json"
+  },
+  {
+   "id": "extras/fidelidade",
+   "title": "Fidelidade: confirmado e derivado",
+   "type": "Kit extra",
+   "section": "Extras do kit",
+   "summary": "O kit nunca finge. Cada item é marcado como vindo do jogo, deduzido ou inventado.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/fidelidade.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-fidelidade.json"
+  },
+  {
+   "id": "extras/receitas",
+   "title": "Receitas",
+   "type": "Guide",
+   "section": "Extras do kit",
+   "summary": "Telas completas montadas com o kit, para copiar e adaptar.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/receitas.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-receitas.json"
+  },
+  {
+   "id": "extras/nao-existe",
+   "title": "O que não existe no kit",
+   "type": "Guide",
+   "section": "Extras do kit",
+   "summary": "Lista direta do que o C-RO não oferece, com a alternativa. Se algo não está documentado aqui nem no índice de classes , não existe: não invente classes.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/nao-existe.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-nao-existe.json"
+  },
+  {
+   "id": "extras/como-e-no-jogo",
+   "title": "Como é no jogo (e o que evitar)",
+   "type": "Guide",
+   "section": "Extras do kit",
+   "summary": "Regras visuais do Ragnarok Online clássico que o kit segue. Uma tela que as quebra parece \"estranha\" mesmo usando as classes certas.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/como-e-no-jogo.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-como-e-no-jogo.json"
+  },
+  {
+   "id": "extras/erros-comuns",
+   "title": "Erros comuns",
+   "type": "Guide",
+   "section": "Extras do kit",
+   "summary": "Os erros que mais apareceram em testes com IAs e pessoas, com a correção.",
+   "html": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/erros-comuns.html",
+   "json": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/data/extras-erros-comuns.json"
+  }
+ ]
+}

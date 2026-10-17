@@ -1,0 +1,77 @@
+{
+ "id": "kit/barras",
+ "title": "Barras, progress e grp",
+ "type": "Native kit piece",
+ "section": "Peças nativas do kit",
+ "summary": "Barras de HP/SP/experiência, ícones de grupo e barras de botões.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/barras.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/kit/barras.html",
+ "classes": [
+  "cro-btnbar",
+  "cro-btnbar--tall",
+  "cro-btnbar--xl",
+  "cro-exp",
+  "cro-grp",
+  "cro-grp--leader",
+  "cro-grp--offline",
+  "cro-grp--online",
+  "cro-mb-2",
+  "cro-mesbtn",
+  "cro-progress",
+  "cro-progress--fluid",
+  "cro-progress__bar",
+  "cro-progress__bar--blue",
+  "cro-progress__bar--cyan",
+  "cro-progress__bar--gray",
+  "cro-progress__bar--green",
+  "cro-progress__bar--orange",
+  "cro-progress__bar--pink",
+  "cro-progress__bar--purple",
+  "cro-progress__bar--red",
+  "cro-progress__bar--sp",
+  "cro-progress__bar--yellow",
+  "cro-skillbar",
+  "cro-skillbar--bottom"
+ ],
+ "data_attributes": [],
+ "text": "# Barras, progress e grp\n\nType: Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.\nSection: Peças nativas do kit\nHuman version (rendered examples): kit/barras.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-btnbar cro-btnbar--tall cro-btnbar--xl cro-exp cro-grp cro-grp--leader cro-grp--offline cro-grp--online cro-mb-2 cro-mesbtn cro-progress cro-progress--fluid cro-progress__bar cro-progress__bar--blue cro-progress__bar--cyan cro-progress__bar--gray cro-progress__bar--green cro-progress__bar--orange cro-progress__bar--pink cro-progress__bar--purple cro-progress__bar--red cro-progress__bar--sp cro-progress__bar--yellow cro-skillbar cro-skillbar--bottom\n\nBarras de HP/SP/experiência, ícones de grupo e barras de botões.\n\n## Progress (cro-progress)\n\nDefina o preenchimento com a variável --p (0–100).\n\n```\n<div style=\"max-width:260px\">\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar\" style=\"--p:70\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--orange\" style=\"--p:60\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--red\" style=\"--p:20\"></div>\n  </div>\n  <div class=\"cro-progress\">\n    <div class=\"cro-progress__bar cro-progress__bar--blue\" style=\"--p:90\"></div>\n  </div>\n</div>\n```\n\nNote\n\nComo é no jogo. A barra tem 85×8 px (o tamanho da janela Basic Info), é azul (HP e SP são ambos azuis) e fica vermelha só abaixo de 25% de vida. O texto \"atual / máx\" vai como texto comum abaixo ou ao lado da barra, nunca dentro dela. Use cro-progress--fluid (largura 100%) só quando o layout realmente pedir uma barra larga. As outras cores existem para barras de outros usos, não para HP.\n\nCores: --green, --blue, --cyan, --yellow, --orange, --red, --pink, --purple, --gray e --sp.\n\n## Barra de experiência (cro-exp)\n\n```\n<div class=\"cro-exp\" style=\"--p:62;width:260px\"></div>\n```\n\n## Atualizar por JavaScript\n\n```\n<div class=\"cro-progress\" style=\"width:260px\">\n  <div class=\"cro-progress__bar\" id=\"hpbar\" style=\"--p:100\"></div>\n</div>\n<p class=\"mt-2\"><button class=\"btn btn-secondary btn-sm\" id=\"hpdown\">Levar dano</button></p>\n```\n\n```\nvar hp = 100;\ndocument.getElementById('hpdown').addEventListener('click', function () {\n  hp = hp <= 15 ? 100 : hp - 15;\n  CRO.bar(document.getElementById('hpbar'), hp);   // abaixo de 25% a barra fica vermelha\n});\n```\n\n## Grp (status de grupo)\n\n```\n<span class=\"cro-grp cro-grp--offline\" title=\"offline\"></span>\n<span class=\"cro-grp cro-grp--online\" title=\"online\"></span>\n<span class=\"cro-grp cro-grp--leader\" title=\"líder\"></span>\n```\n\n## Barra de botões\n\n```\n<div class=\"cro-btnbar\" style=\"width:260px\">\n  <button class=\"cro-mesbtn\" style=\"width:80px\">Um</button>\n  <button class=\"cro-mesbtn\" style=\"width:80px\">Dois</button>\n</div>\n```\n\nNote\n\nCom Bootstrap, .progress / .progress-bar fazem o mesmo (Progress).\n\n## Variações completas\n\nBarras cro-progress__bar--*: green, blue, cyan, yellow, orange, red, pink, purple, gray, sp.\n\n```\n<div style=\"max-width:260px\">\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--green\" style=\"--p:80\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--cyan\" style=\"--p:70\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--yellow\" style=\"--p:60\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--pink\" style=\"--p:50\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--purple\" style=\"--p:40\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--gray\" style=\"--p:30\"></div>\n  </div>\n  <div class=\"cro-progress\">\n    <div class=\"cro-progress__bar cro-progress__bar--sp\" style=\"--p:75\"></div>\n  </div>\n</div>\n```\n\ncro-progress--fluid faz a barra ocupar 100% da largura do contêiner:\n\n```\n<div class=\"cro-progress cro-progress--fluid\">\n  <div class=\"cro-progress__bar\" style=\"--p:55\"></div>\n</div>\n```\n\n## Barras de botões (cro-btnbar) e de skills (cro-skillbar)\n\n```\n<div class=\"cro-btnbar\" style=\"width:260px;margin-bottom:6px\">\n  <button class=\"cro-mesbtn\" style=\"width:80px\">Normal</button>\n</div>\n<div class=\"cro-btnbar cro-btnbar--tall\" style=\"width:260px;margin-bottom:6px\">\n  <button class=\"cro-mesbtn\" style=\"width:80px\">tall</button>\n</div>\n<div class=\"cro-btnbar cro-btnbar--xl\" style=\"width:260px;margin-bottom:6px\">\n  <button class=\"cro-mesbtn\" style=\"width:80px\">xl</button>\n</div>\n<div class=\"cro-skillbar\" style=\"width:260px;margin-bottom:6px\"></div>\n<div class=\"cro-skillbar cro-skillbar--bottom\" style=\"width:260px\"></div>\n```\n\n| Classe | Papel |\n| cro-btnbar (--tall, --xl) | Faixa listrada de barra de botões (21px; --tall 29px) |\n| cro-skillbar | Cabeçalho (20px) da janela de skills |\n| cro-skillbar--bottom | Rodapé (32px) da janela de skills |\n« Slots e inventário · Árvore, menu e lista »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:260px\">\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar\" style=\"--p:70\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--orange\" style=\"--p:60\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--red\" style=\"--p:20\"></div>\n  </div>\n  <div class=\"cro-progress\">\n    <div class=\"cro-progress__bar cro-progress__bar--blue\" style=\"--p:90\"></div>\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"cro-exp\" style=\"--p:62;width:260px\"></div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"cro-progress\" style=\"width:260px\">\n  <div class=\"cro-progress__bar\" id=\"hpbar\" style=\"--p:100\"></div>\n</div>\n<p class=\"mt-2\"><button class=\"btn btn-secondary btn-sm\" id=\"hpdown\">Levar dano</button></p>"
+  },
+  {
+   "language": "js",
+   "code": "var hp = 100;\ndocument.getElementById('hpdown').addEventListener('click', function () {\n  hp = hp <= 15 ? 100 : hp - 15;\n  CRO.bar(document.getElementById('hpbar'), hp);   // abaixo de 25% a barra fica vermelha\n});"
+  },
+  {
+   "language": "html",
+   "code": "<span class=\"cro-grp cro-grp--offline\" title=\"offline\"></span>\n<span class=\"cro-grp cro-grp--online\" title=\"online\"></span>\n<span class=\"cro-grp cro-grp--leader\" title=\"líder\"></span>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"cro-btnbar\" style=\"width:260px\">\n  <button class=\"cro-mesbtn\" style=\"width:80px\">Um</button>\n  <button class=\"cro-mesbtn\" style=\"width:80px\">Dois</button>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:260px\">\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--green\" style=\"--p:80\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--cyan\" style=\"--p:70\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--yellow\" style=\"--p:60\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--pink\" style=\"--p:50\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--purple\" style=\"--p:40\"></div>\n  </div>\n  <div class=\"cro-progress cro-mb-2\">\n    <div class=\"cro-progress__bar cro-progress__bar--gray\" style=\"--p:30\"></div>\n  </div>\n  <div class=\"cro-progress\">\n    <div class=\"cro-progress__bar cro-progress__bar--sp\" style=\"--p:75\"></div>\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"cro-progress cro-progress--fluid\">\n  <div class=\"cro-progress__bar\" style=\"--p:55\"></div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"cro-btnbar\" style=\"width:260px;margin-bottom:6px\">\n  <button class=\"cro-mesbtn\" style=\"width:80px\">Normal</button>\n</div>\n<div class=\"cro-btnbar cro-btnbar--tall\" style=\"width:260px;margin-bottom:6px\">\n  <button class=\"cro-mesbtn\" style=\"width:80px\">tall</button>\n</div>\n<div class=\"cro-btnbar cro-btnbar--xl\" style=\"width:260px;margin-bottom:6px\">\n  <button class=\"cro-mesbtn\" style=\"width:80px\">xl</button>\n</div>\n<div class=\"cro-skillbar\" style=\"width:260px;margin-bottom:6px\"></div>\n<div class=\"cro-skillbar cro-skillbar--bottom\" style=\"width:260px\"></div>"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "id": "conteudo/imagens",
+ "title": "Imagens",
+ "type": "Bootstrap drop-in",
+ "section": "Conteúdo",
+ "summary": "Imagens responsivas e miniaturas, como no Bootstrap.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/conteudo/imagens.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/conteudo/imagens.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Imagens\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Conteúdo\nHuman version (rendered examples): conteudo/imagens.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nImagens responsivas e miniaturas, como no Bootstrap.\n\n## Responsivas\n\n.img-fluid aplica max-width: 100%; height: auto.\n\n```\n<img\n  src=\"https://placehold.co/400x100?text=400x100\"\n  class=\"img-fluid\"\n  width=\"400\"\n  height=\"100\"\n  alt=\"exemplo\">\n```\n\n## Miniaturas\n\n```\n<img\n  src=\"https://placehold.co/120x80\"\n  class=\"img-thumbnail\"\n  width=\"120\"\n  height=\"80\"\n  alt=\"miniatura\">\n```\n\n## Alinhamento\n\n```\n<div class=\"text-center\">\n  <img\n    src=\"https://placehold.co/60\"\n    class=\"d-inline-block rounded-circle\"\n    width=\"60\"\n    height=\"60\"\n    alt=\"centro\">\n</div>\n```\n\nNote\n\nOs ícones do jogo (cro-ico) são CSS, não imagens. Veja Ícones.\n\n## Imagens de teste (placehold.co)\n\nNos exemplos desta documentação as imagens são geradas pelo serviço placehold.co: basta pôr a medida na URL.\n\n| URL | Resultado |\n| https://placehold.co/600x400 | retângulo 600×400 (SVG por padrão) |\n| https://placehold.co/400 | quadrado 400×400 |\n| https://placehold.co/600x400.png | mesmo, em PNG (também jpeg, gif, webp, avif) |\n| https://placehold.co/600x400?text=Olá+mundo | com texto próprio (+ = espaço) |\n| https://placehold.co/600x400/orange/white | cor de fundo e do texto (hex ou nome) |\n| https://placehold.co/600x400@2x.png | densidade 2× (não vale para SVG) |\n\nNote\n\nO serviço precisa de internet; sem ela a imagem não carrega e aparece só o texto do alt.\n« Tipografia · Tabelas »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<img\n  src=\"https://placehold.co/400x100?text=400x100\"\n  class=\"img-fluid\"\n  width=\"400\"\n  height=\"100\"\n  alt=\"exemplo\">"
+  },
+  {
+   "language": "html",
+   "code": "<img\n  src=\"https://placehold.co/120x80\"\n  class=\"img-thumbnail\"\n  width=\"120\"\n  height=\"80\"\n  alt=\"miniatura\">"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"text-center\">\n  <img\n    src=\"https://placehold.co/60\"\n    class=\"d-inline-block rounded-circle\"\n    width=\"60\"\n    height=\"60\"\n    alt=\"centro\">\n</div>"
+  }
+ ]
+}

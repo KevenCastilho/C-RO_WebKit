@@ -1,0 +1,37 @@
+{
+ "id": "kit/formularios-cro",
+ "title": "Formulários cro-*",
+ "type": "Native kit piece",
+ "section": "Peças nativas do kit",
+ "summary": "Campos nativos do kit: cro-field , cro-label , cro-input , cro-select , cro-textarea , cro-check .",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/formularios-cro.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/kit/formularios-cro.html",
+ "classes": [
+  "cro-check",
+  "cro-field",
+  "cro-input",
+  "cro-label",
+  "cro-label--stat",
+  "cro-select",
+  "cro-textarea"
+ ],
+ "data_attributes": [
+  "data-cro-select"
+ ],
+ "text": "# Formulários cro-*\n\nType: Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.\nSection: Peças nativas do kit\nHuman version (rendered examples): kit/formularios-cro.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-check cro-field cro-input cro-label cro-label--stat cro-select cro-textarea\ndata-cro-* attributes in this page: data-cro-select\n\nCampos nativos do kit: cro-field, cro-label, cro-input, cro-select, cro-textarea, cro-check.\n\nUm formulário usa um só tipo de rótulo: o cro-label simples. Misturar --lg ou --stat com o rótulo normal na mesma janela deixa um campo maior e mais escuro que o outro.\n\n```\n<div style=\"max-width:320px\">\n  <div class=\"cro-field\">\n    <label class=\"cro-label\" for=\"fc-a\">Login</label>\n    <input class=\"cro-input\" id=\"fc-a\" value=\"usuario\">\n  </div>\n  <div class=\"cro-field\">\n    <label class=\"cro-label\" for=\"fc-b\">Senha</label>\n    <input class=\"cro-input\" id=\"fc-b\" type=\"password\" value=\"abc\">\n  </div>\n  <div class=\"cro-field\">\n    <label class=\"cro-label\" for=\"fc-c\">Classe</label>\n    <select class=\"cro-select\" id=\"fc-c\">\n      <option>Espadachim</option>\n      <option>Mago</option>\n    </select>\n  </div>\n  <div class=\"cro-field\"><textarea class=\"cro-textarea\" placeholder=\"mensagem\"></textarea></div>\n  <label class=\"cro-check\"><input type=\"checkbox\" checked> Lembrar</label>\n  <label class=\"cro-check\"><input type=\"radio\" name=\"fcr\" checked> A</label>\n  <label class=\"cro-check\"><input type=\"radio\" name=\"fcr\"> B</label>\n</div>\n```\n\n## Variações do rótulo\n\ncro-label--lg (negrito 13px, cor --cro-label-lg) e cro-label--stat (negrito 11px, cor --cro-label-stat) são variações de tamanho e cor. Use a mesma variação em todos os rótulos de um mesmo grupo, nunca em um só campo no meio dos outros.\n\n```\n<div style=\"max-width:320px\">\n  <div class=\"cro-field\">\n    <label class=\"cro-label cro-label--stat\" for=\"fc-d\">STR</label>\n    <input class=\"cro-input\" id=\"fc-d\" value=\"99\">\n  </div>\n  <div class=\"cro-field\">\n    <label class=\"cro-label cro-label--stat\" for=\"fc-e\">AGI</label>\n    <input class=\"cro-input\" id=\"fc-e\" value=\"80\">\n  </div>\n</div>\n```\n\n| Classe | Papel |\n| cro-field | Agrupa rótulo + campo |\n| cro-label (--lg, --stat) | Rótulo azul (variações do jogo) |\n| cro-input, cro-select, cro-textarea | Campos |\n| cro-check | Checkbox e radio com rótulo |\n\n## Elementos nus\n\nSem classe nenhuma também funciona: <input>, <select>, <textarea>, <input type=range>, <meter>, <progress>, <fieldset>... Veja Reboot.\n\n```\n<input placeholder=\"input nu\">\n<input type=\"number\" value=\"3\" style=\"width:60px\">\n<select data-cro-select>\n  <option>Select com popup do kit</option>\n  <option>Segunda</option>\n</select>\n<input type=\"range\">\n<meter value=\".7\"></meter>\n<output>42</output>\n```\n\n« Abas cro-* · Slots e inventário »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:320px\">\n  <div class=\"cro-field\">\n    <label class=\"cro-label\" for=\"fc-a\">Login</label>\n    <input class=\"cro-input\" id=\"fc-a\" value=\"usuario\">\n  </div>\n  <div class=\"cro-field\">\n    <label class=\"cro-label\" for=\"fc-b\">Senha</label>\n    <input class=\"cro-input\" id=\"fc-b\" type=\"password\" value=\"abc\">\n  </div>\n  <div class=\"cro-field\">\n    <label class=\"cro-label\" for=\"fc-c\">Classe</label>\n    <select class=\"cro-select\" id=\"fc-c\">\n      <option>Espadachim</option>\n      <option>Mago</option>\n    </select>\n  </div>\n  <div class=\"cro-field\"><textarea class=\"cro-textarea\" placeholder=\"mensagem\"></textarea></div>\n  <label class=\"cro-check\"><input type=\"checkbox\" checked> Lembrar</label>\n  <label class=\"cro-check\"><input type=\"radio\" name=\"fcr\" checked> A</label>\n  <label class=\"cro-check\"><input type=\"radio\" name=\"fcr\"> B</label>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:320px\">\n  <div class=\"cro-field\">\n    <label class=\"cro-label cro-label--stat\" for=\"fc-d\">STR</label>\n    <input class=\"cro-input\" id=\"fc-d\" value=\"99\">\n  </div>\n  <div class=\"cro-field\">\n    <label class=\"cro-label cro-label--stat\" for=\"fc-e\">AGI</label>\n    <input class=\"cro-input\" id=\"fc-e\" value=\"80\">\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<input placeholder=\"input nu\">\n<input type=\"number\" value=\"3\" style=\"width:60px\">\n<select data-cro-select>\n  <option>Select com popup do kit</option>\n  <option>Segunda</option>\n</select>\n<input type=\"range\">\n<meter value=\".7\"></meter>\n<output>42</output>"
+  }
+ ]
+}

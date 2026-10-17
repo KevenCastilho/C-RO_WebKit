@@ -1,0 +1,14 @@
+{
+ "id": "extras/nao-existe",
+ "title": "O que não existe no kit",
+ "type": "Guide",
+ "section": "Extras do kit",
+ "summary": "Lista direta do que o C-RO não oferece, com a alternativa. Se algo não está documentado aqui nem no índice de classes , não existe: não invente classes.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/nao-existe.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/extras/nao-existe.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# O que não existe no kit\n\nType: Guide. Explanatory page about using the kit.\nSection: Extras do kit\nHuman version (rendered examples): extras/nao-existe.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nLista direta do que o C-RO não oferece, com a alternativa. Se algo não está documentado aqui nem no índice de classes, não existe: não invente classes.\n\n## Resposta curta\n\n| Pergunta | Resposta | O que fazer |\n| Existe janela de chat pronta? | Não. Existe só a barra de entrada do chat (cro-dialog-bar: nome, campo de texto e alça), mais o ícone cro-ico--chatmode. Não há área de mensagens, rolagem de log nem abas de chat. | Monte com cro-window + a barra cro-dialog-bar. Veja Sysbox e dica. |\n| Existe modo escuro? | Não. | Não há alternativa; o visual segue o jogo de 2002. |\n| Existe suporte a RTL (dir=\"rtl\")? | Não. | Não suportado. |\n| Existe janela pronta de inventário, equipamento, status, habilidades, grupo ou minimapa? | Não. Existem as peças: cro-window, cro-slot, cro-progress, cro-tabs, cro-tree, cro-list. | Componha as janelas com as peças. Veja Janela e Slots. |\n| Existe backend de login, sessão ou jogo? | Não. É só CSS e JS de interface. | O formulário de login é visual; ligue ao seu servidor. |\n| O kit usa Node, React, Vue ou etapa de build para usar? | Não. Para usar bastam um CSS e um JS. | <link> e <script>. |\n| Os botões/barras/abas seguem as variáveis de cor? | Não. São imagens (sprites) desenhadas em CSS. Só textos, campos, fundos e bordas seguem tokens --cro-*. | Veja Tokens e Customização. |\n| As cores do tema do Bootstrap (primary, secondary...) mudam em tempo de execução? | Não. Estão compiladas no CSS. | — |\n| Os pickers nativos (data, hora, cor) e datalist seguem o visual do jogo? | Não. Ficam nativos. | Veja Navegadores e limites. |\n\n## Como ter certeza de que uma classe existe\n\nProcure a classe no índice de classes cro-*. Se não estiver lá, ela não existe. O mesmo vale para atributos: a lista completa está em Atributos data-cro-* e os tokens em Tokens.\n\nWarning\n\nAusência de resultado numa busca de texto não prova que algo não existe, e presença de um nome plausível (cro-chat, cro-hp-bar) não prova que existe. A fonte de verdade é o índice de classes.\n« Receitas · Como é no jogo »\n",
+ "code_blocks": []
+}

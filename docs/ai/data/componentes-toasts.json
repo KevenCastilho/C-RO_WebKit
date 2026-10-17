@@ -1,0 +1,27 @@
+{
+ "id": "componentes/toasts",
+ "title": "Toasts",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Notificações leves. No kit são uma janela pequena; sem toast-header viram uma sysbox.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/toasts.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/toasts.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Toasts\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/toasts.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nNotificações leves. No kit são uma janela pequena; sem toast-header viram uma sysbox.\n\n```\n<button class=\"btn btn-primary\" id=\"toastBtn\">Mostrar toast</button>\n<div class=\"toast-container position-fixed bottom-0 end-0 p-3\">\n  <div id=\"toastEx\" class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">\n    <div class=\"toast-header\">\n      <strong class=\"me-auto\">Sistema</strong>\n      <small>agora</small>\n      <button\n        type=\"button\"\n        class=\"btn-close\"\n        data-bs-dismiss=\"toast\"\n        aria-label=\"Fechar\"></button>\n    </div>\n    <div class=\"toast-body\">Você ganhou 100 de experiência!</div>\n  </div>\n</div>\n```\n\n```\ndocument.getElementById('toastBtn').addEventListener('click', function () {\n  bootstrap.Toast.getOrCreateInstance(document.getElementById('toastEx')).show();\n});\n```\n\n## Sem cabeçalho\n\n```\n<div class=\"toast show\" role=\"alert\">\n  <div class=\"toast-body\">Mensagem curta (vira sysbox).</div>\n</div>\n```\n\nNote\n\nPosicione os toasts com toast-container + position-fixed. Use data-bs-autohide=\"false\" para não sumir sozinho.\n« Spinners · Tooltips »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<button class=\"btn btn-primary\" id=\"toastBtn\">Mostrar toast</button>\n<div class=\"toast-container position-fixed bottom-0 end-0 p-3\">\n  <div id=\"toastEx\" class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">\n    <div class=\"toast-header\">\n      <strong class=\"me-auto\">Sistema</strong>\n      <small>agora</small>\n      <button\n        type=\"button\"\n        class=\"btn-close\"\n        data-bs-dismiss=\"toast\"\n        aria-label=\"Fechar\"></button>\n    </div>\n    <div class=\"toast-body\">Você ganhou 100 de experiência!</div>\n  </div>\n</div>"
+  },
+  {
+   "language": "js",
+   "code": "document.getElementById('toastBtn').addEventListener('click', function () {\n  bootstrap.Toast.getOrCreateInstance(document.getElementById('toastEx')).show();\n});"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"toast show\" role=\"alert\">\n  <div class=\"toast-body\">Mensagem curta (vira sysbox).</div>\n</div>"
+  }
+ ]
+}

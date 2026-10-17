@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/link",
+ "title": "Link",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Opacidade e deslocamento do sublinhado dos links.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/link.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/link.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Link\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/link.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nOpacidade e deslocamento do sublinhado dos links.\n\n```\n<p><a class=\"link-offset-2 link-underline-opacity-25\" href=\"#\">Deslocado e translúcido</a></p>\n<p><a class=\"link-underline link-underline-success\" href=\"#\">Sublinhado verde</a></p>\n```\n\n« Interações · Object fit »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<p><a class=\"link-offset-2 link-underline-opacity-25\" href=\"#\">Deslocado e translúcido</a></p>\n<p><a class=\"link-underline link-underline-success\" href=\"#\">Sublinhado verde</a></p>"
+  }
+ ]
+}

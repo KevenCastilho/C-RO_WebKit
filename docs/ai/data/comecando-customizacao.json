@@ -1,0 +1,27 @@
+{
+ "id": "comecando/customizacao",
+ "title": "Customização",
+ "type": "Guide",
+ "section": "Começando",
+ "summary": "Como mudar o visual do kit sem editar o kit — tokens (variáveis CSS), seu próprio CSS e a troca da fonte.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/customizacao.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/comecando/customizacao.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Customização\n\nType: Guide. Explanatory page about using the kit.\nSection: Começando\nHuman version (rendered examples): comecando/customizacao.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nComo mudar o visual do kit sem editar o kit — tokens (variáveis CSS), seu próprio CSS e a troca da fonte.\n\n## Dois níveis\n\n| Nível | Quando usar | Como |\n| 1. Tokens --cro-* | Trocar cor de destaque, seleção, fundo de campo, fonte... | Redefina a variável em :root ou em qualquer container |\n| 2. Seu CSS | Ajustar um componente | Escreva a regra; ela vence o kit (veja abaixo) |\n\n## 1. Tokens\n\nOs tokens ficam em :root e valem em qualquer escopo, inclusive dentro de um único componente. Veja a lista em Tokens.\n\n```\n<div class=\"d-flex flex-wrap gap-3 align-items-start\">\n  <div>\n    <p class=\"mb-1\"><b>Padrão</b></p>\n    <input class=\"form-control mb-2\" value=\"campo\" style=\"width:160px\">\n    <a href=\"#\">link com a cor de destaque</a>\n  </div>\n  <div style=\"--cro-accent:#a01a8c; --cro-field-bg:#fff6cc; --cro-field-border:#a01a8c\">\n    <p class=\"mb-1\"><b>Tokens trocados neste bloco</b></p>\n    <input class=\"form-control mb-2\" value=\"campo\" style=\"width:160px\">\n    <a href=\"#\">link com a cor de destaque</a>\n  </div>\n</div>\n```\n\n```\n:root {\n  --cro-accent: #174888;      /* links, rótulos, destaque */\n  --cro-sel-bg: #83a2ff;      /* item selecionado (lista, menu, tabela) */\n  --cro-field-bg: #f2f2f2;    /* fundo dos campos */\n  --cro-field-border: #c0c0c0;\n  --cro-win-body: #ffffff;    /* corpo de janela/card/modal */\n  --cro-font-ui: \"Minha Fonte\", Helvetica, Arial, sans-serif;\n}\n```\n\nWarning\n\nOs sprites do kit (botões, barras, ícones, abas) são imagens de CSS pixel a pixel e não seguem tokens de cor. Os tokens mexem em cores, fontes e medidas que o kit lê via var(). Para mudar um sprite use o nível 3.\n\n## 2. Seu próprio CSS\n\nO CSS do kit está fora do layer do Bootstrap e os elementos HTML nus usam :where() (especificidade 0). Resultado:\n\n- Uma regra sua, mesmo simples (button { ... }), vence o estilo de elemento do kit.\n- Para vencer uma classe do kit (.cro-btn, .btn), use um seletor de especificidade igual ou maior, ou carregue o seu CSS depois.\n- Qualquer cursor declarado por você vence o cursor do kit (veja Cursores).\n\n```\n/* seu CSS, carregado depois de c-ro-bs.min.css */\na { color: #0a5; }                 /* vence o kit: seletor de elemento */\n.card-header { font-size: 14px; }  /* vence o Bootstrap (layer) e iguala o kit */\n```\n\n## Cores do tema Bootstrap\n\nAs cores contextuais do Bootstrap já vêm tematizadas (a paleta é a do jogo):\n\n| Tema | Cor | Origem |\n| primary | #174888 | derivado do azul do jogo |\n| secondary | #6e6e6e | derivado |\n| success | #1f6b2f | derivado |\n| info | #0f6a78 | derivado |\n| warning | #f3c34d | derivado |\n| danger | #8a1c1c | derivado |\n| light / dark | #f4f4f4 / #1f242c | derivado |\n\nEssas cores são compiladas no Bootstrap e não são tokens de runtime. Para usar outra cor, escreva o seu CSS: ele vence o kit.\n\n## Fonte\n\nTroque --cro-font-ui e --cro-font-title e carregue a sua fonte com @font-face. Lembre-se da licença da fonte nova.\n« JavaScript · Navegadores e limites »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"d-flex flex-wrap gap-3 align-items-start\">\n  <div>\n    <p class=\"mb-1\"><b>Padrão</b></p>\n    <input class=\"form-control mb-2\" value=\"campo\" style=\"width:160px\">\n    <a href=\"#\">link com a cor de destaque</a>\n  </div>\n  <div style=\"--cro-accent:#a01a8c; --cro-field-bg:#fff6cc; --cro-field-border:#a01a8c\">\n    <p class=\"mb-1\"><b>Tokens trocados neste bloco</b></p>\n    <input class=\"form-control mb-2\" value=\"campo\" style=\"width:160px\">\n    <a href=\"#\">link com a cor de destaque</a>\n  </div>\n</div>"
+  },
+  {
+   "language": "css",
+   "code": ":root {\n  --cro-accent: #174888;      /* links, rótulos, destaque */\n  --cro-sel-bg: #83a2ff;      /* item selecionado (lista, menu, tabela) */\n  --cro-field-bg: #f2f2f2;    /* fundo dos campos */\n  --cro-field-border: #c0c0c0;\n  --cro-win-body: #ffffff;    /* corpo de janela/card/modal */\n  --cro-font-ui: \"Minha Fonte\", Helvetica, Arial, sans-serif;\n}"
+  },
+  {
+   "language": "css",
+   "code": "/* seu CSS, carregado depois de c-ro-bs.min.css */\na { color: #0a5; }                 /* vence o kit: seletor de elemento */\n.card-header { font-size: 14px; }  /* vence o Bootstrap (layer) e iguala o kit */"
+  }
+ ]
+}

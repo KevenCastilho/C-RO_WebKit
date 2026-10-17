@@ -14,23 +14,98 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <p><code>nav-tabs</code> e <code>nav-pills</code> viram as abas do jogo: horizontais em pílula e, com <code>flex-column</code>, verticais em escada.</p>
 <h2 id="abas-horizontais">Abas horizontais</h2>
 <pre><code class="language-html">&lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
-  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link active&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nt1&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-selected=&quot;true&quot;&gt;Geral&lt;/button&gt;&lt;/li&gt;
-  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nt2&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;Itens&lt;/button&gt;&lt;/li&gt;
-  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link disabled&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-disabled=&quot;true&quot;&gt;Desabilitada&lt;/button&gt;&lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button
+      class=&quot;nav-link active&quot;
+      data-bs-toggle=&quot;tab&quot;
+      data-bs-target=&quot;#nt1&quot;
+      type=&quot;button&quot;
+      role=&quot;tab&quot;
+      aria-selected=&quot;true&quot;&gt;
+      Geral
+    &lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button
+      class=&quot;nav-link&quot;
+      data-bs-toggle=&quot;tab&quot;
+      data-bs-target=&quot;#nt2&quot;
+      type=&quot;button&quot;
+      role=&quot;tab&quot;
+      aria-selected=&quot;false&quot;&gt;
+      Itens
+    &lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link disabled&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-disabled=&quot;true&quot;&gt;
+      Desabilitada
+    &lt;/button&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;tab-content p-2&quot;&gt;&lt;div class=&quot;tab-pane fade show active&quot; id=&quot;nt1&quot; role=&quot;tabpanel&quot;&gt;Conteúdo geral.&lt;/div&gt;&lt;div class=&quot;tab-pane fade&quot; id=&quot;nt2&quot; role=&quot;tabpanel&quot;&gt;Conteúdo dos itens.&lt;/div&gt;&lt;/div&gt;</code></pre>
+&lt;div class=&quot;tab-content p-2&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;nt1&quot; role=&quot;tabpanel&quot;&gt;Conteúdo geral.&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;nt2&quot; role=&quot;tabpanel&quot;&gt;Conteúdo dos itens.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="abas-verticais-escada">Abas verticais (escada)</h2>
 <pre><code class="language-html">&lt;div class=&quot;d-flex align-items-start&quot; style=&quot;max-width:420px&quot;&gt;
-  &lt;ul class=&quot;nav nav-pills flex-column&quot; role=&quot;tablist&quot;&gt;&lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link active&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#nv1&quot; type=&quot;button&quot; role=&quot;tab&quot;&gt;Status&lt;/button&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#nv2&quot; type=&quot;button&quot; role=&quot;tab&quot;&gt;Equip&lt;/button&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#nv3&quot; type=&quot;button&quot; role=&quot;tab&quot;&gt;Skill&lt;/button&gt;&lt;/li&gt;&lt;/ul&gt;
-  &lt;div class=&quot;tab-content flex-grow-1 p-2&quot;&gt;&lt;div class=&quot;tab-pane fade show active&quot; id=&quot;nv1&quot; role=&quot;tabpanel&quot;&gt;Painel de status.&lt;/div&gt;&lt;div class=&quot;tab-pane fade&quot; id=&quot;nv2&quot; role=&quot;tabpanel&quot;&gt;Painel de equipamentos.&lt;/div&gt;&lt;div class=&quot;tab-pane fade&quot; id=&quot;nv3&quot; role=&quot;tabpanel&quot;&gt;Painel de habilidades.&lt;/div&gt;&lt;/div&gt;
+  &lt;ul class=&quot;nav nav-pills flex-column&quot; role=&quot;tablist&quot;&gt;
+    &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+      &lt;button
+        class=&quot;nav-link active&quot;
+        data-bs-toggle=&quot;pill&quot;
+        data-bs-target=&quot;#nv1&quot;
+        type=&quot;button&quot;
+        role=&quot;tab&quot;&gt;
+        Status
+      &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+      &lt;button
+        class=&quot;nav-link&quot;
+        data-bs-toggle=&quot;pill&quot;
+        data-bs-target=&quot;#nv2&quot;
+        type=&quot;button&quot;
+        role=&quot;tab&quot;&gt;
+        Equip
+      &lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+      &lt;button
+        class=&quot;nav-link&quot;
+        data-bs-toggle=&quot;pill&quot;
+        data-bs-target=&quot;#nv3&quot;
+        type=&quot;button&quot;
+        role=&quot;tab&quot;&gt;
+        Skill
+      &lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;tab-content flex-grow-1 p-2&quot;&gt;
+    &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;nv1&quot; role=&quot;tabpanel&quot;&gt;Painel de status.&lt;/div&gt;
+    &lt;div class=&quot;tab-pane fade&quot; id=&quot;nv2&quot; role=&quot;tabpanel&quot;&gt;Painel de equipamentos.&lt;/div&gt;
+    &lt;div class=&quot;tab-pane fade&quot; id=&quot;nv3&quot; role=&quot;tabpanel&quot;&gt;Painel de habilidades.&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 <h2 id="nav-simples">Nav simples</h2>
-<pre><code class="language-html">&lt;ul class=&quot;nav&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Ativo&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link disabled&quot; aria-disabled=&quot;true&quot;&gt;Off&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</code></pre>
+<pre><code class="language-html">&lt;ul class=&quot;nav&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Ativo&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link disabled&quot; aria-disabled=&quot;true&quot;&gt;Off&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
 <aside><strong>Note</strong><p>Sem Bootstrap, o kit tem as abas <code>cro-tabs</code> e <code>cro-tabs-v</code> com <code>data-cro-tabs</code>. Veja <a href="../kit/abas-cro.html">Abas cro-*</a>.</p></aside>
 <h2 id="outras-variações">Outras variações</h2>
-<pre><code class="language-html">&lt;ul class=&quot;nav nav-underline mb-2&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;nav-underline&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;B&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;ul class=&quot;nav nav-tabs nav-fill mb-2&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;nav-fill&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;B&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;ul class=&quot;nav nav-pills nav-justified&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;nav-justified&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;B&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</code></pre>
+<pre><code class="language-html">&lt;ul class=&quot;nav nav-underline mb-2&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;nav-underline&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;B&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;nav nav-tabs nav-fill mb-2&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;nav-fill&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;B&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;nav nav-pills nav-justified&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;nav-justified&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;B&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
 <ul>
 <li><code>nav-fill</code>: cada item ocupa o espaço proporcional ao conteúdo. <code>nav-justified</code>: todos com largura igual.</li>
 <li><code>nav-underline</code>: derivação do Bootstrap (sublinhado no ativo).</li>

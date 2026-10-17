@@ -1,0 +1,34 @@
+{
+ "id": "extras/favicon",
+ "title": "Favicon automático",
+ "type": "Kit extra",
+ "section": "Extras do kit",
+ "summary": "Se o site não declara favicon, o kit aplica o dele — um retrato em pixel art — sem você fazer nada.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/favicon.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/extras/favicon.html",
+ "classes": [],
+ "data_attributes": [
+  "data-cro-favicon",
+  "data-cro-favicon-link"
+ ],
+ "text": "# Favicon automático\n\nType: Kit extra. A feature Bootstrap does not have.\nSection: Extras do kit\nHuman version (rendered examples): extras/favicon.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ndata-cro-* attributes in this page: data-cro-favicon data-cro-favicon-link\n\nSe o site não declara favicon, o kit aplica o dele — um retrato em pixel art — sem você fazer nada.\n\n## A regra\n\n- Ao carregar, o JS procura um <link rel=\"icon\"> (ou shortcut icon) com href preenchido no <head>.\n- Não achou: injeta o favicon do kit (PNG 32px) e, se também não houver, um apple-touch-icon de 180px.\n- Achou: não faz nada. O favicon do site sempre vence.\n- Depois: se o site adicionar um favicon, o do kit é removido; se remover o dele, o do kit volta.\n\n```\n<!-- sem <link rel=\"icon\">: aparece o favicon do C-RO -->\n<head><meta charset=\"utf-8\"><title>Meu site</title></head>\n\n<!-- com <link rel=\"icon\">: aparece o seu -->\n<head><link rel=\"icon\" href=\"/meu.ico\"></head>\n```\n\n## Desligar\n\n```\n<html data-cro-favicon=\"off\">\n```\n\n## Teste ao vivo\n\nEsta página não declara favicon: o ícone da aba é o do kit. Os links injetados:\n\n```\n<ul id=\"fv-list\" class=\"mb-0\"></ul>\n```\n\n```\nvar ul = document.getElementById('fv-list');\ndocument.querySelectorAll('link[rel~=icon],link[rel=apple-touch-icon]').forEach(function (l) {\n  var li = document.createElement('li');\n  li.textContent = l.getAttribute('rel') + ' ' + (l.getAttribute('sizes') || '') + ' — ' +\n    (l.hasAttribute('data-cro-favicon-link') ? 'injetado pelo kit' : 'do site');\n  ul.appendChild(li);\n});\n```\n\n## Arquivos\n\nEm dist/favicon/: favicon.svg, favicon-32.png, apple-touch-icon.png e favicon.ico (16/32/48) — úteis se você quiser servir o ícone como arquivo.\n\nLimitation\n\nUm /favicon.ico na raiz do site sem <link> não é detectável sem uma requisição. Nesse caso o do kit vale; declare o seu <link rel=\"icon\"> para vencer.\n\nNote\n\nA arte (30×30) foi fornecida pelo autor do projeto. O SVG não vai embutido no bundle (pesaria ~56 KB).\n« Estados automáticos do cursor · Fonte »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<!-- sem <link rel=\"icon\">: aparece o favicon do C-RO -->\n<head><meta charset=\"utf-8\"><title>Meu site</title></head>\n\n<!-- com <link rel=\"icon\">: aparece o seu -->\n<head><link rel=\"icon\" href=\"/meu.ico\"></head>"
+  },
+  {
+   "language": "html",
+   "code": "<html data-cro-favicon=\"off\">"
+  },
+  {
+   "language": "html",
+   "code": "<ul id=\"fv-list\" class=\"mb-0\"></ul>"
+  },
+  {
+   "language": "js",
+   "code": "var ul = document.getElementById('fv-list');\ndocument.querySelectorAll('link[rel~=icon],link[rel=apple-touch-icon]').forEach(function (l) {\n  var li = document.createElement('li');\n  li.textContent = l.getAttribute('rel') + ' ' + (l.getAttribute('sizes') || '') + ' — ' +\n    (l.hasAttribute('data-cro-favicon-link') ? 'injetado pelo kit' : 'do site');\n  ul.appendChild(li);\n});"
+  }
+ ]
+}

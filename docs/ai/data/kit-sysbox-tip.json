@@ -1,0 +1,30 @@
+{
+ "id": "kit/sysbox-tip",
+ "title": "Sysbox e dica",
+ "type": "Native kit piece",
+ "section": "Peças nativas do kit",
+ "summary": "A caixa de mensagem do sistema e a dica (tooltip amarelo) do jogo.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/sysbox-tip.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/kit/sysbox-tip.html",
+ "classes": [
+  "cro-dialog-bar",
+  "cro-dialog-bar__input",
+  "cro-dialog-bar__name",
+  "cro-dialog-grip",
+  "cro-sysbox",
+  "cro-tip"
+ ],
+ "data_attributes": [],
+ "text": "# Sysbox e dica\n\nType: Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.\nSection: Peças nativas do kit\nHuman version (rendered examples): kit/sysbox-tip.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-dialog-bar cro-dialog-bar__input cro-dialog-bar__name cro-dialog-grip cro-sysbox cro-tip\n\nA caixa de mensagem do sistema e a dica (tooltip amarelo) do jogo.\n\n```\n<div class=\"cro-sysbox\" style=\"width:200px;height:48px\">Mensagem do sistema</div>\n<span class=\"cro-tip\" style=\"width:140px;height:40px;padding:6px\">Dica do jogo</span>\n```\n\n| Classe | Equivale a |\n| cro-sysbox | .alert, .toast sem cabeçalho |\n| cro-tip | .tooltip |\n\n## Barra de diálogo\n\nA barra de bate-papo do jogo (nome, campo de texto e alça de redimensionar):\n\n```\n<div class=\"cro-dialog-bar\" style=\"width:100%\">\n  <div class=\"cro-dialog-bar__name\"></div>\n  <div class=\"cro-dialog-bar__input\"></div>\n  <span class=\"cro-dialog-grip\" title=\"Redimensionar\"></span>\n</div>\n```\n\nLimitation\n\nNo perfil lite esses componentes não existem (veja Download).\n« Ícones do jogo · Cor e fundo »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"cro-sysbox\" style=\"width:200px;height:48px\">Mensagem do sistema</div>\n<span class=\"cro-tip\" style=\"width:140px;height:40px;padding:6px\">Dica do jogo</span>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"cro-dialog-bar\" style=\"width:100%\">\n  <div class=\"cro-dialog-bar__name\"></div>\n  <div class=\"cro-dialog-bar__input\"></div>\n  <span class=\"cro-dialog-grip\" title=\"Redimensionar\"></span>\n</div>"
+  }
+ ]
+}

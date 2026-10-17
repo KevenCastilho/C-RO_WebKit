@@ -14,10 +14,18 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <p>A janela é a peça central do jogo: barra de título em degradê, corpo branco, rodapé, cantos recortados de 12 pixels e sombra.</p>
 <h2 id="estrutura">Estrutura</h2>
 <pre><code class="language-html">&lt;section class=&quot;cro-window&quot; style=&quot;width:300px&quot;&gt;
-  &lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Janela&lt;/span&gt;
-    &lt;div class=&quot;cro-titlebar__actions&quot;&gt;&lt;button class=&quot;cro-sys-btn cro-sys-btn--mini&quot; aria-label=&quot;Minimizar&quot;&gt;&lt;/button&gt;&lt;button class=&quot;cro-sys-btn cro-sys-btn--close&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;&lt;/div&gt;&lt;/header&gt;
+  &lt;header class=&quot;cro-titlebar&quot;&gt;
+    &lt;span class=&quot;cro-titlebar__title&quot;&gt;Janela&lt;/span&gt;
+    &lt;div class=&quot;cro-titlebar__actions&quot;&gt;
+      &lt;button class=&quot;cro-sys-btn cro-sys-btn--mini&quot; aria-label=&quot;Minimizar&quot;&gt;&lt;/button&gt;
+      &lt;button class=&quot;cro-sys-btn cro-sys-btn--close&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
   &lt;div class=&quot;cro-window__body&quot;&gt;Corpo da janela.&lt;/div&gt;
-  &lt;footer class=&quot;cro-window__footer&quot;&gt;&lt;button class=&quot;cro-btn&quot;&gt;Cancelar&lt;/button&gt;&lt;button class=&quot;cro-btn&quot;&gt;OK&lt;/button&gt;&lt;/footer&gt;
+  &lt;footer class=&quot;cro-window__footer&quot;&gt;
+    &lt;button class=&quot;cro-btn&quot;&gt;Cancelar&lt;/button&gt;
+    &lt;button class=&quot;cro-btn&quot;&gt;OK&lt;/button&gt;
+  &lt;/footer&gt;
 &lt;/section&gt;</code></pre>
 <table>
 <thead>
@@ -46,9 +54,18 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 </tbody>
 </table>
 <h2 id="variantes">Variantes</h2>
-<pre><code class="language-html">&lt;section class=&quot;cro-window cro-window--gutter&quot; style=&quot;width:200px&quot;&gt;&lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Gutter&lt;/span&gt;&lt;/header&gt;&lt;div class=&quot;cro-window__body&quot;&gt;Listras laterais (como a janela de equipamentos).&lt;/div&gt;&lt;/section&gt;
-&lt;section class=&quot;cro-window cro-window--mini&quot; style=&quot;width:160px&quot;&gt;&lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Mini&lt;/span&gt;&lt;/header&gt;&lt;footer class=&quot;cro-window__footer&quot;&gt;&lt;/footer&gt;&lt;/section&gt;
-&lt;section class=&quot;cro-window cro-window--flat&quot; style=&quot;width:180px&quot;&gt;&lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Flat&lt;/span&gt;&lt;/header&gt;&lt;div class=&quot;cro-window__body&quot;&gt;Sem sombra.&lt;/div&gt;&lt;/section&gt;</code></pre>
+<pre><code class="language-html">&lt;section class=&quot;cro-window cro-window--gutter&quot; style=&quot;width:200px&quot;&gt;
+  &lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Gutter&lt;/span&gt;&lt;/header&gt;
+  &lt;div class=&quot;cro-window__body&quot;&gt;Listras laterais (como a janela de equipamentos).&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;cro-window cro-window--mini&quot; style=&quot;width:160px&quot;&gt;
+  &lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Mini&lt;/span&gt;&lt;/header&gt;
+  &lt;footer class=&quot;cro-window__footer&quot;&gt;&lt;/footer&gt;
+&lt;/section&gt;
+&lt;section class=&quot;cro-window cro-window--flat&quot; style=&quot;width:180px&quot;&gt;
+  &lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Flat&lt;/span&gt;&lt;/header&gt;
+  &lt;div class=&quot;cro-window__body&quot;&gt;Sem sombra.&lt;/div&gt;
+&lt;/section&gt;</code></pre>
 <h2 id="equivalência-com-bootstrap">Equivalência com Bootstrap</h2>
 <table>
 <thead>
@@ -83,7 +100,9 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <aside><strong>Note</strong><p>Os cantos têm 12 pixels recortados exatos, feitos por máscara no primeiro e no último pedaço da janela (nítidos em qualquer tamanho). A sombra é um <code>drop-shadow</code> (<code>--cro-win-drop</code>) que segue essa silhueta: os cantos recortados ficam transparentes. Que a sombra existe é CONFIRMADO (telas de Login/Seleção/Criação); os parâmetros (2px 2px, desfoque 2,5px, 35%) são DERIVADOS, não medidos.</p></aside>
 <h2 id="caixa-janela-sem-barra-de-título">Caixa (janela sem barra de título)</h2>
 <p>No roBrowser, as caixas brancas sem barra (NpcBox, InputBox, ItemObtain, SkillDescription) são outra família: casca branca com <code>padding: 2px</code> e raio de 5px, e uma moldura interna de 1px com raio de 5px. Sem sombra. O popover do Bootstrap sem título usa esta caixa automaticamente.</p>
-<pre><code class="language-html">&lt;div class=&quot;cro-box&quot; style=&quot;width:220px&quot;&gt;&lt;div class=&quot;cro-box__frame&quot;&gt;Texto dentro da caixa.&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;cro-box&quot; style=&quot;width:220px&quot;&gt;
+  &lt;div class=&quot;cro-box__frame&quot;&gt;Texto dentro da caixa.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <table>
 <thead>
 <tr>

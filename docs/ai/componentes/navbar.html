@@ -12,17 +12,69 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Componentes</dd><dt>Human version (rendered examples)</dt><dd><a href="../../componentes/navbar.html">componentes/navbar.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
 <div lang="pt-BR">
 <p>Barras de navegação. Os <code>nav-link</code> e o toggler são botões do kit; marca e collapse seguem o Bootstrap.</p>
-<pre><code class="language-html">&lt;nav class=&quot;navbar navbar-expand-md&quot;&gt;&lt;div class=&quot;container-fluid&quot;&gt;
-  &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;C-RO&lt;/a&gt;
-  &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#nvEx&quot; aria-controls=&quot;nvEx&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Alternar navegação&quot;&gt;&lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&lt;/button&gt;
-  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;nvEx&quot;&gt;&lt;ul class=&quot;navbar-nav me-auto&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; aria-current=&quot;page&quot; href=&quot;#&quot;&gt;Início&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Itens&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link disabled&quot; aria-disabled=&quot;true&quot;&gt;Desabilitado&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-    &lt;form class=&quot;d-flex&quot; role=&quot;search&quot;&gt;&lt;input class=&quot;form-control form-control-sm me-2&quot; type=&quot;search&quot; placeholder=&quot;Buscar&quot; aria-label=&quot;Buscar&quot;&gt;&lt;button class=&quot;btn btn-primary btn-sm&quot; type=&quot;submit&quot;&gt;Ir&lt;/button&gt;&lt;/form&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/nav&gt;</code></pre>
+<pre><code class="language-html">&lt;nav class=&quot;navbar navbar-expand-md&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;C-RO&lt;/a&gt;
+    &lt;button
+      class=&quot;navbar-toggler&quot;
+      type=&quot;button&quot;
+      data-bs-toggle=&quot;collapse&quot;
+      data-bs-target=&quot;#nvEx&quot;
+      aria-controls=&quot;nvEx&quot;
+      aria-expanded=&quot;false&quot;
+      aria-label=&quot;Alternar navegação&quot;&gt;
+      &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;nvEx&quot;&gt;
+      &lt;ul class=&quot;navbar-nav me-auto&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a class=&quot;nav-link active&quot; aria-current=&quot;page&quot; href=&quot;#&quot;&gt;Início&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Itens&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a class=&quot;nav-link disabled&quot; aria-disabled=&quot;true&quot;&gt;Desabilitado&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;form class=&quot;d-flex&quot; role=&quot;search&quot;&gt;
+        &lt;input
+          class=&quot;form-control form-control-sm me-2&quot;
+          type=&quot;search&quot;
+          placeholder=&quot;Buscar&quot;
+          aria-label=&quot;Buscar&quot;&gt;
+        &lt;button class=&quot;btn btn-primary btn-sm&quot; type=&quot;submit&quot;&gt;Ir&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
 <h2 id="com-dropdown">Com dropdown</h2>
-<pre><code class="language-html">&lt;nav class=&quot;navbar navbar-expand&quot;&gt;&lt;div class=&quot;container-fluid&quot;&gt;&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Menu&lt;/a&gt;&lt;ul class=&quot;navbar-nav&quot;&gt;&lt;li class=&quot;nav-item dropdown&quot;&gt;&lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Conta&lt;/a&gt;&lt;ul class=&quot;dropdown-menu&quot;&gt;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Perfil&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Sair&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/nav&gt;</code></pre>
+<pre><code class="language-html">&lt;nav class=&quot;navbar navbar-expand&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Menu&lt;/a&gt;
+    &lt;ul class=&quot;navbar-nav&quot;&gt;
+      &lt;li class=&quot;nav-item dropdown&quot;&gt;
+        &lt;a
+          class=&quot;nav-link dropdown-toggle&quot;
+          href=&quot;#&quot;
+          data-bs-toggle=&quot;dropdown&quot;
+          aria-expanded=&quot;false&quot;&gt;
+          Conta
+        &lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Perfil&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Sair&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
 <aside><strong>Note</strong><p>Esta própria documentação usa uma navbar do kit no topo da página.</p></aside>
 <h2 id="variações">Variações</h2>
-<pre><code class="language-html">&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark mb-2&quot;&gt;&lt;div class=&quot;container-fluid&quot;&gt;&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;navbar-dark&lt;/a&gt;&lt;span class=&quot;navbar-text&quot;&gt;navbar-text&lt;/span&gt;&lt;/div&gt;&lt;/nav&gt;</code></pre>
+<pre><code class="language-html">&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark mb-2&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;navbar-dark&lt;/a&gt;
+    &lt;span class=&quot;navbar-text&quot;&gt;navbar-text&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
 <ul>
 <li><strong>Expansão responsiva</strong>: <code>navbar-expand-sm</code>, <code>-md</code>, <code>-lg</code>, <code>-xl</code>, <code>-xxl</code> (ou <code>navbar-expand</code> sempre expandida).</li>
 <li><strong>Texto</strong>: <code>navbar-text</code> para texto sem link.</li>

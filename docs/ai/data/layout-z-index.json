@@ -1,0 +1,19 @@
+{
+ "id": "layout/z-index",
+ "title": "Z-index",
+ "type": "Bootstrap drop-in",
+ "section": "Layout",
+ "summary": "Camadas fixas do Bootstrap para componentes sobrepostos. O kit as mantém.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/layout/z-index.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/layout/z-index.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Z-index\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Layout\nHuman version (rendered examples): layout/z-index.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nCamadas fixas do Bootstrap para componentes sobrepostos. O kit as mantém.\n\n## Escala\n\n| Camada | z-index |\n| dropdown | 1000 |\n| sticky | 1020 |\n| fixed | 1030 |\n| offcanvas-backdrop | 1040 |\n| offcanvas | 1045 |\n| modal-backdrop | 1050 |\n| modal | 1055 |\n| popover | 1070 |\n| tooltip | 1080 |\n| toast | 1090 |\n\nUtilitários: z-n1, z-0, z-1, z-2, z-3.\n\n```\n<div\n  class=\"position-absolute z-1 bd-demo-box\"\n  style=\"left:20px;top:20px;width:120px;height:60px;background:#cfe\">\n  z-1\n</div>\n<div\n  class=\"position-absolute z-2 bd-demo-box\"\n  style=\"left:70px;top:50px;width:120px;height:60px;background:#fec\">\n  z-2\n</div>\n```\n\nNote\n\nOs diálogos CRO.alert/confirm/prompt usam <dialog> na camada superior (top layer) do navegador, acima de qualquer z-index.\n« Gutters · Reboot e elementos nus »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div\n  class=\"position-absolute z-1 bd-demo-box\"\n  style=\"left:20px;top:20px;width:120px;height:60px;background:#cfe\">\n  z-1\n</div>\n<div\n  class=\"position-absolute z-2 bd-demo-box\"\n  style=\"left:70px;top:50px;width:120px;height:60px;background:#fec\">\n  z-2\n</div>"
+  }
+ ]
+}

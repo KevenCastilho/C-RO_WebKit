@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/object-fit",
+ "title": "Object fit",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Ajusta imagens dentro da caixa.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/object-fit.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/object-fit.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Object fit\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/object-fit.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nAjusta imagens dentro da caixa.\n\n```\n<img\n  src=\"https://placehold.co/60\"\n  class=\"object-fit-cover border\"\n  width=\"120\"\n  height=\"80\"\n  alt=\"cover\">\n```\n\nClasses: object-fit-contain, -cover, -fill, -scale, -none.\n\nobject-fit-contain|cover|fill|scale|none (e por breakpoint: object-fit-md-cover).\n« Link · Opacidade »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<img\n  src=\"https://placehold.co/60\"\n  class=\"object-fit-cover border\"\n  width=\"120\"\n  height=\"80\"\n  alt=\"cover\">"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "id": "formularios/floating-labels",
+ "title": "Floating labels",
+ "type": "Bootstrap drop-in",
+ "section": "Formulários",
+ "summary": "O rótulo flutua sobre o campo quando ele tem valor ou foco.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/floating-labels.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/formularios/floating-labels.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Floating labels\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Formulários\nHuman version (rendered examples): formularios/floating-labels.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nO rótulo flutua sobre o campo quando ele tem valor ou foco.\n\n```\n<div style=\"max-width:320px\">\n  <div class=\"form-floating mb-2\">\n    <input type=\"email\" class=\"form-control\" id=\"fl1\" placeholder=\"nome@exemplo.com\">\n    <label for=\"fl1\">E-mail</label>\n  </div>\n  <div class=\"form-floating mb-2\">\n    <input type=\"password\" class=\"form-control\" id=\"fl2\" placeholder=\"Senha\">\n    <label for=\"fl2\">Senha</label>\n  </div>\n  <div class=\"form-floating\">\n    <textarea\n      class=\"form-control\"\n      id=\"fl3\"\n      placeholder=\"Mensagem\"\n      style=\"height:80px\"></textarea>\n    <label for=\"fl3\">Mensagem</label>\n  </div>\n</div>\n```\n\nNote\n\nO placeholder é obrigatório no Bootstrap para o rótulo flutuar. O kit esconde o placeholder real para não sobrepor o rótulo.\n« Input group · Layout de formulários »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:320px\">\n  <div class=\"form-floating mb-2\">\n    <input type=\"email\" class=\"form-control\" id=\"fl1\" placeholder=\"nome@exemplo.com\">\n    <label for=\"fl1\">E-mail</label>\n  </div>\n  <div class=\"form-floating mb-2\">\n    <input type=\"password\" class=\"form-control\" id=\"fl2\" placeholder=\"Senha\">\n    <label for=\"fl2\">Senha</label>\n  </div>\n  <div class=\"form-floating\">\n    <textarea\n      class=\"form-control\"\n      id=\"fl3\"\n      placeholder=\"Mensagem\"\n      style=\"height:80px\"></textarea>\n    <label for=\"fl3\">Mensagem</label>\n  </div>\n</div>"
+  }
+ ]
+}

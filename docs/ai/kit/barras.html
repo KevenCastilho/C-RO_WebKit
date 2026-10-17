@@ -15,16 +15,27 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <h2 id="progress-cro-progress">Progress (<code>cro-progress</code>)</h2>
 <p>Defina o preenchimento com a variável <code>--p</code> (0–100).</p>
 <pre><code class="language-html">&lt;div style=&quot;max-width:260px&quot;&gt;
-&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar&quot; style=&quot;--p:70&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--orange&quot; style=&quot;--p:60&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--red&quot; style=&quot;--p:20&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;cro-progress&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--blue&quot; style=&quot;--p:90&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;
+    &lt;div class=&quot;cro-progress__bar&quot; style=&quot;--p:70&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;
+    &lt;div class=&quot;cro-progress__bar cro-progress__bar--orange&quot; style=&quot;--p:60&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;
+    &lt;div class=&quot;cro-progress__bar cro-progress__bar--red&quot; style=&quot;--p:20&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cro-progress&quot;&gt;
+    &lt;div class=&quot;cro-progress__bar cro-progress__bar--blue&quot; style=&quot;--p:90&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+<aside><strong>Note</strong><p><strong>Como é no jogo.</strong> A barra tem 85×8 px (o tamanho da janela Basic Info), é azul (HP e SP são ambos azuis) e fica vermelha só abaixo de 25% de vida. O texto "atual / máx" vai como texto comum abaixo ou ao lado da barra, nunca dentro dela. Use <code>cro-progress--fluid</code> (largura 100%) só quando o layout realmente pedir uma barra larga. As outras cores existem para barras de outros usos, não para HP.</p></aside>
 <p>Cores: <code>--green</code>, <code>--blue</code>, <code>--cyan</code>, <code>--yellow</code>, <code>--orange</code>, <code>--red</code>, <code>--pink</code>, <code>--purple</code>, <code>--gray</code> e <code>--sp</code>.</p>
 <h2 id="barra-de-experiência-cro-exp">Barra de experiência (<code>cro-exp</code>)</h2>
 <pre><code class="language-html">&lt;div class=&quot;cro-exp&quot; style=&quot;--p:62;width:260px&quot;&gt;&lt;/div&gt;</code></pre>
 <h2 id="atualizar-por-javascript">Atualizar por JavaScript</h2>
-<pre><code class="language-html">&lt;div class=&quot;cro-progress&quot; style=&quot;width:260px&quot;&gt;&lt;div class=&quot;cro-progress__bar&quot; id=&quot;hpbar&quot; style=&quot;--p:100&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+<pre><code class="language-html">&lt;div class=&quot;cro-progress&quot; style=&quot;width:260px&quot;&gt;
+  &lt;div class=&quot;cro-progress__bar&quot; id=&quot;hpbar&quot; style=&quot;--p:100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;p class=&quot;mt-2&quot;&gt;&lt;button class=&quot;btn btn-secondary btn-sm&quot; id=&quot;hpdown&quot;&gt;Levar dano&lt;/button&gt;&lt;/p&gt;</code></pre>
 <pre><code class="language-js">var hp = 100;
 document.getElementById(&#x27;hpdown&#x27;).addEventListener(&#x27;click&#x27;, function () {
@@ -36,25 +47,50 @@ document.getElementById(&#x27;hpdown&#x27;).addEventListener(&#x27;click&#x27;, 
 &lt;span class=&quot;cro-grp cro-grp--online&quot; title=&quot;online&quot;&gt;&lt;/span&gt;
 &lt;span class=&quot;cro-grp cro-grp--leader&quot; title=&quot;líder&quot;&gt;&lt;/span&gt;</code></pre>
 <h2 id="barra-de-botões">Barra de botões</h2>
-<pre><code class="language-html">&lt;div class=&quot;cro-btnbar&quot; style=&quot;width:260px&quot;&gt;&lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;Um&lt;/button&gt;&lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;Dois&lt;/button&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;cro-btnbar&quot; style=&quot;width:260px&quot;&gt;
+  &lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;Um&lt;/button&gt;
+  &lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;Dois&lt;/button&gt;
+&lt;/div&gt;</code></pre>
 <aside><strong>Note</strong><p>Com Bootstrap, <code>.progress</code> / <code>.progress-bar</code> fazem o mesmo (<a href="../componentes/progress.html">Progress</a>).</p></aside>
 <h2 id="variações-completas">Variações completas</h2>
 <p>Barras <code>cro-progress__bar--*</code>: <code>green</code>, <code>blue</code>, <code>cyan</code>, <code>yellow</code>, <code>orange</code>, <code>red</code>, <code>pink</code>, <code>purple</code>, <code>gray</code>, <code>sp</code>.</p>
 <pre><code class="language-html">&lt;div style=&quot;max-width:260px&quot;&gt;
-&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--green&quot; style=&quot;--p:80&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--cyan&quot; style=&quot;--p:70&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--yellow&quot; style=&quot;--p:60&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--pink&quot; style=&quot;--p:50&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--purple&quot; style=&quot;--p:40&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--gray&quot; style=&quot;--p:30&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;cro-progress&quot;&gt;&lt;div class=&quot;cro-progress__bar cro-progress__bar--sp&quot; style=&quot;--p:75&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;
+    &lt;div class=&quot;cro-progress__bar cro-progress__bar--green&quot; style=&quot;--p:80&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;
+    &lt;div class=&quot;cro-progress__bar cro-progress__bar--cyan&quot; style=&quot;--p:70&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;
+    &lt;div class=&quot;cro-progress__bar cro-progress__bar--yellow&quot; style=&quot;--p:60&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;
+    &lt;div class=&quot;cro-progress__bar cro-progress__bar--pink&quot; style=&quot;--p:50&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;
+    &lt;div class=&quot;cro-progress__bar cro-progress__bar--purple&quot; style=&quot;--p:40&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cro-progress cro-mb-2&quot;&gt;
+    &lt;div class=&quot;cro-progress__bar cro-progress__bar--gray&quot; style=&quot;--p:30&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cro-progress&quot;&gt;
+    &lt;div class=&quot;cro-progress__bar cro-progress__bar--sp&quot; style=&quot;--p:75&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 <p><code>cro-progress--fluid</code> faz a barra ocupar 100% da largura do contêiner:</p>
-<pre><code class="language-html">&lt;div class=&quot;cro-progress cro-progress--fluid&quot;&gt;&lt;div class=&quot;cro-progress__bar&quot; style=&quot;--p:55&quot;&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;cro-progress cro-progress--fluid&quot;&gt;
+  &lt;div class=&quot;cro-progress__bar&quot; style=&quot;--p:55&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="barras-de-botões-cro-btnbar-e-de-skills-cro-skillbar">Barras de botões (<code>cro-btnbar</code>) e de skills (<code>cro-skillbar</code>)</h2>
-<pre><code class="language-html">&lt;div class=&quot;cro-btnbar&quot; style=&quot;width:260px;margin-bottom:6px&quot;&gt;&lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;Normal&lt;/button&gt;&lt;/div&gt;
-&lt;div class=&quot;cro-btnbar cro-btnbar--tall&quot; style=&quot;width:260px;margin-bottom:6px&quot;&gt;&lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;tall&lt;/button&gt;&lt;/div&gt;
-&lt;div class=&quot;cro-btnbar cro-btnbar--xl&quot; style=&quot;width:260px;margin-bottom:6px&quot;&gt;&lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;xl&lt;/button&gt;&lt;/div&gt;
+<pre><code class="language-html">&lt;div class=&quot;cro-btnbar&quot; style=&quot;width:260px;margin-bottom:6px&quot;&gt;
+  &lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;Normal&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cro-btnbar cro-btnbar--tall&quot; style=&quot;width:260px;margin-bottom:6px&quot;&gt;
+  &lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;tall&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cro-btnbar cro-btnbar--xl&quot; style=&quot;width:260px;margin-bottom:6px&quot;&gt;
+  &lt;button class=&quot;cro-mesbtn&quot; style=&quot;width:80px&quot;&gt;xl&lt;/button&gt;
+&lt;/div&gt;
 &lt;div class=&quot;cro-skillbar&quot; style=&quot;width:260px;margin-bottom:6px&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;cro-skillbar cro-skillbar--bottom&quot; style=&quot;width:260px&quot;&gt;&lt;/div&gt;</code></pre>
 <table>

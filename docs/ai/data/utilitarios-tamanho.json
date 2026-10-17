@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/tamanho",
+ "title": "Tamanho",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Largura e altura relativas.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/tamanho.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/tamanho.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Tamanho\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/tamanho.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nLargura e altura relativas.\n\n```\n<div class=\"bg-light border mb-1\">\n  <div class=\"w-25 p-1 bg-primary text-white\">w-25</div>\n</div>\n<div class=\"bg-light border mb-1\">\n  <div class=\"w-50 p-1 bg-primary text-white\">w-50</div>\n</div>\n<div class=\"bg-light border\">\n  <div class=\"w-100 p-1 bg-primary text-white\">w-100</div>\n</div>\n```\n\nTambém: h-25/50/75/100, mw-100, mh-100, vw-100, vh-100, min-vh-100.\n« Sombras · Espaçamento »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"bg-light border mb-1\">\n  <div class=\"w-25 p-1 bg-primary text-white\">w-25</div>\n</div>\n<div class=\"bg-light border mb-1\">\n  <div class=\"w-50 p-1 bg-primary text-white\">w-50</div>\n</div>\n<div class=\"bg-light border\">\n  <div class=\"w-100 p-1 bg-primary text-white\">w-100</div>\n</div>"
+  }
+ ]
+}

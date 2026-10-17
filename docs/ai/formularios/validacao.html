@@ -22,7 +22,12 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <p>Com <code>novalidate</code> e <code>was-validated</code>, o Bootstrap mostra válido/inválido conforme as regras HTML (<code>required</code>, <code>pattern</code>, <code>type=email</code>).</p>
 <pre><code class="language-html">&lt;form class=&quot;needs-validation&quot; id=&quot;val-form&quot; novalidate style=&quot;max-width:320px&quot;&gt;
   &lt;label class=&quot;form-label&quot; for=&quot;val-nome&quot;&gt;Nome&lt;/label&gt;
-  &lt;input class=&quot;form-control mb-1&quot; id=&quot;val-nome&quot; required minlength=&quot;4&quot; placeholder=&quot;mín. 4 letras&quot;&gt;
+  &lt;input
+    class=&quot;form-control mb-1&quot;
+    id=&quot;val-nome&quot;
+    required
+    minlength=&quot;4&quot;
+    placeholder=&quot;mín. 4 letras&quot;&gt;
   &lt;div class=&quot;invalid-feedback&quot;&gt;Mínimo de 4 letras.&lt;/div&gt;
   &lt;div class=&quot;valid-feedback&quot;&gt;Ótimo!&lt;/div&gt;
   &lt;button class=&quot;btn btn-primary mt-2&quot; type=&quot;submit&quot;&gt;Validar&lt;/button&gt;
@@ -35,10 +40,17 @@ f.addEventListener(&#x27;submit&#x27;, function (e) {
 <aside><strong>Note</strong><p>Os campos mostram o estado inválido do kit (<code>--cro-invalid</code>, derivado) também sem classes, via <code>:user-invalid</code>, depois que o usuário interage.</p></aside>
 <h2 id="balões-de-validação">Balões de validação</h2>
 <p><code>valid-tooltip</code> e <code>invalid-tooltip</code> mostram a mensagem em balão (dentro de um contêiner <code>position-relative</code>):</p>
-<pre><code class="language-html">&lt;div class=&quot;position-relative mb-5&quot; style=&quot;max-width:300px&quot;&gt;&lt;input class=&quot;form-control is-invalid&quot; value=&quot;x&quot;&gt;&lt;div class=&quot;invalid-tooltip&quot;&gt;invalid-tooltip: valor inválido.&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;position-relative mb-5&quot; style=&quot;max-width:300px&quot;&gt;
+  &lt;input class=&quot;form-control is-invalid&quot; value=&quot;x&quot;&gt;
+  &lt;div class=&quot;invalid-tooltip&quot;&gt;invalid-tooltip: valor inválido.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="grupos-de-input-com-validação">Grupos de input com validação</h2>
 <p>Dentro de <code>input-group</code>, adicione <code>has-validation</code> para os cantos arredondados continuarem corretos ao mostrar <code>invalid-feedback</code>:</p>
-<pre><code class="language-html">&lt;div class=&quot;input-group has-validation&quot;&gt;&lt;span class=&quot;input-group-text&quot;&gt;@&lt;/span&gt;&lt;input class=&quot;form-control is-invalid&quot;&gt;&lt;div class=&quot;invalid-feedback&quot;&gt;Usuário já existe.&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;input-group has-validation&quot;&gt;
+  &lt;span class=&quot;input-group-text&quot;&gt;@&lt;/span&gt;
+  &lt;input class=&quot;form-control is-invalid&quot;&gt;
+  &lt;div class=&quot;invalid-feedback&quot;&gt;Usuário já existe.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../formularios/layout.html">« Layout de formulários</a> · <a href="../componentes/accordion.html">Accordion »</a></nav>
 </main>

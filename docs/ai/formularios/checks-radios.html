@@ -13,24 +13,57 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <div lang="pt-BR">
 <p>Checkbox, radio e switch com os indicadores do jogo.</p>
 <h2 id="checkboxes">Checkboxes</h2>
-<pre><code class="language-html">&lt;div class=&quot;form-check&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ck1&quot; checked&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;ck1&quot;&gt;Marcado&lt;/label&gt;&lt;/div&gt;
-&lt;div class=&quot;form-check&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ck2&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;ck2&quot;&gt;Desmarcado&lt;/label&gt;&lt;/div&gt;
-&lt;div class=&quot;form-check&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ck3&quot; disabled&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;ck3&quot;&gt;Desabilitado&lt;/label&gt;&lt;/div&gt;
-&lt;div class=&quot;form-check&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ck4&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;ck4&quot;&gt;Indeterminado&lt;/label&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ck1&quot; checked&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ck1&quot;&gt;Marcado&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ck2&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ck2&quot;&gt;Desmarcado&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ck3&quot; disabled&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ck3&quot;&gt;Desabilitado&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ck4&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ck4&quot;&gt;Indeterminado&lt;/label&gt;
+&lt;/div&gt;</code></pre>
 <pre><code class="language-js">document.getElementById(&#x27;ck4&#x27;).indeterminate = true;</code></pre>
 <h2 id="radios">Radios</h2>
-<pre><code class="language-html">&lt;div class=&quot;form-check&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;rd&quot; id=&quot;rd1&quot; checked&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;rd1&quot;&gt;Opção 1&lt;/label&gt;&lt;/div&gt;
-&lt;div class=&quot;form-check&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;rd&quot; id=&quot;rd2&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;rd2&quot;&gt;Opção 2&lt;/label&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;rd&quot; id=&quot;rd1&quot; checked&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;rd1&quot;&gt;Opção 1&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;rd&quot; id=&quot;rd2&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;rd2&quot;&gt;Opção 2&lt;/label&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="switch">Switch</h2>
-<pre><code class="language-html">&lt;div class=&quot;form-check form-switch&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; role=&quot;switch&quot; id=&quot;sw1&quot; checked&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;sw1&quot;&gt;Efeitos sonoros&lt;/label&gt;&lt;/div&gt;
-&lt;div class=&quot;form-check form-switch&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; role=&quot;switch&quot; id=&quot;sw2&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;sw2&quot;&gt;Música&lt;/label&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;form-check form-switch&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; role=&quot;switch&quot; id=&quot;sw1&quot; checked&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;sw1&quot;&gt;Efeitos sonoros&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check form-switch&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; role=&quot;switch&quot; id=&quot;sw2&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;sw2&quot;&gt;Música&lt;/label&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="em-linha">Em linha</h2>
-<pre><code class="language-html">&lt;div class=&quot;form-check form-check-inline&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;in1&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;in1&quot;&gt;A&lt;/label&gt;&lt;/div&gt;
-&lt;div class=&quot;form-check form-check-inline&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;in2&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;in2&quot;&gt;B&lt;/label&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;form-check form-check-inline&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;in1&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;in1&quot;&gt;A&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check form-check-inline&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;in2&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;in2&quot;&gt;B&lt;/label&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="botões-como-checks">Botões como checks</h2>
-<pre><code class="language-html">&lt;input type=&quot;checkbox&quot; class=&quot;btn-check&quot; id=&quot;btn-c1&quot; autocomplete=&quot;off&quot;&gt;&lt;label class=&quot;btn btn-outline-primary&quot; for=&quot;btn-c1&quot;&gt;Alternar&lt;/label&gt;
-&lt;input type=&quot;radio&quot; class=&quot;btn-check&quot; name=&quot;btnr&quot; id=&quot;btn-r1&quot; autocomplete=&quot;off&quot; checked&gt;&lt;label class=&quot;btn btn-outline-primary&quot; for=&quot;btn-r1&quot;&gt;Um&lt;/label&gt;
-&lt;input type=&quot;radio&quot; class=&quot;btn-check&quot; name=&quot;btnr&quot; id=&quot;btn-r2&quot; autocomplete=&quot;off&quot;&gt;&lt;label class=&quot;btn btn-outline-primary&quot; for=&quot;btn-r2&quot;&gt;Dois&lt;/label&gt;</code></pre>
+<pre><code class="language-html">&lt;input type=&quot;checkbox&quot; class=&quot;btn-check&quot; id=&quot;btn-c1&quot; autocomplete=&quot;off&quot;&gt;
+&lt;label class=&quot;btn btn-outline-primary&quot; for=&quot;btn-c1&quot;&gt;Alternar&lt;/label&gt;
+&lt;input type=&quot;radio&quot; class=&quot;btn-check&quot; name=&quot;btnr&quot; id=&quot;btn-r1&quot; autocomplete=&quot;off&quot; checked&gt;
+&lt;label class=&quot;btn btn-outline-primary&quot; for=&quot;btn-r1&quot;&gt;Um&lt;/label&gt;
+&lt;input type=&quot;radio&quot; class=&quot;btn-check&quot; name=&quot;btnr&quot; id=&quot;btn-r2&quot; autocomplete=&quot;off&quot;&gt;
+&lt;label class=&quot;btn btn-outline-primary&quot; for=&quot;btn-r2&quot;&gt;Dois&lt;/label&gt;</code></pre>
 <aside><strong>Note</strong><p>Versão nativa: <code>&lt;label class="cro-check"&gt;&lt;input type="checkbox"&gt; Texto&lt;/label&gt;</code>. Veja <a href="../kit/formularios-cro.html">Formulários cro-*</a>.</p></aside>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../formularios/select.html">« Select</a> · <a href="../formularios/range.html">Range »</a></nav>

@@ -1,0 +1,23 @@
+{
+ "id": "helpers/cor-fundo",
+ "title": "Cor e fundo",
+ "type": "Bootstrap drop-in",
+ "section": "Helpers",
+ "summary": "Helpers text-bg-* definem fundo e cor de texto contrastante de uma vez. Usam as cores do tema do kit.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/cor-fundo.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/helpers/cor-fundo.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Cor e fundo\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Helpers\nHuman version (rendered examples): helpers/cor-fundo.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nHelpers text-bg-* definem fundo e cor de texto contrastante de uma vez. Usam as cores do tema do kit.\n\n```\n<div class=\"p-2 text-bg-primary\">primary</div>\n<div class=\"p-2 text-bg-secondary\">secondary</div>\n<div class=\"p-2 text-bg-success\">success</div>\n<div class=\"p-2 text-bg-danger\">danger</div>\n<div class=\"p-2 text-bg-warning\">warning</div>\n<div class=\"p-2 text-bg-info\">info</div>\n<div class=\"p-2 text-bg-light\">light</div>\n<div class=\"p-2 text-bg-dark\">dark</div>\n```\n\nFuncionam também em card, modal-content, offcanvas e popover: os filhos herdam a cor do texto.\n\n```\n<div class=\"card text-bg-danger\" style=\"width:200px\">\n  <div class=\"card-header\">Perigo</div>\n  <div class=\"card-body\">Corpo branco sobre fundo vermelho do tema.</div>\n</div>\n```\n\nNote\n\nPara só o fundo use bg-primary, bg-success...; só o texto: text-primary... Veja Fundo e Cores.\n« Sysbox e dica · Links coloridos »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"p-2 text-bg-primary\">primary</div>\n<div class=\"p-2 text-bg-secondary\">secondary</div>\n<div class=\"p-2 text-bg-success\">success</div>\n<div class=\"p-2 text-bg-danger\">danger</div>\n<div class=\"p-2 text-bg-warning\">warning</div>\n<div class=\"p-2 text-bg-info\">info</div>\n<div class=\"p-2 text-bg-light\">light</div>\n<div class=\"p-2 text-bg-dark\">dark</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"card text-bg-danger\" style=\"width:200px\">\n  <div class=\"card-header\">Perigo</div>\n  <div class=\"card-body\">Corpo branco sobre fundo vermelho do tema.</div>\n</div>"
+  }
+ ]
+}

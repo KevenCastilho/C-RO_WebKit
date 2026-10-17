@@ -1,0 +1,83 @@
+{
+ "id": "kit/icones-cro",
+ "title": "Ícones do jogo",
+ "type": "Native kit piece",
+ "section": "Peças nativas do kit",
+ "summary": "Ícones pixel-exatos extraídos da interface do jogo, como classes CSS. Sem imagens externas.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/icones-cro.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/kit/icones-cro.html",
+ "classes": [
+  "cro-arrow",
+  "cro-arrow--down",
+  "cro-arrow--left",
+  "cro-arrow--next",
+  "cro-arrow--prev",
+  "cro-arrow--right",
+  "cro-arrow--up",
+  "cro-dialog-handle",
+  "cro-grip",
+  "cro-ico",
+  "cro-ico--arw-down",
+  "cro-ico--arw-up",
+  "cro-ico--battle-opt",
+  "cro-ico--battle-opt2",
+  "cro-ico--btnbar-arrow",
+  "cro-ico--chatmode",
+  "cro-ico--close",
+  "cro-ico--close2",
+  "cro-ico--confusion",
+  "cro-ico--folder",
+  "cro-ico--lock",
+  "cro-ico--num0",
+  "cro-ico--page-first",
+  "cro-ico--page-next",
+  "cro-ico--quest-0",
+  "cro-ico--quest-1",
+  "cro-ico--quest-2",
+  "cro-ico--quest-3",
+  "cro-ico--silence",
+  "cro-ico--skill-empty",
+  "cro-ico--skill-up",
+  "cro-ico--spin-down",
+  "cro-ico--spin-up",
+  "cro-ico--stick-left",
+  "cro-ico--unlock",
+  "cro-ico--view-lines",
+  "cro-ico--wnd-mini",
+  "cro-ico--world-close",
+  "cro-icon-slot",
+  "cro-icon-slot--11",
+  "cro-icon-slot--16",
+  "cro-icon-view",
+  "is-on"
+ ],
+ "data_attributes": [],
+ "text": "# Ícones do jogo\n\nType: Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.\nSection: Peças nativas do kit\nHuman version (rendered examples): kit/icones-cro.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-arrow cro-arrow--down cro-arrow--left cro-arrow--next cro-arrow--prev cro-arrow--right cro-arrow--up cro-dialog-handle cro-grip cro-ico cro-ico--arw-down cro-ico--arw-up cro-ico--battle-opt cro-ico--battle-opt2 cro-ico--btnbar-arrow cro-ico--chatmode cro-ico--close cro-ico--close2 cro-ico--confusion cro-ico--folder cro-ico--lock cro-ico--num0 cro-ico--page-first cro-ico--page-next cro-ico--quest-0 cro-ico--quest-1 cro-ico--quest-2 cro-ico--quest-3 cro-ico--silence cro-ico--skill-empty cro-ico--skill-up cro-ico--spin-down cro-ico--spin-up cro-ico--stick-left cro-ico--unlock cro-ico--view-lines cro-ico--wnd-mini cro-ico--world-close cro-icon-slot cro-icon-slot--11 cro-icon-slot--16 cro-icon-view is-on\n\nÍcones pixel-exatos extraídos da interface do jogo, como classes CSS. Sem imagens externas.\n\n## Pequenos (cro-ico)\n\n```\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--arw-down\"></span>\n  <figcaption class=\"small\">arw-down</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--arw-up\"></span>\n  <figcaption class=\"small\">arw-up</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--close\"></span>\n  <figcaption class=\"small\">close</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--folder\"></span>\n  <figcaption class=\"small\">folder</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--lock\"></span>\n  <figcaption class=\"small\">lock</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--unlock\"></span>\n  <figcaption class=\"small\">unlock</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--chatmode\"></span>\n  <figcaption class=\"small\">chatmode</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--confusion\"></span>\n  <figcaption class=\"small\">confusion</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--silence\"></span>\n  <figcaption class=\"small\">silence</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--battle-opt\"></span>\n  <figcaption class=\"small\">battle-opt</figcaption>\n</figure>\n```\n\n## Lista completa\n\narw-down, arw-right-on, arw-up, battle-opt, battle-opt2, btnbar-arrow, chatmode, close, close2, confusion, folder, lock, num0, page-first, page-last, page-next, page-prev, quest-0…quest-3, silence, skill-empty, skill-up, spin-down, spin-up, stick-left, unlock, view-lines, wnd-mini, world-close.\n\n```\n<span class=\"cro-ico cro-ico--quest-0\"></span>\n<span class=\"cro-ico cro-ico--quest-1\"></span>\n<span class=\"cro-ico cro-ico--quest-2\"></span>\n<span class=\"cro-ico cro-ico--quest-3\"></span>\n<span class=\"cro-ico cro-ico--spin-up\"></span>\n<span class=\"cro-ico cro-ico--spin-down\"></span>\n<span class=\"cro-ico cro-ico--skill-up\"></span>\n<span class=\"cro-ico cro-ico--skill-empty\"></span>\n```\n\n## Ícone clicável\n\n```\n<button class=\"cro-ico cro-ico--page-first\" aria-label=\"primeira página\"></button>\n<button class=\"cro-ico cro-ico--page-next\" aria-label=\"próxima página\"></button>\n<span class=\"cro-icon-view\" title=\"visão\"></span>\n<span class=\"cro-icon-view is-on\" title=\"visão ligada\"></span>\n```\n\nWarning\n\nÍcones clicáveis precisam de aria-label. Para ícones de terceiros, veja Ícones.\n\n## Setas, alça e visão\n\n```\n<span class=\"cro-arrow cro-arrow--up\" title=\"up\"></span>\n<span class=\"cro-arrow cro-arrow--down\" title=\"down\"></span>\n<span class=\"cro-arrow cro-arrow--left\" title=\"left\"></span>\n<span class=\"cro-arrow cro-arrow--right\" title=\"right\"></span>\n<span class=\"cro-arrow cro-arrow--prev\" title=\"prev\"></span>\n<span class=\"cro-arrow cro-arrow--next\" title=\"next\"></span>\n<span class=\"cro-grip\" title=\"alça de redimensionar\"></span>\n<span class=\"cro-dialog-handle\" title=\"alça da barra de diálogo\"></span>\n```\n\n| Classe | Papel |\n| cro-arrow--up/down/left/right | Setas de quest (10×10) |\n| cro-arrow--prev/next | Setas de paginação (11×11) |\n| cro-grip | Alça de redimensionar janela (13×13) |\n| cro-dialog-handle | Alça vertical da barra de diálogo |\n| cro-icon-view (+ is-on) | Alternador \"visão ligada/desligada\" |\n\n## Caixa para ícones de terceiros\n\n```\n<span class=\"cro-icon-slot cro-icon-slot--11\">\n  <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n    <path d=\"M5 12l5 5L20 7\"/>\n  </svg>\n</span>\n<span class=\"cro-icon-slot cro-icon-slot--16\">\n  <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n    <circle cx=\"12\" cy=\"12\" r=\"9\"/>\n  </svg>\n</span>\n```\n\n## Ícones restantes\n\n```\n<span class=\"cro-ico cro-ico--battle-opt2\" title=\"battle-opt2\"></span>\n<span class=\"cro-ico cro-ico--btnbar-arrow\" title=\"btnbar-arrow\"></span>\n<span class=\"cro-ico cro-ico--close2\" title=\"close2\"></span>\n<span class=\"cro-ico cro-ico--num0\" title=\"num0\"></span>\n<span class=\"cro-ico cro-ico--stick-left\" title=\"stick-left\"></span>\n<span class=\"cro-ico cro-ico--view-lines\" title=\"view-lines\"></span>\n<span class=\"cro-ico cro-ico--wnd-mini\" title=\"wnd-mini\"></span>\n<span class=\"cro-ico cro-ico--world-close\" title=\"world-close\"></span>\n```\n\n« Diálogos (CRO.alert...) · Sysbox e dica »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--arw-down\"></span>\n  <figcaption class=\"small\">arw-down</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--arw-up\"></span>\n  <figcaption class=\"small\">arw-up</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--close\"></span>\n  <figcaption class=\"small\">close</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--folder\"></span>\n  <figcaption class=\"small\">folder</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--lock\"></span>\n  <figcaption class=\"small\">lock</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--unlock\"></span>\n  <figcaption class=\"small\">unlock</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--chatmode\"></span>\n  <figcaption class=\"small\">chatmode</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--confusion\"></span>\n  <figcaption class=\"small\">confusion</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--silence\"></span>\n  <figcaption class=\"small\">silence</figcaption>\n</figure>\n<figure class=\"m-0 text-center\">\n  <span class=\"cro-ico cro-ico--battle-opt\"></span>\n  <figcaption class=\"small\">battle-opt</figcaption>\n</figure>"
+  },
+  {
+   "language": "html",
+   "code": "<span class=\"cro-ico cro-ico--quest-0\"></span>\n<span class=\"cro-ico cro-ico--quest-1\"></span>\n<span class=\"cro-ico cro-ico--quest-2\"></span>\n<span class=\"cro-ico cro-ico--quest-3\"></span>\n<span class=\"cro-ico cro-ico--spin-up\"></span>\n<span class=\"cro-ico cro-ico--spin-down\"></span>\n<span class=\"cro-ico cro-ico--skill-up\"></span>\n<span class=\"cro-ico cro-ico--skill-empty\"></span>"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"cro-ico cro-ico--page-first\" aria-label=\"primeira página\"></button>\n<button class=\"cro-ico cro-ico--page-next\" aria-label=\"próxima página\"></button>\n<span class=\"cro-icon-view\" title=\"visão\"></span>\n<span class=\"cro-icon-view is-on\" title=\"visão ligada\"></span>"
+  },
+  {
+   "language": "html",
+   "code": "<span class=\"cro-arrow cro-arrow--up\" title=\"up\"></span>\n<span class=\"cro-arrow cro-arrow--down\" title=\"down\"></span>\n<span class=\"cro-arrow cro-arrow--left\" title=\"left\"></span>\n<span class=\"cro-arrow cro-arrow--right\" title=\"right\"></span>\n<span class=\"cro-arrow cro-arrow--prev\" title=\"prev\"></span>\n<span class=\"cro-arrow cro-arrow--next\" title=\"next\"></span>\n<span class=\"cro-grip\" title=\"alça de redimensionar\"></span>\n<span class=\"cro-dialog-handle\" title=\"alça da barra de diálogo\"></span>"
+  },
+  {
+   "language": "html",
+   "code": "<span class=\"cro-icon-slot cro-icon-slot--11\">\n  <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n    <path d=\"M5 12l5 5L20 7\"/>\n  </svg>\n</span>\n<span class=\"cro-icon-slot cro-icon-slot--16\">\n  <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n    <circle cx=\"12\" cy=\"12\" r=\"9\"/>\n  </svg>\n</span>"
+  },
+  {
+   "language": "html",
+   "code": "<span class=\"cro-ico cro-ico--battle-opt2\" title=\"battle-opt2\"></span>\n<span class=\"cro-ico cro-ico--btnbar-arrow\" title=\"btnbar-arrow\"></span>\n<span class=\"cro-ico cro-ico--close2\" title=\"close2\"></span>\n<span class=\"cro-ico cro-ico--num0\" title=\"num0\"></span>\n<span class=\"cro-ico cro-ico--stick-left\" title=\"stick-left\"></span>\n<span class=\"cro-ico cro-ico--view-lines\" title=\"view-lines\"></span>\n<span class=\"cro-ico cro-ico--wnd-mini\" title=\"wnd-mini\"></span>\n<span class=\"cro-ico cro-ico--world-close\" title=\"world-close\"></span>"
+  }
+ ]
+}

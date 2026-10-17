@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/posicao",
+ "title": "Posição",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Utilitários de posição e translação.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/posicao.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/posicao.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Posição\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/posicao.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nUtilitários de posição e translação.\n\n```\n<div class=\"position-relative h-100\">\n  <div class=\"position-absolute top-0 end-0 bd-demo-box\">top-0 end-0</div>\n  <div class=\"position-absolute bottom-0 start-0 bd-demo-box\">bottom-0 start-0</div>\n</div>\n```\n\n« Overflow · Sombras »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"position-relative h-100\">\n  <div class=\"position-absolute top-0 end-0 bd-demo-box\">top-0 end-0</div>\n  <div class=\"position-absolute bottom-0 start-0 bd-demo-box\">bottom-0 start-0</div>\n</div>"
+  }
+ ]
+}

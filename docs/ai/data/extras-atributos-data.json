@@ -1,0 +1,33 @@
+{
+ "id": "extras/atributos-data",
+ "title": "Atributos data-cro-*",
+ "type": "Kit extra",
+ "section": "Extras do kit",
+ "summary": "Os atributos HTML que controlam comportamento do kit, sem JavaScript seu.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/atributos-data.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/extras/atributos-data.html",
+ "classes": [
+  "cro-progress",
+  "cro-progress__bar",
+  "cro-tab-panels",
+  "cro-tabs",
+  "cro-tabs__btn",
+  "is-active"
+ ],
+ "data_attributes": [
+  "data-cro-color",
+  "data-cro-panel",
+  "data-cro-panels",
+  "data-cro-select",
+  "data-cro-tab",
+  "data-cro-tabs"
+ ],
+ "text": "# Atributos data-cro-*\n\nType: Kit extra. A feature Bootstrap does not have.\nSection: Extras do kit\nHuman version (rendered examples): extras/atributos-data.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-progress cro-progress__bar cro-tab-panels cro-tabs cro-tabs__btn is-active\ndata-cro-* attributes in this page: data-cro-color data-cro-panel data-cro-panels data-cro-select data-cro-tab data-cro-tabs\n\nOs atributos HTML que controlam comportamento do kit, sem JavaScript seu.\n\n| Atributo | Onde | Faz |\n| data-cro-tabs | contêiner dos botões de aba | Liga as abas ARIA do kit |\n| data-cro-panels=\"#seletor\" | junto de data-cro-tabs | Indica onde estão os painéis |\n| data-cro-tab=\"id\" | botão da aba | Aponta o painel |\n| data-cro-panel=\"id\" | painel | Identifica o painel |\n| data-cro-select | <select> | Popup de opções no visual do jogo |\n| data-cro-color | .cro-progress__bar | Impede que CRO.bar() troque a cor para vermelho |\n| data-cro-top | link | Cursor \"seta para cima\" |\n| data-cro-handwriting | qualquer elemento | Cursor de caneta |\n| data-cro-cursor-anim=\"off\" | <html> | Desliga a animação do cursor |\n| data-cro-favicon=\"off\" | <html> | Desliga o favicon automático |\n| data-cro-pen | <html> | Marcado pelo kit quando o ponteiro é uma caneta (não escreva) |\n| data-cro-favicon-link | <link> | Marcado pelo kit nos links que ele injeta (não escreva) |\n\n## Exemplos\n\n```\n<div data-cro-tabs data-cro-panels=\"#p\">\n  <div class=\"cro-tabs\">\n    <button class=\"cro-tabs__btn is-active\" data-cro-tab=\"1\">A</button>\n  </div>\n</div>\n<div class=\"cro-tab-panels\" id=\"p\">\n  <div data-cro-panel=\"1\">Painel A</div>\n</div>\n<select data-cro-select>…</select>\n<div class=\"cro-progress\">\n  <div class=\"cro-progress__bar\" data-cro-color style=\"--p:10\"></div>\n</div>\n```\n\nEstes atributos têm tudo a ver com o JS do kit; veja JavaScript.\n« Tokens (variáveis CSS) · Índice de classes cro-* »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div data-cro-tabs data-cro-panels=\"#p\">\n  <div class=\"cro-tabs\">\n    <button class=\"cro-tabs__btn is-active\" data-cro-tab=\"1\">A</button>\n  </div>\n</div>\n<div class=\"cro-tab-panels\" id=\"p\">\n  <div data-cro-panel=\"1\">Painel A</div>\n</div>\n<select data-cro-select>…</select>\n<div class=\"cro-progress\">\n  <div class=\"cro-progress__bar\" data-cro-color style=\"--p:10\"></div>\n</div>"
+  }
+ ]
+}

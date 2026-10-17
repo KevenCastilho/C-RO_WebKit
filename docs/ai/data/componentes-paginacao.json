@@ -1,0 +1,40 @@
+{
+ "id": "componentes/paginacao",
+ "title": "Paginação",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Paginação do Bootstrap com os ícones de primeira/anterior/próxima/última do jogo.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/paginacao.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/paginacao.html",
+ "classes": [
+  "cro-ico",
+  "cro-ico--page-first",
+  "cro-ico--page-last",
+  "cro-ico--page-next",
+  "cro-ico--page-prev",
+  "cro-pager",
+  "cro-pager__n",
+  "is-current"
+ ],
+ "data_attributes": [],
+ "text": "# Paginação\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/paginacao.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-ico cro-ico--page-first cro-ico--page-last cro-ico--page-next cro-ico--page-prev cro-pager cro-pager__n is-current\n\nPaginação do Bootstrap com os ícones de primeira/anterior/próxima/última do jogo.\n\n```\n<nav aria-label=\"Paginação\">\n  <ul class=\"pagination\">\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"#\" aria-label=\"Primeira\">\n        <span aria-hidden=\"true\">&laquo;</span>\n      </a>\n    </li>\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"#\" aria-label=\"Anterior\">\n        <span aria-hidden=\"true\">&lsaquo;</span>\n      </a>\n    </li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"#\">1</a></li>\n    <li class=\"page-item active\" aria-current=\"page\"><a class=\"page-link\" href=\"#\">2</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"#\">3</a></li>\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"#\" aria-label=\"Próxima\">\n        <span aria-hidden=\"true\">&rsaquo;</span>\n      </a>\n    </li>\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"#\" aria-label=\"Última\">\n        <span aria-hidden=\"true\">&raquo;</span>\n      </a>\n    </li>\n  </ul>\n</nav>\n```\n\n## Tamanhos e desabilitado\n\n```\n<nav aria-label=\"pequena\">\n  <ul class=\"pagination pagination-sm\">\n    <li class=\"page-item disabled\"><a class=\"page-link\">Anterior</a></li>\n    <li class=\"page-item active\"><a class=\"page-link\" href=\"#\">1</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"#\">2</a></li>\n  </ul>\n</nav>\n```\n\n## Nativo do kit\n\n```\n<div class=\"cro-pager\">\n  <button class=\"cro-ico cro-ico--page-first\" aria-label=\"primeira\"></button>\n  <button class=\"cro-ico cro-ico--page-prev\" aria-label=\"anterior\"></button>\n  <button class=\"cro-pager__n\">1</button>\n  <button class=\"cro-pager__n is-current\">2</button>\n  <button class=\"cro-pager__n\">3</button>\n  <button class=\"cro-ico cro-ico--page-next\" aria-label=\"próxima\"></button>\n  <button class=\"cro-ico cro-ico--page-last\" aria-label=\"última\"></button>\n</div>\n```\n\n## Tamanho grande\n\n```\n<nav aria-label=\"grande\">\n  <ul class=\"pagination pagination-lg\">\n    <li class=\"page-item\"><a class=\"page-link\" href=\"#\">1</a></li>\n    <li class=\"page-item active\"><a class=\"page-link\" href=\"#\">2</a></li>\n  </ul>\n</nav>\n```\n\n« Offcanvas · Placeholders »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<nav aria-label=\"Paginação\">\n  <ul class=\"pagination\">\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"#\" aria-label=\"Primeira\">\n        <span aria-hidden=\"true\">&laquo;</span>\n      </a>\n    </li>\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"#\" aria-label=\"Anterior\">\n        <span aria-hidden=\"true\">&lsaquo;</span>\n      </a>\n    </li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"#\">1</a></li>\n    <li class=\"page-item active\" aria-current=\"page\"><a class=\"page-link\" href=\"#\">2</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"#\">3</a></li>\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"#\" aria-label=\"Próxima\">\n        <span aria-hidden=\"true\">&rsaquo;</span>\n      </a>\n    </li>\n    <li class=\"page-item\">\n      <a class=\"page-link\" href=\"#\" aria-label=\"Última\">\n        <span aria-hidden=\"true\">&raquo;</span>\n      </a>\n    </li>\n  </ul>\n</nav>"
+  },
+  {
+   "language": "html",
+   "code": "<nav aria-label=\"pequena\">\n  <ul class=\"pagination pagination-sm\">\n    <li class=\"page-item disabled\"><a class=\"page-link\">Anterior</a></li>\n    <li class=\"page-item active\"><a class=\"page-link\" href=\"#\">1</a></li>\n    <li class=\"page-item\"><a class=\"page-link\" href=\"#\">2</a></li>\n  </ul>\n</nav>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"cro-pager\">\n  <button class=\"cro-ico cro-ico--page-first\" aria-label=\"primeira\"></button>\n  <button class=\"cro-ico cro-ico--page-prev\" aria-label=\"anterior\"></button>\n  <button class=\"cro-pager__n\">1</button>\n  <button class=\"cro-pager__n is-current\">2</button>\n  <button class=\"cro-pager__n\">3</button>\n  <button class=\"cro-ico cro-ico--page-next\" aria-label=\"próxima\"></button>\n  <button class=\"cro-ico cro-ico--page-last\" aria-label=\"última\"></button>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<nav aria-label=\"grande\">\n  <ul class=\"pagination pagination-lg\">\n    <li class=\"page-item\"><a class=\"page-link\" href=\"#\">1</a></li>\n    <li class=\"page-item active\"><a class=\"page-link\" href=\"#\">2</a></li>\n  </ul>\n</nav>"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "id": "extras/fonte",
+ "title": "Fonte",
+ "type": "Kit extra",
+ "section": "Extras do kit",
+ "summary": "O kit usa a Nimbus Sans (clone livre da Helvetica) em todo texto. Esta página mostra, ao vivo, se ela carregou no seu navegador.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/fonte.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/extras/fonte.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Fonte\n\nType: Kit extra. A feature Bootstrap does not have.\nSection: Extras do kit\nHuman version (rendered examples): extras/fonte.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nO kit usa a Nimbus Sans (clone livre da Helvetica) em todo texto. Esta página mostra, ao vivo, se ela carregou no seu navegador.\n\n## Como é aplicada\n\n--cro-font-ui, --cro-font-title e --cro-font-btn valem \"C-RO Helvetica\", sans-serif. \"C-RO Helvetica\" é um nome do kit, declarado em @font-face (Regular e Bold) apontando para fonts/NimbusSans-*.woff2; o itálico é sintetizado pelo navegador. A pasta fonts/ precisa ficar ao lado do CSS (dist/fonts/ neste site).\n\nNote\n\nPara usar a Helvetica real (fonte comercial, não incluída aqui), declare-a no seu CSS com @font-face e aponte --cro-font-ui para ela. Para comparar, use a linha de teste abaixo: ela mostra a mesma frase na fonte do kit e na fonte genérica sans-serif do seu sistema (R, G, a, 1 e & são os melhores sinais).\n\n## Verificação ao vivo\n\n```\n<p style=\"font:36px/1.2 'C-RO Helvetica', monospace\">\n  Fonte do kit: Rag Gy 1 Qej\n  &amp;\n  <b>Bold</b>\n  <i>Oblique</i>\n</p>\n<p style=\"font:36px/1.2 sans-serif\">sans-serif do sistema: Rag Gy 1 Qej&amp;</p>\n<pre id=\"fonte-diag\" style=\"white-space:pre-wrap\">verificando…</pre>\n```\n\n```\n(function () {\n  var out = document.getElementById('fonte-diag');\n  var faces = ['400 12px', '700 12px'];\n  Promise.all(faces.map(function (f) { return document.fonts.load(f + ' \"C-RO Helvetica\"'); })).then(function () {\n    var linhas = faces.map(function (f) { return f + ' → ' + (document.fonts.check(f + ' \"C-RO Helvetica\"') ? 'carregada' : 'NÃO carregou'); });\n    var carregadas = Array.from(document.fonts).filter(function (x) { return x.family.indexOf('C-RO Helvetica') >= 0; })\n      .map(function (x) { return x.weight + ' ' + x.style + ': ' + x.status; });\n    out.textContent = linhas.join('\\n') + '\\n\\nFontFace: ' + carregadas.join(' | ') + '\\nCorpo da página (font-family): ' + getComputedStyle(document.body).fontFamily;\n  });\n})();\n```\n\nSe alguma linha disser NÃO carregou, a pasta fonts/ não está sendo encontrada ao lado do CSS: abra o DevTools → aba Network → filtro Font e veja o erro de NimbusSans-Regular.woff2.\n« Favicon automático · Tokens (variáveis CSS) »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<p style=\"font:36px/1.2 'C-RO Helvetica', monospace\">\n  Fonte do kit: Rag Gy 1 Qej\n  &amp;\n  <b>Bold</b>\n  <i>Oblique</i>\n</p>\n<p style=\"font:36px/1.2 sans-serif\">sans-serif do sistema: Rag Gy 1 Qej&amp;</p>\n<pre id=\"fonte-diag\" style=\"white-space:pre-wrap\">verificando…</pre>"
+  },
+  {
+   "language": "js",
+   "code": "(function () {\n  var out = document.getElementById('fonte-diag');\n  var faces = ['400 12px', '700 12px'];\n  Promise.all(faces.map(function (f) { return document.fonts.load(f + ' \"C-RO Helvetica\"'); })).then(function () {\n    var linhas = faces.map(function (f) { return f + ' → ' + (document.fonts.check(f + ' \"C-RO Helvetica\"') ? 'carregada' : 'NÃO carregou'); });\n    var carregadas = Array.from(document.fonts).filter(function (x) { return x.family.indexOf('C-RO Helvetica') >= 0; })\n      .map(function (x) { return x.weight + ' ' + x.style + ': ' + x.status; });\n    out.textContent = linhas.join('\\n') + '\\n\\nFontFace: ' + carregadas.join(' | ') + '\\nCorpo da página (font-family): ' + getComputedStyle(document.body).fontFamily;\n  });\n})();"
+  }
+ ]
+}

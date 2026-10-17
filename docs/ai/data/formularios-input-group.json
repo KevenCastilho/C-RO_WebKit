@@ -1,0 +1,27 @@
+{
+ "id": "formularios/input-group",
+ "title": "Input group",
+ "type": "Bootstrap drop-in",
+ "section": "Formulários",
+ "summary": "Anexe texto e botões a campos.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/input-group.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/formularios/input-group.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Input group\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Formulários\nHuman version (rendered examples): formularios/input-group.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nAnexe texto e botões a campos.\n\n```\n<div style=\"max-width:420px\">\n  <div class=\"input-group mb-2\">\n    <span class=\"input-group-text\">@</span>\n    <input class=\"form-control\" placeholder=\"usuário\" aria-label=\"usuário\">\n  </div>\n  <div class=\"input-group mb-2\">\n    <input class=\"form-control\" placeholder=\"buscar\" aria-label=\"buscar\">\n    <button class=\"btn btn-secondary\" type=\"button\">Ir</button>\n  </div>\n  <div class=\"input-group mb-2\">\n    <span class=\"input-group-text\">z</span>\n    <input class=\"form-control\" value=\"1000\">\n    <span class=\"input-group-text\">,00</span>\n  </div>\n  <div class=\"input-group input-group-sm\">\n    <span class=\"input-group-text\">sm</span>\n    <input class=\"form-control\">\n  </div>\n</div>\n```\n\n## Intervalo de datas\n\n```\n<div class=\"input-group\" style=\"max-width:420px\">\n  <input type=\"date\" class=\"form-control\">\n  <span class=\"input-group-text\">até</span>\n  <input type=\"date\" class=\"form-control\">\n</div>\n```\n\n## Tamanho grande\n\n```\n<div class=\"input-group input-group-lg\" style=\"max-width:420px\">\n  <span class=\"input-group-text\">lg</span>\n  <input class=\"form-control\" placeholder=\"input-group-lg\">\n</div>\n```\n\n« Range · Floating labels »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:420px\">\n  <div class=\"input-group mb-2\">\n    <span class=\"input-group-text\">@</span>\n    <input class=\"form-control\" placeholder=\"usuário\" aria-label=\"usuário\">\n  </div>\n  <div class=\"input-group mb-2\">\n    <input class=\"form-control\" placeholder=\"buscar\" aria-label=\"buscar\">\n    <button class=\"btn btn-secondary\" type=\"button\">Ir</button>\n  </div>\n  <div class=\"input-group mb-2\">\n    <span class=\"input-group-text\">z</span>\n    <input class=\"form-control\" value=\"1000\">\n    <span class=\"input-group-text\">,00</span>\n  </div>\n  <div class=\"input-group input-group-sm\">\n    <span class=\"input-group-text\">sm</span>\n    <input class=\"form-control\">\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"input-group\" style=\"max-width:420px\">\n  <input type=\"date\" class=\"form-control\">\n  <span class=\"input-group-text\">até</span>\n  <input type=\"date\" class=\"form-control\">\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"input-group input-group-lg\" style=\"max-width:420px\">\n  <span class=\"input-group-text\">lg</span>\n  <input class=\"form-control\" placeholder=\"input-group-lg\">\n</div>"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/display",
+ "title": "Display",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Mostra, esconde e alterna o tipo de display.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/display.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/display.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Display\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/display.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nMostra, esconde e alterna o tipo de display.\n\n```\n<div class=\"d-inline p-2 border\">d-inline</div>\n<div class=\"d-block p-2 border\">d-block</div>\n<div class=\"d-none d-md-block p-2 border\">visível de md para cima</div>\n<div class=\"d-flex p-2 border\">d-flex</div>\n```\n\n## Impressão\n\nd-print-none e d-print-block controlam o que aparece ao imprimir.\n\n## Todos os valores\n\nd-none, d-inline, d-inline-block, d-block, d-grid, d-inline-grid, d-table, d-table-row, d-table-cell, d-flex, d-inline-flex. Com breakpoints: d-md-none. Impressão: d-print-none, -block, -inline, -inline-block, -flex, -inline-flex, -grid, -inline-grid, -table, -table-row, -table-cell.\n« Cores · Flex »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"d-inline p-2 border\">d-inline</div>\n<div class=\"d-block p-2 border\">d-block</div>\n<div class=\"d-none d-md-block p-2 border\">visível de md para cima</div>\n<div class=\"d-flex p-2 border\">d-flex</div>"
+  }
+ ]
+}

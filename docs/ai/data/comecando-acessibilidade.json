@@ -1,0 +1,19 @@
+{
+ "id": "comecando/acessibilidade",
+ "title": "Acessibilidade",
+ "type": "Guide",
+ "section": "Começando",
+ "summary": "O visual do jogo é pixelado e de baixo contraste em alguns pontos. O que o kit faz por você e o que continua sendo responsabilidade da sua marcação.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/acessibilidade.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/comecando/acessibilidade.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Acessibilidade\n\nType: Guide. Explanatory page about using the kit.\nSection: Começando\nHuman version (rendered examples): comecando/acessibilidade.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nO visual do jogo é pixelado e de baixo contraste em alguns pontos. O que o kit faz por você e o que continua sendo responsabilidade da sua marcação.\n\n## O que o kit garante\n\n- Semântica preservada: o kit só muda a aparência; botões continuam <button>, campos continuam <input>.\n- Abas ARIA (data-cro-tabs): role=tablist/tab/tabpanel, aria-selected, tabindex \"roving\" e teclas ←/→/Home/End.\n- Diálogos CRO.alert/confirm/prompt: <dialog> nativo com role=alertdialog, foco preso no diálogo, Esc fecha.\n- Menu CRO.menu: setas, Enter e Esc.\n- Foco visível: os controles mostram anel de foco no teclado.\n- Movimento: o cursor animado para com prefers-reduced-motion.\n\n## O que continua com você\n\n- Dê aria-label a botões só com ícone (btn-close, cro-sys-btn, cro-ico).\n- Associe label a input (for/id), como no Bootstrap.\n- Não use só a cor para dar significado; no jogo clássico o contraste de alguns elementos é baixo (ver abaixo).\n\n```\n<div class=\"mb-2\">\n  <label class=\"form-label\" for=\"a11y1\">Nome do personagem</label>\n  <input id=\"a11y1\" class=\"form-control\" style=\"max-width:240px\">\n</div>\n<button class=\"btn-close\" aria-label=\"Fechar\"></button>\n```\n\n## Contraste\n\nO kit respeita as cores do jogo (CONFIRMADO). Em alguns pontos o contraste fica abaixo do recomendado pela WCAG, por exemplo texto desabilitado e rótulos azul-claros sobre fundo cinza. Quando o jogo não define a cor, o kit usa a cor mais legível (por exemplo rótulo de barra de progresso em preto). Se a sua aplicação exige AA, teste suas telas e ajuste com seu próprio CSS (Customização).\n\n## Cursor customizado\n\nCursores customizados não são lidos por leitores de tela e não substituem indicações visuais. Eles reforçam o estado (clicável, ocupado, ajuda), mas nunca devem ser a única pista.\n« Navegadores e limites · Para IAs »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"mb-2\">\n  <label class=\"form-label\" for=\"a11y1\">Nome do personagem</label>\n  <input id=\"a11y1\" class=\"form-control\" style=\"max-width:240px\">\n</div>\n<button class=\"btn-close\" aria-label=\"Fechar\"></button>"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "id": "componentes/scrollspy",
+ "title": "Scrollspy",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Marca o link de navegação conforme a rolagem. Comportamento 100% Bootstrap.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/scrollspy.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/scrollspy.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Scrollspy\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/scrollspy.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nMarca o link de navegação conforme a rolagem. Comportamento 100% Bootstrap.\n\n```\n<div class=\"row g-2\">\n  <div class=\"col-4\">\n    <div id=\"spyNav\" class=\"list-group\">\n      <a class=\"list-group-item list-group-item-action\" href=\"#spy1\">Primeiro</a>\n      <a class=\"list-group-item list-group-item-action\" href=\"#spy2\">Segundo</a>\n      <a class=\"list-group-item list-group-item-action\" href=\"#spy3\">Terceiro</a>\n    </div>\n  </div>\n  <div class=\"col-8\">\n    <div\n      data-bs-spy=\"scroll\"\n      data-bs-target=\"#spyNav\"\n      data-bs-smooth-scroll=\"true\"\n      tabindex=\"0\"\n      style=\"height:110px;overflow:auto;position:relative;border:1px solid #bbb;padding:6px\">\n      <h4 id=\"spy1\">Primeiro</h4>\n      <p>\n        Texto do primeiro item. Texto do primeiro item. Texto do primeiro item. Texto do\n        primeiro item.\n      </p>\n      <h4 id=\"spy2\">Segundo</h4>\n      <p>\n        Texto do segundo item. Texto do segundo item. Texto do segundo item. Texto do segundo\n        item.\n      </p>\n      <h4 id=\"spy3\">Terceiro</h4>\n      <p>\n        Texto do terceiro item. Texto do terceiro item. Texto do terceiro item. Texto do\n        terceiro item. Texto do terceiro item.\n      </p>\n    </div>\n  </div>\n</div>\n```\n\nEsta documentação usa um observador próprio para o índice \"Nesta página\" (à direita).\n« Progress · Spinners »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"row g-2\">\n  <div class=\"col-4\">\n    <div id=\"spyNav\" class=\"list-group\">\n      <a class=\"list-group-item list-group-item-action\" href=\"#spy1\">Primeiro</a>\n      <a class=\"list-group-item list-group-item-action\" href=\"#spy2\">Segundo</a>\n      <a class=\"list-group-item list-group-item-action\" href=\"#spy3\">Terceiro</a>\n    </div>\n  </div>\n  <div class=\"col-8\">\n    <div\n      data-bs-spy=\"scroll\"\n      data-bs-target=\"#spyNav\"\n      data-bs-smooth-scroll=\"true\"\n      tabindex=\"0\"\n      style=\"height:110px;overflow:auto;position:relative;border:1px solid #bbb;padding:6px\">\n      <h4 id=\"spy1\">Primeiro</h4>\n      <p>\n        Texto do primeiro item. Texto do primeiro item. Texto do primeiro item. Texto do\n        primeiro item.\n      </p>\n      <h4 id=\"spy2\">Segundo</h4>\n      <p>\n        Texto do segundo item. Texto do segundo item. Texto do segundo item. Texto do segundo\n        item.\n      </p>\n      <h4 id=\"spy3\">Terceiro</h4>\n      <p>\n        Texto do terceiro item. Texto do terceiro item. Texto do terceiro item. Texto do\n        terceiro item. Texto do terceiro item.\n      </p>\n    </div>\n  </div>\n</div>"
+  }
+ ]
+}

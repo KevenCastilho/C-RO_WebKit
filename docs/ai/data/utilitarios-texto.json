@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/texto",
+ "title": "Texto",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Alinhamento, quebra, peso, estilo e transformação de texto.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/texto.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/texto.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Texto\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/texto.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nAlinhamento, quebra, peso, estilo e transformação de texto.\n\n```\n<p class=\"text-start mb-1\">start</p>\n<p class=\"text-center mb-1\">center</p>\n<p class=\"text-end mb-1\">end</p>\n<p class=\"fw-bold mb-1\">fw-bold</p>\n<p class=\"fst-italic mb-1\">fst-italic</p>\n<p class=\"text-uppercase mb-1\">uppercase</p>\n<p class=\"text-decoration-underline mb-1\">underline</p>\n<p class=\"font-monospace mb-1\">monospace</p>\n<p class=\"fs-5 mb-0\">fs-5</p>\n```\n\n## Mais classes\n\n| Família | Classes |\n| Título display | display-1 … display-6 |\n| Altura de linha | lh-1, lh-sm, lh-base, lh-lg |\n| Tamanho | fs-1 … fs-6 |\n| Peso | fw-light, fw-lighter, fw-normal, fw-medium, fw-semibold, fw-bold, fw-bolder |\n| Quebra | text-wrap, text-nowrap, text-break |\n| Transformação | text-lowercase, text-uppercase, text-capitalize |\n| Alinhamento | text-start, text-center, text-end (e por breakpoint) |\n« Espaçamento · Alinhamento vertical »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<p class=\"text-start mb-1\">start</p>\n<p class=\"text-center mb-1\">center</p>\n<p class=\"text-end mb-1\">end</p>\n<p class=\"fw-bold mb-1\">fw-bold</p>\n<p class=\"fst-italic mb-1\">fst-italic</p>\n<p class=\"text-uppercase mb-1\">uppercase</p>\n<p class=\"text-decoration-underline mb-1\">underline</p>\n<p class=\"font-monospace mb-1\">monospace</p>\n<p class=\"fs-5 mb-0\">fs-5</p>"
+  }
+ ]
+}

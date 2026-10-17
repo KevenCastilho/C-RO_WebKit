@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/interacoes",
+ "title": "Interações",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Seleção de texto e eventos de ponteiro.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/interacoes.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/interacoes.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Interações\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/interacoes.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nSeleção de texto e eventos de ponteiro.\n\n```\n<p class=\"user-select-all\">user-select-all: clique para selecionar tudo</p>\n<p class=\"user-select-none\">user-select-none: não seleciona</p>\n<p class=\"pe-none\">pe-none: não responde ao ponteiro</p>\n```\n\nWarning\n\nOs utilitários de interação do Bootstrap não mudam o cursor. O cursor do Ragnarok é automático por contexto: veja Cursores.\n\nuser-select-all, user-select-auto, user-select-none; pe-auto, pe-none.\n« Float · Link »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<p class=\"user-select-all\">user-select-all: clique para selecionar tudo</p>\n<p class=\"user-select-none\">user-select-none: não seleciona</p>\n<p class=\"pe-none\">pe-none: não responde ao ponteiro</p>"
+  }
+ ]
+}

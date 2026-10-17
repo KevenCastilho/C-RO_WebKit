@@ -15,35 +15,98 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <h2 id="exemplo">Exemplo</h2>
 <pre><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;max-width:300px&quot;&gt;
   &lt;div class=&quot;card-header&quot;&gt;Status&lt;/div&gt;
-  &lt;div class=&quot;card-body&quot;&gt;&lt;h5 class=&quot;card-title&quot;&gt;Poring&lt;/h5&gt;&lt;p class=&quot;card-text&quot;&gt;Nível 1, HP 50.&lt;/p&gt;&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Poring&lt;/h5&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Nível 1, HP 50.&lt;/p&gt;
+  &lt;/div&gt;
   &lt;div class=&quot;card-footer&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Atacar&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 <h2 id="só-corpo-sem-header">Só corpo (sem header)</h2>
-<pre><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;max-width:300px&quot;&gt;&lt;div class=&quot;card-body&quot;&gt;Um card simples, só com corpo.&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;max-width:300px&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;Um card simples, só com corpo.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="listas-e-imagens">Listas e imagens</h2>
 <pre><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;max-width:300px&quot;&gt;
   &lt;div class=&quot;card-header&quot;&gt;Inventário&lt;/div&gt;
-  &lt;ul class=&quot;list-group list-group-flush&quot;&gt;&lt;li class=&quot;list-group-item&quot;&gt;Poção Vermelha&lt;/li&gt;&lt;li class=&quot;list-group-item&quot;&gt;Asa de Mosca&lt;/li&gt;&lt;li class=&quot;list-group-item&quot;&gt;Maçã&lt;/li&gt;&lt;/ul&gt;
+  &lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Poção Vermelha&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Asa de Mosca&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Maçã&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
 <h2 id="cores">Cores</h2>
-<pre><code class="language-html">&lt;div class=&quot;card text-bg-primary&quot; style=&quot;width:180px&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;Primary&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;Corpo&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;card text-bg-success&quot; style=&quot;width:180px&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;Success&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;Corpo&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;card text-bg-warning&quot; style=&quot;width:180px&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;Warning&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;Corpo&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;card text-bg-primary&quot; style=&quot;width:180px&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;Primary&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;Corpo&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card text-bg-success&quot; style=&quot;width:180px&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;Success&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;Corpo&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card text-bg-warning&quot; style=&quot;width:180px&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;Warning&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;Corpo&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="grade-de-cards">Grade de cards</h2>
 <pre><code class="language-html">&lt;div class=&quot;row row-cols-1 row-cols-md-3 g-2&quot;&gt;
-  &lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;card h-100&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;A&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;Texto&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;card h-100&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;B&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;Texto maior para ver a altura igual.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div class=&quot;col&quot;&gt;&lt;div class=&quot;card h-100&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;C&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;Texto&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;div class=&quot;card-header&quot;&gt;A&lt;/div&gt;
+      &lt;div class=&quot;card-body&quot;&gt;Texto&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;div class=&quot;card-header&quot;&gt;B&lt;/div&gt;
+      &lt;div class=&quot;card-body&quot;&gt;Texto maior para ver a altura igual.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+      &lt;div class=&quot;card-header&quot;&gt;C&lt;/div&gt;
+      &lt;div class=&quot;card-body&quot;&gt;Texto&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 <aside><strong>Note</strong><p>A versão nativa é <code>cro-window</code> — veja <a href="../kit/janela.html">Janela e titlebar</a>.</p></aside>
 <h2 id="mais-partes-do-card">Mais partes do card</h2>
 <pre><code class="language-html">&lt;div class=&quot;card-group mb-2&quot; style=&quot;max-width:520px&quot;&gt;
-  &lt;div class=&quot;card&quot;&gt;&lt;div class=&quot;card-body&quot;&gt;&lt;h6 class=&quot;card-subtitle mb-1&quot;&gt;card-subtitle&lt;/h6&gt;&lt;p class=&quot;card-text&quot;&gt;Card 1 de um &lt;code&gt;card-group&lt;/code&gt;.&lt;/p&gt;&lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;card-link&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div class=&quot;card&quot;&gt;&lt;div class=&quot;card-body&quot;&gt;&lt;p class=&quot;card-text&quot;&gt;Card 2.&lt;/p&gt;&lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;outro link&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;h6 class=&quot;card-subtitle mb-1&quot;&gt;card-subtitle&lt;/h6&gt;
+      &lt;p class=&quot;card-text&quot;&gt;Card 1 de um &lt;code&gt;card-group&lt;/code&gt;.&lt;/p&gt;
+      &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;card-link&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;p class=&quot;card-text&quot;&gt;Card 2.&lt;/p&gt;
+      &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;outro link&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;card&quot; style=&quot;max-width:300px&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;&lt;ul class=&quot;nav nav-tabs card-header-tabs&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;card-header-tabs&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;B&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;Corpo.&lt;/div&gt;&lt;/div&gt;</code></pre>
+&lt;div class=&quot;card&quot; style=&quot;max-width:300px&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;
+    &lt;ul class=&quot;nav nav-tabs card-header-tabs&quot;&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;card-header-tabs&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;B&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;Corpo.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <p>Imagens em cards: <code>card-img-top</code>, <code>card-img-bottom</code>, <code>card-img</code> e, com texto sobre a imagem, <code>card-img-overlay</code>:</p>
-<pre><code class="language-html">&lt;div class=&quot;card text-bg-dark&quot; style=&quot;max-width:300px&quot;&gt;&lt;img src=&quot;https://placehold.co/300x120&quot; class=&quot;card-img&quot; width=&quot;300&quot; height=&quot;120&quot; alt=&quot;imagem&quot;&gt;&lt;div class=&quot;card-img-overlay&quot;&gt;&lt;h5 class=&quot;card-title&quot;&gt;card-img-overlay&lt;/h5&gt;&lt;p class=&quot;card-text&quot;&gt;Texto sobre a imagem.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;card text-bg-dark&quot; style=&quot;max-width:300px&quot;&gt;
+  &lt;img
+    src=&quot;https://placehold.co/300x120&quot;
+    class=&quot;card-img&quot;
+    width=&quot;300&quot;
+    height=&quot;120&quot;
+    alt=&quot;imagem&quot;&gt;
+  &lt;div class=&quot;card-img-overlay&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;card-img-overlay&lt;/h5&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Texto sobre a imagem.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../componentes/grupo-de-botoes.html">« Grupo de botões</a> · <a href="../componentes/carousel.html">Carousel »</a></nav>
 </main>

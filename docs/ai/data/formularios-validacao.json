@@ -1,0 +1,38 @@
+{
+ "id": "formularios/validacao",
+ "title": "Validação",
+ "type": "Bootstrap drop-in",
+ "section": "Formulários",
+ "summary": "Estados válido e inválido com as classes do Bootstrap e a pseudo-classe :user-invalid do navegador.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/validacao.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/formularios/validacao.html",
+ "classes": [
+  "is-invalid",
+  "is-valid"
+ ],
+ "data_attributes": [],
+ "text": "# Validação\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Formulários\nHuman version (rendered examples): formularios/validacao.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: is-invalid is-valid\n\nEstados válido e inválido com as classes do Bootstrap e a pseudo-classe :user-invalid do navegador.\n\n## Classes is-valid e is-invalid\n\n```\n<div style=\"max-width:320px\">\n  <input class=\"form-control is-valid mb-1\" value=\"válido\">\n  <input class=\"form-control is-invalid\" value=\"inválido\" aria-describedby=\"val-fb\">\n  <div id=\"val-fb\" class=\"invalid-feedback\">Informe um nome com 4 a 12 letras.</div>\n</div>\n```\n\n## Validação do navegador\n\nCom novalidate e was-validated, o Bootstrap mostra válido/inválido conforme as regras HTML (required, pattern, type=email).\n\n```\n<form class=\"needs-validation\" id=\"val-form\" novalidate style=\"max-width:320px\">\n  <label class=\"form-label\" for=\"val-nome\">Nome</label>\n  <input\n    class=\"form-control mb-1\"\n    id=\"val-nome\"\n    required\n    minlength=\"4\"\n    placeholder=\"mín. 4 letras\">\n  <div class=\"invalid-feedback\">Mínimo de 4 letras.</div>\n  <div class=\"valid-feedback\">Ótimo!</div>\n  <button class=\"btn btn-primary mt-2\" type=\"submit\">Validar</button>\n</form>\n```\n\n```\nvar f = document.getElementById('val-form');\nf.addEventListener('submit', function (e) {\n  e.preventDefault();\n  f.classList.add('was-validated');\n});\n```\n\nNote\n\nOs campos mostram o estado inválido do kit (--cro-invalid, derivado) também sem classes, via :user-invalid, depois que o usuário interage.\n\n## Balões de validação\n\nvalid-tooltip e invalid-tooltip mostram a mensagem em balão (dentro de um contêiner position-relative):\n\n```\n<div class=\"position-relative mb-5\" style=\"max-width:300px\">\n  <input class=\"form-control is-invalid\" value=\"x\">\n  <div class=\"invalid-tooltip\">invalid-tooltip: valor inválido.</div>\n</div>\n```\n\n## Grupos de input com validação\n\nDentro de input-group, adicione has-validation para os cantos arredondados continuarem corretos ao mostrar invalid-feedback:\n\n```\n<div class=\"input-group has-validation\">\n  <span class=\"input-group-text\">@</span>\n  <input class=\"form-control is-invalid\">\n  <div class=\"invalid-feedback\">Usuário já existe.</div>\n</div>\n```\n\n« Layout de formulários · Accordion »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:320px\">\n  <input class=\"form-control is-valid mb-1\" value=\"válido\">\n  <input class=\"form-control is-invalid\" value=\"inválido\" aria-describedby=\"val-fb\">\n  <div id=\"val-fb\" class=\"invalid-feedback\">Informe um nome com 4 a 12 letras.</div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<form class=\"needs-validation\" id=\"val-form\" novalidate style=\"max-width:320px\">\n  <label class=\"form-label\" for=\"val-nome\">Nome</label>\n  <input\n    class=\"form-control mb-1\"\n    id=\"val-nome\"\n    required\n    minlength=\"4\"\n    placeholder=\"mín. 4 letras\">\n  <div class=\"invalid-feedback\">Mínimo de 4 letras.</div>\n  <div class=\"valid-feedback\">Ótimo!</div>\n  <button class=\"btn btn-primary mt-2\" type=\"submit\">Validar</button>\n</form>"
+  },
+  {
+   "language": "js",
+   "code": "var f = document.getElementById('val-form');\nf.addEventListener('submit', function (e) {\n  e.preventDefault();\n  f.classList.add('was-validated');\n});"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"position-relative mb-5\" style=\"max-width:300px\">\n  <input class=\"form-control is-invalid\" value=\"x\">\n  <div class=\"invalid-tooltip\">invalid-tooltip: valor inválido.</div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"input-group has-validation\">\n  <span class=\"input-group-text\">@</span>\n  <input class=\"form-control is-invalid\">\n  <div class=\"invalid-feedback\">Usuário já existe.</div>\n</div>"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "id": "helpers/ratio",
+ "title": "Ratio",
+ "type": "Bootstrap drop-in",
+ "section": "Helpers",
+ "summary": "Mantém a proporção de vídeos, mapas e iframes.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/ratio.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/helpers/ratio.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Ratio\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Helpers\nHuman version (rendered examples): helpers/ratio.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nMantém a proporção de vídeos, mapas e iframes.\n\n```\n<div class=\"ratio ratio-16x9\" style=\"max-width:320px\">\n  <div class=\"bd-demo-box d-grid\" style=\"place-items:center\">16x9</div>\n</div>\n<div class=\"ratio ratio-1x1 mt-2\" style=\"max-width:120px\">\n  <div class=\"bd-demo-box d-grid\" style=\"place-items:center\">1x1</div>\n</div>\n```\n\nProporções: ratio-1x1, ratio-4x3, ratio-16x9, ratio-21x9.\n« Posição · Stacks »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"ratio ratio-16x9\" style=\"max-width:320px\">\n  <div class=\"bd-demo-box d-grid\" style=\"place-items:center\">16x9</div>\n</div>\n<div class=\"ratio ratio-1x1 mt-2\" style=\"max-width:120px\">\n  <div class=\"bd-demo-box d-grid\" style=\"place-items:center\">1x1</div>\n</div>"
+  }
+ ]
+}

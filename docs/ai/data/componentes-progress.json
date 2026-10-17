@@ -1,0 +1,31 @@
+{
+ "id": "componentes/progress",
+ "title": "Progress",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Barras de progresso no visual da barra HP/SP do jogo (\"gze\"). A altura segue a que você definir.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/progress.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/progress.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Progress\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/progress.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nBarras de progresso no visual da barra HP/SP do jogo (\"gze\"). A altura segue a que você definir.\n\n```\n<div\n  class=\"progress mb-2\"\n  role=\"progressbar\"\n  aria-valuenow=\"75\"\n  aria-valuemin=\"0\"\n  aria-valuemax=\"100\">\n  <div class=\"progress-bar\" style=\"width:75%\"></div>\n</div>\n<div class=\"progress mb-2\" role=\"progressbar\">\n  <div class=\"progress-bar bg-success\" style=\"width:50%\"></div>\n</div>\n<div class=\"progress mb-2\" role=\"progressbar\">\n  <div class=\"progress-bar bg-warning\" style=\"width:35%\"></div>\n</div>\n<div class=\"progress\" role=\"progressbar\">\n  <div class=\"progress-bar bg-danger\" style=\"width:20%\"></div>\n</div>\n```\n\nNote\n\nBarra de HP/SP. Para uma barra de HP como a do jogo (85×8 px, azul, vermelha só abaixo de 25%) use a peça nativa cro-progress (Barras). Com .progress do Bootstrap a barra ocupa a largura do contêiner e as cores bg-success, bg-warning e bg-danger não existem na barra de vida do jogo.\n\n## Rótulo e altura\n\n```\n<div class=\"progress mb-2\" role=\"progressbar\" style=\"height:20px\">\n  <div class=\"progress-bar\" style=\"width:60%\">60%</div>\n</div>\n<div class=\"progress\" role=\"progressbar\" style=\"height:6px\">\n  <div class=\"progress-bar\" style=\"width:40%\"></div>\n</div>\n```\n\n## Listradas e animadas\n\n```\n<div class=\"progress mb-2\" role=\"progressbar\">\n  <div class=\"progress-bar progress-bar-striped\" style=\"width:60%\"></div>\n</div>\n<div class=\"progress\" role=\"progressbar\">\n  <div\n    class=\"progress-bar bg-danger progress-bar-striped progress-bar-animated\"\n    style=\"width:45%\"></div>\n</div>\n```\n\n## Barra empilhada\n\n```\n<div class=\"progress-stacked\">\n  <div class=\"progress\" role=\"progressbar\" style=\"width:30%\">\n    <div class=\"progress-bar\"></div>\n  </div>\n  <div class=\"progress\" role=\"progressbar\" style=\"width:20%\">\n    <div class=\"progress-bar bg-success\"></div>\n  </div>\n</div>\n```\n\nDerived/invented (not in the original game)\n\nO jogo só tem o trilho (gze) e a barra de HP. As cores bg-*, as listras e a animação são derivadas. O rótulo é preto para ter contraste nas barras claras. A versão nativa (com --p) está em Barras, progress e grp.\n« Popovers · Scrollspy »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div\n  class=\"progress mb-2\"\n  role=\"progressbar\"\n  aria-valuenow=\"75\"\n  aria-valuemin=\"0\"\n  aria-valuemax=\"100\">\n  <div class=\"progress-bar\" style=\"width:75%\"></div>\n</div>\n<div class=\"progress mb-2\" role=\"progressbar\">\n  <div class=\"progress-bar bg-success\" style=\"width:50%\"></div>\n</div>\n<div class=\"progress mb-2\" role=\"progressbar\">\n  <div class=\"progress-bar bg-warning\" style=\"width:35%\"></div>\n</div>\n<div class=\"progress\" role=\"progressbar\">\n  <div class=\"progress-bar bg-danger\" style=\"width:20%\"></div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"progress mb-2\" role=\"progressbar\" style=\"height:20px\">\n  <div class=\"progress-bar\" style=\"width:60%\">60%</div>\n</div>\n<div class=\"progress\" role=\"progressbar\" style=\"height:6px\">\n  <div class=\"progress-bar\" style=\"width:40%\"></div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"progress mb-2\" role=\"progressbar\">\n  <div class=\"progress-bar progress-bar-striped\" style=\"width:60%\"></div>\n</div>\n<div class=\"progress\" role=\"progressbar\">\n  <div\n    class=\"progress-bar bg-danger progress-bar-striped progress-bar-animated\"\n    style=\"width:45%\"></div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"progress-stacked\">\n  <div class=\"progress\" role=\"progressbar\" style=\"width:30%\">\n    <div class=\"progress-bar\"></div>\n  </div>\n  <div class=\"progress\" role=\"progressbar\" style=\"width:20%\">\n    <div class=\"progress-bar bg-success\"></div>\n  </div>\n</div>"
+  }
+ ]
+}

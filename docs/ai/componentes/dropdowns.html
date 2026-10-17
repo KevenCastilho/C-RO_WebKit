@@ -13,21 +13,121 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <div lang="pt-BR">
 <p>Menus de contexto abertos por um botão. No kit usam o menu do jogo (lista com seleção azul).</p>
 <h2 id="exemplo">Exemplo</h2>
-<pre><code class="language-html">&lt;div class=&quot;dropdown&quot;&gt;&lt;button class=&quot;btn btn-secondary dropdown-toggle&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Ações&lt;/button&gt;
-  &lt;ul class=&quot;dropdown-menu&quot;&gt;&lt;li&gt;&lt;h6 class=&quot;dropdown-header&quot;&gt;Personagem&lt;/h6&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;dropdown-item active&quot; href=&quot;#&quot;&gt;Atacar&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Falar&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;dropdown-item disabled&quot; href=&quot;#&quot; aria-disabled=&quot;true&quot;&gt;Ignorar&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button
+    class=&quot;btn btn-secondary dropdown-toggle&quot;
+    type=&quot;button&quot;
+    data-bs-toggle=&quot;dropdown&quot;
+    aria-expanded=&quot;false&quot;&gt;
+    Ações
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;li&gt;
+      &lt;h6 class=&quot;dropdown-header&quot;&gt;Personagem&lt;/h6&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item active&quot; href=&quot;#&quot;&gt;Atacar&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Falar&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;hr class=&quot;dropdown-divider&quot;&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item disabled&quot; href=&quot;#&quot; aria-disabled=&quot;true&quot;&gt;Ignorar&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="direções-e-tamanhos">Direções e tamanhos</h2>
-<pre><code class="language-html">&lt;div class=&quot;btn-group&quot;&gt;&lt;button class=&quot;btn btn-primary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Abaixo&lt;/button&gt;&lt;ul class=&quot;dropdown-menu&quot;&gt;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&quot;btn-group dropend&quot;&gt;&lt;button class=&quot;btn btn-primary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Direita&lt;/button&gt;&lt;ul class=&quot;dropdown-menu&quot;&gt;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&quot;btn-group dropup&quot;&gt;&lt;button class=&quot;btn btn-primary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Acima&lt;/button&gt;&lt;ul class=&quot;dropdown-menu&quot;&gt;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&quot;btn-group&quot;&gt;&lt;button class=&quot;btn btn-sm btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Pequeno&lt;/button&gt;&lt;ul class=&quot;dropdown-menu dropdown-menu-end&quot;&gt;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Alinhado à direita&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button
+    class=&quot;btn btn-primary dropdown-toggle&quot;
+    data-bs-toggle=&quot;dropdown&quot;
+    aria-expanded=&quot;false&quot;&gt;
+    Abaixo
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group dropend&quot;&gt;
+  &lt;button
+    class=&quot;btn btn-primary dropdown-toggle&quot;
+    data-bs-toggle=&quot;dropdown&quot;
+    aria-expanded=&quot;false&quot;&gt;
+    Direita
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group dropup&quot;&gt;
+  &lt;button
+    class=&quot;btn btn-primary dropdown-toggle&quot;
+    data-bs-toggle=&quot;dropdown&quot;
+    aria-expanded=&quot;false&quot;&gt;
+    Acima
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button
+    class=&quot;btn btn-sm btn-secondary dropdown-toggle&quot;
+    data-bs-toggle=&quot;dropdown&quot;
+    aria-expanded=&quot;false&quot;&gt;
+    Pequeno
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu dropdown-menu-end&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Alinhado à direita&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
 <aside><strong>Derived/invented (not in the original game)</strong><p>O cabeçalho do dropdown (<code>dropdown-header</code>) é derivado; o jogo não tem menu com títulos.</p></aside>
 <h2 id="menu-de-contexto-por-javascript">Menu de contexto por JavaScript</h2>
 <p>Sem Bootstrap, <code>CRO.menu(itens, x, y)</code> abre o mesmo visual em qualquer ponto. Veja <a href="../kit/dialogos.html">Diálogos</a>.</p>
 <h2 id="todas-as-variações">Todas as variações</h2>
-<pre><code class="language-html">&lt;div class=&quot;btn-group&quot;&gt;&lt;button class=&quot;btn btn-secondary&quot;&gt;Dividido&lt;/button&gt;&lt;button class=&quot;btn btn-secondary dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;&lt;span class=&quot;visually-hidden&quot;&gt;Alternar&lt;/span&gt;&lt;/button&gt;&lt;ul class=&quot;dropdown-menu&quot;&gt;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Ação&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&quot;btn-group dropstart&quot;&gt;&lt;button class=&quot;btn btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;dropstart&lt;/button&gt;&lt;ul class=&quot;dropdown-menu&quot;&gt;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Ação&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&quot;btn-group&quot;&gt;&lt;button class=&quot;btn btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;menu-start&lt;/button&gt;&lt;ul class=&quot;dropdown-menu dropdown-menu-start&quot;&gt;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Ação&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;dropdown-item-text&quot;&gt;dropdown-item-text&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&quot;btn-group&quot;&gt;&lt;button class=&quot;btn btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;menu-dark&lt;/button&gt;&lt;ul class=&quot;dropdown-menu dropdown-menu-dark&quot;&gt;&lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Ação&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button class=&quot;btn btn-secondary&quot;&gt;Dividido&lt;/button&gt;
+  &lt;button
+    class=&quot;btn btn-secondary dropdown-toggle dropdown-toggle-split&quot;
+    data-bs-toggle=&quot;dropdown&quot;
+    aria-expanded=&quot;false&quot;&gt;
+    &lt;span class=&quot;visually-hidden&quot;&gt;Alternar&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Ação&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group dropstart&quot;&gt;
+  &lt;button
+    class=&quot;btn btn-secondary dropdown-toggle&quot;
+    data-bs-toggle=&quot;dropdown&quot;
+    aria-expanded=&quot;false&quot;&gt;
+    dropstart
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Ação&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button
+    class=&quot;btn btn-secondary dropdown-toggle&quot;
+    data-bs-toggle=&quot;dropdown&quot;
+    aria-expanded=&quot;false&quot;&gt;
+    menu-start
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu dropdown-menu-start&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Ação&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span class=&quot;dropdown-item-text&quot;&gt;dropdown-item-text&lt;/span&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button
+    class=&quot;btn btn-secondary dropdown-toggle&quot;
+    data-bs-toggle=&quot;dropdown&quot;
+    aria-expanded=&quot;false&quot;&gt;
+    menu-dark
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu dropdown-menu-dark&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Ação&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
 <p>Classes: <code>dropstart</code>, <code>dropend</code>, <code>dropup</code>, <code>dropdown-center</code>, <code>dropup-center</code>, <code>dropdown-menu-start/end</code>, <code>dropdown-toggle-split</code>, <code>dropdown-item-text</code>, <code>dropdown-menu-dark</code>.</p>
 <aside><strong>Limitation</strong><p><code>dropdown-menu-dark</code> <strong>não escurece</strong> o menu: o menu do jogo é sempre claro e o kit vence o Bootstrap. É coerente com a decisão de não ter modo escuro.</p></aside>
 </div>

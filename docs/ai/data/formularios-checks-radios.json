@@ -1,0 +1,39 @@
+{
+ "id": "formularios/checks-radios",
+ "title": "Checks e radios",
+ "type": "Bootstrap drop-in",
+ "section": "Formulários",
+ "summary": "Checkbox, radio e switch com os indicadores do jogo.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/checks-radios.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/formularios/checks-radios.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Checks e radios\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Formulários\nHuman version (rendered examples): formularios/checks-radios.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nCheckbox, radio e switch com os indicadores do jogo.\n\n## Checkboxes\n\n```\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"checkbox\" id=\"ck1\" checked>\n  <label class=\"form-check-label\" for=\"ck1\">Marcado</label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"checkbox\" id=\"ck2\">\n  <label class=\"form-check-label\" for=\"ck2\">Desmarcado</label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"checkbox\" id=\"ck3\" disabled>\n  <label class=\"form-check-label\" for=\"ck3\">Desabilitado</label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"checkbox\" id=\"ck4\">\n  <label class=\"form-check-label\" for=\"ck4\">Indeterminado</label>\n</div>\n```\n\n```\ndocument.getElementById('ck4').indeterminate = true;\n```\n\n## Radios\n\n```\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"rd\" id=\"rd1\" checked>\n  <label class=\"form-check-label\" for=\"rd1\">Opção 1</label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"rd\" id=\"rd2\">\n  <label class=\"form-check-label\" for=\"rd2\">Opção 2</label>\n</div>\n```\n\n## Switch\n\n```\n<div class=\"form-check form-switch\">\n  <input class=\"form-check-input\" type=\"checkbox\" role=\"switch\" id=\"sw1\" checked>\n  <label class=\"form-check-label\" for=\"sw1\">Efeitos sonoros</label>\n</div>\n<div class=\"form-check form-switch\">\n  <input class=\"form-check-input\" type=\"checkbox\" role=\"switch\" id=\"sw2\">\n  <label class=\"form-check-label\" for=\"sw2\">Música</label>\n</div>\n```\n\n## Em linha\n\n```\n<div class=\"form-check form-check-inline\">\n  <input class=\"form-check-input\" type=\"checkbox\" id=\"in1\">\n  <label class=\"form-check-label\" for=\"in1\">A</label>\n</div>\n<div class=\"form-check form-check-inline\">\n  <input class=\"form-check-input\" type=\"checkbox\" id=\"in2\">\n  <label class=\"form-check-label\" for=\"in2\">B</label>\n</div>\n```\n\n## Botões como checks\n\n```\n<input type=\"checkbox\" class=\"btn-check\" id=\"btn-c1\" autocomplete=\"off\">\n<label class=\"btn btn-outline-primary\" for=\"btn-c1\">Alternar</label>\n<input type=\"radio\" class=\"btn-check\" name=\"btnr\" id=\"btn-r1\" autocomplete=\"off\" checked>\n<label class=\"btn btn-outline-primary\" for=\"btn-r1\">Um</label>\n<input type=\"radio\" class=\"btn-check\" name=\"btnr\" id=\"btn-r2\" autocomplete=\"off\">\n<label class=\"btn btn-outline-primary\" for=\"btn-r2\">Dois</label>\n```\n\nNote\n\nVersão nativa: <label class=\"cro-check\"><input type=\"checkbox\"> Texto</label>. Veja Formulários cro-*.\n« Select · Range »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"checkbox\" id=\"ck1\" checked>\n  <label class=\"form-check-label\" for=\"ck1\">Marcado</label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"checkbox\" id=\"ck2\">\n  <label class=\"form-check-label\" for=\"ck2\">Desmarcado</label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"checkbox\" id=\"ck3\" disabled>\n  <label class=\"form-check-label\" for=\"ck3\">Desabilitado</label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"checkbox\" id=\"ck4\">\n  <label class=\"form-check-label\" for=\"ck4\">Indeterminado</label>\n</div>"
+  },
+  {
+   "language": "js",
+   "code": "document.getElementById('ck4').indeterminate = true;"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"rd\" id=\"rd1\" checked>\n  <label class=\"form-check-label\" for=\"rd1\">Opção 1</label>\n</div>\n<div class=\"form-check\">\n  <input class=\"form-check-input\" type=\"radio\" name=\"rd\" id=\"rd2\">\n  <label class=\"form-check-label\" for=\"rd2\">Opção 2</label>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"form-check form-switch\">\n  <input class=\"form-check-input\" type=\"checkbox\" role=\"switch\" id=\"sw1\" checked>\n  <label class=\"form-check-label\" for=\"sw1\">Efeitos sonoros</label>\n</div>\n<div class=\"form-check form-switch\">\n  <input class=\"form-check-input\" type=\"checkbox\" role=\"switch\" id=\"sw2\">\n  <label class=\"form-check-label\" for=\"sw2\">Música</label>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"form-check form-check-inline\">\n  <input class=\"form-check-input\" type=\"checkbox\" id=\"in1\">\n  <label class=\"form-check-label\" for=\"in1\">A</label>\n</div>\n<div class=\"form-check form-check-inline\">\n  <input class=\"form-check-input\" type=\"checkbox\" id=\"in2\">\n  <label class=\"form-check-label\" for=\"in2\">B</label>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<input type=\"checkbox\" class=\"btn-check\" id=\"btn-c1\" autocomplete=\"off\">\n<label class=\"btn btn-outline-primary\" for=\"btn-c1\">Alternar</label>\n<input type=\"radio\" class=\"btn-check\" name=\"btnr\" id=\"btn-r1\" autocomplete=\"off\" checked>\n<label class=\"btn btn-outline-primary\" for=\"btn-r1\">Um</label>\n<input type=\"radio\" class=\"btn-check\" name=\"btnr\" id=\"btn-r2\" autocomplete=\"off\">\n<label class=\"btn btn-outline-primary\" for=\"btn-r2\">Dois</label>"
+  }
+ ]
+}

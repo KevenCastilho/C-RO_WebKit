@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/alinhamento-vertical",
+ "title": "Alinhamento vertical",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Alinha elementos inline e células de tabela.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/alinhamento-vertical.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/alinhamento-vertical.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Alinhamento vertical\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/alinhamento-vertical.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nAlinha elementos inline e células de tabela.\n\n```\n<span class=\"align-baseline\">baseline</span>\n<span class=\"align-top\">top</span>\n<span class=\"align-middle\">middle</span>\n<span class=\"align-bottom\">bottom</span>\n<span class=\"align-text-top\">text-top</span>\n```\n\nalign-baseline, align-top, align-middle, align-bottom, align-text-top, align-text-bottom.\n« Texto · Visibilidade »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<span class=\"align-baseline\">baseline</span>\n<span class=\"align-top\">top</span>\n<span class=\"align-middle\">middle</span>\n<span class=\"align-bottom\">bottom</span>\n<span class=\"align-text-top\">text-top</span>"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "id": "helpers/visualmente-oculto",
+ "title": "Visualmente oculto",
+ "type": "Bootstrap drop-in",
+ "section": "Helpers",
+ "summary": "Esconde conteúdo da tela mas mantém para leitores de tela.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/visualmente-oculto.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/helpers/visualmente-oculto.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Visualmente oculto\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Helpers\nHuman version (rendered examples): helpers/visualmente-oculto.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nEsconde conteúdo da tela mas mantém para leitores de tela.\n\n```\n<a href=\"#\" class=\"btn btn-primary\">\n  <span class=\"visually-hidden\">Ler mais sobre</span>Poring\n</a>\n<p class=\"mt-2\">\n  <a class=\"visually-hidden-focusable\" href=\"#\">Ir para o conteúdo (aparece com foco)</a>\n</p>\n```\n\nTip\n\nUse para textos de acessibilidade em botões com ícone: <span class=\"visually-hidden\">Fechar</span>.\n« Linha vertical · Visão geral »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<a href=\"#\" class=\"btn btn-primary\">\n  <span class=\"visually-hidden\">Ler mais sobre</span>Poring\n</a>\n<p class=\"mt-2\">\n  <a class=\"visually-hidden-focusable\" href=\"#\">Ir para o conteúdo (aparece com foco)</a>\n</p>"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "id": "utilitarios/flex",
+ "title": "Flex",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Direção, alinhamento, justificação, quebra e crescimento.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/flex.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/flex.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Flex\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/flex.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nDireção, alinhamento, justificação, quebra e crescimento.\n\n```\n<div class=\"d-flex flex-row justify-content-between align-items-center border p-2 mb-2\">\n  <div class=\"bd-demo-box\">1</div>\n  <div class=\"bd-demo-box\">2</div>\n  <div class=\"bd-demo-box\">3</div>\n</div>\n<div class=\"d-flex flex-column gap-1 border p-2 mb-2\" style=\"max-width:160px\">\n  <div class=\"bd-demo-box\">A</div>\n  <div class=\"bd-demo-box\">B</div>\n</div>\n<div class=\"d-flex border p-2\">\n  <div class=\"bd-demo-box flex-grow-1\">cresce</div>\n  <div class=\"bd-demo-box\">fixo</div>\n</div>\n```\n\n## Todas as classes\n\n| Família | Classes |\n| Direção | flex-row, flex-row-reverse, flex-column, flex-column-reverse |\n| Quebra | flex-nowrap, flex-wrap, flex-wrap-reverse |\n| Crescer/encolher | flex-fill, flex-grow-0/1, flex-shrink-0/1 |\n| Justificar | justify-content-start/end/center/between/around/evenly |\n| Alinhar itens | align-items-start/end/center/baseline/stretch |\n| Alinhar conteúdo | align-content-start/end/center/between/around/stretch |\n| Item | align-self-auto/start/end/center/baseline/stretch |\n\n```\n<div class=\"d-flex flex-wrap align-content-around border\" style=\"height:90px\">\n  <div class=\"bd-demo-box flex-fill\">flex-fill</div>\n  <div class=\"bd-demo-box flex-grow-0\">grow-0</div>\n  <div class=\"bd-demo-box align-self-end\">self-end</div>\n</div>\n```\n\n« Display · Float »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"d-flex flex-row justify-content-between align-items-center border p-2 mb-2\">\n  <div class=\"bd-demo-box\">1</div>\n  <div class=\"bd-demo-box\">2</div>\n  <div class=\"bd-demo-box\">3</div>\n</div>\n<div class=\"d-flex flex-column gap-1 border p-2 mb-2\" style=\"max-width:160px\">\n  <div class=\"bd-demo-box\">A</div>\n  <div class=\"bd-demo-box\">B</div>\n</div>\n<div class=\"d-flex border p-2\">\n  <div class=\"bd-demo-box flex-grow-1\">cresce</div>\n  <div class=\"bd-demo-box\">fixo</div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"d-flex flex-wrap align-content-around border\" style=\"height:90px\">\n  <div class=\"bd-demo-box flex-fill\">flex-fill</div>\n  <div class=\"bd-demo-box flex-grow-0\">grow-0</div>\n  <div class=\"bd-demo-box align-self-end\">self-end</div>\n</div>"
+  }
+ ]
+}

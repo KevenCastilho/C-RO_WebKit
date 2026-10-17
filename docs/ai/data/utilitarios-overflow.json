@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/overflow",
+ "title": "Overflow",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Controle de transbordamento.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/overflow.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/overflow.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Overflow\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/overflow.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nControle de transbordamento.\n\n```\n<div class=\"overflow-auto border p-2\" style=\"width:160px;height:60px\">\n  Conteúdo longo que rola dentro da caixa porque tem overflow-auto. Mais texto aqui para rolar.\n</div>\n<div class=\"overflow-hidden border p-2\" style=\"width:160px;height:60px\">\n  Conteúdo cortado com overflow-hidden, não rola.\n</div>\n```\n\nNote\n\nBarras de rolagem no visual do jogo valem em Chromium/Safari; use a classe cro-native-scroll para manter a nativa em um elemento.\n\n## Todas as classes\n\noverflow-auto, -hidden, -visible, -scroll e por eixo: overflow-x-auto|hidden|visible|scroll, overflow-y-auto|hidden|visible|scroll.\n« Opacidade · Posição »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"overflow-auto border p-2\" style=\"width:160px;height:60px\">\n  Conteúdo longo que rola dentro da caixa porque tem overflow-auto. Mais texto aqui para rolar.\n</div>\n<div class=\"overflow-hidden border p-2\" style=\"width:160px;height:60px\">\n  Conteúdo cortado com overflow-hidden, não rola.\n</div>"
+  }
+ ]
+}

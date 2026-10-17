@@ -1,0 +1,27 @@
+{
+ "id": "extras/cursores-estados",
+ "title": "Estados automáticos do cursor",
+ "type": "Kit extra",
+ "section": "Extras do kit",
+ "summary": "Como o kit escolhe o cursor sem você fazer nada — mesma lógica dos cursores nativos do Windows.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/extras/cursores-estados.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/extras/cursores-estados.html",
+ "classes": [],
+ "data_attributes": [
+  "data-cro-cursor-anim",
+  "data-cro-handwriting",
+  "data-cro-top"
+ ],
+ "text": "# Estados automáticos do cursor\n\nType: Kit extra. A feature Bootstrap does not have.\nSection: Extras do kit\nHuman version (rendered examples): extras/cursores-estados.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ndata-cro-* attributes in this page: data-cro-cursor-anim data-cro-handwriting data-cro-top\n\nComo o kit escolhe o cursor sem você fazer nada — mesma lógica dos cursores nativos do Windows.\n\n## Tabela de gatilhos\n\n| Situação | Cursor | Gatilho no HTML |\n| Padrão | Seta animada | qualquer lugar |\n| Link | Mão apontando | a[href], area[href] |\n| Dica / ajuda | Mão com ? | [title], abbr[title], [data-bs-toggle=tooltip], [data-bs-toggle=popover], .tooltip, .popover |\n| Aviso / erro | Mão com ! | .alert, [role=alert], .invalid-feedback, .is-invalid, [aria-invalid=true] |\n| Ocupado (região) | Seta + Poring | [aria-busy=true] |\n| Ocupado (página) | Poring | html[aria-busy=true] |\n| Arrastar | Mão aberta / fechada | [draggable=true] (e :active) |\n| Texto | Barra I | campos editáveis: input de texto, textarea, [contenteditable] |\n| Caneta | Caneta | canvas, [data-cro-handwriting]; e campos editáveis quando o ponteiro é uma caneta |\n| Voltar ao topo | Seta para cima | [data-cro-top] |\n| Desabilitado | Proibido (⊘) | :disabled, [aria-disabled=true] |\n| Redimensionar, mover, esperar... | Cursor do jogo | cursor nativo (ns-resize, move, wait...) convertido |\n\n## Prioridade\n\nEntre regras do kit, a última vence: ajuda < aviso < ocupado < arrastar < link < topo < texto < caneta < desabilitado. Casos práticos:\n\n- Um link com title mostra a mão do link (o link vence a \"?\").\n- Um campo de texto com title mostra a barra I.\n- Um campo inválido continua com a barra I (a mão \"!\" não vence campos editáveis).\n- Um botão disabled com title mostra o cursor proibido.\n\n## Experimente\n\n```\n<div class=\"d-flex flex-wrap gap-2 align-items-center\">\n  <a href=\"#\">link (mão)</a>\n  <span title=\"com title: mão com ?\">dica (?)</span>\n  <abbr title=\"Ragnarok Online\">RO</abbr>\n  <div class=\"alert alert-warning mb-0 py-1\">alerta (mão com !)</div>\n  <input class=\"form-control\" style=\"width:140px\" value=\"campo (barra I)\">\n  <button class=\"btn btn-secondary\" disabled>desabilitado</button>\n  <div draggable=\"true\" class=\"bd-demo-box\">arraste (mão)</div>\n  <a href=\"#\" data-cro-top>voltar ao topo (↑)</a>\n  <div aria-busy=\"true\" class=\"bd-demo-box\">aria-busy</div>\n</div>\n```\n\n## Controle fino\n\n```\n<html data-cro-cursor-anim=\"off\">           <!-- sem animação -->\n<canvas data-cro-handwriting></canvas>      <!-- cursor de caneta -->\n<a href=\"#topo\" data-cro-top>Topo</a>       <!-- seta para cima -->\n<main aria-busy=\"true\">carregando...</main> <!-- seta + Poring -->\n```\n\nPara tirar o cursor do kit de um elemento, declare o seu: .x { cursor: auto; } (palavra-chave: usa o cursor nativo).\n« Cursores do Ragnarok · Favicon automático »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"d-flex flex-wrap gap-2 align-items-center\">\n  <a href=\"#\">link (mão)</a>\n  <span title=\"com title: mão com ?\">dica (?)</span>\n  <abbr title=\"Ragnarok Online\">RO</abbr>\n  <div class=\"alert alert-warning mb-0 py-1\">alerta (mão com !)</div>\n  <input class=\"form-control\" style=\"width:140px\" value=\"campo (barra I)\">\n  <button class=\"btn btn-secondary\" disabled>desabilitado</button>\n  <div draggable=\"true\" class=\"bd-demo-box\">arraste (mão)</div>\n  <a href=\"#\" data-cro-top>voltar ao topo (↑)</a>\n  <div aria-busy=\"true\" class=\"bd-demo-box\">aria-busy</div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<html data-cro-cursor-anim=\"off\">           <!-- sem animação -->\n<canvas data-cro-handwriting></canvas>      <!-- cursor de caneta -->\n<a href=\"#topo\" data-cro-top>Topo</a>       <!-- seta para cima -->\n<main aria-busy=\"true\">carregando...</main> <!-- seta + Poring -->"
+  }
+ ]
+}

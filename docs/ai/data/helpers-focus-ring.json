@@ -1,0 +1,19 @@
+{
+ "id": "helpers/focus-ring",
+ "title": "Focus ring",
+ "type": "Bootstrap drop-in",
+ "section": "Helpers",
+ "summary": "Anel de foco personalizável para elementos que o recebem por teclado.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/focus-ring.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/helpers/focus-ring.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Focus ring\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Helpers\nHuman version (rendered examples): helpers/focus-ring.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nAnel de foco personalizável para elementos que o recebem por teclado.\n\n```\n<a href=\"#\" class=\"d-inline-flex focus-ring py-1 px-2 text-decoration-none border\">\n  Focus ring padrão (use Tab)\n</a>\n<a\n  href=\"#\"\n  class=\"d-inline-flex focus-ring focus-ring-success py-1 px-2 text-decoration-none border\">\n  Success\n</a>\n```\n\n## Cores\n\nfocus-ring-primary, -secondary, -success, -danger, -warning, -info, -light, -dark.\n« Links coloridos · Icon link »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<a href=\"#\" class=\"d-inline-flex focus-ring py-1 px-2 text-decoration-none border\">\n  Focus ring padrão (use Tab)\n</a>\n<a\n  href=\"#\"\n  class=\"d-inline-flex focus-ring focus-ring-success py-1 px-2 text-decoration-none border\">\n  Success\n</a>"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "id": "componentes/badge",
+ "title": "Badge",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Pequenas etiquetas de contagem ou status. No kit são pílulas de 16px com as cores dos botões.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/badge.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/badge.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Badge\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/badge.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nPequenas etiquetas de contagem ou status. No kit são pílulas de 16px com as cores dos botões.\n\n```\n<span class=\"badge text-bg-primary\">Primary</span>\n<span class=\"badge text-bg-secondary\">Secondary</span>\n<span class=\"badge text-bg-success\">Success</span>\n<span class=\"badge text-bg-danger\">Danger</span>\n<span class=\"badge text-bg-warning\">Warning</span>\n<span class=\"badge text-bg-info\">Info</span>\n<span class=\"badge text-bg-light\">Light</span>\n<span class=\"badge text-bg-dark\">Dark</span>\n```\n\n## Em botões e títulos\n\n```\n<button class=\"btn btn-primary\">Mensagens <span class=\"badge text-bg-danger\">4</span></button>\n<h5 class=\"mb-0\">Novo <span class=\"badge text-bg-success\">v1</span></h5>\n```\n\n## Pílula\n\n```\n<span class=\"badge rounded-pill text-bg-primary\">Pílula</span>\n<span class=\"badge rounded-pill text-bg-danger\">99+</span>\n```\n\nDerived/invented (not in the original game)\n\nAs cores contextuais da pílula são derivadas das cores dos botões.\n« Alerts · Breadcrumb »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<span class=\"badge text-bg-primary\">Primary</span>\n<span class=\"badge text-bg-secondary\">Secondary</span>\n<span class=\"badge text-bg-success\">Success</span>\n<span class=\"badge text-bg-danger\">Danger</span>\n<span class=\"badge text-bg-warning\">Warning</span>\n<span class=\"badge text-bg-info\">Info</span>\n<span class=\"badge text-bg-light\">Light</span>\n<span class=\"badge text-bg-dark\">Dark</span>"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"btn btn-primary\">Mensagens <span class=\"badge text-bg-danger\">4</span></button>\n<h5 class=\"mb-0\">Novo <span class=\"badge text-bg-success\">v1</span></h5>"
+  },
+  {
+   "language": "html",
+   "code": "<span class=\"badge rounded-pill text-bg-primary\">Pílula</span>\n<span class=\"badge rounded-pill text-bg-danger\">99+</span>"
+  }
+ ]
+}

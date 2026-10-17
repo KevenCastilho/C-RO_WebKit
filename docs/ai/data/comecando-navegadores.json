@@ -1,0 +1,14 @@
+{
+ "id": "comecando/navegadores",
+ "title": "Navegadores e limites",
+ "type": "Guide",
+ "section": "Começando",
+ "summary": "O que o kit exige do navegador e o que, por decisão ou por limite técnico, ele não faz.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/comecando/navegadores.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/comecando/navegadores.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Navegadores e limites\n\nType: Guide. Explanatory page about using the kit.\nSection: Começando\nHuman version (rendered examples): comecando/navegadores.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nO que o kit exige do navegador e o que, por decisão ou por limite técnico, ele não faz.\n\n## Suporte\n\nO kit usa recursos modernos de CSS, principalmente @layer, :where(), :is(), mask, container-type e imagens data: em cursor/background.\n\n| Navegador | Versão mínima (aprox.) |\n| Chrome / Edge | 120+ |\n| Firefox | 110+ |\n| Safari | 16+ |\n\nNote\n\nVersões aproximadas. A fidelidade dos testes automáticos é feita em Chromium. Navegadores sem @layer (anteriores a 2022) não são suportados.\n\n## Decisões de escopo\n\n- RTL: não suportado. A interface do Ragnarok não é RTL; suportar quebraria o visual do kit. O dir=\"rtl\" do Bootstrap não é adaptado.\n- Modo escuro: fora da v1. O jogo é claro. A ideia fica para depois que a primeira versão estiver estável.\n\n## Limites técnicos (UI que o CSS não alcança)\n\n| Elemento | O que acontece | Alternativa |\n| Popup do <select> | Nativo | <select data-cro-select> usa popup do kit |\n| <datalist> | Nativo | — |\n| Seletores de data, hora e cor (popup) | Nativos | — |\n| Barras de rolagem | Visual do jogo só em motores WebKit/Blink | Firefox usa rolagem nativa |\n| Tooltip | Sem seta (limitação do desenho do jogo) | — |\n| Cursor | Imagens de até ~128px; acima disso o navegador ignora | Já respeitado pelo kit |\n| Menu de contexto do sistema, barra de título da janela | Nativos | — |\n\n## Cursores e favicon dependem de JS?\n\n- O cursor estático é só CSS. A animação do cursor precisa do JS do bundle (CSS não anima cursor).\n- O favicon automático precisa do JS do bundle.\n\n## Movimento reduzido\n\nCom prefers-reduced-motion: reduce, o cursor deixa de animar (fica no quadro de repouso). Os componentes do Bootstrap respeitam a mesma preferência.\n« Customização · Acessibilidade »\n",
+ "code_blocks": []
+}

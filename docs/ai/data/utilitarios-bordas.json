@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/bordas",
+ "title": "Bordas",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Borda, cor, largura e raio.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/bordas.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/bordas.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Bordas\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/bordas.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nBorda, cor, largura e raio.\n\n```\n<div class=\"p-2 border\">border</div>\n<div class=\"p-2 border-top\">border-top</div>\n<div class=\"p-2 border border-primary\">border-primary</div>\n<div class=\"p-2 border border-3 border-danger\">border-3</div>\n<div class=\"p-2 border rounded\">rounded</div>\n<div class=\"p-2 border rounded-pill\">rounded-pill</div>\n<div\n  class=\"border rounded-circle d-flex align-items-center justify-content-center\"\n  style=\"width:48px;height:48px\">\n  o\n</div>\n```\n\nNote\n\nO jogo quase não tem cantos arredondados; rounded-* funciona mas foge do estilo Classic.\n« Fundo · Cores »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"p-2 border\">border</div>\n<div class=\"p-2 border-top\">border-top</div>\n<div class=\"p-2 border border-primary\">border-primary</div>\n<div class=\"p-2 border border-3 border-danger\">border-3</div>\n<div class=\"p-2 border rounded\">rounded</div>\n<div class=\"p-2 border rounded-pill\">rounded-pill</div>\n<div\n  class=\"border rounded-circle d-flex align-items-center justify-content-center\"\n  style=\"width:48px;height:48px\">\n  o\n</div>"
+  }
+ ]
+}

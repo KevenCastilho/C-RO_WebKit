@@ -1,0 +1,23 @@
+{
+ "id": "conteudo/figuras",
+ "title": "Figuras",
+ "type": "Bootstrap drop-in",
+ "section": "Conteúdo",
+ "summary": "figure com legenda, estilizável com as classes do Bootstrap.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/conteudo/figuras.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/conteudo/figuras.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Figuras\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Conteúdo\nHuman version (rendered examples): conteudo/figuras.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nfigure com legenda, estilizável com as classes do Bootstrap.\n\n```\n<figure class=\"figure\">\n  <img\n    src=\"https://placehold.co/200x100\"\n    class=\"figure-img img-fluid\"\n    width=\"200\"\n    height=\"100\"\n    alt=\"figura\">\n  <figcaption class=\"figure-caption\">Legenda da figura.</figcaption>\n</figure>\n```\n\n```\n<figure class=\"text-end\">\n  <blockquote class=\"blockquote\">\n    <p>Citação alinhada à direita.</p>\n  </blockquote>\n  <figcaption class=\"blockquote-footer\">Autor</figcaption>\n</figure>\n```\n\n« Tabelas · Ícones »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<figure class=\"figure\">\n  <img\n    src=\"https://placehold.co/200x100\"\n    class=\"figure-img img-fluid\"\n    width=\"200\"\n    height=\"100\"\n    alt=\"figura\">\n  <figcaption class=\"figure-caption\">Legenda da figura.</figcaption>\n</figure>"
+  },
+  {
+   "language": "html",
+   "code": "<figure class=\"text-end\">\n  <blockquote class=\"blockquote\">\n    <p>Citação alinhada à direita.</p>\n  </blockquote>\n  <figcaption class=\"blockquote-footer\">Autor</figcaption>\n</figure>"
+  }
+ ]
+}

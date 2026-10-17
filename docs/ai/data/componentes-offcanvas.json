@@ -1,0 +1,23 @@
+{
+ "id": "componentes/offcanvas",
+ "title": "Offcanvas",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Painéis que deslizam da borda da tela. No kit são uma janela derivada (referência: janela Storage).",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/offcanvas.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/offcanvas.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Offcanvas\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/offcanvas.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nPainéis que deslizam da borda da tela. No kit são uma janela derivada (referência: janela Storage).\n\n```\n<button\n  class=\"btn btn-primary\"\n  data-bs-toggle=\"offcanvas\"\n  data-bs-target=\"#ocEx\"\n  aria-controls=\"ocEx\">\n  Offcanvas à esquerda\n</button>\n<button\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"offcanvas\"\n  data-bs-target=\"#ocDir\"\n  aria-controls=\"ocDir\">\n  À direita\n</button>\n<div class=\"offcanvas offcanvas-start\" tabindex=\"-1\" id=\"ocEx\" aria-labelledby=\"ocExT\">\n  <div class=\"offcanvas-header\">\n    <h5 class=\"offcanvas-title\" id=\"ocExT\">Storage</h5>\n    <button\n      type=\"button\"\n      class=\"btn-close\"\n      data-bs-dismiss=\"offcanvas\"\n      aria-label=\"Fechar\"></button>\n  </div>\n  <div class=\"offcanvas-body\">Itens guardados.</div>\n</div>\n<div class=\"offcanvas offcanvas-end\" tabindex=\"-1\" id=\"ocDir\" aria-labelledby=\"ocDirT\">\n  <div class=\"offcanvas-header\">\n    <h5 class=\"offcanvas-title\" id=\"ocDirT\">Opções</h5>\n    <button\n      type=\"button\"\n      class=\"btn-close\"\n      data-bs-dismiss=\"offcanvas\"\n      aria-label=\"Fechar\"></button>\n  </div>\n  <div class=\"offcanvas-body\">Conteúdo.</div>\n</div>\n```\n\nPosições: offcanvas-start, -end, -top, -bottom. Responsivo: offcanvas-lg etc. (a navegação lateral desta documentação usa isso em telas pequenas).\n\nDerived/invented (not in the original game)\n\nO jogo não tem painel deslizante. A janela do offcanvas é derivada; posição, transição e backdrop são do Bootstrap.\n\n## Posições e responsivo\n\n```\n<div class=\"offcanvas offcanvas-top\">…</div>\n<!-- de cima -->\n<div class=\"offcanvas offcanvas-bottom\">…</div>\n<!-- de baixo -->\n<div class=\"offcanvas-lg offcanvas-end\">…</div>\n<!-- offcanvas só abaixo de lg; offcanvas-sm/md/lg/xl/xxl -->\n```\n\nEstado interno showing: aplicado pelo Bootstrap durante a abertura; você não o escreve.\n« Navs e abas · Paginação »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<button\n  class=\"btn btn-primary\"\n  data-bs-toggle=\"offcanvas\"\n  data-bs-target=\"#ocEx\"\n  aria-controls=\"ocEx\">\n  Offcanvas à esquerda\n</button>\n<button\n  class=\"btn btn-secondary\"\n  data-bs-toggle=\"offcanvas\"\n  data-bs-target=\"#ocDir\"\n  aria-controls=\"ocDir\">\n  À direita\n</button>\n<div class=\"offcanvas offcanvas-start\" tabindex=\"-1\" id=\"ocEx\" aria-labelledby=\"ocExT\">\n  <div class=\"offcanvas-header\">\n    <h5 class=\"offcanvas-title\" id=\"ocExT\">Storage</h5>\n    <button\n      type=\"button\"\n      class=\"btn-close\"\n      data-bs-dismiss=\"offcanvas\"\n      aria-label=\"Fechar\"></button>\n  </div>\n  <div class=\"offcanvas-body\">Itens guardados.</div>\n</div>\n<div class=\"offcanvas offcanvas-end\" tabindex=\"-1\" id=\"ocDir\" aria-labelledby=\"ocDirT\">\n  <div class=\"offcanvas-header\">\n    <h5 class=\"offcanvas-title\" id=\"ocDirT\">Opções</h5>\n    <button\n      type=\"button\"\n      class=\"btn-close\"\n      data-bs-dismiss=\"offcanvas\"\n      aria-label=\"Fechar\"></button>\n  </div>\n  <div class=\"offcanvas-body\">Conteúdo.</div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"offcanvas offcanvas-top\">…</div>\n<!-- de cima -->\n<div class=\"offcanvas offcanvas-bottom\">…</div>\n<!-- de baixo -->\n<div class=\"offcanvas-lg offcanvas-end\">…</div>\n<!-- offcanvas só abaixo de lg; offcanvas-sm/md/lg/xl/xxl -->"
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "id": "componentes/card",
+ "title": "Card",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Um card é uma janela completa do jogo: barra de título (card-header), corpo, rodapé. As partes só aparecem quando você as declara.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/card.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/card.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Card\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/card.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nUm card é uma janela completa do jogo: barra de título (card-header), corpo, rodapé. As partes só aparecem quando você as declara.\n\n## Exemplo\n\n```\n<div class=\"card\" style=\"max-width:300px\">\n  <div class=\"card-header\">Status</div>\n  <div class=\"card-body\">\n    <h5 class=\"card-title\">Poring</h5>\n    <p class=\"card-text\">Nível 1, HP 50.</p>\n  </div>\n  <div class=\"card-footer\"><a href=\"#\" class=\"btn btn-primary btn-sm\">Atacar</a></div>\n</div>\n```\n\n## Só corpo (sem header)\n\n```\n<div class=\"card\" style=\"max-width:300px\">\n  <div class=\"card-body\">Um card simples, só com corpo.</div>\n</div>\n```\n\n## Listas e imagens\n\n```\n<div class=\"card\" style=\"max-width:300px\">\n  <div class=\"card-header\">Inventário</div>\n  <ul class=\"list-group list-group-flush\">\n    <li class=\"list-group-item\">Poção Vermelha</li>\n    <li class=\"list-group-item\">Asa de Mosca</li>\n    <li class=\"list-group-item\">Maçã</li>\n  </ul>\n</div>\n```\n\n## Cores\n\n```\n<div class=\"card text-bg-primary\" style=\"width:180px\">\n  <div class=\"card-header\">Primary</div>\n  <div class=\"card-body\">Corpo</div>\n</div>\n<div class=\"card text-bg-success\" style=\"width:180px\">\n  <div class=\"card-header\">Success</div>\n  <div class=\"card-body\">Corpo</div>\n</div>\n<div class=\"card text-bg-warning\" style=\"width:180px\">\n  <div class=\"card-header\">Warning</div>\n  <div class=\"card-body\">Corpo</div>\n</div>\n```\n\n## Grade de cards\n\n```\n<div class=\"row row-cols-1 row-cols-md-3 g-2\">\n  <div class=\"col\">\n    <div class=\"card h-100\">\n      <div class=\"card-header\">A</div>\n      <div class=\"card-body\">Texto</div>\n    </div>\n  </div>\n  <div class=\"col\">\n    <div class=\"card h-100\">\n      <div class=\"card-header\">B</div>\n      <div class=\"card-body\">Texto maior para ver a altura igual.</div>\n    </div>\n  </div>\n  <div class=\"col\">\n    <div class=\"card h-100\">\n      <div class=\"card-header\">C</div>\n      <div class=\"card-body\">Texto</div>\n    </div>\n  </div>\n</div>\n```\n\nNote\n\nA versão nativa é cro-window — veja Janela e titlebar.\n\n## Mais partes do card\n\n```\n<div class=\"card-group mb-2\" style=\"max-width:520px\">\n  <div class=\"card\">\n    <div class=\"card-body\">\n      <h6 class=\"card-subtitle mb-1\">card-subtitle</h6>\n      <p class=\"card-text\">Card 1 de um <code>card-group</code>.</p>\n      <a href=\"#\" class=\"card-link\">card-link</a>\n    </div>\n  </div>\n  <div class=\"card\">\n    <div class=\"card-body\">\n      <p class=\"card-text\">Card 2.</p>\n      <a href=\"#\" class=\"card-link\">outro link</a>\n    </div>\n  </div>\n</div>\n<div class=\"card\" style=\"max-width:300px\">\n  <div class=\"card-header\">\n    <ul class=\"nav nav-tabs card-header-tabs\">\n      <li class=\"nav-item\"><a class=\"nav-link active\" href=\"#\">card-header-tabs</a></li>\n      <li class=\"nav-item\"><a class=\"nav-link\" href=\"#\">B</a></li>\n    </ul>\n  </div>\n  <div class=\"card-body\">Corpo.</div>\n</div>\n```\n\nImagens em cards: card-img-top, card-img-bottom, card-img e, com texto sobre a imagem, card-img-overlay:\n\n```\n<div class=\"card text-bg-dark\" style=\"max-width:300px\">\n  <img\n    src=\"https://placehold.co/300x120\"\n    class=\"card-img\"\n    width=\"300\"\n    height=\"120\"\n    alt=\"imagem\">\n  <div class=\"card-img-overlay\">\n    <h5 class=\"card-title\">card-img-overlay</h5>\n    <p class=\"card-text\">Texto sobre a imagem.</p>\n  </div>\n</div>\n```\n\n« Grupo de botões · Carousel »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"card\" style=\"max-width:300px\">\n  <div class=\"card-header\">Status</div>\n  <div class=\"card-body\">\n    <h5 class=\"card-title\">Poring</h5>\n    <p class=\"card-text\">Nível 1, HP 50.</p>\n  </div>\n  <div class=\"card-footer\"><a href=\"#\" class=\"btn btn-primary btn-sm\">Atacar</a></div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"card\" style=\"max-width:300px\">\n  <div class=\"card-body\">Um card simples, só com corpo.</div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"card\" style=\"max-width:300px\">\n  <div class=\"card-header\">Inventário</div>\n  <ul class=\"list-group list-group-flush\">\n    <li class=\"list-group-item\">Poção Vermelha</li>\n    <li class=\"list-group-item\">Asa de Mosca</li>\n    <li class=\"list-group-item\">Maçã</li>\n  </ul>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"card text-bg-primary\" style=\"width:180px\">\n  <div class=\"card-header\">Primary</div>\n  <div class=\"card-body\">Corpo</div>\n</div>\n<div class=\"card text-bg-success\" style=\"width:180px\">\n  <div class=\"card-header\">Success</div>\n  <div class=\"card-body\">Corpo</div>\n</div>\n<div class=\"card text-bg-warning\" style=\"width:180px\">\n  <div class=\"card-header\">Warning</div>\n  <div class=\"card-body\">Corpo</div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"row row-cols-1 row-cols-md-3 g-2\">\n  <div class=\"col\">\n    <div class=\"card h-100\">\n      <div class=\"card-header\">A</div>\n      <div class=\"card-body\">Texto</div>\n    </div>\n  </div>\n  <div class=\"col\">\n    <div class=\"card h-100\">\n      <div class=\"card-header\">B</div>\n      <div class=\"card-body\">Texto maior para ver a altura igual.</div>\n    </div>\n  </div>\n  <div class=\"col\">\n    <div class=\"card h-100\">\n      <div class=\"card-header\">C</div>\n      <div class=\"card-body\">Texto</div>\n    </div>\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"card-group mb-2\" style=\"max-width:520px\">\n  <div class=\"card\">\n    <div class=\"card-body\">\n      <h6 class=\"card-subtitle mb-1\">card-subtitle</h6>\n      <p class=\"card-text\">Card 1 de um <code>card-group</code>.</p>\n      <a href=\"#\" class=\"card-link\">card-link</a>\n    </div>\n  </div>\n  <div class=\"card\">\n    <div class=\"card-body\">\n      <p class=\"card-text\">Card 2.</p>\n      <a href=\"#\" class=\"card-link\">outro link</a>\n    </div>\n  </div>\n</div>\n<div class=\"card\" style=\"max-width:300px\">\n  <div class=\"card-header\">\n    <ul class=\"nav nav-tabs card-header-tabs\">\n      <li class=\"nav-item\"><a class=\"nav-link active\" href=\"#\">card-header-tabs</a></li>\n      <li class=\"nav-item\"><a class=\"nav-link\" href=\"#\">B</a></li>\n    </ul>\n  </div>\n  <div class=\"card-body\">Corpo.</div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"card text-bg-dark\" style=\"max-width:300px\">\n  <img\n    src=\"https://placehold.co/300x120\"\n    class=\"card-img\"\n    width=\"300\"\n    height=\"120\"\n    alt=\"imagem\">\n  <div class=\"card-img-overlay\">\n    <h5 class=\"card-title\">card-img-overlay</h5>\n    <p class=\"card-text\">Texto sobre a imagem.</p>\n  </div>\n</div>"
+  }
+ ]
+}

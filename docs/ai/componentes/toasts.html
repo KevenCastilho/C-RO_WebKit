@@ -14,13 +14,26 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <p>Notificações leves. No kit são uma janela pequena; sem <code>toast-header</code> viram uma sysbox.</p>
 <pre><code class="language-html">&lt;button class=&quot;btn btn-primary&quot; id=&quot;toastBtn&quot;&gt;Mostrar toast&lt;/button&gt;
 &lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;
-  &lt;div id=&quot;toastEx&quot; class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;&lt;div class=&quot;toast-header&quot;&gt;&lt;strong class=&quot;me-auto&quot;&gt;Sistema&lt;/strong&gt;&lt;small&gt;agora&lt;/small&gt;&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;toast-body&quot;&gt;Você ganhou 100 de experiência!&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&quot;toastEx&quot; class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;
+    &lt;div class=&quot;toast-header&quot;&gt;
+      &lt;strong class=&quot;me-auto&quot;&gt;Sistema&lt;/strong&gt;
+      &lt;small&gt;agora&lt;/small&gt;
+      &lt;button
+        type=&quot;button&quot;
+        class=&quot;btn-close&quot;
+        data-bs-dismiss=&quot;toast&quot;
+        aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;toast-body&quot;&gt;Você ganhou 100 de experiência!&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 <pre><code class="language-js">document.getElementById(&#x27;toastBtn&#x27;).addEventListener(&#x27;click&#x27;, function () {
   bootstrap.Toast.getOrCreateInstance(document.getElementById(&#x27;toastEx&#x27;)).show();
 });</code></pre>
 <h2 id="sem-cabeçalho">Sem cabeçalho</h2>
-<pre><code class="language-html">&lt;div class=&quot;toast show&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;toast-body&quot;&gt;Mensagem curta (vira sysbox).&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;toast show&quot; role=&quot;alert&quot;&gt;
+  &lt;div class=&quot;toast-body&quot;&gt;Mensagem curta (vira sysbox).&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <aside><strong>Note</strong><p>Posicione os toasts com <code>toast-container</code> + <code>position-fixed</code>. Use <code>data-bs-autohide="false"</code> para não sumir sozinho.</p></aside>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../componentes/spinners.html">« Spinners</a> · <a href="../componentes/tooltips.html">Tooltips »</a></nav>

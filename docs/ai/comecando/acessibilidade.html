@@ -27,7 +27,10 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <li>Associe <code>label</code> a <code>input</code> (<code>for</code>/<code>id</code>), como no Bootstrap.</li>
 <li>Não use só a cor para dar significado; no jogo clássico o contraste de alguns elementos é baixo (ver abaixo).</li>
 </ul>
-<pre><code class="language-html">&lt;div class=&quot;mb-2&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;a11y1&quot;&gt;Nome do personagem&lt;/label&gt;&lt;input id=&quot;a11y1&quot; class=&quot;form-control&quot; style=&quot;max-width:240px&quot;&gt;&lt;/div&gt;
+<pre><code class="language-html">&lt;div class=&quot;mb-2&quot;&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;a11y1&quot;&gt;Nome do personagem&lt;/label&gt;
+  &lt;input id=&quot;a11y1&quot; class=&quot;form-control&quot; style=&quot;max-width:240px&quot;&gt;
+&lt;/div&gt;
 &lt;button class=&quot;btn-close&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;</code></pre>
 <h2 id="contraste">Contraste</h2>
 <p>O kit respeita as cores do jogo (CONFIRMADO). Em alguns pontos o contraste fica abaixo do recomendado pela WCAG, por exemplo texto desabilitado e rótulos azul-claros sobre fundo cinza. Quando o jogo não define a cor, o kit usa a cor mais legível (por exemplo rótulo de barra de progresso em preto). Se a sua aplicação exige AA, teste suas telas e ajuste com seu próprio CSS (<a href="customizacao.html">Customização</a>).</p>

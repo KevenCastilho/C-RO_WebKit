@@ -1,0 +1,23 @@
+{
+ "id": "helpers/icon-link",
+ "title": "Icon link",
+ "type": "Bootstrap drop-in",
+ "section": "Helpers",
+ "summary": "Link com ícone alinhado.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/icon-link.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/helpers/icon-link.html",
+ "classes": [
+  "cro-ico",
+  "cro-ico--arw-right-on",
+  "cro-ico--folder"
+ ],
+ "data_attributes": [],
+ "text": "# Icon link\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Helpers\nHuman version (rendered examples): helpers/icon-link.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-ico cro-ico--arw-right-on cro-ico--folder\n\nLink com ícone alinhado.\n\n```\n<a class=\"icon-link\" href=\"#\">\n  <span class=\"cro-ico cro-ico--folder\" aria-hidden=\"true\"></span> Abrir pasta\n</a>\n<a class=\"icon-link icon-link-hover\" href=\"#\">\n  <span class=\"cro-ico cro-ico--arw-right-on\" aria-hidden=\"true\"></span> Próximo\n</a>\n```\n\n« Focus ring · Posição »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<a class=\"icon-link\" href=\"#\">\n  <span class=\"cro-ico cro-ico--folder\" aria-hidden=\"true\"></span> Abrir pasta\n</a>\n<a class=\"icon-link icon-link-hover\" href=\"#\">\n  <span class=\"cro-ico cro-ico--arw-right-on\" aria-hidden=\"true\"></span> Próximo\n</a>"
+  }
+ ]
+}

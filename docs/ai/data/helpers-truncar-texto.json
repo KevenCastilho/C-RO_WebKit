@@ -1,0 +1,19 @@
+{
+ "id": "helpers/truncar-texto",
+ "title": "Truncar texto",
+ "type": "Bootstrap drop-in",
+ "section": "Helpers",
+ "summary": "Corta texto longo com reticências.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/truncar-texto.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/helpers/truncar-texto.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Truncar texto\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Helpers\nHuman version (rendered examples): helpers/truncar-texto.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nCorta texto longo com reticências.\n\n```\n<div class=\"row\">\n  <div class=\"col-4\">\n    <span class=\"d-inline-block text-truncate\" style=\"max-width:150px\">\n      Texto muito longo que será cortado com reticências.\n    </span>\n  </div>\n</div>\n<p class=\"text-truncate\" style=\"max-width:220px\">\n  Parágrafo truncado também com text-truncate.\n</p>\n```\n\n« Stretched link · Linha vertical »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"row\">\n  <div class=\"col-4\">\n    <span class=\"d-inline-block text-truncate\" style=\"max-width:150px\">\n      Texto muito longo que será cortado com reticências.\n    </span>\n  </div>\n</div>\n<p class=\"text-truncate\" style=\"max-width:220px\">\n  Parágrafo truncado também com text-truncate.\n</p>"
+  }
+ ]
+}

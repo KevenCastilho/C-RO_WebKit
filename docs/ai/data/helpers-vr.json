@@ -1,0 +1,19 @@
+{
+ "id": "helpers/vr",
+ "title": "Linha vertical",
+ "type": "Bootstrap drop-in",
+ "section": "Helpers",
+ "summary": ".vr separa itens lado a lado.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/vr.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/helpers/vr.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Linha vertical\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Helpers\nHuman version (rendered examples): helpers/vr.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\n.vr separa itens lado a lado.\n\n```\n<div class=\"d-flex\" style=\"height:30px\">\n  <div>Esquerda</div>\n  <div class=\"vr mx-2\"></div>\n  <div>Direita</div>\n</div>\n```\n\n« Truncar texto · Visualmente oculto »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"d-flex\" style=\"height:30px\">\n  <div>Esquerda</div>\n  <div class=\"vr mx-2\"></div>\n  <div>Direita</div>\n</div>"
+  }
+ ]
+}

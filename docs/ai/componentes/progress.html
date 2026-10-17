@@ -12,18 +12,49 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Componentes</dd><dt>Human version (rendered examples)</dt><dd><a href="../../componentes/progress.html">componentes/progress.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
 <div lang="pt-BR">
 <p>Barras de progresso no visual da barra HP/SP do jogo ("gze"). A altura segue a que você definir.</p>
-<pre><code class="language-html">&lt;div class=&quot;progress mb-2&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;75&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;div class=&quot;progress-bar&quot; style=&quot;width:75%&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;progress mb-2&quot; role=&quot;progressbar&quot;&gt;&lt;div class=&quot;progress-bar bg-success&quot; style=&quot;width:50%&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;progress mb-2&quot; role=&quot;progressbar&quot;&gt;&lt;div class=&quot;progress-bar bg-warning&quot; style=&quot;width:35%&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;progress&quot; role=&quot;progressbar&quot;&gt;&lt;div class=&quot;progress-bar bg-danger&quot; style=&quot;width:20%&quot;&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div
+  class=&quot;progress mb-2&quot;
+  role=&quot;progressbar&quot;
+  aria-valuenow=&quot;75&quot;
+  aria-valuemin=&quot;0&quot;
+  aria-valuemax=&quot;100&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; style=&quot;width:75%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress mb-2&quot; role=&quot;progressbar&quot;&gt;
+  &lt;div class=&quot;progress-bar bg-success&quot; style=&quot;width:50%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress mb-2&quot; role=&quot;progressbar&quot;&gt;
+  &lt;div class=&quot;progress-bar bg-warning&quot; style=&quot;width:35%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot; role=&quot;progressbar&quot;&gt;
+  &lt;div class=&quot;progress-bar bg-danger&quot; style=&quot;width:20%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<aside><strong>Note</strong><p><strong>Barra de HP/SP.</strong> Para uma barra de HP como a do jogo (85×8 px, azul, vermelha só abaixo de 25%) use a peça nativa <code>cro-progress</code> (<a href="../kit/barras.html">Barras</a>). Com <code>.progress</code> do Bootstrap a barra ocupa a largura do contêiner e as cores <code>bg-success</code>, <code>bg-warning</code> e <code>bg-danger</code> não existem na barra de vida do jogo.</p></aside>
 <h2 id="rótulo-e-altura">Rótulo e altura</h2>
-<pre><code class="language-html">&lt;div class=&quot;progress mb-2&quot; role=&quot;progressbar&quot; style=&quot;height:20px&quot;&gt;&lt;div class=&quot;progress-bar&quot; style=&quot;width:60%&quot;&gt;60%&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; style=&quot;height:6px&quot;&gt;&lt;div class=&quot;progress-bar&quot; style=&quot;width:40%&quot;&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;progress mb-2&quot; role=&quot;progressbar&quot; style=&quot;height:20px&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; style=&quot;width:60%&quot;&gt;60%&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; style=&quot;height:6px&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; style=&quot;width:40%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="listradas-e-animadas">Listradas e animadas</h2>
-<pre><code class="language-html">&lt;div class=&quot;progress mb-2&quot; role=&quot;progressbar&quot;&gt;&lt;div class=&quot;progress-bar progress-bar-striped&quot; style=&quot;width:60%&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;progress&quot; role=&quot;progressbar&quot;&gt;&lt;div class=&quot;progress-bar bg-danger progress-bar-striped progress-bar-animated&quot; style=&quot;width:45%&quot;&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;progress mb-2&quot; role=&quot;progressbar&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-striped&quot; style=&quot;width:60%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress&quot; role=&quot;progressbar&quot;&gt;
+  &lt;div
+    class=&quot;progress-bar bg-danger progress-bar-striped progress-bar-animated&quot;
+    style=&quot;width:45%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="barra-empilhada">Barra empilhada</h2>
-<pre><code class="language-html">&lt;div class=&quot;progress-stacked&quot;&gt;&lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; style=&quot;width:30%&quot;&gt;&lt;div class=&quot;progress-bar&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; style=&quot;width:20%&quot;&gt;&lt;div class=&quot;progress-bar bg-success&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;progress-stacked&quot;&gt;
+  &lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; style=&quot;width:30%&quot;&gt;
+    &lt;div class=&quot;progress-bar&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; style=&quot;width:20%&quot;&gt;
+    &lt;div class=&quot;progress-bar bg-success&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <aside><strong>Derived/invented (not in the original game)</strong><p>O jogo só tem o trilho (gze) e a barra de HP. As cores <code>bg-*</code>, as listras e a animação são derivadas. O rótulo é preto para ter contraste nas barras claras. A versão nativa (com <code>--p</code>) está em <a href="../kit/barras.html">Barras, progress e grp</a>.</p></aside>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../componentes/popovers.html">« Popovers</a> · <a href="../componentes/scrollspy.html">Scrollspy »</a></nav>

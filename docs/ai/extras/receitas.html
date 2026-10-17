@@ -9,35 +9,258 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <nav class="crumb" aria-label="Breadcrumb"><a href="../index.html">C-RO AI reference</a> › Extras do kit › Receitas</nav>
 <main>
 <h1>Receitas</h1>
-<dl><dt>Type</dt><dd>Guide. Explanatory page about using the kit.</dd><dt>Section</dt><dd>Extras do kit</dd><dt>Human version (rendered examples)</dt><dd><a href="../../extras/receitas.html">extras/receitas.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-btn</code> <code>cro-check</code> <code>cro-field</code> <code>cro-input</code> <code>cro-label</code> <code>cro-slot</code> <code>cro-slot-grid</code> <code>cro-slot__qty</code> <code>cro-titlebar</code> <code>cro-titlebar__title</code> <code>cro-window</code> <code>cro-window__body</code> <code>cro-window__footer</code> <code>is-selected</code></dd></dl>
+<dl><dt>Type</dt><dd>Guide. Explanatory page about using the kit.</dd><dt>Section</dt><dd>Extras do kit</dd><dt>Human version (rendered examples)</dt><dd><a href="../../extras/receitas.html">extras/receitas.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-box</code> <code>cro-box__frame</code> <code>cro-btn</code> <code>cro-check</code> <code>cro-field</code> <code>cro-input</code> <code>cro-label</code> <code>cro-progress</code> <code>cro-progress__bar</code> <code>cro-slot</code> <code>cro-slot-grid</code> <code>cro-slot__qty</code> <code>cro-tab-panel</code> <code>cro-tab-panels</code> <code>cro-tabs</code> <code>cro-tabs__btn</code> <code>cro-titlebar</code> <code>cro-titlebar__title</code> <code>cro-window</code> <code>cro-window__body</code> <code>cro-window__footer</code> <code>is-active</code> <code>is-selected</code></dd><dt>data-cro-* attributes in this page</dt><dd><code>data-cro-panel</code> <code>data-cro-panels</code> <code>data-cro-tab</code> <code>data-cro-tabs</code></dd></dl>
 <div lang="pt-BR">
 <p>Telas completas montadas com o kit, para copiar e adaptar.</p>
 <h2 id="janela-de-login">Janela de login</h2>
-<pre><code class="language-html">&lt;section class=&quot;cro-window&quot; style=&quot;width:300px&quot;&gt;&lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Login&lt;/span&gt;&lt;/header&gt;
-&lt;div class=&quot;cro-window__body&quot;&gt;
-  &lt;div class=&quot;cro-field&quot;&gt;&lt;label class=&quot;cro-label&quot; for=&quot;rc-u&quot;&gt;Usuário&lt;/label&gt;&lt;input class=&quot;cro-input&quot; id=&quot;rc-u&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;cro-field&quot;&gt;&lt;label class=&quot;cro-label&quot; for=&quot;rc-p&quot;&gt;Senha&lt;/label&gt;&lt;input class=&quot;cro-input&quot; id=&quot;rc-p&quot; type=&quot;password&quot;&gt;&lt;/div&gt;
-  &lt;label class=&quot;cro-check&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Lembrar usuário&lt;/label&gt;
-&lt;/div&gt;
-&lt;footer class=&quot;cro-window__footer&quot;&gt;&lt;button class=&quot;cro-btn&quot;&gt;Cancelar&lt;/button&gt;&lt;button class=&quot;cro-btn&quot;&gt;Entrar&lt;/button&gt;&lt;/footer&gt;&lt;/section&gt;</code></pre>
+<pre><code class="language-html">&lt;section class=&quot;cro-window&quot; style=&quot;width:300px&quot;&gt;
+  &lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Login&lt;/span&gt;&lt;/header&gt;
+  &lt;div class=&quot;cro-window__body&quot;&gt;
+    &lt;div class=&quot;cro-field&quot;&gt;
+      &lt;label class=&quot;cro-label&quot; for=&quot;rc-u&quot;&gt;Usuário&lt;/label&gt;
+      &lt;input class=&quot;cro-input&quot; id=&quot;rc-u&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cro-field&quot;&gt;
+      &lt;label class=&quot;cro-label&quot; for=&quot;rc-p&quot;&gt;Senha&lt;/label&gt;
+      &lt;input class=&quot;cro-input&quot; id=&quot;rc-p&quot; type=&quot;password&quot;&gt;
+    &lt;/div&gt;
+    &lt;label class=&quot;cro-check&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Lembrar usuário&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;footer class=&quot;cro-window__footer&quot;&gt;
+    &lt;button class=&quot;cro-btn&quot;&gt;Cancelar&lt;/button&gt;
+    &lt;button class=&quot;cro-btn&quot;&gt;Entrar&lt;/button&gt;
+  &lt;/footer&gt;
+&lt;/section&gt;</code></pre>
 <h2 id="o-mesmo-com-bootstrap-puro">O mesmo com Bootstrap puro</h2>
-<pre><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;width:300px&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;Login&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;
-  &lt;div class=&quot;mb-2&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;rb-u&quot;&gt;Usuário&lt;/label&gt;&lt;input class=&quot;form-control&quot; id=&quot;rb-u&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;mb-2&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;rb-p&quot;&gt;Senha&lt;/label&gt;&lt;input class=&quot;form-control&quot; id=&quot;rb-p&quot; type=&quot;password&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;form-check&quot;&gt;&lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;rb-k&quot; checked&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;rb-k&quot;&gt;Lembrar usuário&lt;/label&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&quot;card-footer d-flex gap-2 justify-content-end&quot;&gt;&lt;button class=&quot;btn btn-secondary btn-sm&quot;&gt;Cancelar&lt;/button&gt;&lt;button class=&quot;btn btn-primary btn-sm&quot;&gt;Entrar&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;width:300px&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;Login&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;div class=&quot;mb-2&quot;&gt;
+      &lt;label class=&quot;form-label&quot; for=&quot;rb-u&quot;&gt;Usuário&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;rb-u&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mb-2&quot;&gt;
+      &lt;label class=&quot;form-label&quot; for=&quot;rb-p&quot;&gt;Senha&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;rb-p&quot; type=&quot;password&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-check&quot;&gt;
+      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;rb-k&quot; checked&gt;
+      &lt;label class=&quot;form-check-label&quot; for=&quot;rb-k&quot;&gt;Lembrar usuário&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-footer d-flex gap-2 justify-content-end&quot;&gt;
+    &lt;button class=&quot;btn btn-secondary btn-sm&quot;&gt;Cancelar&lt;/button&gt;
+    &lt;button class=&quot;btn btn-primary btn-sm&quot;&gt;Entrar&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="painel-de-status">Painel de status</h2>
-<pre><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;max-width:300px&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;Status&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;
-  &lt;div class=&quot;d-flex justify-content-between&quot;&gt;&lt;span&gt;HP&lt;/span&gt;&lt;small&gt;820/1000&lt;/small&gt;&lt;/div&gt;
-  &lt;div class=&quot;progress mb-2&quot; role=&quot;progressbar&quot; style=&quot;height:9px&quot;&gt;&lt;div class=&quot;progress-bar bg-success&quot; style=&quot;width:82%&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div class=&quot;d-flex justify-content-between&quot;&gt;&lt;span&gt;SP&lt;/span&gt;&lt;small&gt;90/200&lt;/small&gt;&lt;/div&gt;
-  &lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; style=&quot;height:9px&quot;&gt;&lt;div class=&quot;progress-bar&quot; style=&quot;width:45%&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;max-width:300px&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;Status&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;div class=&quot;d-flex justify-content-between&quot;&gt;&lt;span&gt;HP&lt;/span&gt;&lt;small&gt;820/1000&lt;/small&gt;&lt;/div&gt;
+    &lt;div class=&quot;progress mb-2&quot; role=&quot;progressbar&quot; style=&quot;height:9px&quot;&gt;
+      &lt;div class=&quot;progress-bar bg-success&quot; style=&quot;width:82%&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;d-flex justify-content-between&quot;&gt;&lt;span&gt;SP&lt;/span&gt;&lt;small&gt;90/200&lt;/small&gt;&lt;/div&gt;
+    &lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; style=&quot;height:9px&quot;&gt;
+      &lt;div class=&quot;progress-bar&quot; style=&quot;width:45%&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="inventário-com-abas">Inventário com abas</h2>
-<pre><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;max-width:360px&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;Inventário&lt;/div&gt;&lt;div class=&quot;card-body p-2&quot;&gt;
-&lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;&lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link active&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#rc-i1&quot; type=&quot;button&quot; role=&quot;tab&quot;&gt;Item&lt;/button&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;&lt;button class=&quot;nav-link&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#rc-i2&quot; type=&quot;button&quot; role=&quot;tab&quot;&gt;Equip&lt;/button&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&quot;tab-content pt-2&quot;&gt;&lt;div class=&quot;tab-pane fade show active&quot; id=&quot;rc-i1&quot; role=&quot;tabpanel&quot;&gt;&lt;div class=&quot;cro-slot-grid&quot; style=&quot;width:192px&quot;&gt;&lt;div class=&quot;cro-slot&quot;&gt;&lt;span class=&quot;cro-slot__qty&quot;&gt;12&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cro-slot&quot;&gt;&lt;/div&gt;&lt;div class=&quot;cro-slot is-selected&quot;&gt;&lt;/div&gt;&lt;div class=&quot;cro-slot&quot;&gt;&lt;/div&gt;&lt;div class=&quot;cro-slot&quot;&gt;&lt;/div&gt;&lt;div class=&quot;cro-slot&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;tab-pane fade&quot; id=&quot;rc-i2&quot; role=&quot;tabpanel&quot;&gt;Equipamentos.&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;max-width:360px&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;Inventário&lt;/div&gt;
+  &lt;div class=&quot;card-body p-2&quot;&gt;
+    &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+        &lt;button
+          class=&quot;nav-link active&quot;
+          data-bs-toggle=&quot;tab&quot;
+          data-bs-target=&quot;#rc-i1&quot;
+          type=&quot;button&quot;
+          role=&quot;tab&quot;&gt;
+          Item
+        &lt;/button&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+        &lt;button
+          class=&quot;nav-link&quot;
+          data-bs-toggle=&quot;tab&quot;
+          data-bs-target=&quot;#rc-i2&quot;
+          type=&quot;button&quot;
+          role=&quot;tab&quot;&gt;
+          Equip
+        &lt;/button&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;tab-content pt-2&quot;&gt;
+      &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;rc-i1&quot; role=&quot;tabpanel&quot;&gt;
+        &lt;div class=&quot;cro-slot-grid&quot; style=&quot;width:192px&quot;&gt;
+          &lt;div class=&quot;cro-slot&quot;&gt;&lt;span class=&quot;cro-slot__qty&quot;&gt;12&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;cro-slot&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;cro-slot is-selected&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;cro-slot&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;cro-slot&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;cro-slot&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;tab-pane fade&quot; id=&quot;rc-i2&quot; role=&quot;tabpanel&quot;&gt;Equipamentos.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h2 id="página-completa-login-abas-confirmação-e-barra-de-hp-peças-nativas">Página completa: login, abas, confirmação e barra de HP (peças nativas)</h2>
+<p>A tela mais comum de um teste, pronta e fiel ao jogo. Um só tipo de botão (<code>cro-btn</code>), janelas de largura fixa, rodapé como irmão do corpo, <code>CRO.confirm</code> com <code>await</code>. Salve como <code>index.html</code> ao lado de <code>c-ro-bs.min.css</code>, <code>c-ro-bs.min.js</code> e da pasta <code>fonts/</code> (ou troque os dois endereços pelos de <code>https://kevencastilho.github.io/C-RO_WebKit/dist/</code>).</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;C-RO: login, abas, confirmação e HP&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;c-ro-bs.min.css&quot;&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div style=&quot;display:flex; gap:24px; flex-wrap:wrap; padding:24px; align-items:flex-start&quot;&gt;
+      &lt;!-- Login: o rodapé é IRMÃO do corpo, não vai dentro dele --&gt;
+      &lt;section class=&quot;cro-window&quot; style=&quot;width:300px&quot;&gt;
+        &lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Login&lt;/span&gt;&lt;/header&gt;
+        &lt;div class=&quot;cro-window__body&quot;&gt;
+          &lt;div class=&quot;cro-field&quot;&gt;
+            &lt;label class=&quot;cro-label&quot; for=&quot;usuario&quot;&gt;Usuário&lt;/label&gt;
+            &lt;input class=&quot;cro-input&quot; id=&quot;usuario&quot;&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;cro-field&quot;&gt;
+            &lt;label class=&quot;cro-label&quot; for=&quot;senha&quot;&gt;Senha&lt;/label&gt;
+            &lt;input class=&quot;cro-input&quot; id=&quot;senha&quot; type=&quot;password&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;footer class=&quot;cro-window__footer&quot;&gt;
+          &lt;button class=&quot;cro-btn&quot; id=&quot;entrar&quot;&gt;Entrar&lt;/button&gt;
+        &lt;/footer&gt;
+      &lt;/section&gt;
+      &lt;!-- Personagem: abas nativas + barra de HP --&gt;
+      &lt;section class=&quot;cro-window&quot; style=&quot;width:340px&quot;&gt;
+        &lt;header class=&quot;cro-titlebar&quot;&gt;
+          &lt;span class=&quot;cro-titlebar__title&quot;&gt;Personagem&lt;/span&gt;
+        &lt;/header&gt;
+        &lt;div class=&quot;cro-window__body&quot;&gt;
+          &lt;div data-cro-tabs data-cro-panels=&quot;#paineis&quot;&gt;
+            &lt;div class=&quot;cro-tabs&quot;&gt;
+              &lt;button class=&quot;cro-tabs__btn is-active&quot; data-cro-tab=&quot;status&quot;&gt;Status&lt;/button&gt;
+              &lt;button class=&quot;cro-tabs__btn&quot; data-cro-tab=&quot;equip&quot;&gt;Equipamento&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;cro-tab-panels&quot; id=&quot;paineis&quot;&gt;
+            &lt;div class=&quot;cro-tab-panel&quot; data-cro-panel=&quot;status&quot;&gt;
+              &lt;p&gt;HP 600 / 1000&lt;/p&gt;
+              &lt;div class=&quot;cro-progress&quot;&gt;
+                &lt;div class=&quot;cro-progress__bar&quot; style=&quot;--p:60&quot;&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;p&gt;&lt;button class=&quot;cro-btn&quot; id=&quot;sair&quot;&gt;Sair da guilda?&lt;/button&gt;&lt;/p&gt;
+              &lt;div class=&quot;cro-box&quot;&gt;
+                &lt;div class=&quot;cro-box__frame&quot; id=&quot;resultado&quot;&gt;Nenhuma escolha feita.&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;cro-tab-panel&quot; data-cro-panel=&quot;equip&quot; hidden&gt;
+              &lt;p&gt;Nenhum equipamento.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+    &lt;script src=&quot;c-ro-bs.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+    document.getElementById(&#x27;entrar&#x27;).addEventListener(&#x27;click&#x27;, async () =&gt; {
+      await CRO.alert(&#x27;Bem-vindo, &#x27; + (document.getElementById(&#x27;usuario&#x27;).value || &#x27;aventureiro&#x27;) + &#x27;!&#x27;);
+    });
+    document.getElementById(&#x27;sair&#x27;).addEventListener(&#x27;click&#x27;, async () =&gt; {
+      const sim = await CRO.confirm(&#x27;Você realmente quer sair da guilda?&#x27;, { ok: &#x27;Sim&#x27;, cancel: &#x27;Não&#x27; });
+      document.getElementById(&#x27;resultado&#x27;).textContent = sim ? &#x27;Você escolheu: SIM&#x27; : &#x27;Você escolheu: NÃO&#x27;;
+    });
+  &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h2 id="a-mesma-tela-com-bootstrap-dentro-das-janelas-do-jogo">A mesma tela com Bootstrap dentro das janelas do jogo</h2>
+<p>Janelas nativas (<code>cro-window</code>) com formulário, abas e botões do Bootstrap. Funciona igual e é bom quando você já escreve Bootstrap. Regra: dentro da mesma tela use <code>btn</code> <strong>ou</strong> <code>cro-btn</code>, não os dois.</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt-BR&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;C-RO: Bootstrap com janelas do jogo&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;c-ro-bs.min.css&quot;&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div style=&quot;display:flex; gap:24px; flex-wrap:wrap; padding:24px; align-items:flex-start&quot;&gt;
+      &lt;section class=&quot;cro-window&quot; style=&quot;width:300px&quot;&gt;
+        &lt;header class=&quot;cro-titlebar&quot;&gt;&lt;span class=&quot;cro-titlebar__title&quot;&gt;Login&lt;/span&gt;&lt;/header&gt;
+        &lt;div class=&quot;cro-window__body&quot;&gt;
+          &lt;div class=&quot;mb-2&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;usuario&quot;&gt;Usuário&lt;/label&gt;
+            &lt;input class=&quot;form-control&quot; id=&quot;usuario&quot;&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;mb-2&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;senha&quot;&gt;Senha&lt;/label&gt;
+            &lt;input class=&quot;form-control&quot; id=&quot;senha&quot; type=&quot;password&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;footer class=&quot;cro-window__footer&quot;&gt;
+          &lt;button class=&quot;btn btn-primary btn-sm&quot; id=&quot;entrar&quot;&gt;Entrar&lt;/button&gt;
+        &lt;/footer&gt;
+      &lt;/section&gt;
+      &lt;section class=&quot;cro-window&quot; style=&quot;width:340px&quot;&gt;
+        &lt;header class=&quot;cro-titlebar&quot;&gt;
+          &lt;span class=&quot;cro-titlebar__title&quot;&gt;Personagem&lt;/span&gt;
+        &lt;/header&gt;
+        &lt;div class=&quot;cro-window__body&quot;&gt;
+          &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+            &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+              &lt;button
+                class=&quot;nav-link active&quot;
+                data-bs-toggle=&quot;tab&quot;
+                data-bs-target=&quot;#aba-status&quot;
+                type=&quot;button&quot;
+                role=&quot;tab&quot;&gt;
+                Status
+              &lt;/button&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+              &lt;button
+                class=&quot;nav-link&quot;
+                data-bs-toggle=&quot;tab&quot;
+                data-bs-target=&quot;#aba-equip&quot;
+                type=&quot;button&quot;
+                role=&quot;tab&quot;&gt;
+                Equipamento
+              &lt;/button&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;div class=&quot;tab-content pt-2&quot;&gt;
+            &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;aba-status&quot; role=&quot;tabpanel&quot;&gt;
+              &lt;p class=&quot;mb-1&quot;&gt;HP 600 / 1000&lt;/p&gt;
+              &lt;div class=&quot;cro-progress&quot;&gt;
+                &lt;div class=&quot;cro-progress__bar&quot; style=&quot;--p:60&quot;&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;p class=&quot;mt-2&quot;&gt;
+                &lt;button class=&quot;btn btn-secondary btn-sm&quot; id=&quot;sair&quot;&gt;Sair da guilda?&lt;/button&gt;
+              &lt;/p&gt;
+              &lt;div id=&quot;resultado&quot;&gt;Nenhuma escolha feita.&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;aba-equip&quot; role=&quot;tabpanel&quot;&gt;
+              &lt;p&gt;Nenhum equipamento.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+    &lt;script src=&quot;c-ro-bs.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+    document.getElementById(&#x27;sair&#x27;).addEventListener(&#x27;click&#x27;, async () =&gt; {
+      const sim = await CRO.confirm(&#x27;Você realmente quer sair da guilda?&#x27;, { ok: &#x27;Sim&#x27;, cancel: &#x27;Não&#x27; });
+      document.getElementById(&#x27;resultado&#x27;).textContent = sim ? &#x27;Você escolheu: SIM&#x27; : &#x27;Você escolheu: NÃO&#x27;;
+    });
+  &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 <h2 id="confirmação-com-asyncawait">Confirmação com <code>async/await</code></h2>
 <pre><code class="language-js">document.querySelector(&#x27;#excluir&#x27;).addEventListener(&#x27;click&#x27;, async () =&gt; {
   if (await CRO.confirm(&#x27;Excluir o personagem?&#x27;, { ok: &#x27;Excluir&#x27;, cancel: &#x27;Cancelar&#x27; })) {
@@ -45,6 +268,6 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
   }
 });</code></pre>
 </div>
-<nav class="pager" aria-label="Pages"><a href="../extras/fidelidade.html">« Fidelidade: confirmado e derivado</a></nav>
+<nav class="pager" aria-label="Pages"><a href="../extras/fidelidade.html">« Fidelidade: confirmado e derivado</a> · <a href="../extras/nao-existe.html">O que não existe »</a></nav>
 </main>
 </body></html>

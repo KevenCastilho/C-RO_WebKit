@@ -1,0 +1,27 @@
+{
+ "id": "layout/gutters",
+ "title": "Gutters",
+ "type": "Bootstrap drop-in",
+ "section": "Layout",
+ "summary": "Espaços entre colunas controlados por g-* , gx-* e gy-* .",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/layout/gutters.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/layout/gutters.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Gutters\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Layout\nHuman version (rendered examples): layout/gutters.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nEspaços entre colunas controlados por g-*, gx-* e gy-*.\n\n## Gutters horizontais e verticais\n\n```\n<div class=\"row gx-5 mb-3\">\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">gx-5</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">gx-5</div>\n  </div>\n</div>\n<div class=\"row gy-3\">\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">gy-3</div>\n  </div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">gy-3</div>\n  </div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">gy-3</div>\n  </div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">gy-3</div>\n  </div>\n</div>\n```\n\n## Sem gutter\n\n```\n<div class=\"row g-0\">\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">g-0</div>\n  </div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">g-0</div>\n  </div>\n</div>\n```\n\n## Responsivo\n\ng-2 g-md-4 usa 2 em telas pequenas e 4 a partir de md.\n\n```\n<div class=\"row g-2 g-md-4\">…</div>\n```\n\nTip\n\nNa UI do jogo o espaçamento é curto. Prefira g-1 ou g-2 dentro de janelas.\n« Colunas · Z-index »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"row gx-5 mb-3\">\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">gx-5</div>\n  </div>\n  <div class=\"col\">\n    <div class=\"bd-demo-box\">gx-5</div>\n  </div>\n</div>\n<div class=\"row gy-3\">\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">gy-3</div>\n  </div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">gy-3</div>\n  </div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">gy-3</div>\n  </div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">gy-3</div>\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"row g-0\">\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">g-0</div>\n  </div>\n  <div class=\"col-6\">\n    <div class=\"bd-demo-box\">g-0</div>\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"row g-2 g-md-4\">…</div>"
+  }
+ ]
+}

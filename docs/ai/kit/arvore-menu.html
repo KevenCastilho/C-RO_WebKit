@@ -14,20 +14,81 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <p>Árvore de pastas (<code>details</code>), menu de contexto, lista selecionável e tabela.</p>
 <h2 id="árvore">Árvore</h2>
 <pre><code class="language-html">&lt;ul class=&quot;cro-tree&quot; role=&quot;tree&quot; style=&quot;max-width:260px&quot;&gt;
-  &lt;li&gt;&lt;details open&gt;&lt;summary&gt;Equipamentos&lt;/summary&gt;&lt;ul&gt;&lt;li&gt;Espada&lt;/li&gt;&lt;li&gt;Escudo&lt;/li&gt;&lt;li&gt;&lt;details&gt;&lt;summary&gt;Armaduras&lt;/summary&gt;&lt;ul&gt;&lt;li&gt;Couro&lt;/li&gt;&lt;/ul&gt;&lt;/details&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/details&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;details&gt;&lt;summary&gt;Consumíveis&lt;/summary&gt;&lt;ul&gt;&lt;li&gt;Poção&lt;/li&gt;&lt;/ul&gt;&lt;/details&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;details open&gt;
+      &lt;summary&gt;Equipamentos&lt;/summary&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Espada&lt;/li&gt;
+        &lt;li&gt;Escudo&lt;/li&gt;
+        &lt;li&gt;
+          &lt;details&gt;
+            &lt;summary&gt;Armaduras&lt;/summary&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Couro&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/details&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/details&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;details&gt;
+      &lt;summary&gt;Consumíveis&lt;/summary&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Poção&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/details&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 <h2 id="menu">Menu</h2>
-<pre><code class="language-html">&lt;ul class=&quot;cro-menu&quot; style=&quot;width:160px&quot;&gt;&lt;li&gt;Abrir&lt;/li&gt;&lt;li&gt;Renomear&lt;/li&gt;&lt;li role=&quot;separator&quot;&gt;&lt;/li&gt;&lt;li aria-disabled=&quot;true&quot;&gt;Desabilitado&lt;/li&gt;&lt;/ul&gt;</code></pre>
+<pre><code class="language-html">&lt;ul class=&quot;cro-menu&quot; style=&quot;width:160px&quot;&gt;
+  &lt;li&gt;Abrir&lt;/li&gt;
+  &lt;li&gt;Renomear&lt;/li&gt;
+  &lt;li role=&quot;separator&quot;&gt;&lt;/li&gt;
+  &lt;li aria-disabled=&quot;true&quot;&gt;Desabilitado&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
 <h2 id="lista-e-tabela">Lista e tabela</h2>
-<pre><code class="language-html">&lt;ul class=&quot;cro-list&quot; style=&quot;width:180px&quot;&gt;&lt;li class=&quot;cro-list__item&quot;&gt;Item A&lt;/li&gt;&lt;li class=&quot;cro-list__item is-selected&quot;&gt;Selecionado&lt;/li&gt;&lt;li class=&quot;cro-list__item&quot;&gt;Item C&lt;/li&gt;&lt;/ul&gt;
-&lt;table class=&quot;cro-table&quot; style=&quot;width:240px&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Nome&lt;/th&gt;&lt;th&gt;Lv&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Ana&lt;/td&gt;&lt;td&gt;99&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Bia&lt;/td&gt;&lt;td&gt;50&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</code></pre>
+<pre><code class="language-html">&lt;ul class=&quot;cro-list&quot; style=&quot;width:180px&quot;&gt;
+  &lt;li class=&quot;cro-list__item&quot;&gt;Item A&lt;/li&gt;
+  &lt;li class=&quot;cro-list__item is-selected&quot;&gt;Selecionado&lt;/li&gt;
+  &lt;li class=&quot;cro-list__item&quot;&gt;Item C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table class=&quot;cro-table&quot; style=&quot;width:240px&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Nome&lt;/th&gt;
+      &lt;th&gt;Lv&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ana&lt;/td&gt;
+      &lt;td&gt;99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bia&lt;/td&gt;
+      &lt;td&gt;50&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
 <h2 id="paginação">Paginação</h2>
-<pre><code class="language-html">&lt;div class=&quot;cro-pager&quot;&gt;&lt;button class=&quot;cro-ico cro-ico--page-first&quot; aria-label=&quot;primeira&quot;&gt;&lt;/button&gt;&lt;button class=&quot;cro-ico cro-ico--page-prev&quot; aria-label=&quot;anterior&quot;&gt;&lt;/button&gt;&lt;button class=&quot;cro-pager__n&quot;&gt;1&lt;/button&gt;&lt;button class=&quot;cro-pager__n is-current&quot;&gt;2&lt;/button&gt;&lt;button class=&quot;cro-pager__n&quot;&gt;3&lt;/button&gt;&lt;button class=&quot;cro-ico cro-ico--page-next&quot; aria-label=&quot;próxima&quot;&gt;&lt;/button&gt;&lt;button class=&quot;cro-ico cro-ico--page-last&quot; aria-label=&quot;última&quot;&gt;&lt;/button&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;cro-pager&quot;&gt;
+  &lt;button class=&quot;cro-ico cro-ico--page-first&quot; aria-label=&quot;primeira&quot;&gt;&lt;/button&gt;
+  &lt;button class=&quot;cro-ico cro-ico--page-prev&quot; aria-label=&quot;anterior&quot;&gt;&lt;/button&gt;
+  &lt;button class=&quot;cro-pager__n&quot;&gt;1&lt;/button&gt;
+  &lt;button class=&quot;cro-pager__n is-current&quot;&gt;2&lt;/button&gt;
+  &lt;button class=&quot;cro-pager__n&quot;&gt;3&lt;/button&gt;
+  &lt;button class=&quot;cro-ico cro-ico--page-next&quot; aria-label=&quot;próxima&quot;&gt;&lt;/button&gt;
+  &lt;button class=&quot;cro-ico cro-ico--page-last&quot; aria-label=&quot;última&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
 <aside><strong>Note</strong><p>A seleção azul vem de <code>--cro-sel-bg</code>. Com Bootstrap: <a href="../componentes/list-group.html">List group</a>, <a href="../componentes/dropdowns.html">Dropdowns</a>, <a href="../componentes/accordion.html">Accordion</a>.</p></aside>
 <h2 id="estados-por-classe">Estados por classe</h2>
 <p>Itens de menu desabilitados: <code>aria-disabled="true"</code> ou a classe <code>is-disabled</code>. Itens de lista selecionados: <code>is-selected</code>. Páginas atuais do pager: <code>is-current</code>.</p>
-<pre><code class="language-html">&lt;ul class=&quot;cro-menu&quot; style=&quot;width:160px&quot;&gt;&lt;li&gt;Normal&lt;/li&gt;&lt;li class=&quot;is-disabled&quot;&gt;is-disabled&lt;/li&gt;&lt;li aria-disabled=&quot;true&quot;&gt;aria-disabled&lt;/li&gt;&lt;/ul&gt;</code></pre>
+<pre><code class="language-html">&lt;ul class=&quot;cro-menu&quot; style=&quot;width:160px&quot;&gt;
+  &lt;li&gt;Normal&lt;/li&gt;
+  &lt;li class=&quot;is-disabled&quot;&gt;is-disabled&lt;/li&gt;
+  &lt;li aria-disabled=&quot;true&quot;&gt;aria-disabled&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../kit/barras.html">« Barras, progress e grp</a> · <a href="../kit/dialogos.html">Diálogos (CRO.alert...) »</a></nav>
 </main>

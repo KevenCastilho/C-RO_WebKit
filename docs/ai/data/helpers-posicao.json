@@ -1,0 +1,19 @@
+{
+ "id": "helpers/posicao",
+ "title": "Posição",
+ "type": "Bootstrap drop-in",
+ "section": "Helpers",
+ "summary": "Fixa, gruda e posiciona elementos com helpers.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/posicao.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/helpers/posicao.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Posição\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Helpers\nHuman version (rendered examples): helpers/posicao.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nFixa, gruda e posiciona elementos com helpers.\n\n```\n<div class=\"position-relative h-100\">\n  <div class=\"position-absolute top-0 start-0 bd-demo-box\">top-0 start-0</div>\n  <div class=\"position-absolute top-50 start-50 translate-middle bd-demo-box\">centro</div>\n  <div class=\"position-absolute bottom-0 end-0 bd-demo-box\">bottom-0 end-0</div>\n</div>\n```\n\nfixed-top, fixed-bottom, sticky-top e sticky-bottom também existem.\n« Icon link · Ratio »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"position-relative h-100\">\n  <div class=\"position-absolute top-0 start-0 bd-demo-box\">top-0 start-0</div>\n  <div class=\"position-absolute top-50 start-50 translate-middle bd-demo-box\">centro</div>\n  <div class=\"position-absolute bottom-0 end-0 bd-demo-box\">bottom-0 end-0</div>\n</div>"
+  }
+ ]
+}

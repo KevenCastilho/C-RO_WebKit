@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/visibilidade",
+ "title": "Visibilidade",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Visível e invisível mantendo o espaço.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/visibilidade.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/visibilidade.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Visibilidade\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/visibilidade.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nVisível e invisível mantendo o espaço.\n\n```\n<div class=\"visible border p-2\">visible</div>\n<div class=\"invisible border p-2\">invisible (ocupa espaço)</div>\n<div class=\"border p-2\">fim</div>\n```\n\n« Alinhamento vertical · Referência completa »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"visible border p-2\">visible</div>\n<div class=\"invisible border p-2\">invisible (ocupa espaço)</div>\n<div class=\"border p-2\">fim</div>"
+  }
+ ]
+}

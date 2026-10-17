@@ -1,0 +1,35 @@
+{
+ "id": "formularios/form-control",
+ "title": "Form control",
+ "type": "Bootstrap drop-in",
+ "section": "Formulários",
+ "summary": "Campos de texto, textarea, tamanhos, readonly, plaintext e arquivo.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/form-control.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/formularios/form-control.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Form control\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Formulários\nHuman version (rendered examples): formularios/form-control.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nCampos de texto, textarea, tamanhos, readonly, plaintext e arquivo.\n\n## Exemplo\n\n```\n<div style=\"max-width:380px\">\n  <label for=\"fc1\" class=\"form-label\">E-mail</label>\n  <input type=\"email\" class=\"form-control mb-2\" id=\"fc1\" placeholder=\"nome@exemplo.com\">\n  <label for=\"fc2\" class=\"form-label\">Texto longo</label>\n  <textarea class=\"form-control\" id=\"fc2\" rows=\"3\">Linha 1</textarea>\n</div>\n```\n\n## Tamanhos\n\n```\n<div style=\"max-width:380px\">\n  <input class=\"form-control form-control-lg mb-1\" placeholder=\"form-control-lg\">\n  <input class=\"form-control mb-1\" placeholder=\"padrão\">\n  <input class=\"form-control form-control-sm\" placeholder=\"form-control-sm\">\n</div>\n```\n\n## Readonly, plaintext e desabilitado\n\n```\n<div style=\"max-width:380px\">\n  <input class=\"form-control mb-1\" value=\"somente leitura\" readonly>\n  <input class=\"form-control-plaintext mb-1\" value=\"texto simples\" readonly>\n  <input class=\"form-control\" value=\"desabilitado\" disabled>\n</div>\n```\n\n## Arquivo e cor\n\n```\n<div style=\"max-width:380px\">\n  <input class=\"form-control mb-1\" type=\"file\">\n  <input class=\"form-control mb-1\" type=\"file\" multiple>\n  <input\n    type=\"color\"\n    class=\"form-control form-control-color\"\n    value=\"#4569b9\"\n    title=\"Escolha uma cor\">\n</div>\n```\n\n## Datalist\n\n```\n<div style=\"max-width:380px\">\n  <input class=\"form-control\" list=\"fc-dl\" placeholder=\"digite...\">\n  <datalist id=\"fc-dl\">\n    <option value=\"Poring\">\n  </datalist>\n</div>\n```\n\nLimitation\n\nA lista do datalist é nativa do navegador.\n\n## Rótulos em linha\n\ncol-form-label, col-form-label-sm e col-form-label-lg alinham rótulos com campos do mesmo tamanho em layouts horizontais (Layout de formulários).\n« Visão geral · Select »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:380px\">\n  <label for=\"fc1\" class=\"form-label\">E-mail</label>\n  <input type=\"email\" class=\"form-control mb-2\" id=\"fc1\" placeholder=\"nome@exemplo.com\">\n  <label for=\"fc2\" class=\"form-label\">Texto longo</label>\n  <textarea class=\"form-control\" id=\"fc2\" rows=\"3\">Linha 1</textarea>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:380px\">\n  <input class=\"form-control form-control-lg mb-1\" placeholder=\"form-control-lg\">\n  <input class=\"form-control mb-1\" placeholder=\"padrão\">\n  <input class=\"form-control form-control-sm\" placeholder=\"form-control-sm\">\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:380px\">\n  <input class=\"form-control mb-1\" value=\"somente leitura\" readonly>\n  <input class=\"form-control-plaintext mb-1\" value=\"texto simples\" readonly>\n  <input class=\"form-control\" value=\"desabilitado\" disabled>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:380px\">\n  <input class=\"form-control mb-1\" type=\"file\">\n  <input class=\"form-control mb-1\" type=\"file\" multiple>\n  <input\n    type=\"color\"\n    class=\"form-control form-control-color\"\n    value=\"#4569b9\"\n    title=\"Escolha uma cor\">\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div style=\"max-width:380px\">\n  <input class=\"form-control\" list=\"fc-dl\" placeholder=\"digite...\">\n  <datalist id=\"fc-dl\">\n    <option value=\"Poring\">\n  </datalist>\n</div>"
+  }
+ ]
+}

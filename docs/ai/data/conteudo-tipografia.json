@@ -1,0 +1,46 @@
+{
+ "id": "conteudo/tipografia",
+ "title": "Tipografia",
+ "type": "Bootstrap drop-in",
+ "section": "Conteúdo",
+ "summary": "Títulos, parágrafos, listas e utilitários de texto. A base é a Helvetica (Nimbus Sans) 12px, como no jogo.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/conteudo/tipografia.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/conteudo/tipografia.html",
+ "classes": [
+  "cro-bullets",
+  "is-on"
+ ],
+ "data_attributes": [],
+ "text": "# Tipografia\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Conteúdo\nHuman version (rendered examples): conteudo/tipografia.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-bullets is-on\n\nTítulos, parágrafos, listas e utilitários de texto. A base é a Helvetica (Nimbus Sans) 12px, como no jogo.\n\n## Títulos\n\n```\n<h1>h1. Título</h1>\n<h2>h2. Título</h2>\n<h3>h3. Título</h3>\n<h4>h4. Título</h4>\n<h5>h5. Título</h5>\n<h6>h6. Título</h6>\n```\n\nClasses .h1–.h6 e .display-1–.display-6 dão o tamanho sem a semântica:\n\n```\n<p class=\"h3\">Parece h3, mas é um parágrafo</p>\n<p class=\"display-6\">display-6</p>\n```\n\n## Texto\n\n```\n<p class=\"lead\">Parágrafo de destaque (<code>.lead</code>).</p>\n<p>\n  Texto normal com\n  <small>texto pequeno</small>\n  ,\n  <mark>destacado</mark>\n  ,\n  <del>removido</del>\n  ,\n  <u>sublinhado</u>\n  e\n  <strong>forte</strong>\n  .\n</p>\n<p class=\"text-start\">Esquerda</p>\n<p class=\"text-center\">Centro</p>\n<p class=\"text-end\">Direita</p>\n<p class=\"fw-bold\">Negrito</p>\n<p class=\"fst-italic\">Itálico</p>\n<p class=\"text-uppercase\">maiúsculas</p>\n```\n\n## Listas\n\n```\n<ul>\n  <li>Não ordenada</li>\n  <li>Outro item</li>\n</ul>\n<ol>\n  <li>Ordenada</li>\n  <li>Outro</li>\n</ol>\n<ul class=\"list-unstyled\">\n  <li>Sem marcadores</li>\n  <li>Outro</li>\n</ul>\n<ul class=\"list-inline\">\n  <li class=\"list-inline-item\">Em</li>\n  <li class=\"list-inline-item\">linha</li>\n</ul>\n```\n\n### Marcador do kit (bolinha sys_base)\n\nToda <ul> solta (sem class nem role) usa como marcador a bolinha azul 11×11 do jogo (sys_base), no lugar do quadrado do HTML. A <ol> continua numerada. O marcador não é aplicado dentro de componentes que já têm visual próprio: árvore, menu, list-group, nav, paginação, breadcrumb, dropdown, abas e qualquer <nav>.\n\nOs estados são os mesmos do botão cro-sys-btn: repouso, hover (bolinha acesa), :active (acesa e um pouco mais escura), is-on/is-active/aria-current/aria-selected (acesa) e is-disabled/aria-disabled=\"true\" (cinza, sem reagir ao mouse).\n\n```\n<ul>\n  <li>Item normal (passe o mouse)</li>\n  <li class=\"is-on\">Item com <code>is-on</code></li>\n  <li aria-disabled=\"true\">Item desabilitado</li>\n  <li>Item com filhos\n    <ul><li>Filho a</li><li>Filho b</li></ul>\n  </li>\n</ul>\n```\n\nPara uma <ul> que tem class e ainda assim deve ter a bolinha, adicione cro-bullets. Para tirar a bolinha, use list-unstyled (ou qualquer class).\n\n```\n<ul class=\"minha-lista cro-bullets\">\n  <li>Lista com class própria</li>\n  <li>Mesma bolinha</li>\n</ul>\n<ul class=\"list-unstyled\">\n  <li>Sem bolinha</li>\n</ul>\n```\n\nNote\n\n> A regra usa :where() (especificidade 0): um li::before { content: none } ou um list-style seu no CSS do projeto vence sem precisar de !important.\n\n## Citações e abreviações\n\n```\n<blockquote class=\"blockquote\">\n  <p>Uma frase marcante.</p>\n  <footer class=\"blockquote-footer\">Alguém em <cite>Fonte</cite></footer>\n</blockquote>\n<abbr title=\"HyperText Markup Language\">HTML</abbr>\n```\n\nNote\n\nElementos com title e abbr ganham automaticamente o cursor \"mão com ?\" do jogo. Veja Estados automáticos do cursor.\n\n## Abreviações\n\ninitialism deixa a abreviação em caixa pequena: <abbr class=\"initialism\" title=\"HyperText Markup Language\">HTML</abbr>.\n« Reboot e elementos nus · Imagens »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<h1>h1. Título</h1>\n<h2>h2. Título</h2>\n<h3>h3. Título</h3>\n<h4>h4. Título</h4>\n<h5>h5. Título</h5>\n<h6>h6. Título</h6>"
+  },
+  {
+   "language": "html",
+   "code": "<p class=\"h3\">Parece h3, mas é um parágrafo</p>\n<p class=\"display-6\">display-6</p>"
+  },
+  {
+   "language": "html",
+   "code": "<p class=\"lead\">Parágrafo de destaque (<code>.lead</code>).</p>\n<p>\n  Texto normal com\n  <small>texto pequeno</small>\n  ,\n  <mark>destacado</mark>\n  ,\n  <del>removido</del>\n  ,\n  <u>sublinhado</u>\n  e\n  <strong>forte</strong>\n  .\n</p>\n<p class=\"text-start\">Esquerda</p>\n<p class=\"text-center\">Centro</p>\n<p class=\"text-end\">Direita</p>\n<p class=\"fw-bold\">Negrito</p>\n<p class=\"fst-italic\">Itálico</p>\n<p class=\"text-uppercase\">maiúsculas</p>"
+  },
+  {
+   "language": "html",
+   "code": "<ul>\n  <li>Não ordenada</li>\n  <li>Outro item</li>\n</ul>\n<ol>\n  <li>Ordenada</li>\n  <li>Outro</li>\n</ol>\n<ul class=\"list-unstyled\">\n  <li>Sem marcadores</li>\n  <li>Outro</li>\n</ul>\n<ul class=\"list-inline\">\n  <li class=\"list-inline-item\">Em</li>\n  <li class=\"list-inline-item\">linha</li>\n</ul>"
+  },
+  {
+   "language": "html",
+   "code": "<ul>\n  <li>Item normal (passe o mouse)</li>\n  <li class=\"is-on\">Item com <code>is-on</code></li>\n  <li aria-disabled=\"true\">Item desabilitado</li>\n  <li>Item com filhos\n    <ul><li>Filho a</li><li>Filho b</li></ul>\n  </li>\n</ul>"
+  },
+  {
+   "language": "html",
+   "code": "<ul class=\"minha-lista cro-bullets\">\n  <li>Lista com class própria</li>\n  <li>Mesma bolinha</li>\n</ul>\n<ul class=\"list-unstyled\">\n  <li>Sem bolinha</li>\n</ul>"
+  },
+  {
+   "language": "html",
+   "code": "<blockquote class=\"blockquote\">\n  <p>Uma frase marcante.</p>\n  <footer class=\"blockquote-footer\">Alguém em <cite>Fonte</cite></footer>\n</blockquote>\n<abbr title=\"HyperText Markup Language\">HTML</abbr>"
+  }
+ ]
+}

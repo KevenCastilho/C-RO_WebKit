@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/espacamento",
+ "title": "Espaçamento",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Margem e padding de 0 a 5, por lado e por breakpoint.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/espacamento.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/espacamento.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Espaçamento\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/espacamento.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nMargem e padding de 0 a 5, por lado e por breakpoint.\n\n```\n<div class=\"bg-white p-0 border\">p-0</div>\n<div class=\"bg-white p-1 border\">p-1</div>\n<div class=\"bg-white p-2 border\">p-2</div>\n<div class=\"bg-white p-3 border\">p-3</div>\n<div class=\"bg-white p-4 border\">p-4</div>\n<div class=\"bg-white p-5 border\">p-5</div>\n```\n\nFormato: {propriedade}{lado}-{breakpoint}-{tamanho} — ex.: mt-3, px-md-4, ms-auto, gap-2.\n\n| Propriedade | Lados |\n| m margem, p padding | t b s e x y (vazio = todos) |\n\n## Gap\n\ngap-0 … gap-5, row-gap-* e column-gap-* (em contêineres d-flex ou d-grid).\n« Tamanho · Texto »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"bg-white p-0 border\">p-0</div>\n<div class=\"bg-white p-1 border\">p-1</div>\n<div class=\"bg-white p-2 border\">p-2</div>\n<div class=\"bg-white p-3 border\">p-3</div>\n<div class=\"bg-white p-4 border\">p-4</div>\n<div class=\"bg-white p-5 border\">p-5</div>"
+  }
+ ]
+}

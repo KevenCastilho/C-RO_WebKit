@@ -12,16 +12,51 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Componentes</dd><dt>Human version (rendered examples)</dt><dd><a href="../../componentes/offcanvas.html">componentes/offcanvas.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
 <div lang="pt-BR">
 <p>Painéis que deslizam da borda da tela. No kit são uma janela derivada (referência: janela Storage).</p>
-<pre><code class="language-html">&lt;button class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#ocEx&quot; aria-controls=&quot;ocEx&quot;&gt;Offcanvas à esquerda&lt;/button&gt;
-&lt;button class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#ocDir&quot; aria-controls=&quot;ocDir&quot;&gt;À direita&lt;/button&gt;
-&lt;div class=&quot;offcanvas offcanvas-start&quot; tabindex=&quot;-1&quot; id=&quot;ocEx&quot; aria-labelledby=&quot;ocExT&quot;&gt;&lt;div class=&quot;offcanvas-header&quot;&gt;&lt;h5 class=&quot;offcanvas-title&quot; id=&quot;ocExT&quot;&gt;Storage&lt;/h5&gt;&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;offcanvas&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;offcanvas-body&quot;&gt;Itens guardados.&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;offcanvas offcanvas-end&quot; tabindex=&quot;-1&quot; id=&quot;ocDir&quot; aria-labelledby=&quot;ocDirT&quot;&gt;&lt;div class=&quot;offcanvas-header&quot;&gt;&lt;h5 class=&quot;offcanvas-title&quot; id=&quot;ocDirT&quot;&gt;Opções&lt;/h5&gt;&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;offcanvas&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;offcanvas-body&quot;&gt;Conteúdo.&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;button
+  class=&quot;btn btn-primary&quot;
+  data-bs-toggle=&quot;offcanvas&quot;
+  data-bs-target=&quot;#ocEx&quot;
+  aria-controls=&quot;ocEx&quot;&gt;
+  Offcanvas à esquerda
+&lt;/button&gt;
+&lt;button
+  class=&quot;btn btn-secondary&quot;
+  data-bs-toggle=&quot;offcanvas&quot;
+  data-bs-target=&quot;#ocDir&quot;
+  aria-controls=&quot;ocDir&quot;&gt;
+  À direita
+&lt;/button&gt;
+&lt;div class=&quot;offcanvas offcanvas-start&quot; tabindex=&quot;-1&quot; id=&quot;ocEx&quot; aria-labelledby=&quot;ocExT&quot;&gt;
+  &lt;div class=&quot;offcanvas-header&quot;&gt;
+    &lt;h5 class=&quot;offcanvas-title&quot; id=&quot;ocExT&quot;&gt;Storage&lt;/h5&gt;
+    &lt;button
+      type=&quot;button&quot;
+      class=&quot;btn-close&quot;
+      data-bs-dismiss=&quot;offcanvas&quot;
+      aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;offcanvas-body&quot;&gt;Itens guardados.&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;offcanvas offcanvas-end&quot; tabindex=&quot;-1&quot; id=&quot;ocDir&quot; aria-labelledby=&quot;ocDirT&quot;&gt;
+  &lt;div class=&quot;offcanvas-header&quot;&gt;
+    &lt;h5 class=&quot;offcanvas-title&quot; id=&quot;ocDirT&quot;&gt;Opções&lt;/h5&gt;
+    &lt;button
+      type=&quot;button&quot;
+      class=&quot;btn-close&quot;
+      data-bs-dismiss=&quot;offcanvas&quot;
+      aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;offcanvas-body&quot;&gt;Conteúdo.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <p>Posições: <code>offcanvas-start</code>, <code>-end</code>, <code>-top</code>, <code>-bottom</code>. Responsivo: <code>offcanvas-lg</code> etc. (a navegação lateral desta documentação usa isso em telas pequenas).</p>
 <aside><strong>Derived/invented (not in the original game)</strong><p>O jogo não tem painel deslizante. A janela do offcanvas é derivada; posição, transição e backdrop são do Bootstrap.</p></aside>
 <h2 id="posições-e-responsivo">Posições e responsivo</h2>
-<pre><code class="language-html">&lt;div class=&quot;offcanvas offcanvas-top&quot;&gt;…&lt;/div&gt;      &lt;!-- de cima --&gt;
-&lt;div class=&quot;offcanvas offcanvas-bottom&quot;&gt;…&lt;/div&gt;   &lt;!-- de baixo --&gt;
-&lt;div class=&quot;offcanvas-lg offcanvas-end&quot;&gt;…&lt;/div&gt;   &lt;!-- offcanvas só abaixo de lg; offcanvas-sm/md/lg/xl/xxl --&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;offcanvas offcanvas-top&quot;&gt;…&lt;/div&gt;
+&lt;!-- de cima --&gt;
+&lt;div class=&quot;offcanvas offcanvas-bottom&quot;&gt;…&lt;/div&gt;
+&lt;!-- de baixo --&gt;
+&lt;div class=&quot;offcanvas-lg offcanvas-end&quot;&gt;…&lt;/div&gt;
+&lt;!-- offcanvas só abaixo de lg; offcanvas-sm/md/lg/xl/xxl --&gt;</code></pre>
 <p>Estado interno <code>showing</code>: aplicado pelo Bootstrap durante a abertura; você não o escreve.</p>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../componentes/navs-tabs.html">« Navs e abas</a> · <a href="../componentes/paginacao.html">Paginação »</a></nav>

@@ -1,0 +1,31 @@
+{
+ "id": "componentes/modal",
+ "title": "Modal",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Janelas modais. O modal é uma janela do jogo: modal-header vira a barra de título e btn-close o botão fechar.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/modal.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/modal.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Modal\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/modal.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nJanelas modais. O modal é uma janela do jogo: modal-header vira a barra de título e btn-close o botão fechar.\n\n## Exemplo\n\n```\n<button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#modalEx\">\n  Abrir modal\n</button>\n<div\n  class=\"modal fade\"\n  id=\"modalEx\"\n  tabindex=\"-1\"\n  aria-labelledby=\"modalExLabel\"\n  aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-dialog-centered\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h1 class=\"modal-title fs-5\" id=\"modalExLabel\">Confirmar</h1>\n        <button\n          type=\"button\"\n          class=\"btn-close\"\n          data-bs-dismiss=\"modal\"\n          aria-label=\"Fechar\"></button>\n      </div>\n      <div class=\"modal-body\">Deseja mesmo sair do jogo?</div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">\n          Cancelar\n        </button>\n        <button type=\"button\" class=\"btn btn-primary\">Sair</button>\n      </div>\n    </div>\n  </div>\n</div>\n```\n\n## Tamanhos e rolagem\n\n```\n<div class=\"modal-dialog modal-sm\">…</div>\n<div class=\"modal-dialog modal-lg modal-dialog-scrollable\">…</div>\n<div class=\"modal-dialog modal-fullscreen\">…</div>\n```\n\n## Controle por JavaScript\n\n```\n<button class=\"btn btn-secondary\" id=\"mdOpen\">Abrir por JS</button>\n<div class=\"modal fade\" id=\"modalJs\" tabindex=\"-1\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h1 class=\"modal-title fs-5\">Por JS</h1>\n        <button class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Fechar\"></button>\n      </div>\n      <div class=\"modal-body\">Aberto com <code>bootstrap.Modal</code>.</div>\n    </div>\n  </div>\n</div>\n```\n\n```\ndocument.getElementById('mdOpen').addEventListener('click', function () {\n  bootstrap.Modal.getOrCreateInstance(document.getElementById('modalJs')).show();\n});\n```\n\nTip\n\nPara avisos rápidos sem escrever HTML, use CRO.alert, CRO.confirm e CRO.prompt (Diálogos).\n\n## Tamanhos extras e estático\n\nmodal-sm, modal-lg, modal-xl (e modal-fullscreen-sm-down...). Com data-bs-backdrop=\"static\" o clique fora não fecha: o Bootstrap aplica modal-static e a janela \"balança\".\n« List group · Navbar »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#modalEx\">\n  Abrir modal\n</button>\n<div\n  class=\"modal fade\"\n  id=\"modalEx\"\n  tabindex=\"-1\"\n  aria-labelledby=\"modalExLabel\"\n  aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-dialog-centered\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h1 class=\"modal-title fs-5\" id=\"modalExLabel\">Confirmar</h1>\n        <button\n          type=\"button\"\n          class=\"btn-close\"\n          data-bs-dismiss=\"modal\"\n          aria-label=\"Fechar\"></button>\n      </div>\n      <div class=\"modal-body\">Deseja mesmo sair do jogo?</div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">\n          Cancelar\n        </button>\n        <button type=\"button\" class=\"btn btn-primary\">Sair</button>\n      </div>\n    </div>\n  </div>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"modal-dialog modal-sm\">…</div>\n<div class=\"modal-dialog modal-lg modal-dialog-scrollable\">…</div>\n<div class=\"modal-dialog modal-fullscreen\">…</div>"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"btn btn-secondary\" id=\"mdOpen\">Abrir por JS</button>\n<div class=\"modal fade\" id=\"modalJs\" tabindex=\"-1\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h1 class=\"modal-title fs-5\">Por JS</h1>\n        <button class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Fechar\"></button>\n      </div>\n      <div class=\"modal-body\">Aberto com <code>bootstrap.Modal</code>.</div>\n    </div>\n  </div>\n</div>"
+  },
+  {
+   "language": "js",
+   "code": "document.getElementById('mdOpen').addEventListener('click', function () {\n  bootstrap.Modal.getOrCreateInstance(document.getElementById('modalJs')).show();\n});"
+  }
+ ]
+}

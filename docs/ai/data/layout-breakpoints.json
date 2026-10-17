@@ -1,0 +1,23 @@
+{
+ "id": "layout/breakpoints",
+ "title": "Breakpoints",
+ "type": "Bootstrap drop-in",
+ "section": "Layout",
+ "summary": "Os pontos de quebra responsivos são os do Bootstrap 5.3. O kit não altera nenhuma medida do grid.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/layout/breakpoints.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/layout/breakpoints.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Breakpoints\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Layout\nHuman version (rendered examples): layout/breakpoints.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nOs pontos de quebra responsivos são os do Bootstrap 5.3. O kit não altera nenhuma medida do grid.\n\n## Tabela\n\n| Breakpoint | Sufixo | Largura mínima | Container máx. |\n| Extra pequeno | (nenhum) | <576px | 100% |\n| Pequeno | sm | ≥576px | 540px |\n| Médio | md | ≥768px | 720px |\n| Grande | lg | ≥992px | 960px |\n| Extra grande | xl | ≥1200px | 1140px |\n| XXL | xxl | ≥1400px | 1320px |\n\nOs sufixos valem para colunas (col-md-4), display (d-lg-none), flex, espaçamento, texto e demais utilitários responsivos.\n\n## Media queries\n\n```\n@media (min-width: 768px)  { /* md e acima */ }\n@media (min-width: 992px)  { /* lg e acima */ }\n@media (max-width: 575.98px) { /* só xs */ }\n```\n\n```\n<div class=\"d-block d-md-none\">\n  <span class=\"badge text-bg-danger\">Você está abaixo de md</span>\n</div>\n<div class=\"d-none d-md-block\">\n  <span class=\"badge text-bg-success\">Você está em md ou maior</span>\n</div>\n```\n\nTip\n\nRedimensione a janela do navegador para ver o exemplo trocar.\n\nNote\n\nO próprio kit usa container-type e media queries do Bootstrap onde precisa. A tela do jogo (800×600) não é um breakpoint do kit: o layout é fluido.\n« De Bootstrap para C-RO · Containers »\n",
+ "code_blocks": [
+  {
+   "language": "css",
+   "code": "@media (min-width: 768px)  { /* md e acima */ }\n@media (min-width: 992px)  { /* lg e acima */ }\n@media (max-width: 575.98px) { /* só xs */ }"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"d-block d-md-none\">\n  <span class=\"badge text-bg-danger\">Você está abaixo de md</span>\n</div>\n<div class=\"d-none d-md-block\">\n  <span class=\"badge text-bg-success\">Você está em md ou maior</span>\n</div>"
+  }
+ ]
+}

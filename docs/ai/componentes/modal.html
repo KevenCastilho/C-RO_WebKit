@@ -13,13 +13,34 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <div lang="pt-BR">
 <p>Janelas modais. O modal é uma janela do jogo: <code>modal-header</code> vira a barra de título e <code>btn-close</code> o botão fechar.</p>
 <h2 id="exemplo">Exemplo</h2>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#modalEx&quot;&gt;Abrir modal&lt;/button&gt;
-&lt;div class=&quot;modal fade&quot; id=&quot;modalEx&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;modalExLabel&quot; aria-hidden=&quot;true&quot;&gt;
-  &lt;div class=&quot;modal-dialog modal-dialog-centered&quot;&gt;&lt;div class=&quot;modal-content&quot;&gt;
-    &lt;div class=&quot;modal-header&quot;&gt;&lt;h1 class=&quot;modal-title fs-5&quot; id=&quot;modalExLabel&quot;&gt;Confirmar&lt;/h1&gt;&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;&lt;/div&gt;
-    &lt;div class=&quot;modal-body&quot;&gt;Deseja mesmo sair do jogo?&lt;/div&gt;
-    &lt;div class=&quot;modal-footer&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-dismiss=&quot;modal&quot;&gt;Cancelar&lt;/button&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Sair&lt;/button&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/div&gt;
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#modalEx&quot;&gt;
+  Abrir modal
+&lt;/button&gt;
+&lt;div
+  class=&quot;modal fade&quot;
+  id=&quot;modalEx&quot;
+  tabindex=&quot;-1&quot;
+  aria-labelledby=&quot;modalExLabel&quot;
+  aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-dialog-centered&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h1 class=&quot;modal-title fs-5&quot; id=&quot;modalExLabel&quot;&gt;Confirmar&lt;/h1&gt;
+        &lt;button
+          type=&quot;button&quot;
+          class=&quot;btn-close&quot;
+          data-bs-dismiss=&quot;modal&quot;
+          aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;Deseja mesmo sair do jogo?&lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-dismiss=&quot;modal&quot;&gt;
+          Cancelar
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Sair&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 <h2 id="tamanhos-e-rolagem">Tamanhos e rolagem</h2>
 <pre><code class="language-html">&lt;div class=&quot;modal-dialog modal-sm&quot;&gt;…&lt;/div&gt;
@@ -27,7 +48,17 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 &lt;div class=&quot;modal-dialog modal-fullscreen&quot;&gt;…&lt;/div&gt;</code></pre>
 <h2 id="controle-por-javascript">Controle por JavaScript</h2>
 <pre><code class="language-html">&lt;button class=&quot;btn btn-secondary&quot; id=&quot;mdOpen&quot;&gt;Abrir por JS&lt;/button&gt;
-&lt;div class=&quot;modal fade&quot; id=&quot;modalJs&quot; tabindex=&quot;-1&quot; aria-hidden=&quot;true&quot;&gt;&lt;div class=&quot;modal-dialog&quot;&gt;&lt;div class=&quot;modal-content&quot;&gt;&lt;div class=&quot;modal-header&quot;&gt;&lt;h1 class=&quot;modal-title fs-5&quot;&gt;Por JS&lt;/h1&gt;&lt;button class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;modal-body&quot;&gt;Aberto com &lt;code&gt;bootstrap.Modal&lt;/code&gt;.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+&lt;div class=&quot;modal fade&quot; id=&quot;modalJs&quot; tabindex=&quot;-1&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h1 class=&quot;modal-title fs-5&quot;&gt;Por JS&lt;/h1&gt;
+        &lt;button class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;Aberto com &lt;code&gt;bootstrap.Modal&lt;/code&gt;.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <pre><code class="language-js">document.getElementById(&#x27;mdOpen&#x27;).addEventListener(&#x27;click&#x27;, function () {
   bootstrap.Modal.getOrCreateInstance(document.getElementById(&#x27;modalJs&#x27;)).show();
 });</code></pre>

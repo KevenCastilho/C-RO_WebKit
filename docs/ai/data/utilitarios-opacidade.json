@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/opacidade",
+ "title": "Opacidade",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Transparência do elemento.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/opacidade.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/opacidade.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Opacidade\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/opacidade.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nTransparência do elemento.\n\n```\n<div class=\"p-2 bg-primary text-white opacity-100\">100</div>\n<div class=\"p-2 bg-primary text-white opacity-75\">75</div>\n<div class=\"p-2 bg-primary text-white opacity-50\">50</div>\n<div class=\"p-2 bg-primary text-white opacity-25\">25</div>\n```\n\n« Object fit · Overflow »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"p-2 bg-primary text-white opacity-100\">100</div>\n<div class=\"p-2 bg-primary text-white opacity-75\">75</div>\n<div class=\"p-2 bg-primary text-white opacity-50\">50</div>\n<div class=\"p-2 bg-primary text-white opacity-25\">25</div>"
+  }
+ ]
+}

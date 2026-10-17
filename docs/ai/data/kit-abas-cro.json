@@ -1,0 +1,46 @@
+{
+ "id": "kit/abas-cro",
+ "title": "Abas cro-*",
+ "type": "Native kit piece",
+ "section": "Peças nativas do kit",
+ "summary": "Abas horizontais em pílula e verticais em escada, com ARIA e teclado automáticos via data-cro-tabs .",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/kit/abas-cro.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/kit/abas-cro.html",
+ "classes": [
+  "cro-tab-panel",
+  "cro-tab-panels",
+  "cro-tabs",
+  "cro-tabs-v",
+  "cro-tabs-v__body",
+  "cro-tabs-v__btn",
+  "cro-tabs-v__rail",
+  "cro-tabs__btn",
+  "cro-titlebar",
+  "cro-titlebar__title",
+  "cro-window",
+  "cro-window__body",
+  "is-active"
+ ],
+ "data_attributes": [
+  "data-cro-panel",
+  "data-cro-panels",
+  "data-cro-tab",
+  "data-cro-tabs"
+ ],
+ "text": "# Abas cro-*\n\nType: Native kit piece. Uses cro-* classes that belong to C-RO. They work with or without Bootstrap.\nSection: Peças nativas do kit\nHuman version (rendered examples): kit/abas-cro.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\ncro-* / is-* classes in this page: cro-tab-panel cro-tab-panels cro-tabs cro-tabs-v cro-tabs-v__body cro-tabs-v__btn cro-tabs-v__rail cro-tabs__btn cro-titlebar cro-titlebar__title cro-window cro-window__body is-active\ndata-cro-* attributes in this page: data-cro-panel data-cro-panels data-cro-tab data-cro-tabs\n\nAbas horizontais em pílula e verticais em escada, com ARIA e teclado automáticos via data-cro-tabs.\n\n## Horizontais (pílula)\n\n```\n<section class=\"cro-window\" style=\"width:320px\">\n  <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Opções</span></header>\n  <div class=\"cro-window__body\">\n    <div data-cro-tabs data-cro-panels=\"#ab-h\">\n      <div class=\"cro-tabs\">\n        <button class=\"cro-tabs__btn is-active\" data-cro-tab=\"1\">Geral</button>\n        <button class=\"cro-tabs__btn\" data-cro-tab=\"2\">Áudio</button>\n        <button class=\"cro-tabs__btn\" data-cro-tab=\"3\">Vídeo</button>\n      </div>\n    </div>\n    <div class=\"cro-tab-panels\" id=\"ab-h\">\n      <div data-cro-panel=\"1\">Painel Geral</div>\n      <div data-cro-panel=\"2\" hidden>Painel Áudio</div>\n      <div data-cro-panel=\"3\" hidden>Painel Vídeo</div>\n    </div>\n  </div>\n</section>\n```\n\n## Verticais (escada)\n\n```\n<section class=\"cro-window\" style=\"width:280px\">\n  <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Itens</span></header>\n  <div class=\"cro-tabs-v\" data-cro-tabs data-cro-panels=\"#ab-v\">\n    <div class=\"cro-tabs-v__rail\">\n      <button class=\"cro-tabs-v__btn is-active\" data-cro-tab=\"a\">Item</button>\n      <button class=\"cro-tabs-v__btn\" data-cro-tab=\"b\">Equip</button>\n      <button class=\"cro-tabs-v__btn\" data-cro-tab=\"c\">Etc</button>\n    </div>\n    <div class=\"cro-tabs-v__body\" id=\"ab-v\">\n      <div data-cro-panel=\"a\">Itens</div>\n      <div data-cro-panel=\"b\" hidden>Equipamentos</div>\n      <div data-cro-panel=\"c\" hidden>Outros</div>\n    </div>\n  </div>\n</section>\n```\n\n## Como funciona\n\n- data-cro-tabs no contêiner dos botões; data-cro-tab=\"id\" em cada botão; data-cro-panel=\"id\" em cada painel.\n- Os painéis ficam em data-cro-panels=\"#seletor\" ou no elemento irmão.\n- O kit coloca role=tablist/tab/tabpanel, aria-selected, tabindex e as teclas ←/→/Home/End.\n- Chame CRO.init(root) depois de inserir abas novas no DOM.\n\nNote\n\nCom Bootstrap, use nav-tabs e nav-pills (Navs e abas); o visual é o mesmo.\n\n## Classes do painel\n\ncro-tab-panels envolve os painéis e cro-tab-panel marca um painel estilizado (com data-cro-panel):\n\n```\n<div class=\"cro-tab-panels\" id=\"p\">\n  <div class=\"cro-tab-panel\" data-cro-panel=\"1\">Painel</div>\n</div>\n```\n\n« Botões cro-* · Formulários cro-* »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<section class=\"cro-window\" style=\"width:320px\">\n  <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Opções</span></header>\n  <div class=\"cro-window__body\">\n    <div data-cro-tabs data-cro-panels=\"#ab-h\">\n      <div class=\"cro-tabs\">\n        <button class=\"cro-tabs__btn is-active\" data-cro-tab=\"1\">Geral</button>\n        <button class=\"cro-tabs__btn\" data-cro-tab=\"2\">Áudio</button>\n        <button class=\"cro-tabs__btn\" data-cro-tab=\"3\">Vídeo</button>\n      </div>\n    </div>\n    <div class=\"cro-tab-panels\" id=\"ab-h\">\n      <div data-cro-panel=\"1\">Painel Geral</div>\n      <div data-cro-panel=\"2\" hidden>Painel Áudio</div>\n      <div data-cro-panel=\"3\" hidden>Painel Vídeo</div>\n    </div>\n  </div>\n</section>"
+  },
+  {
+   "language": "html",
+   "code": "<section class=\"cro-window\" style=\"width:280px\">\n  <header class=\"cro-titlebar\"><span class=\"cro-titlebar__title\">Itens</span></header>\n  <div class=\"cro-tabs-v\" data-cro-tabs data-cro-panels=\"#ab-v\">\n    <div class=\"cro-tabs-v__rail\">\n      <button class=\"cro-tabs-v__btn is-active\" data-cro-tab=\"a\">Item</button>\n      <button class=\"cro-tabs-v__btn\" data-cro-tab=\"b\">Equip</button>\n      <button class=\"cro-tabs-v__btn\" data-cro-tab=\"c\">Etc</button>\n    </div>\n    <div class=\"cro-tabs-v__body\" id=\"ab-v\">\n      <div data-cro-panel=\"a\">Itens</div>\n      <div data-cro-panel=\"b\" hidden>Equipamentos</div>\n      <div data-cro-panel=\"c\" hidden>Outros</div>\n    </div>\n  </div>\n</section>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"cro-tab-panels\" id=\"p\">\n  <div class=\"cro-tab-panel\" data-cro-panel=\"1\">Painel</div>\n</div>"
+  }
+ ]
+}

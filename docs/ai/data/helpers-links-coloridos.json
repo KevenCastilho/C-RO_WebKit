@@ -1,0 +1,19 @@
+{
+ "id": "helpers/links-coloridos",
+ "title": "Links coloridos",
+ "type": "Bootstrap drop-in",
+ "section": "Helpers",
+ "summary": "Links nas cores do tema, com sublinhado e opacidade ajustáveis.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/helpers/links-coloridos.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/helpers/links-coloridos.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Links coloridos\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Helpers\nHuman version (rendered examples): helpers/links-coloridos.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nLinks nas cores do tema, com sublinhado e opacidade ajustáveis.\n\n```\n<a href=\"#\" class=\"link-primary\">Primary</a>\n<a href=\"#\" class=\"link-secondary\">Secondary</a>\n<a href=\"#\" class=\"link-success\">Success</a>\n<a href=\"#\" class=\"link-danger\">Danger</a>\n<a href=\"#\" class=\"link-warning\">Warning</a>\n<a href=\"#\" class=\"link-info\">Info</a>\n<a href=\"#\" class=\"link-dark\">Dark</a>\n<a href=\"#\" class=\"link-primary link-underline-opacity-25 link-underline-opacity-100-hover\">\n  Sublinhado com opacidade\n</a>\n```\n\n« Cor e fundo · Focus ring »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<a href=\"#\" class=\"link-primary\">Primary</a>\n<a href=\"#\" class=\"link-secondary\">Secondary</a>\n<a href=\"#\" class=\"link-success\">Success</a>\n<a href=\"#\" class=\"link-danger\">Danger</a>\n<a href=\"#\" class=\"link-warning\">Warning</a>\n<a href=\"#\" class=\"link-info\">Info</a>\n<a href=\"#\" class=\"link-dark\">Dark</a>\n<a href=\"#\" class=\"link-primary link-underline-opacity-25 link-underline-opacity-100-hover\">\n  Sublinhado com opacidade\n</a>"
+  }
+ ]
+}

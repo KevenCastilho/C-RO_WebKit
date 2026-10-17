@@ -12,19 +12,58 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Componentes</dd><dt>Human version (rendered examples)</dt><dd><a href="../../componentes/paginacao.html">componentes/paginacao.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-ico</code> <code>cro-ico--page-first</code> <code>cro-ico--page-last</code> <code>cro-ico--page-next</code> <code>cro-ico--page-prev</code> <code>cro-pager</code> <code>cro-pager__n</code> <code>is-current</code></dd></dl>
 <div lang="pt-BR">
 <p>Paginação do Bootstrap com os ícones de primeira/anterior/próxima/última do jogo.</p>
-<pre><code class="language-html">&lt;nav aria-label=&quot;Paginação&quot;&gt;&lt;ul class=&quot;pagination&quot;&gt;
-  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Primeira&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Anterior&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;lsaquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;page-item active&quot; aria-current=&quot;page&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Próxima&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;rsaquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Última&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/nav&gt;</code></pre>
+<pre><code class="language-html">&lt;nav aria-label=&quot;Paginação&quot;&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Primeira&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Anterior&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&amp;lsaquo;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item active&quot; aria-current=&quot;page&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Próxima&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&amp;rsaquo;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;
+      &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Última&quot;&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
 <h2 id="tamanhos-e-desabilitado">Tamanhos e desabilitado</h2>
-<pre><code class="language-html">&lt;nav aria-label=&quot;pequena&quot;&gt;&lt;ul class=&quot;pagination pagination-sm&quot;&gt;&lt;li class=&quot;page-item disabled&quot;&gt;&lt;a class=&quot;page-link&quot;&gt;Anterior&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;page-item active&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;</code></pre>
+<pre><code class="language-html">&lt;nav aria-label=&quot;pequena&quot;&gt;
+  &lt;ul class=&quot;pagination pagination-sm&quot;&gt;
+    &lt;li class=&quot;page-item disabled&quot;&gt;&lt;a class=&quot;page-link&quot;&gt;Anterior&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item active&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
 <h2 id="nativo-do-kit">Nativo do kit</h2>
-<pre><code class="language-html">&lt;div class=&quot;cro-pager&quot;&gt;&lt;button class=&quot;cro-ico cro-ico--page-first&quot; aria-label=&quot;primeira&quot;&gt;&lt;/button&gt;&lt;button class=&quot;cro-ico cro-ico--page-prev&quot; aria-label=&quot;anterior&quot;&gt;&lt;/button&gt;&lt;button class=&quot;cro-pager__n&quot;&gt;1&lt;/button&gt;&lt;button class=&quot;cro-pager__n is-current&quot;&gt;2&lt;/button&gt;&lt;button class=&quot;cro-pager__n&quot;&gt;3&lt;/button&gt;&lt;button class=&quot;cro-ico cro-ico--page-next&quot; aria-label=&quot;próxima&quot;&gt;&lt;/button&gt;&lt;button class=&quot;cro-ico cro-ico--page-last&quot; aria-label=&quot;última&quot;&gt;&lt;/button&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div class=&quot;cro-pager&quot;&gt;
+  &lt;button class=&quot;cro-ico cro-ico--page-first&quot; aria-label=&quot;primeira&quot;&gt;&lt;/button&gt;
+  &lt;button class=&quot;cro-ico cro-ico--page-prev&quot; aria-label=&quot;anterior&quot;&gt;&lt;/button&gt;
+  &lt;button class=&quot;cro-pager__n&quot;&gt;1&lt;/button&gt;
+  &lt;button class=&quot;cro-pager__n is-current&quot;&gt;2&lt;/button&gt;
+  &lt;button class=&quot;cro-pager__n&quot;&gt;3&lt;/button&gt;
+  &lt;button class=&quot;cro-ico cro-ico--page-next&quot; aria-label=&quot;próxima&quot;&gt;&lt;/button&gt;
+  &lt;button class=&quot;cro-ico cro-ico--page-last&quot; aria-label=&quot;última&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="tamanho-grande">Tamanho grande</h2>
-<pre><code class="language-html">&lt;nav aria-label=&quot;grande&quot;&gt;&lt;ul class=&quot;pagination pagination-lg&quot;&gt;&lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;page-item active&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;</code></pre>
+<pre><code class="language-html">&lt;nav aria-label=&quot;grande&quot;&gt;
+  &lt;ul class=&quot;pagination pagination-lg&quot;&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item active&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
 </div>
 <nav class="pager" aria-label="Pages"><a href="../componentes/offcanvas.html">« Offcanvas</a> · <a href="../componentes/placeholders.html">Placeholders »</a></nav>
 </main>

@@ -12,9 +12,31 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Componentes</dd><dt>Human version (rendered examples)</dt><dd><a href="../../componentes/popovers.html">componentes/popovers.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd></dl>
 <div lang="pt-BR">
 <p>Balões com título e conteúdo. No kit são uma janela pequena do jogo.</p>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;popover&quot; data-bs-title=&quot;Título&quot; data-bs-content=&quot;Conteúdo do popover.&quot;&gt;Clique&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;popover&quot; data-bs-placement=&quot;right&quot; data-bs-title=&quot;À direita&quot; data-bs-content=&quot;Posição configurável.&quot;&gt;Direita&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;popover&quot; data-bs-trigger=&quot;hover focus&quot; data-bs-content=&quot;Aparece no hover.&quot;&gt;Hover&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-secondary&quot;
+  data-bs-toggle=&quot;popover&quot;
+  data-bs-title=&quot;Título&quot;
+  data-bs-content=&quot;Conteúdo do popover.&quot;&gt;
+  Clique
+&lt;/button&gt;
+&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-secondary&quot;
+  data-bs-toggle=&quot;popover&quot;
+  data-bs-placement=&quot;right&quot;
+  data-bs-title=&quot;À direita&quot;
+  data-bs-content=&quot;Posição configurável.&quot;&gt;
+  Direita
+&lt;/button&gt;
+&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-secondary&quot;
+  data-bs-toggle=&quot;popover&quot;
+  data-bs-trigger=&quot;hover focus&quot;
+  data-bs-content=&quot;Aparece no hover.&quot;&gt;
+  Hover
+&lt;/button&gt;</code></pre>
 <aside><strong>Warning</strong><p>Popovers precisam ser inicializados: <code>new bootstrap.Popover(el)</code> (a documentação já faz isso nos exemplos). Veja <a href="../comecando/javascript.html">JavaScript</a>.</p></aside>
 <aside><strong>Derived/invented (not in the original game)</strong><p>A seta do popover é a do Bootstrap (o jogo não tem balão com seta). Elementos com popover ganham o cursor "mão com ?" automaticamente.</p></aside>
 <h2 id="marcação-gerada">Marcação gerada</h2>

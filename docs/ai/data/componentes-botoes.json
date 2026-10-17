@@ -1,0 +1,43 @@
+{
+ "id": "componentes/botoes",
+ "title": "Botões",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "O botão de 20px do jogo (degradê azul de 1px por linha, borda cinza) com as cores contextuais do Bootstrap derivadas.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/botoes.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/botoes.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Botões\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/botoes.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nO botão de 20px do jogo (degradê azul de 1px por linha, borda cinza) com as cores contextuais do Bootstrap derivadas.\n\n## Cores\n\n```\n<button class=\"btn btn-secondary\">Secondary</button>\n<button class=\"btn btn-primary\">Primary</button>\n<button class=\"btn btn-success\">Success</button>\n<button class=\"btn btn-danger\">Danger</button>\n<button class=\"btn btn-warning\">Warning</button>\n<button class=\"btn btn-info\">Info</button>\n<button class=\"btn btn-light\">Light</button>\n<button class=\"btn btn-dark\">Dark</button>\n<button class=\"btn btn-link\">Link</button>\n```\n\nDerived/invented (not in the original game)\n\nO jogo só tem o botão azul-acinzentado padrão (CONFIRMADO). As cores contextuais são derivadas dele (DERIVADO).\n\n## Contorno\n\n```\n<button class=\"btn btn-outline-primary\">Primary</button>\n<button class=\"btn btn-outline-success\">Success</button>\n<button class=\"btn btn-outline-danger\">Danger</button>\n<button class=\"btn btn-outline-secondary\">Secondary</button>\n```\n\n## Tamanhos\n\n```\n<button class=\"btn btn-primary btn-lg\">Grande</button>\n<button class=\"btn btn-primary\">Padrão</button>\n<button class=\"btn btn-primary btn-sm\">Pequeno</button>\n```\n\nOs tamanhos usam a altura flexível do sprite: o degradê é redesenhado sem esticar a borda.\n\n## Estados\n\n```\n<button class=\"btn btn-primary active\">Ativo</button>\n<button class=\"btn btn-primary\" disabled>Desabilitado</button>\n<a class=\"btn btn-primary disabled\" role=\"button\" aria-disabled=\"true\">Link desabilitado</a>\n```\n\n## Elementos\n\n```\n<button class=\"btn btn-primary\" type=\"button\">button</button>\n<a class=\"btn btn-primary\" href=\"#\" role=\"button\">a</a>\n<input class=\"btn btn-primary\" type=\"submit\" value=\"input\">\n```\n\n## Bloco e alternância\n\n```\n<div class=\"d-grid gap-2\" style=\"max-width:260px\">\n  <button class=\"btn btn-primary\">Bloco</button>\n  <button class=\"btn btn-secondary\">Bloco</button>\n</div>\n<button class=\"btn btn-primary mt-2\" data-bs-toggle=\"button\">\n  Alternar (data-bs-toggle=\"button\")\n</button>\n```\n\n## Botões nativos do kit\n\nVeja Botões cro-*: cro-btn, cro-mesbtn, cro-sys-btn, cro-dialbtn.\n\n## Todos os contornos\n\n```\n<button class=\"btn btn-outline-secondary\">secondary</button>\n<button class=\"btn btn-outline-success\">success</button>\n<button class=\"btn btn-outline-danger\">danger</button>\n<button class=\"btn btn-outline-warning\">warning</button>\n<button class=\"btn btn-outline-info\">info</button>\n<button class=\"btn btn-outline-light\">light</button>\n<button class=\"btn btn-outline-dark\">dark</button>\n```\n\n« Breadcrumb · Grupo de botões »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<button class=\"btn btn-secondary\">Secondary</button>\n<button class=\"btn btn-primary\">Primary</button>\n<button class=\"btn btn-success\">Success</button>\n<button class=\"btn btn-danger\">Danger</button>\n<button class=\"btn btn-warning\">Warning</button>\n<button class=\"btn btn-info\">Info</button>\n<button class=\"btn btn-light\">Light</button>\n<button class=\"btn btn-dark\">Dark</button>\n<button class=\"btn btn-link\">Link</button>"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"btn btn-outline-primary\">Primary</button>\n<button class=\"btn btn-outline-success\">Success</button>\n<button class=\"btn btn-outline-danger\">Danger</button>\n<button class=\"btn btn-outline-secondary\">Secondary</button>"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"btn btn-primary btn-lg\">Grande</button>\n<button class=\"btn btn-primary\">Padrão</button>\n<button class=\"btn btn-primary btn-sm\">Pequeno</button>"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"btn btn-primary active\">Ativo</button>\n<button class=\"btn btn-primary\" disabled>Desabilitado</button>\n<a class=\"btn btn-primary disabled\" role=\"button\" aria-disabled=\"true\">Link desabilitado</a>"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"btn btn-primary\" type=\"button\">button</button>\n<a class=\"btn btn-primary\" href=\"#\" role=\"button\">a</a>\n<input class=\"btn btn-primary\" type=\"submit\" value=\"input\">"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"d-grid gap-2\" style=\"max-width:260px\">\n  <button class=\"btn btn-primary\">Bloco</button>\n  <button class=\"btn btn-secondary\">Bloco</button>\n</div>\n<button class=\"btn btn-primary mt-2\" data-bs-toggle=\"button\">\n  Alternar (data-bs-toggle=\"button\")\n</button>"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"btn btn-outline-secondary\">secondary</button>\n<button class=\"btn btn-outline-success\">success</button>\n<button class=\"btn btn-outline-danger\">danger</button>\n<button class=\"btn btn-outline-warning\">warning</button>\n<button class=\"btn btn-outline-info\">info</button>\n<button class=\"btn btn-outline-light\">light</button>\n<button class=\"btn btn-outline-dark\">dark</button>"
+  }
+ ]
+}

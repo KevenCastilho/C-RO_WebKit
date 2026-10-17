@@ -14,21 +14,48 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <p>Empilhado, em grade, horizontal e em linha, usando o grid e os utilitários do Bootstrap.</p>
 <h2 id="grade">Grade</h2>
 <pre><code class="language-html">&lt;form class=&quot;row g-2&quot; style=&quot;max-width:560px&quot;&gt;
-  &lt;div class=&quot;col-md-6&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;lf1&quot;&gt;Nome&lt;/label&gt;&lt;input class=&quot;form-control&quot; id=&quot;lf1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;col-md-6&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;lf2&quot;&gt;Classe&lt;/label&gt;&lt;select class=&quot;form-select&quot; id=&quot;lf2&quot;&gt;&lt;option&gt;Mago&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
-  &lt;div class=&quot;col-12&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;lf3&quot;&gt;Guilda&lt;/label&gt;&lt;input class=&quot;form-control&quot; id=&quot;lf3&quot; placeholder=&quot;Opcional&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;lf1&quot;&gt;Nome&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;lf1&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;lf2&quot;&gt;Classe&lt;/label&gt;
+    &lt;select class=&quot;form-select&quot; id=&quot;lf2&quot;&gt;
+      &lt;option&gt;Mago&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-12&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;lf3&quot;&gt;Guilda&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;lf3&quot; placeholder=&quot;Opcional&quot;&gt;
+  &lt;/div&gt;
   &lt;div class=&quot;col-12&quot;&gt;&lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Salvar&lt;/button&gt;&lt;/div&gt;
 &lt;/form&gt;</code></pre>
 <h2 id="horizontal">Horizontal</h2>
 <pre><code class="language-html">&lt;form style=&quot;max-width:520px&quot;&gt;
-  &lt;div class=&quot;row mb-2&quot;&gt;&lt;label for=&quot;lh1&quot; class=&quot;col-sm-3 col-form-label&quot;&gt;Nome&lt;/label&gt;&lt;div class=&quot;col-sm-9&quot;&gt;&lt;input class=&quot;form-control&quot; id=&quot;lh1&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div class=&quot;row mb-2&quot;&gt;&lt;label for=&quot;lh2&quot; class=&quot;col-sm-3 col-form-label&quot;&gt;Senha&lt;/label&gt;&lt;div class=&quot;col-sm-9&quot;&gt;&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;lh2&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-sm-9 offset-sm-3&quot;&gt;&lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Entrar&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;row mb-2&quot;&gt;
+    &lt;label for=&quot;lh1&quot; class=&quot;col-sm-3 col-form-label&quot;&gt;Nome&lt;/label&gt;
+    &lt;div class=&quot;col-sm-9&quot;&gt;&lt;input class=&quot;form-control&quot; id=&quot;lh1&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row mb-2&quot;&gt;
+    &lt;label for=&quot;lh2&quot; class=&quot;col-sm-3 col-form-label&quot;&gt;Senha&lt;/label&gt;
+    &lt;div class=&quot;col-sm-9&quot;&gt;&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;lh2&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-9 offset-sm-3&quot;&gt;
+      &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Entrar&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/form&gt;</code></pre>
 <h2 id="em-linha">Em linha</h2>
 <pre><code class="language-html">&lt;form class=&quot;row row-cols-lg-auto g-2 align-items-center&quot;&gt;
-  &lt;div class=&quot;col-12&quot;&gt;&lt;label class=&quot;visually-hidden&quot; for=&quot;li1&quot;&gt;Usuário&lt;/label&gt;&lt;input class=&quot;form-control&quot; id=&quot;li1&quot; placeholder=&quot;Usuário&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;col-12&quot;&gt;&lt;label class=&quot;visually-hidden&quot; for=&quot;li2&quot;&gt;Senha&lt;/label&gt;&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;li2&quot; placeholder=&quot;Senha&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-12&quot;&gt;
+    &lt;label class=&quot;visually-hidden&quot; for=&quot;li1&quot;&gt;Usuário&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;li1&quot; placeholder=&quot;Usuário&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-12&quot;&gt;
+    &lt;label class=&quot;visually-hidden&quot; for=&quot;li2&quot;&gt;Senha&lt;/label&gt;
+    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;li2&quot; placeholder=&quot;Senha&quot;&gt;
+  &lt;/div&gt;
   &lt;div class=&quot;col-12&quot;&gt;&lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Entrar&lt;/button&gt;&lt;/div&gt;
 &lt;/form&gt;</code></pre>
 </div>

@@ -1,0 +1,27 @@
+{
+ "id": "componentes/spinners",
+ "title": "Spinners",
+ "type": "Bootstrap drop-in",
+ "section": "Componentes",
+ "summary": "Indicadores de carregamento. Derivação mínima do kit; para \"ocupado\" no cursor use o relógio do jogo (automático).",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/componentes/spinners.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/componentes/spinners.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Spinners\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Componentes\nHuman version (rendered examples): componentes/spinners.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nIndicadores de carregamento. Derivação mínima do kit; para \"ocupado\" no cursor use o relógio do jogo (automático).\n\n```\n<div class=\"spinner-border text-primary\" role=\"status\">\n  <span class=\"visually-hidden\">Carregando...</span>\n</div>\n<div class=\"spinner-border text-success\" role=\"status\">\n  <span class=\"visually-hidden\">Carregando...</span>\n</div>\n<div class=\"spinner-grow text-danger\" role=\"status\">\n  <span class=\"visually-hidden\">Carregando...</span>\n</div>\n<div class=\"spinner-border spinner-border-sm\" role=\"status\">\n  <span class=\"visually-hidden\">Carregando...</span>\n</div>\n```\n\n## Em botão\n\n```\n<button class=\"btn btn-primary\" type=\"button\" disabled>\n  <span class=\"spinner-border spinner-border-sm\" aria-hidden=\"true\"></span> Carregando...\n</button>\n```\n\nTip\n\nMarque a região com aria-busy=\"true\" para que o cursor vire o Poring \"progress\" do jogo, e html[aria-busy=true] para o cursor de espera da página toda.\n\n## Tamanho pequeno do spinner \"grow\"\n\n```\n<div class=\"spinner-grow spinner-grow-sm text-primary\" role=\"status\">\n  <span class=\"visually-hidden\">Carregando...</span>\n</div>\n<div class=\"spinner-border spinner-border-sm text-danger\" role=\"status\">\n  <span class=\"visually-hidden\">Carregando...</span>\n</div>\n```\n\n« Scrollspy · Toasts »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"spinner-border text-primary\" role=\"status\">\n  <span class=\"visually-hidden\">Carregando...</span>\n</div>\n<div class=\"spinner-border text-success\" role=\"status\">\n  <span class=\"visually-hidden\">Carregando...</span>\n</div>\n<div class=\"spinner-grow text-danger\" role=\"status\">\n  <span class=\"visually-hidden\">Carregando...</span>\n</div>\n<div class=\"spinner-border spinner-border-sm\" role=\"status\">\n  <span class=\"visually-hidden\">Carregando...</span>\n</div>"
+  },
+  {
+   "language": "html",
+   "code": "<button class=\"btn btn-primary\" type=\"button\" disabled>\n  <span class=\"spinner-border spinner-border-sm\" aria-hidden=\"true\"></span> Carregando...\n</button>"
+  },
+  {
+   "language": "html",
+   "code": "<div class=\"spinner-grow spinner-grow-sm text-primary\" role=\"status\">\n  <span class=\"visually-hidden\">Carregando...</span>\n</div>\n<div class=\"spinner-border spinner-border-sm text-danger\" role=\"status\">\n  <span class=\"visually-hidden\">Carregando...</span>\n</div>"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "id": "formularios/layout",
+ "title": "Layout de formulários",
+ "type": "Bootstrap drop-in",
+ "section": "Formulários",
+ "summary": "Empilhado, em grade, horizontal e em linha, usando o grid e os utilitários do Bootstrap.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/formularios/layout.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/formularios/layout.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Layout de formulários\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Formulários\nHuman version (rendered examples): formularios/layout.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nEmpilhado, em grade, horizontal e em linha, usando o grid e os utilitários do Bootstrap.\n\n## Grade\n\n```\n<form class=\"row g-2\" style=\"max-width:560px\">\n  <div class=\"col-md-6\">\n    <label class=\"form-label\" for=\"lf1\">Nome</label>\n    <input class=\"form-control\" id=\"lf1\">\n  </div>\n  <div class=\"col-md-6\">\n    <label class=\"form-label\" for=\"lf2\">Classe</label>\n    <select class=\"form-select\" id=\"lf2\">\n      <option>Mago</option>\n    </select>\n  </div>\n  <div class=\"col-12\">\n    <label class=\"form-label\" for=\"lf3\">Guilda</label>\n    <input class=\"form-control\" id=\"lf3\" placeholder=\"Opcional\">\n  </div>\n  <div class=\"col-12\"><button class=\"btn btn-primary\" type=\"submit\">Salvar</button></div>\n</form>\n```\n\n## Horizontal\n\n```\n<form style=\"max-width:520px\">\n  <div class=\"row mb-2\">\n    <label for=\"lh1\" class=\"col-sm-3 col-form-label\">Nome</label>\n    <div class=\"col-sm-9\"><input class=\"form-control\" id=\"lh1\"></div>\n  </div>\n  <div class=\"row mb-2\">\n    <label for=\"lh2\" class=\"col-sm-3 col-form-label\">Senha</label>\n    <div class=\"col-sm-9\"><input type=\"password\" class=\"form-control\" id=\"lh2\"></div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-sm-9 offset-sm-3\">\n      <button class=\"btn btn-primary\" type=\"submit\">Entrar</button>\n    </div>\n  </div>\n</form>\n```\n\n## Em linha\n\n```\n<form class=\"row row-cols-lg-auto g-2 align-items-center\">\n  <div class=\"col-12\">\n    <label class=\"visually-hidden\" for=\"li1\">Usuário</label>\n    <input class=\"form-control\" id=\"li1\" placeholder=\"Usuário\">\n  </div>\n  <div class=\"col-12\">\n    <label class=\"visually-hidden\" for=\"li2\">Senha</label>\n    <input type=\"password\" class=\"form-control\" id=\"li2\" placeholder=\"Senha\">\n  </div>\n  <div class=\"col-12\"><button class=\"btn btn-primary\" type=\"submit\">Entrar</button></div>\n</form>\n```\n\n« Floating labels · Validação »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<form class=\"row g-2\" style=\"max-width:560px\">\n  <div class=\"col-md-6\">\n    <label class=\"form-label\" for=\"lf1\">Nome</label>\n    <input class=\"form-control\" id=\"lf1\">\n  </div>\n  <div class=\"col-md-6\">\n    <label class=\"form-label\" for=\"lf2\">Classe</label>\n    <select class=\"form-select\" id=\"lf2\">\n      <option>Mago</option>\n    </select>\n  </div>\n  <div class=\"col-12\">\n    <label class=\"form-label\" for=\"lf3\">Guilda</label>\n    <input class=\"form-control\" id=\"lf3\" placeholder=\"Opcional\">\n  </div>\n  <div class=\"col-12\"><button class=\"btn btn-primary\" type=\"submit\">Salvar</button></div>\n</form>"
+  },
+  {
+   "language": "html",
+   "code": "<form style=\"max-width:520px\">\n  <div class=\"row mb-2\">\n    <label for=\"lh1\" class=\"col-sm-3 col-form-label\">Nome</label>\n    <div class=\"col-sm-9\"><input class=\"form-control\" id=\"lh1\"></div>\n  </div>\n  <div class=\"row mb-2\">\n    <label for=\"lh2\" class=\"col-sm-3 col-form-label\">Senha</label>\n    <div class=\"col-sm-9\"><input type=\"password\" class=\"form-control\" id=\"lh2\"></div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-sm-9 offset-sm-3\">\n      <button class=\"btn btn-primary\" type=\"submit\">Entrar</button>\n    </div>\n  </div>\n</form>"
+  },
+  {
+   "language": "html",
+   "code": "<form class=\"row row-cols-lg-auto g-2 align-items-center\">\n  <div class=\"col-12\">\n    <label class=\"visually-hidden\" for=\"li1\">Usuário</label>\n    <input class=\"form-control\" id=\"li1\" placeholder=\"Usuário\">\n  </div>\n  <div class=\"col-12\">\n    <label class=\"visually-hidden\" for=\"li2\">Senha</label>\n    <input type=\"password\" class=\"form-control\" id=\"li2\" placeholder=\"Senha\">\n  </div>\n  <div class=\"col-12\"><button class=\"btn btn-primary\" type=\"submit\">Entrar</button></div>\n</form>"
+  }
+ ]
+}

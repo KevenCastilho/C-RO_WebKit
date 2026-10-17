@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/cores",
+ "title": "Cores",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Cor do texto.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/cores.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/cores.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Cores\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/cores.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nCor do texto.\n\n```\n<p class=\"text-primary mb-1\">text-primary</p>\n<p class=\"text-secondary mb-1\">text-secondary</p>\n<p class=\"text-success mb-1\">text-success</p>\n<p class=\"text-danger mb-1\">text-danger</p>\n<p class=\"text-warning mb-1\">text-warning</p>\n<p class=\"text-info mb-1\">text-info</p>\n<p class=\"text-body-secondary mb-1\">text-body-secondary</p>\n<p class=\"text-muted mb-0\">text-muted</p>\n```\n\n« Bordas · Display »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<p class=\"text-primary mb-1\">text-primary</p>\n<p class=\"text-secondary mb-1\">text-secondary</p>\n<p class=\"text-success mb-1\">text-success</p>\n<p class=\"text-danger mb-1\">text-danger</p>\n<p class=\"text-warning mb-1\">text-warning</p>\n<p class=\"text-info mb-1\">text-info</p>\n<p class=\"text-body-secondary mb-1\">text-body-secondary</p>\n<p class=\"text-muted mb-0\">text-muted</p>"
+  }
+ ]
+}

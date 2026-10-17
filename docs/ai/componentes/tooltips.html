@@ -12,9 +12,29 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <dl><dt>Type</dt><dd>Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.</dd><dt>Section</dt><dd>Componentes</dd><dt>Human version (rendered examples)</dt><dd><a href="../../componentes/tooltips.html">componentes/tooltips.html</a></dd><dt>Prose language</dt><dd>Brazilian Portuguese. Code, class names and identifier tables are language-neutral.</dd><dt>cro-* / is-* classes in this page</dt><dd><code>cro-tip</code></dd></dl>
 <div lang="pt-BR">
 <p>Dicas ao passar o mouse. No kit usam a "dica" do jogo (caixa amarela), sem seta.</p>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-title=&quot;Dica do kit&quot;&gt;Em cima&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;right&quot; data-bs-title=&quot;À direita&quot;&gt;Direita&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;bottom&quot; data-bs-title=&quot;Embaixo&quot;&gt;Embaixo&lt;/button&gt;
+<pre><code class="language-html">&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-secondary&quot;
+  data-bs-toggle=&quot;tooltip&quot;
+  data-bs-title=&quot;Dica do kit&quot;&gt;
+  Em cima
+&lt;/button&gt;
+&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-secondary&quot;
+  data-bs-toggle=&quot;tooltip&quot;
+  data-bs-placement=&quot;right&quot;
+  data-bs-title=&quot;À direita&quot;&gt;
+  Direita
+&lt;/button&gt;
+&lt;button
+  type=&quot;button&quot;
+  class=&quot;btn btn-secondary&quot;
+  data-bs-toggle=&quot;tooltip&quot;
+  data-bs-placement=&quot;bottom&quot;
+  data-bs-title=&quot;Embaixo&quot;&gt;
+  Embaixo
+&lt;/button&gt;
 &lt;a href=&quot;#&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-title=&quot;Link com dica&quot;&gt;Link com dica&lt;/a&gt;</code></pre>
 <aside><strong>Warning</strong><p>Tooltips precisam ser inicializados com <code>new bootstrap.Tooltip(el)</code>.</p></aside>
 <aside><strong>Limitation</strong><p>A dica do jogo não tem seta, então o tooltip do kit também não.</p></aside>

@@ -14,11 +14,17 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <p>Campos de texto, textarea, tamanhos, readonly, plaintext e arquivo.</p>
 <h2 id="exemplo">Exemplo</h2>
 <pre><code class="language-html">&lt;div style=&quot;max-width:380px&quot;&gt;
-  &lt;label for=&quot;fc1&quot; class=&quot;form-label&quot;&gt;E-mail&lt;/label&gt;&lt;input type=&quot;email&quot; class=&quot;form-control mb-2&quot; id=&quot;fc1&quot; placeholder=&quot;nome@exemplo.com&quot;&gt;
-  &lt;label for=&quot;fc2&quot; class=&quot;form-label&quot;&gt;Texto longo&lt;/label&gt;&lt;textarea class=&quot;form-control&quot; id=&quot;fc2&quot; rows=&quot;3&quot;&gt;Linha 1&lt;/textarea&gt;
+  &lt;label for=&quot;fc1&quot; class=&quot;form-label&quot;&gt;E-mail&lt;/label&gt;
+  &lt;input type=&quot;email&quot; class=&quot;form-control mb-2&quot; id=&quot;fc1&quot; placeholder=&quot;nome@exemplo.com&quot;&gt;
+  &lt;label for=&quot;fc2&quot; class=&quot;form-label&quot;&gt;Texto longo&lt;/label&gt;
+  &lt;textarea class=&quot;form-control&quot; id=&quot;fc2&quot; rows=&quot;3&quot;&gt;Linha 1&lt;/textarea&gt;
 &lt;/div&gt;</code></pre>
 <h2 id="tamanhos">Tamanhos</h2>
-<pre><code class="language-html">&lt;div style=&quot;max-width:380px&quot;&gt;&lt;input class=&quot;form-control form-control-lg mb-1&quot; placeholder=&quot;form-control-lg&quot;&gt;&lt;input class=&quot;form-control mb-1&quot; placeholder=&quot;padrão&quot;&gt;&lt;input class=&quot;form-control form-control-sm&quot; placeholder=&quot;form-control-sm&quot;&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div style=&quot;max-width:380px&quot;&gt;
+  &lt;input class=&quot;form-control form-control-lg mb-1&quot; placeholder=&quot;form-control-lg&quot;&gt;
+  &lt;input class=&quot;form-control mb-1&quot; placeholder=&quot;padrão&quot;&gt;
+  &lt;input class=&quot;form-control form-control-sm&quot; placeholder=&quot;form-control-sm&quot;&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="readonly-plaintext-e-desabilitado">Readonly, plaintext e desabilitado</h2>
 <pre><code class="language-html">&lt;div style=&quot;max-width:380px&quot;&gt;
   &lt;input class=&quot;form-control mb-1&quot; value=&quot;somente leitura&quot; readonly&gt;
@@ -26,9 +32,22 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
   &lt;input class=&quot;form-control&quot; value=&quot;desabilitado&quot; disabled&gt;
 &lt;/div&gt;</code></pre>
 <h2 id="arquivo-e-cor">Arquivo e cor</h2>
-<pre><code class="language-html">&lt;div style=&quot;max-width:380px&quot;&gt;&lt;input class=&quot;form-control mb-1&quot; type=&quot;file&quot;&gt;&lt;input class=&quot;form-control mb-1&quot; type=&quot;file&quot; multiple&gt;&lt;input type=&quot;color&quot; class=&quot;form-control form-control-color&quot; value=&quot;#4569b9&quot; title=&quot;Escolha uma cor&quot;&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div style=&quot;max-width:380px&quot;&gt;
+  &lt;input class=&quot;form-control mb-1&quot; type=&quot;file&quot;&gt;
+  &lt;input class=&quot;form-control mb-1&quot; type=&quot;file&quot; multiple&gt;
+  &lt;input
+    type=&quot;color&quot;
+    class=&quot;form-control form-control-color&quot;
+    value=&quot;#4569b9&quot;
+    title=&quot;Escolha uma cor&quot;&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="datalist">Datalist</h2>
-<pre><code class="language-html">&lt;div style=&quot;max-width:380px&quot;&gt;&lt;input class=&quot;form-control&quot; list=&quot;fc-dl&quot; placeholder=&quot;digite...&quot;&gt;&lt;datalist id=&quot;fc-dl&quot;&gt;&lt;option value=&quot;Poring&quot;&gt;&lt;option value=&quot;Lunatic&quot;&gt;&lt;option value=&quot;Fabre&quot;&gt;&lt;/datalist&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;div style=&quot;max-width:380px&quot;&gt;
+  &lt;input class=&quot;form-control&quot; list=&quot;fc-dl&quot; placeholder=&quot;digite...&quot;&gt;
+  &lt;datalist id=&quot;fc-dl&quot;&gt;
+    &lt;option value=&quot;Poring&quot;&gt;
+  &lt;/datalist&gt;
+&lt;/div&gt;</code></pre>
 <aside><strong>Limitation</strong><p>A lista do <code>datalist</code> é nativa do navegador.</p></aside>
 <h2 id="rótulos-em-linha">Rótulos em linha</h2>
 <p><code>col-form-label</code>, <code>col-form-label-sm</code> e <code>col-form-label-lg</code> alinham rótulos com campos do mesmo tamanho em layouts horizontais (<a href="layout.html">Layout de formulários</a>).</p>

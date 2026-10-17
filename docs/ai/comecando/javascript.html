@@ -46,18 +46,58 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 </table>
 <h2 id="atributos-data--do-bootstrap">Atributos <code>data-*</code> do Bootstrap</h2>
 <p>Funcionam como no Bootstrap, sem JavaScript seu:</p>
-<pre><code class="language-html">&lt;button class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#jsModal&quot;&gt;Abrir modal&lt;/button&gt;
-&lt;button class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#jsCol&quot;&gt;Alternar collapse&lt;/button&gt;
-&lt;div class=&quot;modal fade&quot; id=&quot;jsModal&quot; tabindex=&quot;-1&quot; aria-hidden=&quot;true&quot;&gt;&lt;div class=&quot;modal-dialog modal-dialog-centered&quot;&gt;&lt;div class=&quot;modal-content&quot;&gt;
-  &lt;div class=&quot;modal-header&quot;&gt;&lt;h1 class=&quot;modal-title fs-5&quot;&gt;Janela&lt;/h1&gt;&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;&lt;/div&gt;
-  &lt;div class=&quot;modal-body&quot;&gt;Comportamento do Bootstrap, visual do jogo.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;collapse w-100&quot; id=&quot;jsCol&quot;&gt;&lt;div class=&quot;card card-body&quot;&gt;Conteúdo recolhível.&lt;/div&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-html">&lt;button class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#jsModal&quot;&gt;
+  Abrir modal
+&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#jsCol&quot;&gt;
+  Alternar collapse
+&lt;/button&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;jsModal&quot; tabindex=&quot;-1&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-dialog-centered&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h1 class=&quot;modal-title fs-5&quot;&gt;Janela&lt;/h1&gt;
+        &lt;button
+          type=&quot;button&quot;
+          class=&quot;btn-close&quot;
+          data-bs-dismiss=&quot;modal&quot;
+          aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;Comportamento do Bootstrap, visual do jogo.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;collapse w-100&quot; id=&quot;jsCol&quot;&gt;
+  &lt;div class=&quot;card card-body&quot;&gt;Conteúdo recolhível.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="tooltips-popovers-e-toasts">Tooltips, popovers e toasts</h2>
 <p>Tooltips e popovers precisam ser inicializados (como no Bootstrap). Toasts também:</p>
-<pre><code class="language-html">&lt;button class=&quot;btn btn-secondary&quot; id=&quot;tt1&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-title=&quot;Dica do kit&quot;&gt;Passe o mouse&lt;/button&gt;
-&lt;button class=&quot;btn btn-secondary&quot; id=&quot;tt2&quot; data-bs-toggle=&quot;popover&quot; data-bs-title=&quot;Título&quot; data-bs-content=&quot;Conteúdo do popover&quot;&gt;Popover&lt;/button&gt;
+<pre><code class="language-html">&lt;button class=&quot;btn btn-secondary&quot; id=&quot;tt1&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-title=&quot;Dica do kit&quot;&gt;
+  Passe o mouse
+&lt;/button&gt;
+&lt;button
+  class=&quot;btn btn-secondary&quot;
+  id=&quot;tt2&quot;
+  data-bs-toggle=&quot;popover&quot;
+  data-bs-title=&quot;Título&quot;
+  data-bs-content=&quot;Conteúdo do popover&quot;&gt;
+  Popover
+&lt;/button&gt;
 &lt;button class=&quot;btn btn-secondary&quot; id=&quot;tt3&quot;&gt;Mostrar toast&lt;/button&gt;
-&lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;&lt;div id=&quot;tt4&quot; class=&quot;toast&quot; role=&quot;alert&quot;&gt;&lt;div class=&quot;toast-header&quot;&gt;&lt;strong class=&quot;me-auto&quot;&gt;Aviso&lt;/strong&gt;&lt;small&gt;agora&lt;/small&gt;&lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;toast-body&quot;&gt;Toast com barra de título.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+&lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;
+  &lt;div id=&quot;tt4&quot; class=&quot;toast&quot; role=&quot;alert&quot;&gt;
+    &lt;div class=&quot;toast-header&quot;&gt;
+      &lt;strong class=&quot;me-auto&quot;&gt;Aviso&lt;/strong&gt;
+      &lt;small&gt;agora&lt;/small&gt;
+      &lt;button
+        type=&quot;button&quot;
+        class=&quot;btn-close&quot;
+        data-bs-dismiss=&quot;toast&quot;
+        aria-label=&quot;Fechar&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;toast-body&quot;&gt;Toast com barra de título.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <pre><code class="language-js">// tooltips e popovers: a documentação já liga os deste exemplo; no seu site faça:
 document.querySelectorAll(&#x27;[data-bs-toggle=&quot;tooltip&quot;]&#x27;).forEach(function (el) {
   new bootstrap.Tooltip(el);

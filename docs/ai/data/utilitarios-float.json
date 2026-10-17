@@ -1,0 +1,19 @@
+{
+ "id": "utilitarios/float",
+ "title": "Float",
+ "type": "Bootstrap drop-in",
+ "section": "Utilitários",
+ "summary": "Flutua elementos à esquerda ou direita.",
+ "language_of_prose": "pt-BR (code, class names and identifiers are language-neutral)",
+ "html_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/ai/utilitarios/float.html",
+ "human_url": "https://kevencastilho.github.io/C-RO_WebKit/docs/utilitarios/float.html",
+ "classes": [],
+ "data_attributes": [],
+ "text": "# Float\n\nType: Bootstrap drop-in. Write standard Bootstrap 5.3.8 markup. The kit only changes the look; no new classes are needed.\nSection: Utilitários\nHuman version (rendered examples): utilitarios/float.html\nProse language: Brazilian Portuguese. Code, class names and identifier tables are language-neutral.\n\nFlutua elementos à esquerda ou direita.\n\n```\n<div class=\"clearfix border p-2\">\n  <div class=\"float-start bd-demo-box\">float-start</div>\n  <div class=\"float-end bd-demo-box\">float-end</div>\n</div>\n```\n\nfloat-start, float-end, float-none. Responsivo: float-md-end.\n« Flex · Interações »\n",
+ "code_blocks": [
+  {
+   "language": "html",
+   "code": "<div class=\"clearfix border p-2\">\n  <div class=\"float-start bd-demo-box\">float-start</div>\n  <div class=\"float-end bd-demo-box\">float-end</div>\n</div>"
+  }
+ ]
+}

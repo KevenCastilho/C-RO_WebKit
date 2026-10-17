@@ -23,8 +23,35 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 &lt;/table&gt;</code></pre>
 <h2 id="variações">Variações</h2>
 <pre><code class="language-html">&lt;table class=&quot;table table-striped table-hover table-sm&quot;&gt;
-  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;#&lt;/th&gt;&lt;th&gt;Nome&lt;/th&gt;&lt;th&gt;Lv&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Ana&lt;/td&gt;&lt;td&gt;99&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Bia&lt;/td&gt;&lt;td&gt;50&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;table-primary&quot;&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Cris&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;table-danger&quot;&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Dani&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;#&lt;/th&gt;
+      &lt;th&gt;Nome&lt;/th&gt;
+      &lt;th&gt;Lv&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Ana&lt;/td&gt;
+      &lt;td&gt;99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Bia&lt;/td&gt;
+      &lt;td&gt;50&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;table-primary&quot;&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Cris&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;table-danger&quot;&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Dani&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
 <p>Classes de linha/célula contextuais (<code>table-primary</code>, <code>table-success</code>, <code>table-danger</code>...) usam as cores do Bootstrap.</p>
 <h2 id="responsiva">Responsiva</h2>
@@ -32,12 +59,85 @@ nav.crumb,nav.pager{font-size:.92em}h2{margin-top:2rem}</style></head><body>
 <h2 id="nativa-do-kit">Nativa do kit</h2>
 <p>Sem Bootstrap, a classe <code>cro-table</code> (ou o elemento <code>&lt;table&gt;</code> nu) tem o mesmo visual. Veja <a href="../kit/arvore-menu.html">Árvore, menu e lista</a>.</p>
 <h2 id="todas-as-variações">Todas as variações</h2>
-<pre><code class="language-html">&lt;table class=&quot;table table-bordered&quot;&gt;&lt;caption class=&quot;caption-top&quot;&gt;table-bordered com caption-top&lt;/caption&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;A&lt;/th&gt;&lt;th&gt;B&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-&lt;table class=&quot;table table-borderless&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;table-borderless&lt;/td&gt;&lt;td&gt;x&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-&lt;table class=&quot;table table-dark&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;table-dark&lt;/td&gt;&lt;td&gt;x&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-&lt;table class=&quot;table table-striped-columns&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;striped&lt;/td&gt;&lt;td&gt;columns&lt;/td&gt;&lt;td&gt;x&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;a&lt;/td&gt;&lt;td&gt;b&lt;/td&gt;&lt;td&gt;c&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-&lt;table class=&quot;table&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Cabeçalho&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody class=&quot;table-group-divider&quot;&gt;&lt;tr&gt;&lt;td&gt;table-group-divider&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-&lt;table class=&quot;table&quot;&gt;&lt;tbody&gt;&lt;tr class=&quot;table-active&quot;&gt;&lt;td&gt;table-active&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;table-secondary&quot;&gt;&lt;td&gt;table-secondary&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;table-info&quot;&gt;&lt;td&gt;table-info&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;table-warning&quot;&gt;&lt;td&gt;table-warning&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;table-light&quot;&gt;&lt;td&gt;table-light&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;table-dark&quot;&gt;&lt;td&gt;table-dark (linha)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</code></pre>
+<pre><code class="language-html">&lt;table class=&quot;table table-bordered&quot;&gt;
+  &lt;caption class=&quot;caption-top&quot;&gt;table-bordered com caption-top&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;A&lt;/th&gt;
+      &lt;th&gt;B&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class=&quot;table table-borderless&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;table-borderless&lt;/td&gt;
+      &lt;td&gt;x&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class=&quot;table table-dark&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;table-dark&lt;/td&gt;
+      &lt;td&gt;x&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class=&quot;table table-striped-columns&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;striped&lt;/td&gt;
+      &lt;td&gt;columns&lt;/td&gt;
+      &lt;td&gt;x&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;a&lt;/td&gt;
+      &lt;td&gt;b&lt;/td&gt;
+      &lt;td&gt;c&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class=&quot;table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Cabeçalho&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class=&quot;table-group-divider&quot;&gt;
+    &lt;tr&gt;
+      &lt;td&gt;table-group-divider&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class=&quot;table&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr class=&quot;table-active&quot;&gt;
+      &lt;td&gt;table-active&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;table-secondary&quot;&gt;
+      &lt;td&gt;table-secondary&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;table-info&quot;&gt;
+      &lt;td&gt;table-info&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;table-warning&quot;&gt;
+      &lt;td&gt;table-warning&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;table-light&quot;&gt;
+      &lt;td&gt;table-light&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;table-dark&quot;&gt;
+      &lt;td&gt;table-dark (linha)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
 <p>Tabelas responsivas por breakpoint: <code>table-responsive-sm</code>, <code>-md</code>, <code>-lg</code>, <code>-xl</code>, <code>-xxl</code> (a rolagem horizontal só aparece abaixo do breakpoint).</p>
 <aside><strong>Note</strong><p><code>table-dark</code> mantém o fundo escuro do Bootstrap: é a única superfície escura do kit além de <code>navbar-dark</code> e <code>text-bg-dark</code>. Não há modo escuro geral (veja <a href="../comecando/navegadores.html">Navegadores e limites</a>).</p></aside>
 <p>Responsiva por breakpoint: <code>table-responsive-sm</code>, <code>-md</code>, <code>-lg</code>, <code>-xl</code>, <code>-xxl</code>.</p>
